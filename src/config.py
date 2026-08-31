@@ -32,6 +32,14 @@ class Settings:
     top_n: int
     timeout: int
     allow_mock: bool
+    enable_email: bool
+    email_from: str
+    email_to: str
+    smtp_host: str
+    smtp_port: int
+    smtp_username: str
+    smtp_password: str
+    site_url: str
 
     @classmethod
     def load(cls, root: Path) -> "Settings":
@@ -47,5 +55,12 @@ class Settings:
             top_n=int(os.getenv("DAILY_TOP_N", "5")),
             timeout=int(os.getenv("HTTP_TIMEOUT_SECONDS", "12")),
             allow_mock=as_bool(os.getenv("ALLOW_MOCK_LLM", "true")),
+            enable_email=as_bool(os.getenv("ENABLE_EMAIL", "false")),
+            email_from=os.getenv("EMAIL_FROM", os.getenv("SMTP_USERNAME", "")),
+            email_to=os.getenv("EMAIL_TO", ""),
+            smtp_host=os.getenv("SMTP_HOST", "smtp.qq.com"),
+            smtp_port=int(os.getenv("SMTP_PORT", "465")),
+            smtp_username=os.getenv("SMTP_USERNAME", ""),
+            smtp_password=os.getenv("SMTP_PASSWORD", ""),
+            site_url=os.getenv("SITE_URL", ""),
         )
-

@@ -8,6 +8,7 @@ from pathlib import Path
 from src.collectors import collect
 from src.config import Settings
 from src.llm import DeepSeekProvider, MockProvider
+from src.notifications import send_daily_email
 from src.processing import deduplicate, pre_score
 from src.reporting import render_build, render_daily, safe_slug
 from src.storage import append_history, write_json
@@ -72,6 +73,13 @@ def run(settings: Settings) -> tuple[Path, Path]:
     build_path.write_text(render_build(date, build), encoding="utf-8")
     logging.info("Generated %s", daily_path)
     logging.info("Generated %s", build_path)
+    if settings.enable_email:
+        try:
+            logging.info("Sending email...")
+            send_daily_email(settings, date, analyzed, concept, build)
+            logging.info("Email sent to %s", settings.email_to)
+        except Exception as exc:
+            logging.warning("Email unavailable: %s", type(exc).__name__)
     logging.info("Completed")
     return daily_path, build_path
 

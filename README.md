@@ -13,7 +13,7 @@
 需要 Python 3.11+：
 
 ```powershell
-cd C:\VScode\personal-ai-frontier
+cd "C:\CodeTools\每日前沿推送"
 Copy-Item .env.example .env
 python main.py
 python -m unittest discover -s tests -v
@@ -40,9 +40,25 @@ python main.py --smoke-test
 
 程序只显示连接状态、模型和 token 用量，不显示密钥。`LLM_PROVIDER` 与业务逻辑解耦，未来可增加 Qwen/Kimi Provider。
 
+## GitHub Actions 自动运行
+
+工作流位于 `.github/workflows/daily.yml`，支持手动触发，并在每天 `00:00 UTC`（北京时间 08:00）自动运行。它会测试、生成日报，并把 `daily/`、`builds/`、`data/` 的变化提交回仓库。
+
+在仓库 `Settings → Secrets and variables → Actions` 创建以下 Repository secrets：
+
+- `DEEPSEEK_API_KEY`：DeepSeek 新 Key
+- `EMAIL_FROM`：发件 QQ 邮箱
+- `EMAIL_TO`：收件邮箱
+- `SMTP_USERNAME`：发件 QQ 邮箱，通常与 `EMAIL_FROM` 相同
+- `SMTP_PASSWORD`：QQ 邮箱生成的 SMTP 授权码，不是 QQ 密码
+
+在同一页面的 Variables 中创建 `ENABLE_EMAIL=true`。若暂时不需要邮件，可不创建邮件 Secrets，并保持 `ENABLE_EMAIL=false`。
+
+首次配置后进入 `Actions → Daily AI Frontier Radar → Run workflow` 手动验证。
+
 ## 当前范围
 
-本阶段已覆盖采集、清洗、去重、预评分、DeepSeek/Mock Provider、结构化分析、TOP 5、Emerging Concept、Build of the Day、Markdown、历史与成本记录。GitHub Actions、Pages 和邮件属于第二阶段。
+已覆盖采集、清洗、去重、预评分、DeepSeek/Mock Provider、结构化分析、TOP 5、Emerging Concept、Build of the Day、Markdown、历史、成本记录、GitHub Actions 和 QQ SMTP 邮件。GitHub Pages Dashboard 将在后续完善。
 
 ## 常见问题
 
