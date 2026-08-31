@@ -4,8 +4,8 @@
     "provider": "deepseek",
     "model": "deepseek-chat",
     "task": "daily_analysis",
-    "input_tokens": 2040,
-    "output_tokens": 2133,
+    "input_tokens": 2500,
+    "output_tokens": 2418,
     "estimated_cost_rmb": null,
     "daily_budget_rmb": 0.5
   }
