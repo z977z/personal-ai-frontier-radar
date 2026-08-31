@@ -1,0 +1,122 @@
+[
+  {
+    "id": "d5fe6b1c79b5b3c7",
+    "title": "How Much Memory Does Your Agent Actually Need?",
+    "summary": "",
+    "published_at": "Tue, 18 Aug 2026 18:09:38 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "Hugging Face 发布博客文章，讨论 AI 代理所需内存大小，标题为 'How Much Memory Does Your Agent Actually Need?'，发布于 2026-08-18。",
+    "analysis": "该文章可能探讨了 AI 代理在不同任务中的内存需求，为开发者提供优化内存使用的指导。",
+    "technical_value": "提供关于 AI 代理内存优化的实用见解，有助于提升模型部署效率。",
+    "impact": "对 AI 代理的开发和部署有参考价值，可能影响资源受限环境下的应用设计。",
+    "keywords": [
+      "AI agent",
+      "memory",
+      "optimization"
+    ]
+  },
+  {
+    "id": "1702d60298868bde",
+    "title": "Putting sign language AI into users’ hands",
+    "summary": "Introducing sign-language-to-text (SL2T), our breakthrough model powering new sign language features for Deaf and hard of hearing users.",
+    "published_at": "Wed, 12 Aug 2026 14:01:59 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 5.4,
+    "facts": "Google DeepMind 发布博客，介绍手语转文本模型 SL2T，为聋人和听力障碍用户提供新功能，发布于 2026-08-12。",
+    "analysis": "该模型旨在打破沟通障碍，利用 AI 技术实现手语实时翻译，具有重要社会意义。",
+    "technical_value": "涉及多模态学习、序列生成等先进技术，推动无障碍 AI 发展。",
+    "impact": "改善聋人群体数字体验，促进包容性技术应用。",
+    "keywords": [
+      "sign language",
+      "SL2T",
+      "accessibility"
+    ]
+  },
+  {
+    "id": "2eae02444289c76c",
+    "title": "WeatherNext: AI model achieves breakthrough in forecasting cyclones",
+    "summary": "",
+    "published_at": "Thu, 06 Aug 2026 15:06:15 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 5.4,
+    "facts": "Google DeepMind 发布 WeatherNext 模型，在气旋预报方面取得突破，发布于 2026-08-06。",
+    "analysis": "该模型可能利用深度学习提高气旋路径和强度预测准确性，对防灾减灾有重要意义。",
+    "technical_value": "结合气象学与 AI，展示时序预测和空间建模能力。",
+    "impact": "提升天气预报精度，有助于减少自然灾害损失。",
+    "keywords": [
+      "WeatherNext",
+      "cyclone",
+      "forecasting"
+    ]
+  },
+  {
+    "id": "bb5557eb7aa24eef",
+    "title": "Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
+    "summary": "We’re introducing new Gemini models, including Gemini 3.6 Flash, 3.5 Flash-Lite and 3.5 Flash Cyber.",
+    "published_at": "Tue, 21 Jul 2026 15:16:30 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-gemini-3-6-flash-3-5-flash-lite-and-3-5-flash-cyber/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 5.4,
+    "facts": "Google DeepMind 发布新 Gemini 模型：3.6 Flash、3.5 Flash-Lite 和 3.5 Flash Cyber，发布于 2026-07-21。",
+    "analysis": "新模型系列可能针对不同场景优化，如轻量级和安全性，扩展 Gemini 生态。",
+    "technical_value": "模型迭代展示多模态能力提升和效率优化。",
+    "impact": "为开发者提供更多选择，推动 AI 应用创新。",
+    "keywords": [
+      "Gemini",
+      "model",
+      "Flash"
+    ]
+  },
+  {
+    "id": "7f76ba5a8248814d",
+    "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+    "summary": "",
+    "published_at": "Wed, 26 Aug 2026 00:00:00 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/train-multi-vector-encoder",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 5.4,
+    "facts": "Hugging Face 发布关于使用 Sentence Transformers 训练和微调多向量嵌入模型的博客，发布于 2026-08-26。",
+    "analysis": "多向量嵌入模型可能提升检索和语义理解性能，文章提供技术教程。",
+    "technical_value": "介绍多向量编码技术，对信息检索和 NLP 有实用价值。",
+    "impact": "促进嵌入模型的发展，可能影响搜索和推荐系统。",
+    "keywords": [
+      "multi-vector",
+      "embedding",
+      "Sentence Transformers"
+    ]
+  }
+]

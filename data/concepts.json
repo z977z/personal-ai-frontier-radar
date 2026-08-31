@@ -1,0 +1,14 @@
+[
+  {
+    "date": "2026-08-31",
+    "name_zh": "AI 代理内存优化",
+    "name_en": "AI Agent Memory Optimization",
+    "score": 5.5,
+    "maturity": "Emerging",
+    "explanation": "AI 代理在执行任务时需要管理内存资源，优化内存使用可提升效率和降低成本。",
+    "why_now": "随着 AI 代理在复杂任务中的普及，内存瓶颈成为实际部署的关键问题。",
+    "evidence_urls": [
+      "https://huggingface.co/blog/ibm-research/altk-evolve-hmm"
+    ]
+  }
+]
