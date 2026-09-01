@@ -1,0 +1,128 @@
+[
+  {
+    "id": "ae96e227d86faa10",
+    "title": "Auditing Anonymous AI Models: A Four-Stage Protocol for Black-Box Identity Verification",
+    "summary": "The 2025--2026 AI market has seen a wave of stealth releases: frontier models launched anonymously on developer platforms under codenames. For their users, identity determines data-handling terms, supply-chain risk, and capability expectations. No validated methodology exists for black-box identity verification of anonymous models: practitioner checklists lack accuracy evidence, and self-identification is untrustworthy by design. We propose a four-stage forensic audit protocol for API-served models. Stage 0 reconstructs launch-time configuration from archived platform snapshots (Internet Archive), exposing preview--production drift. Stage 1 fingerprints configuration (context, output ceiling, reasoning, modality) against the platform catalog. Stage 2 tests tokenizer identity with a cross-length differential that rejects short-prompt collisions. Stage 3 corroborates with behavioral probes. We test declaration consistency on 10 known-identity releases (7 exact, 2 precision-differences, 1 partial, 0 counter-directional), not end-to-end identification under anonymity. Identification is validated prospectively on a flagship case whose 2026-08-23 analysis pointed to the GLM-5.3 version line and whose official reveal confirmed those family and version-line inferences (deployment variant was not pre-asserted; Flash was consistent post-reveal), and on three Stage-0-only cases where the protocol produced a graded hypothesis or declined rather than guessed. A standard-library-only implementation is provided as supplementary material.",
+    "published_at": "2026-08-31T17:48:24Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2608.31142v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.0,
+    "ai_score": 6.0,
+    "facts": "A four-stage forensic audit protocol for black-box identity verification of anonymous AI models is proposed. Stage 0 reconstructs launch-time configuration from archived platform snapshots; Stage 1 fingerprints configuration against platform catalog; Stage 2 tests tokenizer identity with cross-length differential; Stage 3 corroborates with behavioral probes. Tested on 10 known-identity releases (7 exact, 2 precision-differences, 1 partial, 0 counter-directional). Prospectively validated on a flagship case (2026-08-23 analysis pointed to GLM-5.3 version line, official reveal confirmed family and version-line inferences). Three Stage-0-only cases produced graded hypothesis or declined. Standard-library-only implementation provided.",
+    "analysis": "The protocol addresses the emerging issue of stealth AI model releases, providing a systematic method for identity verification without access to model internals. The validation on known cases and prospective success on GLM-5.3 suggests practical utility. However, the protocol is not end-to-end identification under anonymity; it relies on platform snapshots and behavioral probes, which may be limited if models are updated or if platforms restrict access. The approach is novel and fills a gap in AI auditing.",
+    "technical_value": "Introduces a structured, multi-stage forensic methodology for black-box model identification, with a standard-library-only implementation for reproducibility. The cross-length differential for tokenizer identity is a specific technical contribution.",
+    "impact": "Could become a standard tool for AI auditors, regulators, and enterprises to verify the identity of API-served models, mitigating risks related to data handling, supply chain, and capability expectations. May influence platform transparency policies.",
+    "keywords": [
+      "anonymous AI models",
+      "black-box identity verification",
+      "forensic audit",
+      "GLM-5.3",
+      "tokenizer fingerprinting"
+    ]
+  },
+  {
+    "id": "bab88919d6a5b10b",
+    "title": "Token-Efficient Data Reasoning Agents via Adaptive Structuring of Unstructured Data",
+    "summary": "Valuable data remains embedded in unstructured sources: web pages, reports, contracts, filings, earnings calls, and PDFs. The big bet in enterprise AI is deploying LLM agents that reason over this data to answer complex questions for every knowledge worker. Agents can do this today, but at prohibitive cost. Each question repeatedly opens large documents to recover scattered evidence, consuming up to a million tokens. However, if the data were already structured, the same question would reduce to a cheap database lookup. For example, on FanOutQA benchmark, reasoning over an ideal pre-structured store is 28X cheaper, and the gap grows to orders of magnitude as questions fan out over more documents. Yet structuring everything in advance is not viable: documents hold vastly more possible structure than any workload will use, and the useful structure and documents are unknown until queries arrive. We propose agentic data cracking, a method that structures unstructured data adaptively and speculatively as a byproduct of reasoning itself. Structuring is adaptive because observed queries decide when it happens and what matters, and speculative because it goes beyond the current question. Whenever the agent opens a document to answer, a cracking sub-agent forks from the already-loaded context at marginal cost and extracts grounded structure likely to serve related future queries. Over time, an increasing share of queries is fully covered by structured data and answered without opening a document, keeping agentic accuracy at close to RAG cost. On FanOutQA, extended with merely one related question per test question, cracking cuts cost by 53% while preserving accuracy. Agentic data cracking is a first step toward next-generation data infrastructure for agentic reasoning over unstr",
+    "published_at": "2026-08-31T16:53:45Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2608.31082v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.8,
+    "ai_score": 5.8,
+    "facts": "Agentic data cracking is proposed to structure unstructured data adaptively and speculatively as a byproduct of reasoning. On FanOutQA benchmark, reasoning over ideal pre-structured store is 28X cheaper; with one related question per test question, cracking cuts cost by 53% while preserving accuracy. Method forks a cracking sub-agent from already-loaded context to extract grounded structure for future queries.",
+    "analysis": "The method addresses the high token cost of LLM agents reasoning over unstructured data. By structuring data on-the-fly based on observed queries, it balances upfront structuring costs with query-time savings. The 53% cost reduction with minimal accuracy loss is promising, but the approach requires careful implementation to avoid overhead. The speculative nature may lead to extracting irrelevant structure, but the adaptive aspect mitigates this.",
+    "technical_value": "Introduces a novel agentic data cracking technique that integrates structuring into the reasoning process, leveraging sub-agents and context reuse. Provides empirical evidence on FanOutQA.",
+    "impact": "Could significantly reduce operational costs for enterprise AI agents that process large volumes of unstructured data, making them more viable for widespread deployment. May influence the design of future data infrastructure for agentic systems.",
+    "keywords": [
+      "agentic data cracking",
+      "unstructured data",
+      "token efficiency",
+      "LLM agents",
+      "FanOutQA"
+    ]
+  },
+  {
+    "id": "d5fe6b1c79b5b3c7",
+    "title": "How Much Memory Does Your Agent Actually Need?",
+    "summary": "",
+    "published_at": "Tue, 18 Aug 2026 18:09:38 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "The blog post discusses memory requirements for AI agents, likely presenting research or insights on how much memory agents need. No specific details are provided in the summary.",
+    "analysis": "Without content, it's difficult to assess. The topic is relevant as memory is a critical resource for agent performance. The post may offer guidelines or benchmarks for memory allocation.",
+    "technical_value": "Unknown, but likely provides practical guidance on memory sizing for agents.",
+    "impact": "Could help developers optimize agent memory usage, improving efficiency and cost.",
+    "keywords": [
+      "memory",
+      "AI agents",
+      "resource optimization"
+    ]
+  },
+  {
+    "id": "1702d60298868bde",
+    "title": "Putting sign language AI into users’ hands",
+    "summary": "Introducing sign-language-to-text (SL2T), our breakthrough model powering new sign language features for Deaf and hard of hearing users.",
+    "published_at": "Wed, 12 Aug 2026 14:01:59 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 5.4,
+    "facts": "Google DeepMind introduces sign-language-to-text (SL2T) model powering new sign language features for Deaf and hard of hearing users.",
+    "analysis": "This is a significant accessibility advancement. The model likely uses computer vision and NLP to translate sign language in real-time. The impact on communication for Deaf users is substantial.",
+    "technical_value": "Breakthrough in sign language recognition, likely involving multimodal learning.",
+    "impact": "Improves accessibility and inclusion, potentially transforming how Deaf individuals interact with technology.",
+    "keywords": [
+      "sign language",
+      "SL2T",
+      "accessibility",
+      "Google DeepMind"
+    ]
+  },
+  {
+    "id": "2eae02444289c76c",
+    "title": "WeatherNext: AI model achieves breakthrough in forecasting cyclones",
+    "summary": "",
+    "published_at": "Thu, 06 Aug 2026 15:06:15 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 5.4,
+    "facts": "Google DeepMind's WeatherNext AI model achieves breakthrough in forecasting cyclones.",
+    "analysis": "Accurate cyclone forecasting is critical for disaster preparedness. AI models can improve prediction speed and accuracy over traditional methods.",
+    "technical_value": "Advanced AI for meteorological forecasting, likely using deep learning on atmospheric data.",
+    "impact": "Could save lives and reduce economic losses by providing earlier and more accurate cyclone warnings.",
+    "keywords": [
+      "WeatherNext",
+      "cyclone forecasting",
+      "AI",
+      "Google DeepMind"
+    ]
+  }
+]

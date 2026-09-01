@@ -10,5 +10,18 @@
     "evidence_urls": [
       "https://huggingface.co/blog/ibm-research/altk-evolve-hmm"
     ]
+  },
+  {
+    "date": "2026-09-01",
+    "name_zh": "AI模型身份验证与数据效率",
+    "name_en": "AI Model Identity Verification and Data Efficiency",
+    "score": 7.5,
+    "maturity": "Emerging",
+    "explanation": "The concept encompasses two emerging trends: verifying the identity of anonymous AI models through forensic auditing, and improving token efficiency in AI agents via adaptive data structuring. Both address critical challenges in the deployment and trust of AI systems.",
+    "why_now": "The rise of stealth model releases and the high cost of agentic reasoning over unstructured data have created urgent needs for verification and efficiency. Recent advances in model auditing and agentic data cracking provide initial solutions.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.31142v1",
+      "https://arxiv.org/abs/2608.31082v1"
+    ]
   }
 ]

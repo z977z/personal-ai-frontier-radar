@@ -19,5 +19,26 @@
     "code_size": "约500行",
     "v2": "加入自适应内存管理，支持多代理协作。",
     "status": "idea"
+  },
+  {
+    "date": "2026-09-01",
+    "name_zh": "AI模型身份验证与数据效率平台",
+    "name_en": "AI Model Identity Verification and Data Efficiency Platform",
+    "tagline": "Verify AI models and optimize data usage",
+    "why_today": "With anonymous AI models proliferating and agent costs soaring, there is a market need for tools that ensure trust and efficiency.",
+    "scenarios": [
+      "Enterprises auditing third-party AI APIs for compliance and risk",
+      "Developers optimizing token usage in agent-based applications",
+      "Regulators verifying model identity for accountability"
+    ],
+    "flow": "1. Ingest model API endpoints and metadata. 2. Run forensic audit protocol (stages 0-3) to verify identity. 3. Apply agentic data cracking to structure unstructured data on-the-fly. 4. Provide dashboards and reports.",
+    "ai_role": "AI models are used for behavioral probing, tokenizer analysis, and adaptive structuring.",
+    "stack": "Python, FastAPI, PyTorch, Hugging Face Transformers, Internet Archive API, vector databases",
+    "mvp": "A web service that accepts an API endpoint, runs the audit protocol, and returns a verification report. Also includes a library for data cracking.",
+    "difficulty": "High",
+    "time": "6-9 months",
+    "code_size": "~15,000 lines",
+    "v2": "Add support for more model families, integrate with CI/CD pipelines, and expand data cracking to more data types.",
+    "status": "idea"
   }
 ]
