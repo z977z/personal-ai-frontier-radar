@@ -3,8 +3,8 @@ name: Daily AI Frontier Radar
 on:
   workflow_dispatch:
   schedule:
-    # GitHub Actions uses UTC. 00:00 UTC = 08:00 Asia/Shanghai.
-    - cron: "0 0 * * *"
+    # GitHub Actions uses UTC. 00:37 UTC = 08:37 Asia/Shanghai.
+    - cron: "37 0 * * *"
 
 permissions:
   contents: write
