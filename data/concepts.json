@@ -23,5 +23,19 @@
       "https://arxiv.org/abs/2608.31142v1",
       "https://arxiv.org/abs/2608.31082v1"
     ]
+  },
+  {
+    "date": "2026-09-02",
+    "name_zh": "智能体生命周期推理",
+    "name_en": "Agent Lifecycle Reasoning",
+    "score": 6.0,
+    "maturity": "Emerging",
+    "explanation": "智能体生命周期推理是指语言模型在动态智能体框架中理解和推理组件生命周期（如依赖、清理、配置变化）的能力。随着智能体系统越来越复杂，这种推理能力对于确保系统的正确性和可靠性至关重要。",
+    "why_now": "随着动态智能体框架的兴起，语言模型被赋予改变自身执行环境的能力，这带来了新的推理挑战。CordisBench等基准的出现表明该领域正在成为研究热点。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.01600v1",
+      "https://arxiv.org/abs/2609.01597v1",
+      "https://arxiv.org/abs/2609.01567v1"
+    ]
   }
 ]

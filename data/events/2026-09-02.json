@@ -1,0 +1,131 @@
+[
+  {
+    "id": "87ed9a6ed2211f34",
+    "title": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?",
+    "summary": "Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new reasoning burden: a local plugin change can propagate through dependencies and cleanup. We introduce CordisBench, a 1,200-question benchmark of this lifecycle reasoning. It combines a controlled formal setting with programs executed against Cordis, a runtime that manages component dependencies and cleanup, and asks models to identify affected components, predict state after a specified teardown order, determine which conditions hold under all or some orders, and choose reconfigurations that succeed when executed. Across these tasks, we evaluate three efficiency-oriented models at low reasoning effort with 2, 4, 8, 16, 24, or 32 relevant interactions, using deterministic task-specific scoring. Models usually handle small systems well but grow less reliable as more interactions become relevant, especially when predicting final state and when reasoning across teardown orders. Additional inference effort recovers marked gains for some models. The cost is nontrivial: on our 16-interaction subset, GPT-5.6 Luna uses nearly 3,000 reasoning tokens per question at medium effort. For these controlled instances, that cost is avoidable: an independent finite reference semantics agrees with Cordis execution on every observation and action outcome used for scoring across all 528 executable questions.",
+    "published_at": "2026-09-01T17:59:13Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.01600v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.3,
+    "ai_score": 6.3,
+    "facts": "CordisBench is a benchmark with 1,200 questions designed to test language models' reasoning about component lifecycles in dynamic agent harnesses. It uses a formal setting with programs executed against Cordis, a runtime managing component dependencies and cleanup. Tasks include identifying affected components, predicting state after teardown orders, determining conditions under all/some orders, and choosing successful reconfigurations. Evaluated three efficiency-oriented models at low reasoning effort with varying interactions (2-32). Models handle small systems well but degrade with more interactions, especially in predicting final state and reasoning across teardown orders. Additional inference effort helps some models. On a 16-interaction subset, GPT-5.6 Luna uses nearly 3,000 reasoning tokens per question at medium effort. An independent finite reference semantics agrees with Cordis execution on all 528 executable questions.",
+    "analysis": "The benchmark highlights a scalability issue in lifecycle reasoning for agent harnesses. The cost of reasoning tokens is significant, suggesting inefficiency. The agreement with finite reference semantics indicates potential for more efficient symbolic reasoning instead of LLM token-heavy inference.",
+    "technical_value": "Provides a new benchmark for evaluating and improving LLM reasoning in dynamic software environments, with potential to guide development of more efficient reasoning methods.",
+    "impact": "Could influence research on agent harnesses and LLM reasoning, promoting hybrid approaches combining LLMs with formal methods.",
+    "keywords": [
+      "CordisBench",
+      "agent harness",
+      "lifecycle reasoning",
+      "benchmark",
+      "LLM"
+    ]
+  },
+  {
+    "id": "581227cadda2a595",
+    "title": "The Rise of Verbal Reinforcement Learning",
+    "summary": "Natural language is emerging as a primary feedback channel for improving language agents, capable of conveying intent, preferences, and causal structure in forms interpretable by both humans and modern language models. We call this paradigm Verbal Reinforcement Learning (VRL) and offer the first unified account of it. We organize the field around a single axis, \\textit{when} verbal feedback takes effect in an agent's lifecycle and \\textit{what} it modifies, yielding three pillars: (1) \\textbf{Language as Grounding Signal}, where language defines the task itself by specifying goals, states, and reward structures; (2) \\textbf{Language as Deliberative Feedback}, where natural language guides reasoning at test time without the need to update model parameters; (3) \\textbf{Language as Learning Signal}, where language-based feedback shapes model parameters through training. Within each pillar, we synthesize representative work, distinguish key subcategories of approaches, and outline the distinct role language plays in shaping agent behavior. Together, this taxonomy shows how verbal reinforcement is reshaping agent development, while also defining the challenges and opportunities for building more capable and aligned agents.",
+    "published_at": "2026-09-01T17:58:18Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.01597v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.9,
+    "ai_score": 5.9,
+    "facts": "The paper introduces Verbal Reinforcement Learning (VRL) as a paradigm where natural language serves as a feedback channel for improving language agents. It organizes the field into three pillars: Language as Grounding Signal (defining tasks), Language as Deliberative Feedback (guiding reasoning at test time), and Language as Learning Signal (shaping model parameters). It synthesizes representative work and outlines challenges and opportunities.",
+    "analysis": "VRL unifies diverse approaches under a single taxonomy, highlighting the growing role of language in agent development. The three pillars provide a framework for understanding how language can be integrated at different stages of an agent's lifecycle.",
+    "technical_value": "Provides a structured taxonomy that can guide future research and development in language-based agent training and inference.",
+    "impact": "Could shape how agents are trained and deployed, making them more adaptable and aligned with human intent through natural language feedback.",
+    "keywords": [
+      "Verbal Reinforcement Learning",
+      "language agents",
+      "feedback",
+      "taxonomy",
+      "NLP"
+    ]
+  },
+  {
+    "id": "48d08677ea0d09c0",
+    "title": "Selective Agent Guidance via Entropy: Learning Autonomous Policies from Imperfect VLM Teachers",
+    "summary": "Vision-Language Models (VLMs) provide useful priors for interactive decision-making, but using them directly as policies is expensive and brittle: they must be queried at every step, do not improve from environment interaction, and can repeat systematic errors. We study how to learn a cheap autonomous policy from an online, expensive, and imperfect but informative VLM teacher. We propose SAGE (Selective Agent Guidance via Entropy), a framework that queries a VLM only when the learner is uncertain, executes the suggested action during training, and distills guidance into a lightweight Reinforcement Learning (RL) policy. Because VLM advice is not always reliable, SAGE can weight teacher-action distillation using environment-derived advantages rather than treating all suggestions as equally useful. Across sparse-reward visual reasoning and navigation tasks, SAGE learns policies that act without VLM guidance at evaluation time and improves over unguided RL in several environments, including settings where the learned policy exceeds its VLM teacher. The results show that selective guidance is most beneficial when the VLM can help the agent discover high-reward trajectories, and less useful when unguided exploration already succeeds or teacher actions do not lead to informative experience. SAGE also reduces VLM usage by prompting the teacher only on a fraction of training steps and requiring no VLM calls at deployment. Overall, our results suggest that VLMs don't need to be used as fixed policies to be useful; they can instead act as temporary, imperfect sources of guidance whose value is tested and internalized through interaction.",
+    "published_at": "2026-09-01T17:33:41Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.01567v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.9,
+    "ai_score": 5.9,
+    "facts": "SAGE (Selective Agent Guidance via Entropy) is a framework that learns a lightweight RL policy from an imperfect VLM teacher. It queries the VLM only when the learner is uncertain, executes suggested actions during training, and distills guidance into the policy. It weights teacher-action distillation using environment-derived advantages. Evaluated on sparse-reward visual reasoning and navigation tasks, SAGE learns policies that act without VLM guidance at evaluation, improving over unguided RL in several environments, sometimes exceeding the teacher. It reduces VLM usage and requires no VLM calls at deployment.",
+    "analysis": "SAGE demonstrates that VLMs can be used as temporary guides rather than fixed policies, making them more practical for deployment. The selective querying based on uncertainty and advantage weighting addresses the brittleness and cost of using VLMs directly.",
+    "technical_value": "Offers a method to distill knowledge from large VLMs into efficient RL policies, reducing computational cost and improving robustness.",
+    "impact": "Could enable more practical use of VLMs in interactive decision-making, especially in resource-constrained settings.",
+    "keywords": [
+      "SAGE",
+      "VLM",
+      "RL",
+      "selective guidance",
+      "distillation"
+    ]
+  },
+  {
+    "id": "204cc4ef541aa343",
+    "title": "Introducing agentic video understanding with Gemini",
+    "summary": "",
+    "published_at": "Tue, 01 Sep 2026 17:08:51 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "Google DeepMind announced agentic video understanding with Gemini. The blog post introduces capabilities for AI to understand and reason about video content in an agentic manner, likely enabling interactive video analysis and decision-making.",
+    "analysis": "This represents a step towards more sophisticated AI systems that can process video streams and act upon them, potentially for applications like surveillance, autonomous driving, or interactive assistants.",
+    "technical_value": "Advances multimodal AI by integrating video understanding with agentic capabilities, enabling real-time reasoning and action.",
+    "impact": "Could lead to new applications in video analytics, robotics, and human-computer interaction.",
+    "keywords": [
+      "Gemini",
+      "agentic video",
+      "video understanding",
+      "multimodal",
+      "DeepMind"
+    ]
+  },
+  {
+    "id": "d5fe6b1c79b5b3c7",
+    "title": "How Much Memory Does Your Agent Actually Need?",
+    "summary": "",
+    "published_at": "Tue, 18 Aug 2026 18:09:38 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "Hugging Face blog post discusses memory requirements for AI agents, likely exploring how much memory an agent needs for different tasks and how to optimize memory usage.",
+    "analysis": "Memory management is crucial for deploying agents on resource-constrained devices. This post likely provides insights into efficient memory allocation and usage for agent-based systems.",
+    "technical_value": "Provides guidance on memory optimization for AI agents, which is essential for scalability and cost reduction.",
+    "impact": "Could help developers build more efficient agents that can run on edge devices or with limited resources.",
+    "keywords": [
+      "memory",
+      "AI agents",
+      "optimization",
+      "Hugging Face"
+    ]
+  }
+]
