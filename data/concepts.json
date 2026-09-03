@@ -37,5 +37,17 @@
       "https://arxiv.org/abs/2609.01597v1",
       "https://arxiv.org/abs/2609.01567v1"
     ]
+  },
+  {
+    "date": "2026-09-03",
+    "name_zh": "智能体安全对齐",
+    "name_en": "Agent Safety Alignment",
+    "score": 5.7,
+    "maturity": "Emerging",
+    "explanation": "智能体安全对齐指通过调整LLM智能体的策略和外部工具（harness）来确保其行为安全，防止有害输出和不当执行。",
+    "why_now": "随着LLM智能体在复杂环境中自主决策，安全风险凸显，现有对齐方法难以兼顾运行时控制和内在安全，需要协同进化。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.02786v1"
+    ]
   }
 ]

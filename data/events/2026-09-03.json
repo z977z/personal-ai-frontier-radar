@@ -1,0 +1,130 @@
+[
+  {
+    "id": "f2e61ba5b3a0262c",
+    "title": "Large Language Models (LLMs) for Telecom Root Cause Analysis (RCA): A Structured Reasoning Framework for Evidence-Grounded Diagnosis",
+    "summary": "Root cause analysis (RCA) is a critical task in telecom network operations, but diagnosing performance degradations in modern 5G and emerging 6G networks remains challenging due to complex cross-layer dependencies. While large language models (LLMs) offer promising capabilities for reasoning and knowledge integration, directly applying vanilla LLMs to telecom RCA often leads to hallucination, unstable reasoning, and poor alignment with structured network evidence. This work first reviews the evolution of telecom RCA from rule-based and machine learning (ML) approaches to emerging LLM-enabled techniques, and provides an overview of recent paradigms, including structured reasoning, retrieval-augmented knowledge grounding, agentic orchestration, and verifiable reasoning. Building upon these insights, we propose a structured reasoning framework for LLM-enabled telecom RCA that aligns diagnostic reasoning with telecom-specific evidence and domain knowledge. The proposed approach first organizes heterogeneous network telemetry into canonical contexts, and then enforces decision-path reasoning during diagnosis, and finally generates evidence-grounded explanations for reliable fault identification. Experimental results on two 5G RCA datasets, TeleLogs and TelecomTS, demonstrate that the proposed framework consistently improves diagnostic accuracy and decision consistency compared with baseline techniques. These cross-dataset results highlight the importance of structured reasoning design for practical LLM-based RCA systems in next-generation telecom networks.",
+    "published_at": "2026-09-02T16:43:22Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.02805v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.9,
+    "ai_score": 5.9,
+    "facts": "论文提出用于电信网络根因分析的结构化推理框架，在5G数据集TeleLogs和TelecomTS上提升诊断准确性和决策一致性。",
+    "analysis": "该框架通过组织异构网络遥测为规范上下文、强制决策路径推理、生成基于证据的解释，减少幻觉，提高可靠性。",
+    "technical_value": "为LLM在电信RCA中的应用提供结构化推理方法，增强证据对齐和可解释性。",
+    "impact": "有望提升5G/6G网络运维的自动化诊断能力，减少人工干预。",
+    "keywords": [
+      "LLM",
+      "RCA",
+      "电信网络",
+      "结构化推理",
+      "5G"
+    ]
+  },
+  {
+    "id": "3879a74aba0684ee",
+    "title": "Discriminative World Models for Web Agents",
+    "summary": "Recent web agents use world models for test-time action selection by sampling candidate actions, predicting the resulting web states, and ranking them with a ranker model or a Process Reward Model (PRM). These world models are typically trained via supervised next-state prediction to generate fixed representations like HTML or AXTree snapshots. However, this objective is misaligned with the downstream ranker, which relies on predicted states being discriminative across candidates to accurately score them. To address this, we introduce predicted-state matching, a training objective where the predicted representation must distinguish the true resulting state from those reached by alternative actions. We train these models using a branching web-agent dataset derived from WebArena Go-Browse trajectories, where every decision point contains multiple alternative actions and their resulting states. Experiments on our held-out predicted-state matching benchmark show that our approach outperforms world models trained with supervised next-state prediction. We further show that our approach improves PRM-style action ranking on WebPRMBench compared with action-only PRMs and PRMs augmented with supervised-next-state world models. Finally, on WebArena-Lite, using our world model for test-time action selection improves end-to-end task success. Our project page is available at: https://dhruvpendharkar.github.io/dwm/.",
+    "published_at": "2026-09-02T17:59:40Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.02885v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 5.7,
+    "facts": "论文提出预测状态匹配训练目标，用于改进Web智能体的世界模型，在WebArena-Lite上提升端到端任务成功率。",
+    "analysis": "该方法使预测表示能区分真实结果状态与替代动作状态，与下游排序器对齐，优于监督式下一状态预测。",
+    "technical_value": "提出新的训练目标，提升世界模型的判别能力，增强智能体测试时行动选择。",
+    "impact": "推动Web自动化智能体的性能提升，可能应用于浏览器自动化、测试等。",
+    "keywords": [
+      "世界模型",
+      "Web智能体",
+      "预测状态匹配",
+      "行动排序",
+      "WebArena"
+    ]
+  },
+  {
+    "id": "c6af9bd6d86ee434",
+    "title": "SafeEvolve: Harness-Policy Co-Evolution from Agent Experience for Safety Alignment",
+    "summary": "The performance of LLM-based agents is jointly shaped by the base model and the harness used when interacting with the environment. This exposes them to safety risks in both harmful final responses and multi-step execution trajectories. Existing safety alignment mechanisms often rely on either external harness updates or policy optimization, yet applying either paradigm in isolation fails to bridge runtime control with intrinsic safety. We propose SafeEvolve, an experience-driven self-evolving framework for agent safety alignment. SafeEvolve leverages safety experience from completed on-policy trajectories to drive a continual loop of harness-policy co-evolution. On the harness side, SafeEvolve converts trajectory-level safety evidence into bounded, component-level updates across safety prompt and hierarchical skills, yielding auditable and reversible harness artifacts. On the policy side, SafeEvolve follows a two-stage SFT-RL paradigm, where harness-use SFT bootstraps the policy to actively leverage evolved harness artifacts, and harness-augmented RL further shapes autonomous safety behaviors during multi-step exploration via verifier-decomposed rewards. Through harness-policy co-evolution, SafeEvolve converts safety experience into an evolved runtime harness and improved policy behavior. Experiments on agentic safety benchmarks show that SafeEvolve achieves a stronger safety-utility tradeoff than existing baselines. For Qwen3.5-4B, SafeEvolve achieves a $3\\times$ ASR reduction on AgentDojo while improving benign utility from 59.79% to 61.86%.",
+    "published_at": "2026-09-02T16:19:54Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.02786v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 5.7,
+    "facts": "SafeEvolve框架通过经验驱动的自我进化，实现LLM智能体的安全对齐，在AgentDojo上ASR降低3倍，良性效用提升。",
+    "analysis": "该框架同时进化外部harness和内部策略，将轨迹级安全经验转化为可审计的组件更新，并通过SFT-RL两阶段优化。",
+    "technical_value": "提出harness-策略协同进化方法，平衡安全与效用，提供可审计的安全机制。",
+    "impact": "增强LLM智能体的安全性，减少有害行为，适用于多步决策环境。",
+    "keywords": [
+      "安全对齐",
+      "智能体",
+      "harness进化",
+      "策略优化",
+      "经验驱动"
+    ]
+  },
+  {
+    "id": "204cc4ef541aa343",
+    "title": "Introducing agentic video understanding with Gemini",
+    "summary": "",
+    "published_at": "Tue, 01 Sep 2026 17:08:51 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "Google DeepMind发布博客，介绍Gemini中的智能体视频理解功能。",
+    "analysis": "该功能可能使AI能理解视频内容并执行相关动作，扩展多模态智能体能力。",
+    "technical_value": "结合视频理解与智能体行动，可能涉及视频摘要、事件检测等。",
+    "impact": "推动视频AI应用，如自动化监控、内容分析等。",
+    "keywords": [
+      "Gemini",
+      "视频理解",
+      "智能体",
+      "多模态"
+    ]
+  },
+  {
+    "id": "d5fe6b1c79b5b3c7",
+    "title": "How Much Memory Does Your Agent Actually Need?",
+    "summary": "",
+    "published_at": "Tue, 18 Aug 2026 18:09:38 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "Hugging Face博客讨论智能体所需内存大小，可能涉及IBM研究。",
+    "analysis": "文章可能分析不同任务下智能体的内存需求，提出优化策略。",
+    "technical_value": "提供智能体内存管理的见解，可能涉及模型压缩或记忆机制。",
+    "impact": "有助于设计更高效的智能体系统，降低资源消耗。",
+    "keywords": [
+      "智能体",
+      "内存",
+      "优化",
+      "IBM"
+    ]
+  }
+]
