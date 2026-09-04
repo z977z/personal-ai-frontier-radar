@@ -49,5 +49,17 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2609.02786v1"
     ]
+  },
+  {
+    "date": "2026-09-04",
+    "name_zh": "智能体视频理解",
+    "name_en": "Agentic Video Understanding",
+    "score": 5.5,
+    "maturity": "Emerging",
+    "explanation": "智能体视频理解是指AI系统不仅能够分析视频内容，还能基于理解采取行动，实现从感知到决策的闭环。这结合了计算机视觉、自然语言处理和强化学习等技术，使AI能够像人类一样理解动态场景并做出响应。",
+    "why_now": "随着多模态模型（如Gemini）的发展，AI已经能够处理视频数据，但缺乏主动性和决策能力。近期研究开始将智能体（agent）的概念引入视频理解，旨在让AI在视频环境中自主操作，如自动驾驶、机器人导航等。",
+    "evidence_urls": [
+      "https://deepmind.google/blog/introducing-agentic-video-in-gemini/"
+    ]
   }
 ]
