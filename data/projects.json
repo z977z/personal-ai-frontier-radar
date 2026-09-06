@@ -127,5 +127,27 @@
     "code_size": "约5000行",
     "v2": "扩展至多视频流处理，支持更复杂的决策和交互。",
     "status": "idea"
+  },
+  {
+    "date": "2026-09-06",
+    "name_zh": "智能体视频理解系统",
+    "name_en": "Agentic Video Understanding System",
+    "tagline": "Build an AI agent that watches and understands video to perform tasks.",
+    "why_today": "With the release of Gemini's agentic video capabilities, there is a growing need for custom solutions that leverage video understanding for automation, surveillance, and content analysis.",
+    "scenarios": [
+      "Automated video surveillance for security",
+      "Content moderation on video platforms",
+      "Video summarization and highlight generation",
+      "Interactive video assistants for education or training"
+    ],
+    "flow": "1. Input video stream or file. 2. Use a multimodal model (e.g., Gemini) to extract frames and audio. 3. Generate textual descriptions of events. 4. Use an agent loop to reason and decide actions based on user-defined goals. 5. Output actions or insights.",
+    "ai_role": "The AI model provides perception (understanding video) and reasoning (deciding actions).",
+    "stack": "Python, Google Gemini API, OpenCV for frame extraction, LangChain for agent orchestration, FastAPI for serving.",
+    "mvp": "A simple agent that monitors a live camera feed and alerts when it detects a specific event (e.g., person entering a restricted area).",
+    "difficulty": "Advanced",
+    "time": "4-6 weeks",
+    "code_size": "~2000 lines",
+    "v2": "Add multi-camera support, integrate with external APIs for actions, and improve accuracy with fine-tuning on domain-specific data.",
+    "status": "idea"
   }
 ]

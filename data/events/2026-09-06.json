@@ -1,0 +1,127 @@
+[
+  {
+    "id": "204cc4ef541aa343",
+    "title": "Introducing agentic video understanding with Gemini",
+    "summary": "",
+    "published_at": "Tue, 01 Sep 2026 17:08:51 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "Google DeepMind announced agentic video understanding with Gemini on September 1, 2026. The official blog post is at https://deepmind.google/blog/introducing-agentic-video-in-gemini/.",
+    "analysis": "This indicates a move towards AI agents that can process and reason over video content, potentially enabling autonomous video analysis and interaction. The high pre-score suggests significant interest.",
+    "technical_value": "High, as it likely involves advanced multimodal models combining vision, language, and action.",
+    "impact": "Could transform video surveillance, content moderation, and interactive media.",
+    "keywords": [
+      "agentic AI",
+      "video understanding",
+      "Gemini",
+      "multimodal"
+    ]
+  },
+  {
+    "id": "c8754172bb3bf73f",
+    "title": "Give Your Coding Agents a Memory You Own",
+    "summary": "",
+    "published_at": "Thu, 03 Sep 2026 00:00:00 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/funes",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "Hugging Face published a blog post on September 3, 2026, titled 'Give Your Coding Agents a Memory You Own', available at https://huggingface.co/blog/funes.",
+    "analysis": "Focuses on providing coding agents with persistent, user-owned memory, likely to enhance their context and personalization.",
+    "technical_value": "High, as it addresses a key limitation of current coding agents.",
+    "impact": "Could improve developer productivity and enable more autonomous coding assistants.",
+    "keywords": [
+      "coding agents",
+      "memory",
+      "ownership",
+      "Hugging Face"
+    ]
+  },
+  {
+    "id": "a5b5573760534fe5",
+    "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+    "summary": "",
+    "published_at": "Thu, 03 Sep 2026 15:02:08 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 5.4,
+    "facts": "Google DeepMind introduced WeatherNext 3, their most advanced global weather AI model, on September 3, 2026. Blog: https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/.",
+    "analysis": "This model likely improves accuracy and resolution for weather forecasting, building on previous WeatherNext models.",
+    "technical_value": "High, as it pushes state-of-the-art in meteorological AI.",
+    "impact": "Better weather predictions can aid disaster preparedness and climate research.",
+    "keywords": [
+      "WeatherNext",
+      "weather forecasting",
+      "AI model",
+      "Google DeepMind"
+    ]
+  },
+  {
+    "id": "1702d60298868bde",
+    "title": "Putting sign language AI into users’ hands",
+    "summary": "Introducing sign-language-to-text (SL2T), our breakthrough model powering new sign language features for Deaf and hard of hearing users.",
+    "published_at": "Wed, 12 Aug 2026 14:01:59 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 5.4,
+    "facts": "Google DeepMind introduced sign-language-to-text (SL2T) model on August 12, 2026, to power sign language features for Deaf and hard of hearing users. Blog: https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/.",
+    "analysis": "This breakthrough model aims to translate sign language to text, improving accessibility.",
+    "technical_value": "High, as it involves complex gesture recognition and language translation.",
+    "impact": "Enhances communication for Deaf community and promotes inclusivity.",
+    "keywords": [
+      "sign language",
+      "SL2T",
+      "accessibility",
+      "Google DeepMind"
+    ]
+  },
+  {
+    "id": "2eae02444289c76c",
+    "title": "WeatherNext: AI model achieves breakthrough in forecasting cyclones",
+    "summary": "",
+    "published_at": "Thu, 06 Aug 2026 15:06:15 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 5.4,
+    "facts": "Google DeepMind reported a breakthrough in forecasting cyclones with WeatherNext AI model on August 6, 2026. Blog: https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/.",
+    "analysis": "This suggests improved prediction of cyclone paths and intensity, potentially saving lives.",
+    "technical_value": "High, as it applies AI to a critical meteorological challenge.",
+    "impact": "Better cyclone forecasting can reduce disaster risk.",
+    "keywords": [
+      "WeatherNext",
+      "cyclone forecasting",
+      "AI",
+      "Google DeepMind"
+    ]
+  }
+]

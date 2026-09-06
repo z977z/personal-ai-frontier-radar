@@ -73,5 +73,17 @@
     "evidence_urls": [
       "https://deepmind.google/blog/introducing-agentic-video-in-gemini/"
     ]
+  },
+  {
+    "date": "2026-09-06",
+    "name_zh": "智能体视频理解",
+    "name_en": "Agentic Video Understanding",
+    "score": 5.5,
+    "maturity": "Emerging",
+    "explanation": "Agentic video understanding refers to AI systems that can autonomously analyze, interpret, and act upon video content, combining computer vision, natural language processing, and decision-making capabilities.",
+    "why_now": "Recent advances in multimodal models and reinforcement learning have made it feasible to build agents that can process video streams in real-time and take actions, as demonstrated by Google DeepMind's announcement.",
+    "evidence_urls": [
+      "https://deepmind.google/blog/introducing-agentic-video-in-gemini/"
+    ]
   }
 ]
