@@ -1,0 +1,132 @@
+[
+  {
+    "id": "6536499b37aad8c4",
+    "title": "Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe",
+    "summary": "Data-sovereignty regulations increasingly require public institutions to deploy open-source, on-premise LLM agents that chain multiple tool-calls across live government APIs. However, open-source models consistently underperform in this multi-step setting, and no existing benchmark measures the gap. We introduce the Korean Open Public API Benchmark (KOPA-Bench), comprising 145 real-world tasks. To close this gap, we present EDGE, an Execution-grounded Dynamic Graph for tool-calling data synthEsis driven by live execution. EDGE builds a graph of how each tool's output can feed another's input, keeps only the links that succeed when actually called against the live APIs, and traverses these verified links to synthesize executable multi-step trajectories. Fine-tuned via GRPO on the resulting dataset, our 9B model nearly matches the untuned 27B model from the same family, improving substantially not only on KOPA-Bench but also on the BFCL benchmark.",
+    "published_at": "2026-09-04T17:44:52Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.05395v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 5.7,
+    "facts": "Introduces KOPA-Bench, a benchmark of 145 real-world tasks for multi-step tool-calling over Korean open public APIs. Proposes EDGE, a method for synthesizing training data by building a graph of tool interactions and verifying links via live execution. Fine-tuning a 9B model with GRPO on EDGE data nearly matches an untuned 27B model, improving on KOPA-Bench and BFCL.",
+    "analysis": "Addresses the gap in evaluating and improving open-source LLMs for multi-step tool-calling, which is crucial for data-sovereignty compliant on-premise deployments. The EDGE method leverages live execution to ensure data quality, and the results show significant gains from efficient fine-tuning, suggesting a path to close the performance gap with larger models.",
+    "technical_value": "Provides a benchmark and a data synthesis recipe that can be adapted to other domains and languages, enabling further research in tool-calling and agentic AI.",
+    "impact": "Could accelerate the adoption of open-source LLM agents in public institutions requiring data sovereignty, by offering a method to improve their multi-step tool-calling capabilities.",
+    "keywords": [
+      "tool-calling",
+      "benchmark",
+      "data synthesis",
+      "open-source LLM",
+      "Korean public APIs"
+    ]
+  },
+  {
+    "id": "baf48d26f9d9cd66",
+    "title": "Molecular Déjà Vu: Digit-Level Retrieval of Published Values in Frontier Language Models",
+    "summary": "Large language models (LLMs) are increasingly evaluated on molecular property benchmarks, but accuracy cannot distinguish a model that predicts a property from one that retrieves a published number. We audit 22 frontier models on 12 regression benchmarks for verbatim retrieval and find that it is widespread but relatively benchmark-specific: on five datasets more than $50\\%$ of the LLMs show verbatim retrieval, while on the remaining datasets it appears only in isolated cells. We run our experiments at two reasoning levels and find that reasoning changes retrieval. The same experiments, on the same molecules and with the same prompt, are flagged $89\\%$ more often at the higher reasoning level than at the lowest one. Finally, we test a way to interrupt retrieval in our most contaminated cases, and find that the strongest models in some cases still recognise a combination of transformed SMILES strings and original labels. Furthermore, suppressing retrieval moves the prediction errors of the different models closer together in relative terms, while their differing use of verbatim retrieval spreads them apart. This indicates that the general predictive capability of an LLM is not determined solely by the amount of memorised values. This work provides an overview of the amount and depth of verbatim retrieval in molecular regression benchmarks using LLMs.",
+    "published_at": "2026-09-04T17:32:48Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.05381v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 5.7,
+    "facts": "Audits 22 frontier models on 12 molecular regression benchmarks for verbatim retrieval of published values. Finds retrieval is widespread but benchmark-specific, with over 50% of models showing retrieval on five datasets. Reasoning level affects retrieval, with higher reasoning leading to 89% more flagged instances. Attempts to interrupt retrieval show some models still recognize transformed SMILES and original labels.",
+    "analysis": "Highlights a significant issue in evaluating LLMs on scientific benchmarks: models may memorize and retrieve known values rather than predict from molecular structure. This undermines the validity of benchmark results and suggests that current evaluations may overestimate true predictive ability. The finding that reasoning increases retrieval suggests that models may use memorization more when prompted to reason.",
+    "technical_value": "Provides a methodology for detecting verbatim retrieval in regression benchmarks, which can be applied to other domains to ensure evaluation integrity.",
+    "impact": "Calls into question the reliability of LLM performance on molecular property prediction and similar benchmarks, prompting the need for more robust evaluation protocols that prevent or account for memorization.",
+    "keywords": [
+      "verbatim retrieval",
+      "molecular benchmarks",
+      "LLM evaluation",
+      "memorization",
+      "frontier models"
+    ]
+  },
+  {
+    "id": "204cc4ef541aa343",
+    "title": "Introducing agentic video understanding with Gemini",
+    "summary": "",
+    "published_at": "Tue, 01 Sep 2026 17:08:51 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "Google DeepMind introduces agentic video understanding with Gemini, enabling models to reason about and interact with video content in an agentic manner.",
+    "analysis": "This represents a step towards more sophisticated AI agents that can process and act on video data, potentially enabling applications in autonomous systems, content analysis, and interactive media.",
+    "technical_value": "Advances multimodal AI by integrating video understanding with agentic capabilities, likely leveraging Gemini's architecture.",
+    "impact": "Could lead to new applications in video surveillance, autonomous driving, and interactive entertainment, and may influence future research in multimodal agentic AI.",
+    "keywords": [
+      "agentic video",
+      "Gemini",
+      "multimodal",
+      "video understanding",
+      "AI agents"
+    ]
+  },
+  {
+    "id": "c8754172bb3bf73f",
+    "title": "Give Your Coding Agents a Memory You Own",
+    "summary": "",
+    "published_at": "Thu, 03 Sep 2026 00:00:00 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/funes",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "Hugging Face blog post discusses giving coding agents a memory you own, likely introducing a tool or framework for persistent memory in coding agents.",
+    "analysis": "Memory is a key limitation in coding agents, as they often lack context across sessions. This development could improve their ability to maintain project context and user preferences, enhancing their utility in real-world development.",
+    "technical_value": "Provides a solution for persistent memory in coding agents, potentially using vector databases or other storage mechanisms.",
+    "impact": "Could increase adoption of AI coding assistants by making them more personalized and context-aware, improving developer productivity.",
+    "keywords": [
+      "coding agents",
+      "memory",
+      "persistent storage",
+      "AI assistant",
+      "developer tools"
+    ]
+  },
+  {
+    "id": "a5b5573760534fe5",
+    "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+    "summary": "",
+    "published_at": "Thu, 03 Sep 2026 15:02:08 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 5.4,
+    "facts": "Google DeepMind introduces WeatherNext 3, their most advanced and accurate global weather AI model.",
+    "analysis": "Weather forecasting is a critical application for AI, and improved accuracy can have significant societal and economic benefits. This model likely leverages advances in deep learning to outperform previous versions and possibly traditional models.",
+    "technical_value": "Represents state-of-the-art in AI-based weather prediction, likely incorporating novel architectures or training techniques.",
+    "impact": "Could improve early warning systems for extreme weather, aid in climate research, and optimize industries like agriculture and energy.",
+    "keywords": [
+      "weather forecasting",
+      "AI model",
+      "WeatherNext",
+      "global weather",
+      "accuracy"
+    ]
+  }
+]

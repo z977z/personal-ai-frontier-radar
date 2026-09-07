@@ -149,5 +149,27 @@
     "code_size": "~2000 lines",
     "v2": "Add multi-camera support, integrate with external APIs for actions, and improve accuracy with fine-tuning on domain-specific data.",
     "status": "idea"
+  },
+  {
+    "date": "2026-09-07",
+    "name_zh": "多模态智能体开发平台",
+    "name_en": "Multimodal Agent Development Platform",
+    "tagline": "构建能看、能听、能行动的AI助手",
+    "why_today": "随着智能体与多模态技术的成熟，开发者需要集成工具来快速构建能够处理视频、图像、语音并执行复杂任务的AI应用。",
+    "scenarios": [
+      "智能客服：理解用户视频或语音输入，并调用API解决问题",
+      "内容创作：根据视频素材自动生成摘要或剪辑",
+      "辅助编程：通过语音或视频指导编码，并自动执行代码",
+      "实时监控：分析视频流并触发警报或操作"
+    ],
+    "flow": "用户输入（文本/语音/视频） -> 多模态理解模块 -> 任务规划模块 -> 工具调用模块 -> 执行动作 -> 反馈输出",
+    "ai_role": "AI作为核心引擎，负责理解多模态输入、规划任务、调用外部工具，并生成响应。",
+    "stack": "Python, PyTorch, Hugging Face Transformers, LangChain, FastAPI, Docker, Kubernetes",
+    "mvp": "构建一个原型，能够接收视频输入，识别关键事件，并通过调用天气API提供相关建议。",
+    "difficulty": "高级",
+    "time": "3-6个月",
+    "code_size": "约5000-10000行",
+    "v2": "扩展支持更多模态和工具，优化模型性能，增加用户自定义工作流，提供可视化界面。",
+    "status": "idea"
   }
 ]

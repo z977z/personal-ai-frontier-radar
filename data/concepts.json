@@ -85,5 +85,21 @@
     "evidence_urls": [
       "https://deepmind.google/blog/introducing-agentic-video-in-gemini/"
     ]
+  },
+  {
+    "date": "2026-09-07",
+    "name_zh": "AI智能体与多模态融合",
+    "name_en": "AI Agents and Multimodal Integration",
+    "score": 8.5,
+    "maturity": "Growth",
+    "explanation": "当前AI领域正从单一模型向能够执行复杂任务、与外部环境交互的智能体发展，同时融合文本、图像、视频、语音等多种模态。这些事件展示了智能体在工具调用、视频理解、编码辅助等方面的进展，以及多模态模型在天气预测、手语翻译等领域的应用。",
+    "why_now": "大语言模型的成熟、强化学习与微调技术的进步，以及数据主权和实时性需求，推动了智能体与多模态融合的发展。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.05395v1",
+      "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+      "https://huggingface.co/blog/funes",
+      "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+      "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/"
+    ]
   }
 ]
