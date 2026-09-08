@@ -101,5 +101,20 @@
       "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
       "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/"
     ]
+  },
+  {
+    "date": "2026-09-08",
+    "name_zh": "AI代理与多模态前沿",
+    "name_en": "AI Agents and Multimodal Frontiers",
+    "score": 5.5,
+    "maturity": "Emerging",
+    "explanation": "近期事件显示AI领域正聚焦于开发能够执行复杂任务（如多步骤工具调用、视频理解）的代理系统，并推动多模态模型在天气预测、手语翻译等领域的应用。同时，模型压缩和高效微调技术也在快速发展，以实现更广泛的部署。",
+    "why_now": "数据主权法规推动本地化部署，多模态数据激增，以及边缘计算需求上升，共同促使AI代理和多模态技术成为当前热点。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.05395v1",
+      "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+      "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+      "https://huggingface.co/blog/funes"
+    ]
   }
 ]

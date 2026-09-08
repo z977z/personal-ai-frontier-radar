@@ -1,0 +1,130 @@
+[
+  {
+    "id": "6536499b37aad8c4",
+    "title": "Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe",
+    "summary": "Data-sovereignty regulations increasingly require public institutions to deploy open-source, on-premise LLM agents that chain multiple tool-calls across live government APIs. However, open-source models consistently underperform in this multi-step setting, and no existing benchmark measures the gap. We introduce the Korean Open Public API Benchmark (KOPA-Bench), comprising 145 real-world tasks. To close this gap, we present EDGE, an Execution-grounded Dynamic Graph for tool-calling data synthEsis driven by live execution. EDGE builds a graph of how each tool's output can feed another's input, keeps only the links that succeed when actually called against the live APIs, and traverses these verified links to synthesize executable multi-step trajectories. Fine-tuned via GRPO on the resulting dataset, our 9B model nearly matches the untuned 27B model from the same family, improving substantially not only on KOPA-Bench but also on the BFCL benchmark.",
+    "published_at": "2026-09-04T17:44:52Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.05395v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 5.7,
+    "facts": "KOPA-Bench benchmark introduced with 145 real-world tasks for multi-step tool-calling over Korean open public APIs. EDGE method synthesizes data via execution-grounded dynamic graph. Fine-tuning 9B model with GRPO nearly matches untuned 27B model, improving on KOPA-Bench and BFCL.",
+    "analysis": "Addresses data sovereignty and on-premise deployment needs. Demonstrates that smaller models can be competitive with larger ones via targeted fine-tuning and synthetic data. Highlights importance of execution verification in tool-calling.",
+    "technical_value": "Introduces a new benchmark and a data synthesis recipe that can be applied to other domains. Shows potential for efficient model improvement.",
+    "impact": "Could accelerate adoption of open-source LLM agents in government and regulated industries. Provides a methodology for creating domain-specific benchmarks.",
+    "keywords": [
+      "KOPA-Bench",
+      "EDGE",
+      "tool-calling",
+      "GRPO",
+      "open public APIs",
+      "data synthesis"
+    ]
+  },
+  {
+    "id": "baf48d26f9d9cd66",
+    "title": "Molecular Déjà Vu: Digit-Level Retrieval of Published Values in Frontier Language Models",
+    "summary": "Large language models (LLMs) are increasingly evaluated on molecular property benchmarks, but accuracy cannot distinguish a model that predicts a property from one that retrieves a published number. We audit 22 frontier models on 12 regression benchmarks for verbatim retrieval and find that it is widespread but relatively benchmark-specific: on five datasets more than $50\\%$ of the LLMs show verbatim retrieval, while on the remaining datasets it appears only in isolated cells. We run our experiments at two reasoning levels and find that reasoning changes retrieval. The same experiments, on the same molecules and with the same prompt, are flagged $89\\%$ more often at the higher reasoning level than at the lowest one. Finally, we test a way to interrupt retrieval in our most contaminated cases, and find that the strongest models in some cases still recognise a combination of transformed SMILES strings and original labels. Furthermore, suppressing retrieval moves the prediction errors of the different models closer together in relative terms, while their differing use of verbatim retrieval spreads them apart. This indicates that the general predictive capability of an LLM is not determined solely by the amount of memorised values. This work provides an overview of the amount and depth of verbatim retrieval in molecular regression benchmarks using LLMs.",
+    "published_at": "2026-09-04T17:32:48Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.05381v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 5.7,
+    "facts": "Audit of 22 frontier models on 12 molecular regression benchmarks reveals widespread verbatim retrieval, with over 50% of models showing retrieval on five datasets. Higher reasoning levels increase retrieval flags by 89%. Suppressing retrieval reduces error differences among models.",
+    "analysis": "Raises concerns about benchmark validity for molecular property prediction. Suggests that models may memorize rather than learn underlying chemistry. The effect of reasoning level indicates complex interaction with retrieval.",
+    "technical_value": "Provides a methodology for detecting verbatim retrieval and a potential mitigation strategy. Insights into model behavior on scientific benchmarks.",
+    "impact": "Calls for more robust evaluation methods in scientific AI. May influence how molecular benchmarks are designed and interpreted.",
+    "keywords": [
+      "verbatim retrieval",
+      "molecular benchmarks",
+      "LLM evaluation",
+      "memorization",
+      "frontier models"
+    ]
+  },
+  {
+    "id": "204cc4ef541aa343",
+    "title": "Introducing agentic video understanding with Gemini",
+    "summary": "",
+    "published_at": "Tue, 01 Sep 2026 17:08:51 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "Google DeepMind announced agentic video understanding with Gemini. No further details provided in summary.",
+    "analysis": "Indicates advancement in multimodal AI, enabling agents to process and reason about video content. Likely to enhance applications in robotics, surveillance, and content analysis.",
+    "technical_value": "Potential for new capabilities in video-based reasoning and interaction.",
+    "impact": "Could lead to more sophisticated AI assistants and autonomous systems.",
+    "keywords": [
+      "agentic video",
+      "Gemini",
+      "multimodal",
+      "video understanding"
+    ]
+  },
+  {
+    "id": "c8754172bb3bf73f",
+    "title": "Give Your Coding Agents a Memory You Own",
+    "summary": "",
+    "published_at": "Thu, 03 Sep 2026 00:00:00 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/funes",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "Hugging Face blog post about giving coding agents a memory you own. No summary provided.",
+    "analysis": "Focuses on persistent memory for coding agents, likely to improve code generation and maintenance by retaining context across sessions.",
+    "technical_value": "Addresses a key limitation of current LLM-based coding tools.",
+    "impact": "Could enhance developer productivity and enable more complex coding tasks.",
+    "keywords": [
+      "coding agents",
+      "memory",
+      "persistent",
+      "Hugging Face"
+    ]
+  },
+  {
+    "id": "a5b5573760534fe5",
+    "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+    "summary": "",
+    "published_at": "Thu, 03 Sep 2026 15:02:08 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 5.4,
+    "facts": "Google DeepMind introduced WeatherNext 3, described as their most advanced and accurate global weather AI model.",
+    "analysis": "Represents continued progress in AI-driven weather forecasting, potentially improving prediction accuracy and lead times.",
+    "technical_value": "Advanced model architecture likely incorporates novel techniques for atmospheric modeling.",
+    "impact": "Could benefit disaster preparedness, agriculture, and climate research.",
+    "keywords": [
+      "WeatherNext 3",
+      "weather forecasting",
+      "AI model",
+      "global"
+    ]
+  }
+]
