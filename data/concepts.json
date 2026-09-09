@@ -116,5 +116,28 @@
       "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
       "https://huggingface.co/blog/funes"
     ]
+  },
+  {
+    "date": "2026-09-09",
+    "name_zh": "AI代理与多模态融合",
+    "name_en": "AI Agents and Multimodal Integration",
+    "score": 8.5,
+    "maturity": "Emerging",
+    "explanation": "近期事件显示AI正从单一模态向多模态代理发展，结合视频理解、记忆、实时数据处理等能力，形成更自主的智能体。",
+    "why_now": "随着Gemini等模型的多模态能力增强，以及Hugging Face等社区推动工具链成熟，AI代理开始具备处理复杂任务的能力。",
+    "evidence_urls": [
+      "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+      "https://huggingface.co/blog/funes",
+      "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+      "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
+      "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+      "https://huggingface.co/blog/grpo-with-trl-ifstruct",
+      "https://huggingface.co/blog/train-to-paint-with-code",
+      "https://huggingface.co/blog/ibm-research/real-time-intelligence",
+      "https://huggingface.co/blog/train-multi-vector-encoder",
+      "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+      "https://huggingface.co/blog/allenai/benchmirt",
+      "https://arxiv.org/abs/2609.09153v1"
+    ]
   }
 ]
