@@ -1,0 +1,132 @@
+[
+  {
+    "id": "6e51ab9d24442666",
+    "title": "ConvMem: Convolutional Memory for Long-Context Reasoning",
+    "summary": "While Large Language Models (LLMs) have demonstrated impressive capabilities, they often struggle with extremely long contexts due to fixed context limits. To address this, sequential approaches like MemAgent extend the effective context by reading text in segments and iteratively updating a fixed-size memory. However, this sequential paradigm suffers from high latency and requires costly reinforcement learning (RL) training, which can lead to overfitting on specific datasets. To overcome these limitations, we propose ConvMem, a training-free, highly parallelizable framework that reformulates long-context reasoning as a hierarchical convolution. Inspired by CNNs, ConvMem treats an LLM prompted with a specific query as a convolutional kernel. This kernel summarizes text segments hierarchically, shortening the reasoning path from a linear chain into a logarithmic tree. Specifically, ConvMem integrates \\textit{Configurable Strides} and \\textit{Skip Connections} to ensure robust evidence capture and propagation, while employing \\textit{Multi-Kernel Convolution} to decompose complex queries into disentangled semantic channels. This design not only mitigates error accumulation but also enables massive parallelization across both text segments and reasoning threads. Experiments on RULER-HotpotQA and RULER-2WikiMultiHopQA demonstrate that ConvMem outperforms training-free baselines and avoids the risk of overfitting to parametric priors often observed in RL-trained models on out-of-distribution tasks.",
+    "published_at": "2026-09-09T16:53:02Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.10441v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.9,
+    "ai_score": 8,
+    "facts": "论文提出 ConvMem，一种免训练、高度可并行化的长上下文推理框架，将长上下文推理重构为分层卷积。在 RULER-HotpotQA 和 RULER-2WikiMultiHopQA 上，ConvMem 优于免训练基线，并避免 RL 训练模型在分布外任务上的过拟合风险。",
+    "analysis": "长上下文推理是 LLM 的核心瓶颈之一。ConvMem 免训练、可并行，避免了 RL 训练的高成本和过拟合，若成立，可显著降低长上下文应用的门槛。",
+    "technical_value": "将 CNN 的卷积、可配置步长、跳跃连接和多核卷积引入 LLM 长上下文处理，把线性推理链变为对数树，减少误差累积并支持大规模并行。",
+    "impact": "可能影响长上下文推理的技术路线，推动免训练方法在 RAG、多跳问答等场景的应用。",
+    "keywords": [
+      "长上下文",
+      "卷积记忆",
+      "免训练",
+      "并行推理",
+      "LLM"
+    ]
+  },
+  {
+    "id": "42f89914f560b5b8",
+    "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
+    "summary": "",
+    "published_at": "Wed, 09 Sep 2026 15:36:24 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+        "type": "official"
+      }
+    ],
+    "pre_score": 6.1,
+    "ai_score": 7,
+    "facts": "IBM 在 Hugging Face 官方博客发布 Granite Time Series PatchTST-FM-r2 模型，称其为 SOTA 时间序列基础模型，采用商业友好许可证。",
+    "analysis": "时间序列基础模型是 AI 在工业、金融、气象等领域落地的关键方向。IBM 以商业友好许可证发布 SOTA 模型，可能降低企业采用门槛，推动时间序列预测从定制模型向基础模型迁移。",
+    "technical_value": "PatchTST 是时间序列 Transformer 的代表性架构，r2 版本可能改进预训练策略或微调效率，商业友好许可证提升可商用性。",
+    "impact": "可能加速时间序列基础模型在企业的部署，与云厂商和开源时间序列模型形成竞争。",
+    "keywords": [
+      "时间序列",
+      "基础模型",
+      "IBM",
+      "PatchTST",
+      "商业许可"
+    ]
+  },
+  {
+    "id": "6679e3882e6d4914",
+    "title": "IBIB: A Protocol for Measuring Enterprise AI Systems by Serving Route, Not Model Identifier",
+    "summary": "Enterprises deploy systems, not checkpoints. Usable capability depends jointly on weights, serving route, precision, output contract, and harness, yet all 18 audited benchmarks score advertised model identifiers. We treat this as measurement error and give a protocol that makes it reportable. It has three parts. A gold-blind capability-binding preflight verifies that a route can execute the evaluation contract before any task reaches it; a reliability-inclusive first-pass scoring rule keeps failure in the score while keeping unsupported capability out; and adjudication is structurally score-blind. We call the protocol IB2 and release its algorithms, classification tables, request contract, and manifest schemas. Its reference instantiation, 128 locked tasks and 987 assertions over document, spreadsheet, chart, tool and database work, stays sealed: the procedure is the artifact, not the corpus. Across eleven systems, four results. Capability availability is measurable: two complete single-route runs on identical weights later failed distinct predicates of the finalized binding gate, while a third passed that gate before a fresh run. The advertised identifier exposed neither limit. Discrimination is not uniform: four of seven suites saturate under a six-system band, with the spread almost entirely from governed database work and multi-tab joins, so we report interval-backed resolution groups, not ranks; two of the nominal five-label output's four cuts fail multiplicity adjustment. Serving-arm choice moved one declared revision and precision from 77.38 to 82.54, paired interval [0.11,10.60], though the arms differ in access mode, harness generation, and the serving tool-call parser, and harness generation is a property of our evaluator, not any endpoint. Excluding failed re",
+    "published_at": "2026-09-09T17:31:29Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.10494v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.8,
+    "ai_score": 7,
+    "facts": "论文提出 IB2 协议，主张企业 AI 系统应按服务路由而非模型标识符来衡量。协议包含能力绑定预检、包含可靠性的首轮评分规则和结构上分数盲的裁决。在 11 个系统上测试，发现能力可用性可测量、区分度不均匀、服务臂选择影响精度。",
+    "analysis": "当前 AI 评测多针对模型标识符，忽略实际部署中的服务路由、精度、输出契约等。IB2 将测量误差显式化，可能推动企业 AI 评测标准从模型中心转向系统中心。",
+    "technical_value": "提供可报告、可复现的评测协议，包括算法、分类表、请求契约和清单模式，强调过程而非语料。",
+    "impact": "可能影响企业 AI 采购和评测实践，促使供应商披露服务路由细节，提升评测可信度。",
+    "keywords": [
+      "企业AI",
+      "评测协议",
+      "服务路由",
+      "可靠性",
+      "基准测试"
+    ]
+  },
+  {
+    "id": "cd75ed5cd6de943d",
+    "title": "JarvisGUI: Towards Cross-Device GUI Agents with Dynamic Task Composition",
+    "summary": "Real-world GUI usage frequently involves workflows that span multiple devices and platforms, requiring the transfer of intermediate results, maintenance of shared state, and coordination across heterogeneous environments. However, existing GUI benchmarks overwhelmingly evaluate agents on single-device, statically defined tasks, thus leaving such cross-device capabilities largely unexamined, resulting in an overly optimistic assessment of agents' readiness for real-world usage. We introduce JarvisGUI, a dynamic benchmark that evaluates GUI agents on cross-device workflows requiring coordinated interaction across heterogeneous platforms, including Android, Windows, and Ubuntu. Specifically, JarvisGUI formulates GUI tasks as input-output transformations under a lightweight type system, which allows us to automatically compose multi-step, cross-device workflows and dynamically evaluate agent performance within a unified framework. By evaluating agents in virtual environments spanning multiple operating systems, JarvisGUI reveals that state-of-the-art open-source GUI agents struggle with the state-transfer awareness, cross-platform contextual reasoning, and long-horizon dependency management required for real-world workflows, exposing a critical capability gap invisible to existing benchmarks.",
+    "published_at": "2026-09-09T16:59:59Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.10451v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.8,
+    "ai_score": 7,
+    "facts": "论文提出 JarvisGUI，一个动态基准，评估 GUI 智能体在跨设备工作流中的表现，覆盖 Android、Windows 和 Ubuntu。将 GUI 任务形式化为轻量类型系统下的输入输出变换，可自动组合多步跨设备工作流。实验显示当前开源 GUI 智能体在状态转移、跨平台上下文推理和长程依赖管理上存在明显不足。",
+    "analysis": "现有 GUI 基准多局限于单设备静态任务，高估了智能体实际能力。JarvisGUI 揭示跨设备场景的能力缺口，为 GUI 智能体研究提供更真实的评估方向。",
+    "technical_value": "动态任务组合和轻量类型系统支持自动生成跨设备工作流，统一框架下评估异构平台交互。",
+    "impact": "可能推动 GUI 智能体从单设备演示走向跨设备实用，影响智能体评测标准和研发重点。",
+    "keywords": [
+      "GUI智能体",
+      "跨设备",
+      "动态基准",
+      "任务组合",
+      "异构平台"
+    ]
+  },
+  {
+    "id": "204cc4ef541aa343",
+    "title": "Introducing agentic video understanding with Gemini",
+    "summary": "",
+    "published_at": "Tue, 01 Sep 2026 17:08:51 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 6,
+    "facts": "Google DeepMind 发布博客，介绍 Gemini 的智能体视频理解功能。",
+    "analysis": "视频理解与智能体结合，可能使 AI 能主动分析、检索和操作视频内容，拓展多模态应用场景。",
+    "technical_value": "智能体视频理解可能涉及长视频分段、事件定位、跨模态推理和工具调用。",
+    "impact": "可能推动视频分析、内容审核、教育等领域的自动化，加剧多模态 AI 竞争。",
+    "keywords": [
+      "视频理解",
+      "智能体",
+      "Gemini",
+      "多模态",
+      "Google"
+    ]
+  }
+]

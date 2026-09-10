@@ -139,5 +139,17 @@
       "https://huggingface.co/blog/allenai/benchmirt",
       "https://arxiv.org/abs/2609.09153v1"
     ]
+  },
+  {
+    "date": "2026-09-10",
+    "name_zh": "长上下文卷积记忆",
+    "name_en": "Convolutional Memory for Long-Context Reasoning",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "ConvMem 将长上下文推理重构为分层卷积，利用可配置步长、跳跃连接和多核卷积，实现免训练、高度可并行化的长上下文处理，避免 RL 训练的高成本和过拟合。",
+    "why_now": "LLM 上下文窗口有限，长上下文推理需求激增，现有顺序方法延迟高、训练成本大，ConvMem 提供免训练并行替代方案。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.10441v1"
+    ]
   }
 ]
