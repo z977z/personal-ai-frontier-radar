@@ -164,5 +164,18 @@
       "https://arxiv.org/abs/2609.11900v1",
       "https://mind-topo.github.io/"
     ]
+  },
+  {
+    "date": "2026-09-12",
+    "name_zh": "拓扑空间推理",
+    "name_en": "Topological Spatial Reasoning",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "拓扑空间推理指模型理解和推断在连续变形下保持不变的空间关系（如连通性、包围、顺序、纽结等），区别于依赖距离、角度等度量属性的推理。它是认知科学中空间理解的基础，也是具身智能和机器人导航的关键能力。",
+    "why_now": "当前多模态大模型在度量空间推理上进步显著，但 MindTopo 基准揭示其在拓扑推理和闭环规划中表现远低于人类，暴露出基础模型缺乏对连续变形不变性的内在表征。随着具身智能和视频理解的发展，拓扑推理成为亟待突破的瓶颈。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.11900v1",
+      "https://mind-topo.github.io/"
+    ]
   }
 ]

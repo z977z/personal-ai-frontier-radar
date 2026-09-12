@@ -1,0 +1,132 @@
+[
+  {
+    "id": "7b6ae9633d48c5ef",
+    "title": "MindTopo: Can Foundation Models Reason in Topological Space?",
+    "summary": "Spatial reasoning depends not only on metric properties such as distance, angle, and shape, but also on topological relations that remain invariant under continuous deformation. Cognitive science identifies these relations as foundational to spatial understanding, yet foundation-model evaluations largely focus on metric or viewpoint-dependent relations. We introduce MindTopo, a benchmark of topological intuition across five properties grounded in cognitive science and formal topology: continuity, separation, order, enclosure, and knots. MindTopo evaluates each property at two cognitive levels. Reasoning asks a model to identify topological relations or infer how they change. Planning instantiates a foundation model as a closed-loop agent whose policy selects environment actions. MindTopo contains 11,030 instances across 13 procedurally generated task types with controllable difficulty. We benchmark 14 MLLMs and study agent configurations augmented with image and video generation, including 3 video generative models in planning settings. Every MLLM performs better on reasoning than on planning, and the best-performing model remains far below observed human performance. On Qwen3-VL-2B-Instruct, supervised fine-tuning and reinforcement learning improve reasoning more than planning. Generated observations retain local cues and reach plausible endpoints, but audited rollouts do not reliably follow environment dynamics or preserve topology across transitions. Our website is at https://mind-topo.github.io/",
+    "published_at": "2026-09-10T17:54:32Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.11900v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.3,
+    "ai_score": 8,
+    "facts": "MindTopo 是一个基于认知科学与形式拓扑学的拓扑直觉基准，涵盖连续性、分离性、顺序、包围和纽结五种性质，每种性质在两个认知层次上评估：推理（识别拓扑关系或推断其变化）和规划（将基础模型实例化为闭环智能体，其策略选择环境动作）。基准包含 13 种程序生成任务类型共 11,030 个实例，难度可控。研究对 14 个多模态大模型进行了基准测试，并研究了增强图像和视频生成的智能体配置，包括 3 个视频生成模型在规划设置中的应用。结果显示：所有多模态大模型在推理任务上表现优于规划任务，最佳模型仍远低于人类表现。在 Qwen3-VL-2B-Instruct 上，监督微调和强化学习对推理的提升大于规划。生成的观察保留了局部线索并达到合理终点，但审计的 rollout 不能可靠遵循环境动态或在转换中保持拓扑。网站：https://mind-topo.github.io/",
+    "analysis": "该工作首次系统性地将拓扑空间推理引入基础模型评估，填补了现有基准偏重度量或视角依赖关系的空白。其双层次（推理/规划）设计揭示了模型在闭环决策中的拓扑保持缺陷，为具身智能和空间推理研究提供了关键诊断工具。结果暗示当前多模态模型缺乏对连续变形不变性的内在表征，需在训练中融入拓扑归纳偏置。",
+    "technical_value": "提供了可程序化生成、难度可控的拓扑推理基准，支持推理与规划两种评估范式，并开源网站。对多模态大模型、视频生成模型和智能体策略的评估方法具有可复用性。",
+    "impact": "将推动空间推理研究从度量关系转向拓扑关系，影响具身智能、机器人导航和视频理解等领域的模型设计与评估标准。",
+    "keywords": [
+      "拓扑推理",
+      "基准测试",
+      "多模态大模型",
+      "空间智能",
+      "闭环规划"
+    ]
+  },
+  {
+    "id": "42f89914f560b5b8",
+    "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
+    "summary": "",
+    "published_at": "Wed, 09 Sep 2026 15:36:24 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+        "type": "official"
+      }
+    ],
+    "pre_score": 6.1,
+    "ai_score": 7,
+    "facts": "IBM 发布了 Granite Time Series PatchTST-FM-r2 模型，据称在时间序列预测上达到 SOTA，并采用商业友好许可证。发布在 Hugging Face 博客。",
+    "analysis": "IBM 持续扩展 Granite 基础模型系列至时间序列领域，PatchTST-FM-r2 可能结合了 PatchTST 架构与基础模型预训练优势。商业友好许可证降低了企业采用门槛，有望推动时间序列基础模型在金融、能源、供应链等行业的落地。",
+    "technical_value": "提供了可直接商用、可能开源的 SOTA 时间序列基础模型，降低了企业构建预测系统的门槛。",
+    "impact": "可能加速时间序列基础模型在企业中的普及，并对现有时间序列预测工具（如 Prophet、ARIMA 及专用深度学习模型）形成替代压力。",
+    "keywords": [
+      "时间序列",
+      "基础模型",
+      "IBM Granite",
+      "商业许可",
+      "PatchTST"
+    ]
+  },
+  {
+    "id": "da5a1cae555a77d1",
+    "title": "Artificial Id: Drive and Persistent Alignment in Agentic AI",
+    "summary": "Agentic AI is moving from bounded task execution toward systems that retain consequential state, continue operating and adapt across task boundaries. That shift creates a control problem that current harnesses largely solve by hand: objectives, retries, verification, stopping rules and other behavioral transitions are specified externally. We propose an artificial id, an adaptive internal drive for determining whether behavior should continue, stop or change. In a minimal virtual Petri-dish experiment, a controller too small to perform general-purpose reasoning and receiving no task-specific behavioral objective develops useful control through differential persistence. The same mechanism selects an unintended physical strategy when that behavior persists better and later replaces a learned sensor mapping when its environmental meaning changes. These results show that adaptive direction can emerge without being explicitly specified as a behavioral objective. The same persistence that makes such adaptive agency useful can also allow misalignment, corrupted state and unintended behavior to persist across task boundaries. A scalable artificial id would carry consequential state and adaptive drive across those boundaries, making alignment a property of the continuing agentic system rather than of a model response or single trajectory. Such systems require a persistent alignment boundary over trusted observations, consequence channels, persistent state, authority, identity, provenance and hard constraints.",
+    "published_at": "2026-09-10T17:56:41Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.11911v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.9,
+    "ai_score": 7,
+    "facts": "论文提出“人工本我”（artificial id）概念，即一种自适应内部驱动力，用于决定行为应继续、停止还是改变。在最小虚拟培养皿实验中，一个小到无法进行通用推理且未接收任务特定行为目标的控制器，通过差分持续性发展出有用的控制。同一机制在某种行为持续更好时会选择非预期的物理策略，并在环境意义变化后替换已学习的传感器映射。结果表明，自适应方向可以无需显式指定为行为目标而涌现。同样的持续性也可能使错位、损坏状态和意外行为跨越任务边界持续存在。可扩展的人工本我需要跨越这些边界携带重要状态和自适应驱动力，使对齐成为持续智能体系统的属性，而非模型响应或单条轨迹的属性。此类系统需要在可信观察、后果通道、持久状态、权威、身份、来源和硬约束之上建立持久对齐边界。",
+    "analysis": "该研究将智能体对齐问题从单次响应扩展到持续运行的系统，提出“人工本我”作为自适应驱动机制。其核心洞见在于：驱动行为持续性的机制与导致错位持续性的机制同源，因此对齐必须作为系统级属性而非模型级属性来设计。这为长期自主智能体的安全架构提供了新思路，但实验规模极小，离实际部署尚远。",
+    "technical_value": "提出了差分持续性作为自适应控制机制，并给出了持久对齐边界的概念框架，对智能体安全架构设计有启发意义。",
+    "impact": "可能影响未来自主智能体的对齐研究方向和系统设计原则，推动从模型对齐向系统对齐的范式转变。",
+    "keywords": [
+      "智能体对齐",
+      "人工本我",
+      "持久状态",
+      "自适应驱动",
+      "AI安全"
+    ]
+  },
+  {
+    "id": "de093f04c6ce703b",
+    "title": "Domain-Specific Hallucination Detection in Large Language Models",
+    "summary": "Large language models generate fluent text that can contain unfaithful claims -- a phenomenon known as hallucination. We present a multi-signal detection pipeline combining fine-tuned DeBERTa-v3 classification, Monte Carlo (MC) Dropout uncertainty quantification, and temperature-scaled calibration for response-level hallucination detection. Evaluated on the HaluEval benchmark, our pipeline achieves F1=0.915 and AUROC=0.977 on general-domain tasks, with per-task F1 scores of 0.97 (QA), 0.96 (Summarization), and 0.82 (Dialogue). MC Dropout inference further improves accuracy to 93.2%. A context ablation study confirms the model performs genuine entailment reasoning rather than exploiting surface patterns, with summarization F1 dropping 24% when knowledge context is removed. Learning curve analysis reveals that 25% of training data captures 77% of full-data performance. Beyond detection, we apply Direct Preference Optimization (DPO) to a Qwen2.5-0.5B generator, reducing its hallucination rate from 85.5% to 37.7% (55.9% relative reduction) as measured by our detector. Cross-domain evaluation on the SciFact biomedical benchmark shows that general-domain training transfers poorly (F1=0.52), motivating domain-specific fine-tuning. PubMedBERT fine-tuned on SciFact achieves F1=0.63 and AUROC=0.81, demonstrating that domain-matched pre-training is the strongest adaptation strategy. Code and models are available at https://github.com/varunteja99/hallucination-detection-nlp",
+    "published_at": "2026-09-10T17:45:36Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.11878v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 6,
+    "facts": "论文提出多信号幻觉检测流水线，结合微调 DeBERTa-v3 分类、蒙特卡洛 Dropout 不确定性量化和温度缩放校准，用于响应级幻觉检测。在 HaluEval 基准上，通用领域任务达到 F1=0.915、AUROC=0.977，各任务 F1 分别为 QA 0.97、摘要 0.96、对话 0.82。MC Dropout 推理将准确率提升至 93.2%。上下文消融研究证实模型进行真正的蕴含推理而非利用表面模式，移除知识上下文后摘要 F1 下降 24%。学习曲线分析显示 25% 训练数据即可达到全量性能的 77%。此外，对 Qwen2.5-0.5B 生成器应用直接偏好优化（DPO），将其幻觉率从 85.5% 降至 37.7%（相对降低 55.9%）。跨域评估显示通用领域训练迁移效果差（SciFact 生物医学基准 F1=0.52），需领域特定微调。PubMedBERT 在 SciFact 上微调达到 F1=0.63、AUROC=0.81。代码和模型已开源。",
+    "analysis": "该工作提供了端到端的幻觉检测与缓解方案，其多信号融合策略在通用领域表现优异，但跨域迁移的显著性能下降揭示了领域适应仍是关键挑战。DPO 对小型生成器的幻觉抑制效果显著，为低成本模型优化提供了参考。",
+    "technical_value": "开源了检测流水线、微调模型和代码，提供了可复现的幻觉检测与缓解方法，对构建可信 LLM 应用有直接工程价值。",
+    "impact": "有助于提升 LLM 在问答、摘要等场景的可靠性，推动幻觉检测成为部署标配，并激励领域特定幻觉检测研究。",
+    "keywords": [
+      "幻觉检测",
+      "不确定性量化",
+      "DPO",
+      "领域适应",
+      "可信AI"
+    ]
+  },
+  {
+    "id": "204cc4ef541aa343",
+    "title": "Introducing agentic video understanding with Gemini",
+    "summary": "",
+    "published_at": "Tue, 01 Sep 2026 17:08:51 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 6,
+    "facts": "Google DeepMind 发布博客，介绍 Gemini 中的智能体视频理解功能。",
+    "analysis": "将智能体能力引入视频理解，意味着模型不仅能被动分析视频，还能主动规划、调用工具或与环境交互以完成视频相关任务。这代表了多模态智能体在视频领域的重要进展，可能推动视频问答、监控分析、内容创作等应用升级。",
+    "technical_value": "展示了智能体框架与视频理解的结合，可能涉及工具调用、多步推理和长视频处理技术。",
+    "impact": "可能提升视频理解任务的交互性和任务完成能力，对视频分析、内容审核、教育等场景产生影响。",
+    "keywords": [
+      "智能体",
+      "视频理解",
+      "Gemini",
+      "多模态",
+      "Google DeepMind"
+    ]
+  }
+]
