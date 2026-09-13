@@ -177,5 +177,18 @@
       "https://arxiv.org/abs/2609.11900v1",
       "https://mind-topo.github.io/"
     ]
+  },
+  {
+    "date": "2026-09-13",
+    "name_zh": "拓扑空间推理",
+    "name_en": "Topological Spatial Reasoning",
+    "score": 7,
+    "maturity": "Emerging",
+    "explanation": "指基础模型在连续性、分离性、顺序、包围、纽结等拓扑关系上的理解与推理能力，这些关系在连续变形下保持不变，是空间认知的基础。MindTopo 基准首次系统评测该能力，并区分推理与规划两个层级。",
+    "why_now": "多模态大模型在度量空间任务上进展迅速，但拓扑关系评测长期缺失；具身智能与视频生成智能体的可靠性要求模型保持拓扑一致性，MindTopo 的发布使该问题可量化。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.11900v1",
+      "https://mind-topo.github.io/"
+    ]
   }
 ]
