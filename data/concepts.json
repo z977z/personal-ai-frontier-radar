@@ -190,5 +190,17 @@
       "https://arxiv.org/abs/2609.11900v1",
       "https://mind-topo.github.io/"
     ]
+  },
+  {
+    "date": "2026-09-14",
+    "name_zh": "时间序列基础模型",
+    "name_en": "Time Series Foundation Models",
+    "score": 8.5,
+    "maturity": "Emerging",
+    "explanation": "时间序列基础模型是在大规模时间序列数据上预训练的模型，能够进行零样本或少样本预测，适用于多种下游任务。IBM 的 Granite Time Series PatchTST-FM-r2 是这一方向的代表，其商业友好许可证加速了企业采用。",
+    "why_now": "随着物联网和传感器数据爆炸，传统时间序列方法难以泛化。基础模型通过预训练获得通用表示，结合 Transformer 架构的进步，使得高精度预测成为可能。IBM 的发布标志着该领域从研究走向商业化。",
+    "evidence_urls": [
+      "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series"
+    ]
   }
 ]
