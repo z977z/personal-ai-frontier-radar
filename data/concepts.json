@@ -202,5 +202,17 @@
     "evidence_urls": [
       "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series"
     ]
+  },
+  {
+    "date": "2026-09-15",
+    "name_zh": "时间序列基础模型",
+    "name_en": "Time Series Foundation Models",
+    "score": 8.5,
+    "maturity": "Emerging",
+    "explanation": "时间序列基础模型是指在大规模时间序列数据上预训练的模型，能够泛化到多种预测任务，减少对特定任务标注数据的依赖。IBM Granite Time Series PatchTST-FM-r2 是这一方向的代表，采用商业友好许可证，推动企业应用。",
+    "why_now": "随着物联网和传感器数据爆炸式增长，传统时间序列方法难以满足跨领域泛化需求。基础模型范式在 NLP 和 CV 的成功激励了时间序列领域，近期多个模型发布标志着技术成熟度提升。",
+    "evidence_urls": [
+      "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series"
+    ]
   }
 ]

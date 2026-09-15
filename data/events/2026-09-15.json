@@ -1,0 +1,132 @@
+[
+  {
+    "id": "42f89914f560b5b8",
+    "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
+    "summary": "",
+    "published_at": "Wed, 09 Sep 2026 15:36:24 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+        "type": "official"
+      }
+    ],
+    "pre_score": 6.1,
+    "ai_score": 8.5,
+    "facts": "IBM 发布了 Granite Time Series PatchTST-FM-r2 模型，声称是 SOTA，采用商业友好许可证。来源为 Hugging Face 官方博客。",
+    "analysis": "该模型针对时间序列预测任务，PatchTST 是一种基于 Transformer 的补丁化时间序列建模方法。商业友好许可证降低了企业应用门槛，可能推动时间序列基础模型在金融、能源、物联网等领域的落地。",
+    "technical_value": "时间序列基础模型，基于 PatchTST 架构，可能采用大规模预训练和微调范式，提升跨领域时间序列预测的泛化能力。",
+    "impact": "为时间序列分析提供更强大的开源基础模型，促进 AI 在预测性维护、需求预测、金融风控等场景的应用。",
+    "keywords": [
+      "时间序列",
+      "基础模型",
+      "PatchTST",
+      "IBM Granite",
+      "商业友好"
+    ]
+  },
+  {
+    "id": "204cc4ef541aa343",
+    "title": "Introducing agentic video understanding with Gemini",
+    "summary": "",
+    "published_at": "Tue, 01 Sep 2026 17:08:51 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 8.0,
+    "facts": "Google DeepMind 推出 Gemini 的智能体视频理解功能。来源为 Google DeepMind 官方博客。",
+    "analysis": "将智能体（Agent）能力与视频理解结合，意味着模型不仅能理解视频内容，还能基于视频进行推理、规划和行动。这可能是多模态 AI 向自主智能体演进的重要一步。",
+    "technical_value": "融合视频理解、多模态大模型和智能体框架，可能涉及长视频时序推理、工具调用和决策规划。",
+    "impact": "推动视频分析从被动理解转向主动交互，在安防、教育、娱乐、机器人等领域有广泛应用前景。",
+    "keywords": [
+      "Gemini",
+      "智能体",
+      "视频理解",
+      "多模态",
+      "Google DeepMind"
+    ]
+  },
+  {
+    "id": "c8754172bb3bf73f",
+    "title": "Give Your Coding Agents a Memory You Own",
+    "summary": "",
+    "published_at": "Thu, 03 Sep 2026 00:00:00 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/funes",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 7.5,
+    "facts": "Hugging Face 博客介绍如何为编码智能体提供用户拥有的记忆。来源为 Hugging Face 官方博客。",
+    "analysis": "编码智能体（Coding Agents）的记忆管理是提升其长期上下文理解和个性化协作的关键。用户拥有记忆意味着数据隐私和可控性，可能涉及本地存储或去中心化方案。",
+    "technical_value": "涉及智能体记忆架构、向量数据库、检索增强生成（RAG）以及隐私保护技术。",
+    "impact": "提升编码智能体的实用性和用户信任，推动 AI 辅助编程向更个性化、可持续的方向发展。",
+    "keywords": [
+      "编码智能体",
+      "记忆",
+      "隐私",
+      "Hugging Face",
+      "RAG"
+    ]
+  },
+  {
+    "id": "295e3a83fd6fbde0",
+    "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+    "summary": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome.",
+    "published_at": "Tue, 08 Sep 2026 14:00:15 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 4.9,
+    "ai_score": 7.5,
+    "facts": "Google DeepMind 发布 AlphaGenome Atlas，预测人类基因组中每个可能的 DNA 字母变化的分子效应，覆盖 90 亿个单字母变异。来源为 Google DeepMind 官方博客。",
+    "analysis": "AlphaGenome Atlas 是基因组学与 AI 结合的里程碑，能预测非编码区变异的影响，对遗传病研究和药物开发意义重大。",
+    "technical_value": "基于 AlphaGenome 模型，可能使用深度学习处理长序列 DNA，预测基因表达、剪接等分子表型。",
+    "impact": "加速精准医学和基因组研究，帮助识别致病变异和药物靶点。",
+    "keywords": [
+      "基因组学",
+      "AlphaGenome",
+      "变异预测",
+      "Google DeepMind",
+      "精准医学"
+    ]
+  },
+  {
+    "id": "a5b5573760534fe5",
+    "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+    "summary": "",
+    "published_at": "Thu, 03 Sep 2026 15:02:08 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 7.0,
+    "facts": "Google DeepMind 发布 WeatherNext 3，声称是最先进、最准确的全球天气 AI 模型。来源为 Google DeepMind 官方博客。",
+    "analysis": "WeatherNext 系列持续迭代，表明 AI 在气象预测领域的应用日益成熟。高精度全球模型对防灾减灾、农业、能源等行业具有重要价值。",
+    "technical_value": "可能基于图神经网络或 Transformer 架构，融合多源气象数据，进行高分辨率全球预报。",
+    "impact": "提升天气预报准确性，助力应对气候变化，减少极端天气带来的经济损失。",
+    "keywords": [
+      "天气预测",
+      "AI 模型",
+      "WeatherNext",
+      "Google DeepMind",
+      "全球预报"
+    ]
+  }
+]

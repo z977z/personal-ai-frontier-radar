@@ -328,5 +328,27 @@
     "code_size": "约 2000 行",
     "v2": "增加多变量预测、自动超参搜索、与业务系统集成、支持实时数据流。",
     "status": "idea"
+  },
+  {
+    "date": "2026-09-15",
+    "name_zh": "时间序列预测助手",
+    "name_en": "Time Series Forecasting Assistant",
+    "tagline": "基于基础模型的智能时间序列预测与异常检测平台",
+    "why_today": "时间序列基础模型（如 IBM Granite PatchTST-FM-r2）已开源且商业友好，结合轻量级微调，可快速构建跨领域预测应用。",
+    "scenarios": [
+      "金融市场的价格预测",
+      "能源消耗预测",
+      "物联网设备异常检测",
+      "零售需求预测"
+    ],
+    "flow": "用户上传时间序列数据 -> 数据预处理与特征工程 -> 加载预训练基础模型 -> 零样本预测或少量微调 -> 输出预测结果与可视化 -> 异常检测与告警",
+    "ai_role": "基础模型提供零样本/少样本预测能力；微调模块适配特定领域；异常检测基于预测残差。",
+    "stack": "Python, PyTorch, Hugging Face Transformers, IBM Granite Time Series 模型, FastAPI, Streamlit",
+    "mvp": "支持 CSV 上传，选择预训练模型进行零样本预测，展示预测曲线和置信区间。",
+    "difficulty": "中等",
+    "time": "2-3 周",
+    "code_size": "约 2000 行",
+    "v2": "增加自动微调、多变量预测、实时流数据支持和异常检测告警。",
+    "status": "idea"
   }
 ]
