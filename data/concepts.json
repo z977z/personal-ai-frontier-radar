@@ -214,5 +214,18 @@
     "evidence_urls": [
       "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series"
     ]
+  },
+  {
+    "date": "2026-09-16",
+    "name_zh": "递归式自改进科研智能体",
+    "name_en": "Recursive-in-Recursive Self-Improvement Scientific Agent",
+    "score": 7,
+    "maturity": "Emerging",
+    "explanation": "一种将智能体harness演化与模型强化学习耦合为双层递归的范式：内层在模型固定下改进harness，外层在改进后的harness下训练模型，二者互为条件、交替提升，并将研究者交互反馈自动转化为训练任务与评估标准。",
+    "why_now": "智能体工程与RL训练环境设计正走向协同优化，科研场景对持续学习与长期协作需求上升，ScienceBuddy以研究产品形式将该范式开放给科学社区。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.17523v1",
+      "http://science-buddy.io"
+    ]
   }
 ]
