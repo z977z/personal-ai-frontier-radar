@@ -1,0 +1,127 @@
+[
+  {
+    "id": "204cc4ef541aa343",
+    "title": "Introducing agentic video understanding with Gemini",
+    "summary": "",
+    "published_at": "Tue, 01 Sep 2026 17:08:51 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 8.5,
+    "facts": "Google DeepMind 发布博客，介绍在 Gemini 中引入 agentic video understanding（智能体视频理解）功能。",
+    "analysis": "该功能将智能体能力与视频理解结合，可能使模型能够主动分析、推理和操作视频内容，而不仅仅是被动识别。这代表了多模态 AI 向更自主、交互式方向的发展。",
+    "technical_value": "高。智能体视频理解需要融合视频感知、时序推理、工具调用和规划能力，是 multimodal agent 的重要前沿。",
+    "impact": "可能推动视频编辑、监控分析、教育、机器人等领域的自动化应用，并加剧多模态 AI 竞争。",
+    "keywords": [
+      "Gemini",
+      "agentic video understanding",
+      "multimodal",
+      "Google DeepMind"
+    ]
+  },
+  {
+    "id": "295e3a83fd6fbde0",
+    "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+    "summary": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome.",
+    "published_at": "Tue, 08 Sep 2026 14:00:15 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 4.9,
+    "ai_score": 8.5,
+    "facts": "Google DeepMind 发布 AlphaGenome Atlas，预测人类基因组中 90 亿个单字母 DNA 变异的分子效应。",
+    "analysis": "该图谱可能极大促进基因组学研究，帮助理解遗传变异与疾病的关系，是 AI for Science 的重大成果。",
+    "technical_value": "高。涉及基因组学、大规模预测模型和生物信息学，技术门槛高。",
+    "impact": "可能加速精准医学、药物研发和基础生物学研究。",
+    "keywords": [
+      "AlphaGenome",
+      "genomics",
+      "DNA variants",
+      "Google DeepMind"
+    ]
+  },
+  {
+    "id": "a5b5573760534fe5",
+    "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+    "summary": "",
+    "published_at": "Thu, 03 Sep 2026 15:02:08 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 8.0,
+    "facts": "Google DeepMind 发布 WeatherNext 3，称其为最先进且准确的全球天气 AI 模型。",
+    "analysis": "该模型可能在预报精度、分辨率和计算效率上有所突破，延续了 AI 在科学计算领域的应用趋势。",
+    "technical_value": "高。天气预测是 AI for Science 的重要方向，涉及大规模时空建模和物理约束。",
+    "impact": "可提升气象预报准确性，对农业、交通、灾害应对等产生实际影响。",
+    "keywords": [
+      "WeatherNext",
+      "weather AI",
+      "forecasting",
+      "Google DeepMind"
+    ]
+  },
+  {
+    "id": "69e1fb158ded63b8",
+    "title": "Your Agent Aced the Task. Will It Do It Again?",
+    "summary": "",
+    "published_at": "Tue, 15 Sep 2026 16:00:44 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 7.5,
+    "facts": "Hugging Face 博客发布 IBM Research 的文章，讨论智能体任务成功后的可重复性与一致性评估。",
+    "analysis": "该研究关注 agent 的可靠性问题，即一次成功不代表稳定成功。这对 agent 部署至关重要，可能提出新的评估指标或方法。",
+    "technical_value": "中高。涉及 agent 评估、鲁棒性和一致性，是当前 agent 研究的关键缺口。",
+    "impact": "有助于推动更可靠的 AI agent 落地，影响企业级 agent 应用的质量标准。",
+    "keywords": [
+      "agent consistency",
+      "reliability",
+      "evaluation",
+      "IBM Research"
+    ]
+  },
+  {
+    "id": "1702d60298868bde",
+    "title": "Putting sign language AI into users’ hands",
+    "summary": "Introducing sign-language-to-text (SL2T), our breakthrough model powering new sign language features for Deaf and hard of hearing users.",
+    "published_at": "Wed, 12 Aug 2026 14:01:59 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 7.5,
+    "facts": "Google DeepMind 推出 sign-language-to-text (SL2T) 模型，为聋哑及听障用户提供手语转文字功能。",
+    "analysis": "该模型专注于手语识别与翻译，体现了 AI 在无障碍领域的应用，可能涉及计算机视觉和序列建模。",
+    "technical_value": "中高。手语识别具有挑战性，需处理复杂手势和语法，该突破可能推动相关技术。",
+    "impact": "促进信息无障碍，改善听障人士沟通体验，具有社会价值。",
+    "keywords": [
+      "sign language",
+      "accessibility",
+      "SL2T",
+      "Google DeepMind"
+    ]
+  }
+]
