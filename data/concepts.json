@@ -251,5 +251,17 @@
     "evidence_urls": [
       "https://deepmind.google/blog/introducing-agentic-video-in-gemini/"
     ]
+  },
+  {
+    "date": "2026-09-19",
+    "name_zh": "智能体化视频理解",
+    "name_en": "Agentic Video Understanding",
+    "score": 8.5,
+    "maturity": "Emerging",
+    "explanation": "将 AI 智能体（Agent）能力引入视频理解，使模型不仅能被动分析视频内容，还能主动规划、调用工具、多步推理以完成复杂的视频相关任务。",
+    "why_now": "多模态大模型和 agent 框架的成熟使得视频理解从静态感知向动态行动演进，Google DeepMind 在 Gemini 中推出该功能标志着技术进入产品化探索阶段。",
+    "evidence_urls": [
+      "https://deepmind.google/blog/introducing-agentic-video-in-gemini/"
+    ]
   }
 ]
