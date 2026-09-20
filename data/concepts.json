@@ -263,5 +263,18 @@
     "evidence_urls": [
       "https://deepmind.google/blog/introducing-agentic-video-in-gemini/"
     ]
+  },
+  {
+    "date": "2026-09-20",
+    "name_zh": "智能体记忆",
+    "name_en": "Agentic Memory",
+    "score": 8.0,
+    "maturity": "Emerging",
+    "explanation": "智能体记忆指 AI 智能体在长期任务中存储、检索和利用历史信息的能力，包括工作记忆、情景记忆和语义记忆。它使智能体能够保持上下文、避免重复错误，并实现个性化交互。",
+    "why_now": "随着智能体承担更复杂、长时程任务，缺乏记忆成为主要瓶颈。近期多项工作（如编码智能体记忆、机器人工作空间模型）集中涌现，推动该方向快速发展。",
+    "evidence_urls": [
+      "https://huggingface.co/blog/funes",
+      "https://arxiv.org/abs/2609.20820v1"
+    ]
   }
 ]

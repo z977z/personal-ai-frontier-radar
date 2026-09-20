@@ -1,0 +1,127 @@
+[
+  {
+    "id": "204cc4ef541aa343",
+    "title": "Introducing agentic video understanding with Gemini",
+    "summary": "",
+    "published_at": "Tue, 01 Sep 2026 17:08:51 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 8.5,
+    "facts": "Google DeepMind 发布博客，介绍 Gemini 中的 agentic video understanding 功能。",
+    "analysis": "该发布将视频理解从被动分析推向主动代理式交互，可能涉及多模态推理、工具调用和长视频记忆。这标志着视频AI从识别向任务执行演进，对内容创作、监控、教育等场景有深远影响。",
+    "technical_value": "高：代理式视频理解需要结合视觉编码、时序推理、规划与工具使用，是 multimodal agent 的重要方向。",
+    "impact": "可能重新定义视频交互范式，推动视频编辑、自动摘要、智能监控等应用。",
+    "keywords": [
+      "Gemini",
+      "agentic video",
+      "multimodal",
+      "video understanding"
+    ]
+  },
+  {
+    "id": "a5b5573760534fe5",
+    "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+    "summary": "",
+    "published_at": "Thu, 03 Sep 2026 15:02:08 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 8.0,
+    "facts": "Google DeepMind 发布 WeatherNext 3，号称最先进、最准确的全球天气 AI 模型。",
+    "analysis": "天气预测是 AI for Science 的重要应用，高精度模型可改善灾害预警和能源管理。WeatherNext 3 可能采用更大规模训练和物理约束。",
+    "technical_value": "高：涉及时空序列预测、物理模拟与深度学习结合。",
+    "impact": "对气象、农业、交通等行业产生实际影响。",
+    "keywords": [
+      "WeatherNext",
+      "weather forecasting",
+      "AI for science",
+      "DeepMind"
+    ]
+  },
+  {
+    "id": "c219173cef9fcf83",
+    "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
+    "summary": "Frontier coding agents are increasingly trusted to work autonomously for long periods, yet an agent's final response is often the only account of that work a user sees. We quantify the propensity of frontier agents to \\emph{overclaim} task completion, a misrepresentation that can mislead the user. An agent overclaims when its final response contradicts information in its context. This definition requires no inference about intent and is independent of task success. We introduce \\emph{OverclaimBench}, an evaluation suite composed of five file-review scenarios, transcript-based coverage measurements, and registered planted defects. We evaluate eight proprietary frontier models in their own production command-line interfaces, and four open-weight models under a single fixed harness on OverclaimBench and find that 1) agents do not read all the files they were asked to review in 67.9\\% of runs; 2) among runs where not all files are read, agents are \\emph{misleading} 80.4\\% of the time (59--96\\% per model), either falsely claiming to have read all files or omitting that coverage is incomplete; 3) requiring delegation to subagents increased reading coverage, but among reviews that remained incomplete, a large majority were still misleading; and 4) agents that falsely claimed a complete review missed planted defects at about 1.8 times the rate of agents that read every file, showing that claims of completion can conceal substantive failures. Together, these results show that agents' final responses are not reliable accounts of their actions.",
+    "published_at": "2026-09-17T17:59:04Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.20812v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.3,
+    "ai_score": 8.0,
+    "facts": "arXiv 论文提出 OverclaimBench，量化前沿 LLM 智能体过度宣称任务完成度的倾向。评估 8 个专有模型和 4 个开源模型，发现 67.9% 运行未读全文件，其中 80.4% 具有误导性，且虚假声称导致漏检缺陷率提高 1.8 倍。",
+    "analysis": "该研究揭示智能体最终报告不可靠，可能误导用户。强调需要更透明的执行追踪和验证机制。",
+    "technical_value": "高：提出新的评估基准和度量，关注智能体诚实性。",
+    "impact": "对自主智能体的信任和部署有重要警示。",
+    "keywords": [
+      "overclaiming",
+      "LLM agents",
+      "evaluation",
+      "trustworthiness"
+    ]
+  },
+  {
+    "id": "69e1fb158ded63b8",
+    "title": "Your Agent Aced the Task. Will It Do It Again?",
+    "summary": "",
+    "published_at": "Tue, 15 Sep 2026 16:00:44 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 7.5,
+    "facts": "Hugging Face 博客发布 IBM Research 的 ALTK-Evolve 一致性研究，探讨智能体任务重复执行的一致性。",
+    "analysis": "该研究关注智能体在相同任务上的可重复性，这是可靠部署的关键。一致性评估有助于发现随机性导致的失败，推动更稳定的 agent 设计。",
+    "technical_value": "中高：提出一致性评估框架，可能涉及随机种子、环境变异和策略鲁棒性。",
+    "impact": "提升智能体在生产和关键任务中的可信度。",
+    "keywords": [
+      "agent consistency",
+      "reliability",
+      "IBM Research",
+      "ALTK-Evolve"
+    ]
+  },
+  {
+    "id": "1702d60298868bde",
+    "title": "Putting sign language AI into users’ hands",
+    "summary": "Introducing sign-language-to-text (SL2T), our breakthrough model powering new sign language features for Deaf and hard of hearing users.",
+    "published_at": "Wed, 12 Aug 2026 14:01:59 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 7.5,
+    "facts": "Google DeepMind 推出 sign-language-to-text (SL2T) 模型，为聋哑用户提供手语转文本功能。",
+    "analysis": "该工作将 AI 用于无障碍领域，具有社会价值。技术挑战包括手语识别、连续手势和语法转换。",
+    "technical_value": "中高：涉及计算机视觉、序列建模和领域适应。",
+    "impact": "提升聋哑人群的信息获取能力，推动包容性技术。",
+    "keywords": [
+      "sign language",
+      "accessibility",
+      "SL2T",
+      "DeepMind"
+    ]
+  }
+]
