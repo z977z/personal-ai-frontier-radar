@@ -1,0 +1,134 @@
+[
+  {
+    "id": "55cde8d3b380bc25",
+    "title": "Designer-RSI: Evolving Procedural Memory from User Traffic for Agentic Graphic Design",
+    "summary": "Professional graphic design is a long-horizon agentic task in which structured, editable artifacts emerge from many interdependent actions, yet outcomes admit no reliable programmatic oracle. We introduce a continual adaptation framework in which a frozen frontier model operates professional design software through more than 230 tools, while an external procedural memory of natural-language skills accumulates and refines reusable design procedures from experience. The memory widens by acquiring procedures for recurring uncovered subtasks and deepens by revising existing procedures against their own successful and failed executions, while a matched replay gate admits only changes that repair failures without regressing observed successes. Five rounds over 1,406 real user briefs and 1,869 automatically graded trajectories, with no weight updates and no human labels, grow the bank from 76 documentation-derived skills to 139 and raise GenEval2 execution success on Claude-Sonnet-4 from 72.7% to 99.3% (+11.99 points in generation quality), with 61.8% and 67.6% win rates against the no-skill agent across four specialized design benchmarks on Claude-Sonnet-4 and Claude-Opus-4.6. We further show the two mechanisms are effective in combination: on 200 held-out briefs from user-traffic benchmark, widening or deepening alone reaches a 49.4% / 48.6% win rate over the no-skill agent, while their combination reaches 58.5% (p = 0.025). Procedural memory offers a practical route to continual adaptation of agents under noisy, unverifiable feedback.",
+    "published_at": "2026-09-18T17:59:56Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.22086v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 8.5,
+    "facts": "论文提出Designer-RSI框架：冻结的前沿模型通过230多个工具操作专业设计软件，外部程序性记忆以自然语言技能形式从经验中积累和精炼可复用设计流程。记忆通过为反复出现的未覆盖子任务获取流程来拓宽，通过根据自身成功与失败执行修订现有流程来加深，匹配重放门控只接受修复失败且不回归已观察成功的变更。在1,406个真实用户简报和1,869条自动评分轨迹上进行五轮迭代，无权重更新、无人工标签，技能库从76个文档衍生技能增长到139个，GenEval2执行成功率在Claude-Sonnet-4上从72.7%提升至99.3%（生成质量+11.99分），在四个专业设计基准上对无技能智能体胜率为61.8%和67.6%。在200个留出简报上，单独拓宽或加深分别达到49.4%/48.6%胜率，组合达到58.5%（p=0.025）。",
+    "analysis": "该工作针对专业图形设计这类长时程、无可靠程序化评判标准的智能体任务，提出了一种不更新模型权重、仅通过外部程序性记忆实现持续适应的范式。其核心创新在于将技能库的拓宽与加深机制与匹配重放门控结合，在噪声、不可验证反馈下实现稳定改进。实验设计较为严谨，包含消融与统计显著性检验，且完全基于真实用户流量数据，避免了合成数据的偏差。",
+    "technical_value": "高。程序性记忆的拓宽/加深双机制与匹配重放门控为无梯度持续学习提供了可复用的工程范式；230+工具操作与自然语言技能表示对复杂软件智能体有直接参考价值；在无人工标签条件下实现显著性能提升，降低了持续适应的数据标注成本。",
+    "impact": "对智能体持续学习、工具使用、专业设计自动化领域有较强推动作用。若可复现，可能成为无权重更新场景下智能体自我改进的标准方法之一，并影响设计软件厂商的智能体集成策略。",
+    "keywords": [
+      "程序性记忆",
+      "持续适应",
+      "智能体图形设计",
+      "无权重更新",
+      "技能库",
+      "匹配重放门控",
+      "GenEval2"
+    ]
+  },
+  {
+    "id": "1702d60298868bde",
+    "title": "Putting sign language AI into users’ hands",
+    "summary": "Introducing sign-language-to-text (SL2T), our breakthrough model powering new sign language features for Deaf and hard of hearing users.",
+    "published_at": "Wed, 12 Aug 2026 14:01:59 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 7.5,
+    "facts": "Google DeepMind发布手语到文本（SL2T）模型，为聋人和听障用户提供新的手语功能。",
+    "analysis": "SL2T是手语识别与翻译领域的突破性模型，直接面向无障碍应用。手语具有复杂的时空语法和视觉韵律，传统方法难以达到实用精度。该模型若能在真实场景中稳定运行，将显著改善聋人社区的数字服务可及性。但博客未披露模型架构、支持的手语种类或准确率数据。",
+    "technical_value": "高。手语到文本的实时准确转换是计算机视觉与多模态领域的长期挑战，SL2T若实现突破，对无障碍技术、人机交互有重要价值。",
+    "impact": "对社会包容性有直接贡献，可能推动视频通信平台、公共服务系统集成手语翻译功能，并影响相关无障碍法规的落地。",
+    "keywords": [
+      "手语识别",
+      "SL2T",
+      "无障碍技术",
+      "聋人社区",
+      "Google DeepMind"
+    ]
+  },
+  {
+    "id": "e844fd438fc004d8",
+    "title": "NemotronLabs VoiceChat: An Open Full-duplex Speech-to-Speech Model with Tool Calling Capabilities",
+    "summary": "We introduce NemotronLabs VoiceChat, an open full-duplex speech-to-speech model with native tool-calling capabilities. NemotronLabs VoiceChat combines a streaming speech encoder and decoder-only language model with parallel specialized output streams for agent text and structured function calls, an auxiliary RNN-T branch for incremental user transcription, and a streaming TTS decoder. This design enables the model to listen, transcribe, reason, invoke tools, and speak within a unified streaming architecture while preserving the temporal behavior required for natural conversation. On Full-Duplex-Bench 1.0, NemotronLabs VoiceChat achieves the lowest pause-handling takeover rates among evaluated open-weight systems, 100\\% takeover following user interruptions, and a 4.33/5 post-interruption response-quality score. On Full-Duplex-Bench 1.5, it resumes its response after user backchannels in 93\\% of cases. NemotronLabs VoiceChat obtains a 55.1 normalized average on VoiceBench and, on Full-Duplex-Bench 3.0 (FDB 3.0), achieves 82.5\\% tool-selection F1, while argument accuracy and end-to-end tool execution remain areas for improvement. These results demonstrate that full-duplex interaction, speech recognition and generation, general language capabilities, and external tool use can be integrated in a single open speech-to-speech model without sacrificing real-time conversational behavior.",
+    "published_at": "2026-09-18T16:27:22Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.21967v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.3,
+    "ai_score": 7.5,
+    "facts": "论文提出NemotronLabs VoiceChat，一个开放的全双工语音到语音模型，具备原生工具调用能力。模型结合流式语音编码器、仅解码器语言模型、并行专用输出流（智能体文本和结构化函数调用）、辅助RNN-T分支用于增量用户转录，以及流式TTS解码器。在Full-Duplex-Bench 1.0上，在评估的开放权重系统中取得最低暂停处理接管率，用户打断后100%接管，打断后响应质量4.33/5。在Full-Duplex-Bench 1.5上，93%情况下在用户反馈后恢复响应。VoiceBench归一化平均55.1，Full-Duplex-Bench 3.0工具选择F1为82.5%，但参数准确性和端到端工具执行仍有改进空间。",
+    "analysis": "该工作将全双工交互、语音识别与生成、语言能力和外部工具调用集成到单一开放语音到语音模型中，且不牺牲实时对话行为。其架构设计（并行输出流、RNN-T转录分支、流式TTS）针对全双工场景的时序要求做了专门优化。基准结果在接管率和恢复响应方面表现突出，但工具调用的参数准确性不足，表明端到端工具执行仍是挑战。",
+    "technical_value": "高。全双工语音交互与工具调用的统一架构是语音智能体的重要进展，开放权重有利于社区复现与改进。RNN-T增量转录与并行输出流的设计对实时语音系统有参考价值。",
+    "impact": "可能推动语音助手从轮次对话向全双工、可工具调用的智能体演进，影响客服、车载、智能家居等实时交互场景。",
+    "keywords": [
+      "全双工语音",
+      "语音到语音",
+      "工具调用",
+      "NemotronLabs",
+      "流式TTS",
+      "RNN-T"
+    ]
+  },
+  {
+    "id": "204cc4ef541aa343",
+    "title": "Introducing agentic video understanding with Gemini",
+    "summary": "",
+    "published_at": "Tue, 01 Sep 2026 17:08:51 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 7.0,
+    "facts": "Google DeepMind发布博客，介绍Gemini中的智能体视频理解功能。",
+    "analysis": "官方博客未提供摘要，仅从标题判断为Gemini新增智能体式视频理解能力。智能体视频理解意味着模型可对视频进行多步推理、工具调用或交互式查询，而非单次描述。该方向与当前多模态智能体趋势一致，但缺乏技术细节与基准数据，难以评估具体能力边界。",
+    "technical_value": "中高。若实现真正的智能体式视频理解（如长视频检索、事件因果推理、工具辅助分析），将扩展多模态模型在监控、教育、内容审核等场景的实用性。但需等待技术报告或API文档确认。",
+    "impact": "可能推动视频理解从被动描述向主动分析演进，影响视频平台、安防、媒体制作等行业的AI集成方式。",
+    "keywords": [
+      "Gemini",
+      "智能体视频理解",
+      "多模态",
+      "Google DeepMind"
+    ]
+  },
+  {
+    "id": "a5b5573760534fe5",
+    "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+    "summary": "",
+    "published_at": "Thu, 03 Sep 2026 15:02:08 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 7.0,
+    "facts": "Google DeepMind发布WeatherNext 3，称其为最先进、最准确的全球天气AI模型。",
+    "analysis": "WeatherNext 3是DeepMind天气预测模型系列的第三代，官方宣称在准确性和先进性上达到新高度。天气AI模型通常基于图神经网络或Transformer架构，在ERA5等再分析数据上训练，并在多个预报指标上超越传统数值天气预报。但博客未提供具体基准数据或对比细节。",
+    "technical_value": "高。全球天气AI模型在计算效率与预报精度上持续突破，对气象学、能源、农业、灾害预警有直接应用价值。第三代模型可能引入更高分辨率、更长预报时效或更好极端事件捕捉能力。",
+    "impact": "可能进一步推动AI天气预测在业务系统中的采纳，影响国家气象机构和商业气象服务市场。",
+    "keywords": [
+      "WeatherNext 3",
+      "天气预测",
+      "AI模型",
+      "Google DeepMind",
+      "全球预报"
+    ]
+  }
+]

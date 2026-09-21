@@ -276,5 +276,19 @@
       "https://huggingface.co/blog/funes",
       "https://arxiv.org/abs/2609.20820v1"
     ]
+  },
+  {
+    "date": "2026-09-21",
+    "name_zh": "智能体程序性记忆",
+    "name_en": "Agentic Procedural Memory",
+    "score": 8.5,
+    "maturity": "Emerging",
+    "explanation": "智能体程序性记忆指智能体将成功与失败经验转化为可复用的自然语言技能或程序，存储于外部记忆库中，并在后续任务中检索、组合与精炼。与参数化记忆不同，它不更新模型权重，而是通过记忆的拓宽（获取新技能）和加深（修订现有技能）实现持续适应。Designer-RSI展示了该概念在专业设计软件中的有效性，技能库从76增长到139，执行成功率从72.7%提升至99.3%。",
+    "why_now": "当前前沿模型能力强大但权重冻结，无法通过梯度更新适应新任务；同时智能体在长时程、无程序化评判标准的任务中需要积累经验。程序性记忆提供了一条无需权重更新、无需人工标签的持续适应路径，且自然语言技能表示便于审计与迁移。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.22086v1",
+      "https://huggingface.co/blog/funes",
+      "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
+    ]
   }
 ]
