@@ -290,5 +290,18 @@
       "https://huggingface.co/blog/funes",
       "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
     ]
+  },
+  {
+    "date": "2026-09-22",
+    "name_zh": "智能体harness蒸馏",
+    "name_en": "Agent Harness Distillation",
+    "score": 6.0,
+    "maturity": "Emerging",
+    "explanation": "智能体harness蒸馏是指将领域或实例优化的智能体harness（提示、控制流、工具、记忆等）所诱导的行为，通过训练转移到模型权重中，使得在部署时使用单一固定harness也能保留优化harness带来的性能增益。该概念旨在解决harness优化后难以泛化到不同部署环境的问题，实现模型能力的轻量化和通用化。",
+    "why_now": "随着LLM智能体系统的广泛应用，harness的优化成为提升性能的关键，但专用harness的部署复杂且难以跨域泛化。近期研究如Harness-Zero和RRSI表明，通过蒸馏和正则化可以内化harness增益，减少对复杂外部系统的依赖，这正好契合当前对高效、通用智能体系统的需求。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.24974v1",
+      "https://arxiv.org/abs/2609.24972v1"
+    ]
   }
 ]

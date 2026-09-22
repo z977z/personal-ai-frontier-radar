@@ -1,0 +1,129 @@
+[
+  {
+    "id": "fbdcc1e11a8943e0",
+    "title": "GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay",
+    "summary": "Modern video games provide a measurable testbed for AI models, combining abilities of visual understanding, instruction decomposition, goal planning, and precise action control over multiple temporal horizons. Existing datasets and benchmarks, however, either cover a narrow range of games, lack language instructions, or rely on high-variance online rollouts. To address these challenges, we introduce GameHorizon, a unified data and evaluation suite that measures gameplay capabilities at different horizons for diverse model families. GameHorizon Suite consists of three components. First, GameHorizon-Annotator is a scalable and automated annotation pipeline for multi-horizon instructions. Second, utilizing the pipeline, we construct GameHorizon-Data, the first large-scale AAA gameplay dataset with temporally aligned videos, player actions, and multi-horizon instructions. It comprises 5,000 hours of recordings from 21 games, collected by 100 human expert players. Third, we build GameHorizon-Bench with reproducible offline and stepwise online testing. The offline track enables reproducible evaluation using thousands of standardized questions organized into three primary tasks and a series of diagnostic variants, while the online track tests whether offline scores reflect actual gameplay capabilities and localizes failures to specific steps within long-horizon gameplay. Based on our GameHorizon Suite, we evaluate 47 models through more than one million model invocations, revealing a meaningful hierarchy of task difficulty and pronounced differences in model capabilities. Our work can provide a standardized yardstick for evaluating gameplay capabilities across horizons and model families. We will release our dataset, annotator, and benchmark to facilitate future research.",
+    "published_at": "2026-09-21T17:59:33Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.25001v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.1,
+    "ai_score": 6.1,
+    "facts": "GameHorizon Suite 包含三个组件：GameHorizon-Annotator 是可扩展的多时间跨度指令自动标注流水线；GameHorizon-Data 是首个大规模 AAA 游戏数据集，包含 5000 小时、21 款游戏、100 名人类专家玩家的录制，含时间对齐的视频、玩家动作和多时间跨度指令；GameHorizon-Bench 提供可复现的离线测试和逐步在线测试。离线测试包含数千个标准化问题，分为三个主要任务和一系列诊断变体；在线测试检验离线分数是否反映实际游戏能力，并将失败定位到长时程游戏中的具体步骤。基于该套件，对 47 个模型进行了超过一百万次调用评估，揭示了任务难度的层次结构和模型能力的显著差异。数据集、标注器和基准将发布。",
+    "analysis": "该工作针对现有游戏 AI 基准覆盖游戏范围窄、缺乏语言指令或依赖高方差在线 rollout 的问题，提出了统一的多时间跨度数据与评估套件。其核心贡献在于将游戏作为可测量的 AI 测试平台，覆盖视觉理解、指令分解、目标规划和精确动作控制。通过大规模人类专家数据和标准化评估，为不同模型家族提供可比较的衡量标准，有望推动游戏 AI 和通用智能体研究。",
+    "technical_value": "提供了首个大规模 AAA 游戏多时间跨度数据集和可复现的离线/在线评估协议，解决了现有基准的覆盖面和可复现性问题。标注流水线可扩展，评估涵盖 47 个模型和百万级调用，为后续研究提供了标准化测试平台。",
+    "impact": "对游戏 AI、多模态理解和智能体规划领域具有推动作用，可能成为游戏内 AI 能力评估的参考基准，促进模型在复杂动态环境中的能力提升。",
+    "keywords": [
+      "游戏AI",
+      "多时间跨度",
+      "基准测试",
+      "数据集",
+      "智能体评估"
+    ]
+  },
+  {
+    "id": "09e92b4688f12eee",
+    "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+    "summary": "An LLM agent's capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively proposing and selecting component-wise edits of an agent harness, practically establishing a form of recursive self-improvement (RSI) at the agent-system level. However, such recursive evolution may overfit by memorizing the training tasks, showing large in-distribution gains that shrink or even vanish on out-of-distribution benchmarks. We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and selection. The proposer operates with a temporally annealed budget, limiting how many edits a candidate can bundle, and it encourages unexplored trajectories based on evolution history. The selector is equipped with a critic and a pruner: the critic screens benchmark-specific proposals, while the pruner, removes changes that are too small, too expensive, or no longer useful. Together these constraints favor reusable agent mechanisms over benchmark-specific ones or even noises. Across eight benchmarks spanning coding, agentic workspace and engineering design tasks, RRSI gains up to 14.1 points on the split it evolves against and up to 4.7 points on the five out-of-distribution benchmarks, while producing a harness that runs on 30% fewer policy tokens than the unregularized evolution. Code is available at https://github.com/google-research/rrsi and project page is https://regularized-rsi.com/.",
+    "published_at": "2026-09-21T17:54:49Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.24972v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.0,
+    "ai_score": 6.0,
+    "facts": "RRSI 将正则化原则引入智能体 harness 的递归自我改进，通过约束候选提案和选择来防止过拟合。提案器使用时间退火预算限制每次编辑捆绑数量，并基于进化历史鼓励探索未探索轨迹；选择器配备批评器筛选基准特定提案，修剪器移除过小、过贵或不再有用的更改。在八个基准（编码、智能体工作空间和工程设计任务）上，RRSI 在进化所用划分上提升最多 14.1 分，在五个分布外基准上提升最多 4.7 分，同时生成的 harness 比未正则化进化少用 30% 策略 token。代码和项目页面已公开。",
+    "analysis": "该研究关注 LLM 智能体 harness 的自动优化，指出递归自我改进可能导致对训练任务的记忆和过拟合，从而在分布外表现下降。RRSI 通过正则化约束进化过程，平衡探索与利用，提升泛化能力并降低计算成本。其方法具有通用性，可应用于多种智能体系统。",
+    "technical_value": "提出了正则化递归自我改进框架，通过时间退火预算、批评器和修剪器实现更稳健的 harness 进化，在多个基准上验证了泛化提升和 token 效率，为智能体系统的自动化优化提供了新思路。",
+    "impact": "对智能体系统的自动化设计和持续改进有重要意义，可能推动更高效、更通用的智能体 harness 进化方法，减少对人工调参的依赖。",
+    "keywords": [
+      "递归自我改进",
+      "智能体harness",
+      "正则化",
+      "泛化",
+      "进化优化"
+    ]
+  },
+  {
+    "id": "204cc4ef541aa343",
+    "title": "Introducing agentic video understanding with Gemini",
+    "summary": "",
+    "published_at": "Tue, 01 Sep 2026 17:08:51 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "Google DeepMind 发布博客，介绍 Gemini 中的智能体视频理解功能。",
+    "analysis": "该发布表明 Gemini 正在增强视频理解能力，并引入智能体机制，可能支持更复杂的视频交互和分析任务。这反映了多模态模型向智能体化发展的趋势。",
+    "technical_value": "将智能体能力与视频理解结合，可能提升模型在动态视觉环境中的自主分析和决策能力。",
+    "impact": "对多模态 AI 和视频分析应用有推动作用，可能影响内容创作、监控、教育等领域。",
+    "keywords": [
+      "Gemini",
+      "视频理解",
+      "智能体",
+      "多模态"
+    ]
+  },
+  {
+    "id": "69e1fb158ded63b8",
+    "title": "Your Agent Aced the Task. Will It Do It Again?",
+    "summary": "",
+    "published_at": "Tue, 15 Sep 2026 16:00:44 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "Hugging Face 博客文章，标题为“Your Agent Aced the Task. Will It Do It Again?”，由 IBM Research 发布，讨论智能体任务一致性问题。",
+    "analysis": "该文章关注智能体在重复执行任务时的一致性，即一次成功是否意味着可重复成功。这是智能体可靠部署的关键问题，涉及评估方法和改进策略。",
+    "technical_value": "可能提出评估智能体一致性的框架或方法，帮助识别和减少随机性带来的性能波动。",
+    "impact": "对智能体在真实场景中的可靠应用有重要意义，推动更稳健的智能体系统开发。",
+    "keywords": [
+      "智能体",
+      "一致性",
+      "可靠性",
+      "评估"
+    ]
+  },
+  {
+    "id": "c8754172bb3bf73f",
+    "title": "Give Your Coding Agents a Memory You Own",
+    "summary": "",
+    "published_at": "Thu, 03 Sep 2026 00:00:00 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/funes",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "Hugging Face 博客文章，标题为“Give Your Coding Agents a Memory You Own”，讨论为编码智能体提供可拥有的记忆。",
+    "analysis": "该文章关注编码智能体的记忆管理，可能涉及如何让智能体记住代码上下文、用户偏好或项目历史，并确保用户对记忆的控制权。",
+    "technical_value": "可能提出记忆架构或工具，提升编码智能体的长期上下文理解和个性化能力。",
+    "impact": "对 AI 辅助编程工具的发展有推动作用，增强智能体的实用性和用户信任。",
+    "keywords": [
+      "编码智能体",
+      "记忆",
+      "上下文管理",
+      "个性化"
+    ]
+  }
+]
