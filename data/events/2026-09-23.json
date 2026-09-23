@@ -1,0 +1,131 @@
+[
+  {
+    "id": "c5845cc0b12f054e",
+    "title": "A2M: Trace-Optimized Agent Hijacking in the MCP Ecosystem",
+    "summary": "Agents using the Model Context Protocol (MCP) rely on semantic matching to select tools from third-party servers, exposing a semantic supply-chain risk through attacker-controlled metadata and outputs. We introduce A2M (Attraction-to-Manipulation), a two-stage black-box framework for hijacking MCP agents. The Attraction phase optimizes tool metadata to increase invocation probability; the Manipulation phase uses execution traces to refine adversarial tool returns that steer agents toward attacker-desired outcomes. On LiveMCPBench, direct attacks optimized and evaluated on GLM-4.6 achieve a macro-average malicious tool invocation rate of 93.6% across four scenarios, increase weighted token costs to 32.4$\\times$ the benign baseline under Cognitive Denial of Service, and attain a mean attack success rate of 74.4% across Information Exfiltration, Environment Integrity Compromise, and Reasoning Derailment. Transfer to four other models without re-optimization yields corresponding macro-averages of 63.6%, 2.7$\\times$, and 24.5%. These findings motivate stronger tool vetting and runtime isolation in MCP ecosystems. Code is publicly available at https://github.com/Lilaizhen/A2M.",
+    "published_at": "2026-09-22T17:41:34Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.26761v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.6,
+    "ai_score": 8.5,
+    "facts": "论文提出A2M（Attraction-to-Manipulation），一个针对MCP生态的两阶段黑盒智能体劫持框架。Attraction阶段优化工具元数据以提高调用概率；Manipulation阶段利用执行轨迹精炼对抗性工具返回，引导智能体走向攻击者期望的结果。在LiveMCPBench上，针对GLM-4.6直接优化的攻击在四个场景中实现93.6%的宏平均恶意工具调用率，在认知拒绝服务下将加权token成本提升至良性基线的32.4倍，在信息窃取、环境完整性破坏和推理脱轨上平均攻击成功率为74.4%。迁移到其他四个模型无需重新优化，对应宏平均分别为63.6%、2.7倍和24.5%。代码已公开于https://github.com/Lilaizhen/A2M。",
+    "analysis": "该研究揭示了MCP生态中基于语义匹配的工具选择机制存在供应链安全风险：攻击者可通过控制工具元数据和输出来劫持智能体行为。两阶段黑盒方法无需访问模型内部，具有较强现实可行性；跨模型迁移性表明风险不局限于单一模型。这为MCP生态的安全部署敲响警钟，可能推动工具审核、运行时隔离和元数据签名等防御机制的发展。",
+    "technical_value": "高。首次系统性地将MCP智能体劫持形式化为两阶段优化问题，并给出可复现的攻击框架与量化评估，为后续防御研究提供基准。",
+    "impact": "对基于MCP的智能体应用构成直接安全威胁，可能影响企业级智能体部署的信任模型，并催生MCP安全标准与工具市场审核机制。",
+    "keywords": [
+      "MCP",
+      "智能体安全",
+      "供应链攻击",
+      "工具劫持",
+      "黑盒攻击"
+    ]
+  },
+  {
+    "id": "94483c4c6e42fc22",
+    "title": "Grow the Harness, Not the Context: From Strategy-Free Scaffolds to Reusable Specialist Agents",
+    "summary": "Large language model (LLM) agents often handle streams of related tasks, yet standard harnesses repeatedly ask the model to reconstruct the same control decisions inside each task's context. We study whether task feedback can instead turn recurring control into reusable executable code, while reserving LLM calls for task-specific semantic reasoning. We introduce Growing Harness, a failure-guided training paradigm that learns the agent harness itself from a strategy-free scaffold that exposes fixed model and tool interfaces but encodes no task-solving controller. Function-level execution traces localize each failure to a bounded code surface, an optimizer repairs a window of failures jointly, and a success-first held-out gate rolls back repair sequences that harm prior capability. Accepted edits accumulate in one shared harness, allowing its control structure to emerge from task feedback. Across BrowseComp-Plus and WebArena-Verified with three deployment models from 4B to 120B parameters, Growing Harness achieves the highest mean success in five of six benchmark-model settings and trails the best mean by 0.7 pp. in the sixth. Relative to a Tool-Calling agent, it reduces LLM calls by 76.0-91.8% and deployed-agent inference cost by 74.4-98.6%. On WebArena-Verified, its success remains 44.7-45.3% across model scales, whereas Tool-Calling falls to 6.7% with the 4B model. Ablations show that trace-local edits, joint repair, and gate-based rollback each improve final success. These results show that persistent program growth can move recurring control out of model context and into low-cost code, yielding reusable specialist agents that remain effective with smaller deployment models.",
+    "published_at": "2026-09-22T17:40:45Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.26760v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.3,
+    "ai_score": 8.0,
+    "facts": "论文提出Growing Harness，一种失败引导的训练范式，从无策略脚手架中学习智能体harness本身。函数级执行轨迹将失败定位到有界代码面，优化器联合修复失败窗口，成功优先的留出集门控回滚损害先前能力的修复序列。在BrowseComp-Plus和WebArena-Verified上，使用4B至120B参数的三个部署模型，Growing Harness在六个基准-模型设置中的五个取得最高平均成功率，第六个落后最佳0.7个百分点。相比工具调用智能体，减少LLM调用76.0-91.8%，部署智能体推理成本降低74.4-98.6%。在WebArena-Verified上，其成功率在不同模型规模下保持44.7-45.3%，而工具调用在4B模型下降至6.7%。消融实验表明轨迹局部编辑、联合修复和门控回滚各自提升最终成功率。",
+    "analysis": "该工作将智能体的重复控制逻辑从模型上下文迁移到可执行代码中，通过失败反馈持续增长harness，实现可复用的专家智能体。这降低了推理成本并提升小模型部署效果，代表智能体架构从“大上下文+通用模型”向“小模型+专用程序”的演进方向。",
+    "technical_value": "高。提出可学习的harness增长机制，结合轨迹定位、联合修复与门控回滚，在多个基准上验证有效性与成本优势，为智能体工程化提供新范式。",
+    "impact": "可能改变智能体部署的经济性，使小模型在复杂任务中具备竞争力，推动专用智能体代码库的积累与复用。",
+    "keywords": [
+      "智能体harness",
+      "失败引导学习",
+      "代码复用",
+      "成本优化",
+      "小模型部署"
+    ]
+  },
+  {
+    "id": "318382dc8111241f",
+    "title": "SWE-Serve: Benchmarking Agentic Engineering For Production Inference Serving",
+    "summary": "We introduce SWE-Serve, a benchmark for evaluating agents on production inference engineering tasks. Implementing an inference feature can require coordinating multiple changes across the serving stack, including model support, runtime execution, and public APIs. Existing benchmarks provide limited coverage of production inference engineering: repository-level software engineering benchmarks do not target inference, while general terminal-agent benchmarks include only a few inference tasks. Dedicated inference benchmarks, meanwhile, focus primarily on isolated kernel generation or performance optimization rather than repository-scale production feature implementation. SWE-Serve provides 53 repository-grounded tasks derived from recent production changes to SGLang, spanning six inference engineering families. Each task executes on either CPU or a single GPU (H100) and is evaluated with hidden functional and regression tests, including, where applicable, end-to-end (E2E) serving tests and calibrated performance gates. Executable no-op and oracle controls, adversarial verifier review, and closed-book execution support task validity and evaluation integrity. Across 11 models and 31 model-effort configurations, the best-performing configuration achieves 75% mean pass@1. SWE-Serve exposes a substantial gap between completing tasks locally and achieving production correctness. On 19 tasks with end-to-end coverage, model-serving E2E tests reject roughly one-third of patches that pass every other test (45.9% under the verifier versus 69.4% with E2E tests excluded from scoring), with pass rate increasing for each model's best-performing configuration. By making the production correctness gap directly measurable, SWE-Serve enables the field to track whether future agents move beyo",
+    "published_at": "2026-09-22T17:54:59Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.26777v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 7.5,
+    "facts": "论文提出SWE-Serve，一个评估智能体在生产推理工程任务上的基准。包含53个源自SGLang近期生产变更的仓库级任务，覆盖六个推理工程家族。每个任务在CPU或单GPU（H100）上执行，使用隐藏功能与回归测试评估，包括端到端服务测试和校准性能门控。在11个模型和31个模型-努力配置中，最佳配置达到75%平均pass@1。在19个有端到端覆盖的任务上，模型服务E2E测试拒绝约三分之一通过其他所有测试的补丁（验证器下45.9%通过率 vs 排除E2E测试的69.4%）。",
+    "analysis": "SWE-Serve填补了生产推理工程智能体评估的空白，揭示本地任务完成与生产正确性之间的显著差距。E2E测试的高拒绝率表明，仅靠单元测试不足以评估推理系统变更，需要更贴近生产环境的验证。该基准将推动智能体在真实推理栈中的工程能力提升。",
+    "technical_value": "中高。提供仓库级、生产导向的推理工程基准，包含E2E与性能门控，为智能体在ML系统运维领域的评估建立新标准。",
+    "impact": "对推理服务框架（如SGLang）的自动化维护与升级有直接意义，可能加速智能体在MLOps和推理优化领域的落地。",
+    "keywords": [
+      "推理服务",
+      "智能体基准",
+      "SWE-Serve",
+      "SGLang",
+      "生产工程"
+    ]
+  },
+  {
+    "id": "dcf950226e2e8d6a",
+    "title": "FleXray: Universal Clinical X-ray Segmentation",
+    "summary": "X-ray is medicine's most widely used imaging modality, yet remains among its least quantitative. Unlike volumetric modalities like CT or MRI, X-ray collapses 3D anatomy into a 2D projection, causing structures to overlap and anatomical boundaries to be ambiguous, even to experts. As a result, labeling X-ray databases for training general-purpose segmentation systems is impractical, leaving morphometric and functional X-ray analysis confined to narrow anatomical regions and applications. To this end, we present FleXray, a generalist model for anatomical segmentation across the entire body in clinical X-rays. Instead of curating large, manually annotated X-ray datasets, we build a scalable, physics-based generative X-ray data engine. Using existing 3D whole-body CT segmentation datasets and generative image-editing models, we simulate fully-annotated 2D X-rays with diverse appearances, physiological properties, and imaging geometries. Trained on these simulations, FleXray accurately segments 60 anatomical structures across unseen research datasets and in-the-wild X-rays. We further show that FleXray makes X-rays directly amenable to quantitative analysis, enabling automated measurements for disease grading, robust navigation during X-ray-guided interventions, and data-efficient learning of pathological targets. We release the model, code, a full-body X-ray segmentation dataset, and a local, easy-to-use browser-based tool at https://flexray.csail.mit.edu .",
+    "published_at": "2026-09-22T17:37:55Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.26756v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 7.0,
+    "facts": "论文提出FleXray，一个用于临床X射线全身解剖分割的通用模型。通过基于物理的生成式X射线数据引擎，利用现有3D全身CT分割数据集和生成式图像编辑模型，模拟具有多样外观、生理属性和成像几何的完全标注2D X射线。训练后的FleXray能准确分割60个解剖结构，覆盖未见研究数据集和真实世界X射线。模型、代码、全身X射线分割数据集及本地浏览器工具已发布于https://flexray.csail.mit.edu。",
+    "analysis": "FleXray通过合成数据解决X射线标注难题，实现全身多结构分割，使X射线具备定量分析能力。该方法可推广至其他缺乏标注的医学影像模态，降低对人工标注的依赖。其开源工具和数据集将促进临床X射线定量分析的研究与应用。",
+    "technical_value": "高。提出可扩展的物理生成数据引擎，训练通用分割模型，在多个未见数据集上验证泛化能力，并开源完整工具链。",
+    "impact": "有望推动X射线在疾病分级、介入导航和病理目标学习中的定量应用，提升基层医疗的影像分析能力。",
+    "keywords": [
+      "X射线分割",
+      "合成数据",
+      "医学影像",
+      "通用模型",
+      "开源工具"
+    ]
+  },
+  {
+    "id": "204cc4ef541aa343",
+    "title": "Introducing agentic video understanding with Gemini",
+    "summary": "",
+    "published_at": "Tue, 01 Sep 2026 17:08:51 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 6.5,
+    "facts": "Google DeepMind发布博客，介绍Gemini中的智能体视频理解功能。",
+    "analysis": "智能体视频理解意味着模型不仅能被动分析视频，还能主动调用工具、执行多步推理来回答关于视频的问题。这扩展了多模态智能体的应用场景，如视频编辑、监控分析和交互式内容检索。",
+    "technical_value": "中。将智能体能力与视频理解结合，可能涉及长视频记忆、时序推理和工具调用，但博客未披露技术细节。",
+    "impact": "可能推动视频分析从单次问答向交互式、任务导向的智能体工作流转变，影响内容创作、安防和教育等行业。",
+    "keywords": [
+      "Gemini",
+      "视频理解",
+      "智能体",
+      "多模态"
+    ]
+  }
+]

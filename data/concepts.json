@@ -303,5 +303,18 @@
       "https://arxiv.org/abs/2609.24974v1",
       "https://arxiv.org/abs/2609.24972v1"
     ]
+  },
+  {
+    "date": "2026-09-23",
+    "name_zh": "MCP智能体劫持",
+    "name_en": "MCP Agent Hijacking",
+    "score": 8.5,
+    "maturity": "Emerging",
+    "explanation": "MCP（Model Context Protocol）智能体劫持是指攻击者通过控制第三方工具服务器的元数据和返回内容，利用智能体基于语义匹配的工具选择机制，诱导其调用恶意工具并执行攻击者期望的行为。A2M框架将其形式化为两阶段黑盒优化问题：先优化工具元数据提高调用概率，再通过执行轨迹精炼对抗性返回以操纵智能体决策。",
+    "why_now": "MCP正成为智能体连接外部工具的事实标准，但其语义匹配机制缺乏对工具来源和输出的严格验证。A2M在LiveMCPBench上实现93.6%的恶意工具调用率和74.4%的攻击成功率，且可跨模型迁移，表明该风险已具备现实可行性，亟需在MCP生态中建立工具审核与运行时隔离机制。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.26761v1",
+      "https://github.com/Lilaizhen/A2M"
+    ]
   }
 ]
