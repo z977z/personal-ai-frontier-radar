@@ -316,5 +316,17 @@
       "https://arxiv.org/abs/2609.26761v1",
       "https://github.com/Lilaizhen/A2M"
     ]
+  },
+  {
+    "date": "2026-09-24",
+    "name_zh": "智能体状态编辑世界模型",
+    "name_en": "Agent-Editing World Model",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "一种面向 LLM 智能体的世界模型新范式：不再预测环境观测或工具响应，而是建模推理与动作如何改变任务状态，并通过 Action Judge 与 State Revision 主动编辑历史中的噪声推理-动作延续，直接修正后续决策所依赖的状态。",
+    "why_now": "长程 LLM 智能体普遍受 task-state contamination 困扰，错误假设与过时计划在历史中累积并扭曲决策；同时真实工具反馈已足够廉价，模拟高熵工具响应价值有限，因此从'模拟环境'转向'编辑状态'成为更高效的世界模型方向。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.28416v1"
+    ]
   }
 ]

@@ -526,5 +526,27 @@
     "code_size": "约8000-12000行",
     "v2": "引入基于执行轨迹的异常检测模型，实现自适应风险评分；支持多租户策略配置；集成威胁情报共享；提供攻击模拟测试套件。",
     "status": "idea"
+  },
+  {
+    "date": "2026-09-24",
+    "name_zh": "智能体状态编辑中间件",
+    "name_en": "Agent State-Edit Middleware",
+    "tagline": "在真实执行循环中实时识别并修正智能体的噪声推理-动作状态",
+    "why_today": "LLM 智能体在长程任务中因历史污染而失败率高，而现有世界模型模拟工具响应成本高、收益低；AEWM 证明直接编辑任务状态可在多环境提升 3.2–6.7 分，具备工程落地条件。",
+    "scenarios": [
+      "长程搜索智能体",
+      "终端运维智能体",
+      "软件工程智能体",
+      "多步工具调用工作流"
+    ],
+    "flow": "观测历史输入 -> Action Judge 分类决策为 Critical/Exploratory/Noisy -> State Revision 对 Noisy 延续生成编辑 -> EditAct 将编辑结果与真实执行结合 -> 更新任务状态 -> 进入下一轮决策",
+    "ai_role": "Action Judge 使用微调 LLM 对决策分类；State Revision 使用 LLM 生成状态编辑；EditAct 在真实执行前应用编辑并记录轨迹用于后续 RFT。",
+    "stack": "基础 LLM（如 Qwen 系列）+ mid-training/SFT 微调 + 真实工具执行环境（Search/Terminal/SWE）+ 轨迹记录与拒绝采样微调流水线",
+    "mvp": "在单一环境（如 Terminal）实现 Action Judge 分类器与 State Revision 编辑器，接入现有 agent 循环，用少量标注轨迹做 SFT，验证任务成功率提升。",
+    "difficulty": "中高",
+    "time": "4–8 周",
+    "code_size": "约 3000–6000 行（含训练与集成）",
+    "v2": "扩展至多环境统一 Action Judge，加入在线 AEWM 引导与 AEWM-RFT 离线微调，支持多模态观测与跨智能体迁移。",
+    "status": "idea"
   }
 ]

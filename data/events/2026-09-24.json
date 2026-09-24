@@ -1,0 +1,134 @@
+[
+  {
+    "id": "b3b9a17bfcd31991",
+    "title": "Agent-Editing World Model: Rethinking World Modeling for LLM Agents",
+    "summary": "Recent advances in large language models (LLMs) have enabled agents to tackle long-horizon tasks across diverse environments. To further improve agent performance, existing language world models typically predict environment observations, yet reconstructing high-entropy, execution-dependent tool responses offers limited value when real feedback is available. Meanwhile, agents suffer from \\emph{task-state contamination}, where unsupported assumptions and outdated plans persist in history and distort subsequent decisions. We propose the \\textbf{Agent-Editing World Model (AEWM)}, which models how reasoning and actions shape future task progress rather than simulating tool responses. AEWM combines \\textbf{Action Judge} to distinguish \\textsc{Critical}, \\textsc{Exploratory}, and \\textsc{Noisy} decisions with \\textbf{State Revision} to edit noisy reasoning--action continuations from the same observed history. \\textbf{EditAct} integrates these capabilities with real execution, directly changing the state underlying subsequent decisions rather than merely providing critiques. We train AEWM across Search, Terminal, and Software Engineering through mid-training and supervised fine-tuning. AEWM achieves 70.5\\% macro-F1 on our Action Judge benchmark, exceeding the strongest frontier baseline by 10.6 points. Across six benchmarks and three agent backbones, EditAct improves average scores by 3.2--6.7 points over the strongest baseline. Furthermore, rejection sampling fine-tuning on verified EditAct trajectories, termed \\textbf{AEWM-RFT}, improves over Self-RFT by 2.2--2.6 points across three domains without online AEWM guidance.",
+    "published_at": "2026-09-23T17:18:26Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.28416v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.3,
+    "ai_score": 8,
+    "facts": "论文提出 Agent-Editing World Model (AEWM)，不模拟工具响应，而是建模推理与动作如何塑造未来任务进展。包含 Action Judge（区分 Critical、Exploratory、Noisy 决策）与 State Revision（编辑同一观测历史中的噪声推理-动作延续）。EditAct 将二者与真实执行集成，直接改变后续决策的状态。在 Search、Terminal、Software Engineering 上通过 mid-training 和 SFT 训练。Action Judge 基准 macro-F1 达 70.5%，超最强前沿基线 10.6 分；六个基准、三个 agent backbone 上 EditAct 平均提升 3.2–6.7 分；AEWM-RFT 在三个领域比 Self-RFT 提升 2.2–2.6 分。",
+    "analysis": "该工作针对 LLM agent 的 task-state contamination 问题，提出从'预测环境观测'转向'编辑任务状态'的世界模型范式，思路新颖。Action Judge 与 State Revision 的组合把世界模型从被动模拟器变为主动状态修正器，EditAct 直接介入执行循环，工程上可落地。AEWM-RFT 表明离线轨迹可用于拒绝采样微调，降低在线引导依赖。局限在于实验集中在 Search/Terminal/SWE 三类环境，泛化到开放域交互与多模态环境尚未验证。",
+    "technical_value": "高。提供可复用的 Action Judge 分类框架与状态编辑机制，训练流程（mid-training+SFT+RFT）可迁移到其他 agent 系统，对缓解长程任务中的错误累积有直接工程价值。",
+    "impact": "对 LLM agent 长程任务可靠性有实质提升，可能推动世界模型研究从观测预测转向状态修正，并影响 agent 训练数据构造与在线/离线微调策略。",
+    "keywords": [
+      "world model",
+      "LLM agent",
+      "task-state contamination",
+      "Action Judge",
+      "State Revision",
+      "EditAct",
+      "AEWM-RFT"
+    ]
+  },
+  {
+    "id": "5337992e697ce4cb",
+    "title": "Can LLMs Reason About Runtime Behavior? A Repository-Level Dynamic Benchmark",
+    "summary": "Large language models (LLMs) are increasingly used in coding tasks, but their ability to reason about code execution remains unclear. Existing repository-level QA benchmarks mainly evaluate static code understanding and often rely on LLM-based evaluation, while execution-reasoning benchmarks are mostly limited to snippets or functions. We introduce SWE-Flux, a repository-level benchmark for dynamic execution reasoning containing 480 execution-grounded instances across 12 real Python repositories, with gold answers automatically harvested from instrumented test executions rather than written manually or judged by LLMs. The benchmark covers singletest and multi-test questions over control flow, loops, program state, dataflow, exceptions, and program invariants. Evaluating five LLMs shows that this task remains challenging. The best model achieves only 37% accuracy. Models perform better on localized behavior such as invariants, intra-procedural control flow, exceptions, and simple loops, but struggle with dataflow, inter-procedural execution, precise state reasoning, and suite-level aggregation. Finally, we show that the oracle-harvesting pipeline can generate fresh benchmark variants using input perturbation. It successfully harvests valid variants for almost 90% of the selected instances, and the resulting variants are substantially more challenging for the evaluated models.",
+    "published_at": "2026-09-23T17:46:50Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.28449v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 7,
+    "facts": "论文提出 SWE-Flux，一个仓库级动态执行推理基准，含 12 个真实 Python 仓库的 480 个执行接地实例，金标准答案由插桩测试执行自动采集而非人工编写或 LLM 评判。覆盖单测试与多测试问题，涉及控制流、循环、程序状态、数据流、异常和程序不变量。评估五个 LLM，最佳模型仅 37% 准确率；模型在局部行为（不变量、过程内控制流、异常、简单循环）上表现较好，但在数据流、跨过程执行、精确状态推理和套件级聚合上表现差。oracle-harvesting 流水线可通过输入扰动生成新变体，约 90% 选中实例可成功采集有效变体，且变体对模型更具挑战性。",
+    "analysis": "该基准填补了仓库级动态执行推理评测的空白，自动采集金标准避免了 LLM 评判偏差，方法学上更可靠。37% 的最佳准确率揭示当前 LLM 在跨过程数据流与状态推理上的显著短板，为后续研究提供明确方向。输入扰动生成变体的机制提升了基准的可扩展性与抗污染能力。局限在于仅覆盖 Python 仓库，语言与生态多样性有限。",
+    "technical_value": "高。提供可复现、可扩展的仓库级动态推理评测工具，自动采集与变体生成流水线可被其他基准借鉴，对代码 LLM 能力诊断有直接价值。",
+    "impact": "为代码 LLM 的执行推理能力提供更严格评测标准，可能推动模型在跨过程数据流与状态推理方向的改进，并影响仓库级代码 agent 的评估方式。",
+    "keywords": [
+      "SWE-Flux",
+      "repository-level benchmark",
+      "dynamic execution reasoning",
+      "code LLM",
+      "oracle-harvesting",
+      "dataflow"
+    ]
+  },
+  {
+    "id": "09bc07dacc1e146a",
+    "title": "When and Where to Trust the Teacher: Unifying On-Policy Distillation and GRPO through Entropy-Calibrated Credit Assignment",
+    "summary": "Reinforcement learning with verifiable rewards (RLVR) supervises mathematical reasoning through final-answer correctness, but provides little guidance on individual tokens. On-policy distillation (OPD) supplies dense feedback on student-generated responses, yet teacher preference need not reflect correctness. Recent hybrids combine OPD and verifier-derived advantages or reweight task credit using teacher ratios. However, teacher guidance enters after verifier-based group normalization, and token reweighting need not preserve the total task credit assigned to each response. We introduce Unified Entropy-Calibrated Credit Redistribution for GRPO (UECR-GRPO), which integrates verifier and teacher signals within a single GRPO-style update at both the response and token levels. \\emph{Path-Utility Unification} (PUU) combines verifier reward and a teacher-to-anchor path log-ratio in a single KL-regularized objective. Its on-policy implementation uses a length-normalized teacher score and combines both rewards before group normalization and PPO clipping, allowing teacher evidence to influence the response ranking. \\emph{Entropy-Calibrated Redistribution} (ECR) then uses the signed teacher--old-policy token gap to redistribute the verifier-derived component. Full-vocabulary teacher entropy attenuates uncertain guidance, while a response-wise zero-sum projection preserves the total task credit and its token-wise sign before clipping. Across five mathematical reasoning benchmarks, UECR-GRPO achieves average \\(\\mathrm{Avg@12}\\) accuracies of 17.21\\% and 65.09\\% with Qwen3-1.7B and Qwen3-4B students, respectively, exceeding the strongest baseline at each scale by 0.89 and 0.56 percentage points.",
+    "published_at": "2026-09-23T16:58:26Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.28385v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.2,
+    "ai_score": 7,
+    "facts": "论文提出 UECR-GRPO，在单一 GRPO 风格更新中于响应级和 token 级整合 verifier 与 teacher 信号。Path-Utility Unification (PUU) 将 verifier 奖励与 teacher-to-anchor 路径对数比结合在 KL 正则化目标中，on-policy 实现使用长度归一化 teacher 分数，在组归一化和 PPO 裁剪前合并两种奖励。Entropy-Calibrated Redistribution (ECR) 使用带符号的 teacher-old-policy token 差距重分配 verifier 分量，全词表 teacher 熵衰减不确定指导，响应级零和投影保持总任务信用与 token 符号。在五个数学推理基准上，Qwen3-1.7B 和 Qwen3-4B 学生 Avg@12 分别达 17.21% 和 65.09%，各规模超最强基线 0.89 和 0.56 个百分点。",
+    "analysis": "该工作针对 RLVR 仅提供最终答案监督、OPD 教师偏好未必反映正确性的问题，提出在组归一化前融合 verifier 与 teacher 信号，并用熵校准重分配 token 信用。方法设计细致，兼顾响应排序与 token 级信用保持。提升幅度较小（<1 个百分点），但方向明确。局限在于仅在数学推理与 Qwen3 系列上验证，跨领域与跨模型泛化待确认。",
+    "technical_value": "高。PUU 与 ECR 提供可复用的 RLVR+蒸馏融合机制，对 token 级信用分配有方法学贡献。",
+    "impact": "可能推动 RLVR 与 on-policy 蒸馏的进一步融合，影响数学推理模型的后训练策略。",
+    "keywords": [
+      "GRPO",
+      "on-policy distillation",
+      "RLVR",
+      "entropy calibration",
+      "credit assignment",
+      "mathematical reasoning"
+    ]
+  },
+  {
+    "id": "69e1fb158ded63b8",
+    "title": "Your Agent Aced the Task. Will It Do It Again?",
+    "summary": "",
+    "published_at": "Tue, 15 Sep 2026 16:00:44 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 6,
+    "facts": "Hugging Face 博客文章，标题为 'Your Agent Aced the Task. Will It Do It Again?'，由 IBM Research 发布，URL 指向 altk-evolve-consistency。摘要为空。",
+    "analysis": "从标题与来源推断，文章关注 agent 任务成功后的可重复性与一致性评估，属于 agent 可靠性方向。由于缺少摘要与正文，无法确认具体方法、指标或结论，分析仅基于标题语义。",
+    "technical_value": "待确认。若涉及一致性评测框架或演化方法，可能对 agent 可靠性工程有参考价值。",
+    "impact": "待确认。主题契合当前 agent 从'能完成'到'稳定完成'的行业关注点。",
+    "keywords": [
+      "agent consistency",
+      "reproducibility",
+      "IBM Research",
+      "evaluation"
+    ]
+  },
+  {
+    "id": "c8754172bb3bf73f",
+    "title": "Give Your Coding Agents a Memory You Own",
+    "summary": "",
+    "published_at": "Thu, 03 Sep 2026 00:00:00 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/funes",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 6,
+    "facts": "Hugging Face 博客文章，标题为 'Give Your Coding Agents a Memory You Own'，URL 指向 funes。摘要为空。",
+    "analysis": "标题暗示面向编码 agent 的自有记忆方案，可能涉及记忆存储、检索或所有权/隐私控制。缺少正文，无法确认技术细节与实现方式。",
+    "technical_value": "待确认。若提供可自托管的 agent 记忆组件，对编码 agent 的上下文管理与个性化有实用价值。",
+    "impact": "待确认。契合 agent 记忆与数据主权趋势。",
+    "keywords": [
+      "coding agent",
+      "memory",
+      "self-hosted",
+      "context management"
+    ]
+  }
+]

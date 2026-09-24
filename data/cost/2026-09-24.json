@@ -1,0 +1,12 @@
+[
+  {
+    "date": "2026-09-24",
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "task": "daily_analysis",
+    "input_tokens": 3193,
+    "output_tokens": 3629,
+    "estimated_cost_rmb": null,
+    "daily_budget_rmb": 0.5
+  }
+]
