@@ -548,5 +548,27 @@
     "code_size": "约 3000–6000 行（含训练与集成）",
     "v2": "扩展至多环境统一 Action Judge，加入在线 AEWM 引导与 AEWM-RFT 离线微调，支持多模态观测与跨智能体迁移。",
     "status": "idea"
+  },
+  {
+    "date": "2026-09-25",
+    "name_zh": "视频代理助手",
+    "name_en": "Video Agent Assistant",
+    "tagline": "让 AI 主动理解并操作你的视频内容",
+    "why_today": "多模态大模型和代理技术已足够成熟，可以构建能理解视频并执行任务的智能助手。",
+    "scenarios": [
+      "自动视频剪辑",
+      "智能监控",
+      "视频内容问答",
+      "辅助驾驶"
+    ],
+    "flow": "用户上传视频 -> 代理分解任务 -> 多模态模型理解内容 -> 规划并执行操作（如剪辑、标注）-> 返回结果",
+    "ai_role": "核心：多模态理解、任务规划、工具调用",
+    "stack": "Gemini API、LangChain、OpenCV、FFmpeg",
+    "mvp": "实现视频问答和简单剪辑功能",
+    "difficulty": "中等",
+    "time": "2-4周",
+    "code_size": "约2000行",
+    "v2": "增加实时视频流处理和复杂任务自动化",
+    "status": "idea"
   }
 ]

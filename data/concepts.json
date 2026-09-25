@@ -328,5 +328,17 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2609.28416v1"
     ]
+  },
+  {
+    "date": "2026-09-25",
+    "name_zh": "代理式视频理解",
+    "name_en": "Agentic Video Understanding",
+    "score": 8.5,
+    "maturity": "Emerging",
+    "explanation": "代理式视频理解是指 AI 代理能够主动分析、推理和操作视频内容，而不仅仅是被动识别。它结合了多模态感知、任务规划和工具使用，使 AI 能根据视频内容执行复杂任务。",
+    "why_now": "随着多模态模型和代理框架的成熟，视频理解正从静态分析转向动态交互，满足自动化视频编辑、监控、辅助驾驶等需求。",
+    "evidence_urls": [
+      "https://deepmind.google/blog/introducing-agentic-video-in-gemini/"
+    ]
   }
 ]

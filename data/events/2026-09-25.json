@@ -1,0 +1,127 @@
+[
+  {
+    "id": "204cc4ef541aa343",
+    "title": "Introducing agentic video understanding with Gemini",
+    "summary": "",
+    "published_at": "Tue, 01 Sep 2026 17:08:51 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 8.5,
+    "facts": "Google DeepMind 发布博客，介绍 Gemini 中的 agentic video understanding 功能。",
+    "analysis": "该功能使 AI 能够主动理解视频内容，可能涉及多模态推理和任务规划，标志着视频理解从被动分析向主动代理转变。",
+    "technical_value": "高：结合代理与视频理解，可能推动视频问答、自动编辑等应用。",
+    "impact": "可能改变视频内容分析、监控、媒体制作等行业。",
+    "keywords": [
+      "Gemini",
+      "视频理解",
+      "代理",
+      "多模态"
+    ]
+  },
+  {
+    "id": "295e3a83fd6fbde0",
+    "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+    "summary": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome.",
+    "published_at": "Tue, 08 Sep 2026 14:00:15 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 4.9,
+    "ai_score": 8.5,
+    "facts": "Google DeepMind 发布 AlphaGenome Atlas，预测人类基因组中 90 亿个单字母 DNA 变异的分子效应。",
+    "analysis": "该工作利用 AI 预测基因变异影响，可能加速遗传病研究和药物开发。",
+    "technical_value": "高：大规模基因组预测模型，推动计算生物学。",
+    "impact": "对医学、生物技术产生深远影响。",
+    "keywords": [
+      "基因组",
+      "AlphaGenome",
+      "变异预测",
+      "生物信息学"
+    ]
+  },
+  {
+    "id": "a5b5573760534fe5",
+    "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+    "summary": "",
+    "published_at": "Thu, 03 Sep 2026 15:02:08 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 8.0,
+    "facts": "Google DeepMind 发布 WeatherNext 3，号称最先进且准确的全球天气 AI 模型。",
+    "analysis": "该模型可能利用深度学习提升天气预报精度，对气候科学和灾害预警有重要意义。",
+    "technical_value": "高：先进的气象预测模型，可能涉及大规模时空序列预测。",
+    "impact": "对农业、交通、灾害管理等领域有重大影响。",
+    "keywords": [
+      "天气预测",
+      "AI模型",
+      "DeepMind",
+      "气候"
+    ]
+  },
+  {
+    "id": "69e1fb158ded63b8",
+    "title": "Your Agent Aced the Task. Will It Do It Again?",
+    "summary": "",
+    "published_at": "Tue, 15 Sep 2026 16:00:44 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 7.5,
+    "facts": "Hugging Face 博客发布 IBM Research 的文章，讨论代理任务一致性的评估。",
+    "analysis": "文章关注代理在重复执行任务时的稳定性，这是代理可靠性的关键问题，可能提出新的评估方法或框架。",
+    "technical_value": "中高：为代理评估提供新思路，促进可靠代理的发展。",
+    "impact": "对依赖代理自动化的行业有影响，如客服、自动化流程。",
+    "keywords": [
+      "代理",
+      "一致性",
+      "评估",
+      "可靠性"
+    ]
+  },
+  {
+    "id": "47f2ab12df583672",
+    "title": "Introducing Gemini 3.8 Live with Live Avatar",
+    "summary": "",
+    "published_at": "Thu, 24 Sep 2026 16:20:39 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 4.9,
+    "ai_score": 7.5,
+    "facts": "Google DeepMind 发布 Gemini 3.8 Live with Live Avatar。",
+    "analysis": "该版本引入实时虚拟形象，增强交互体验，可能用于虚拟助手、直播等。",
+    "technical_value": "中高：集成实时 avatar 生成与交互。",
+    "impact": "推动虚拟人、远程呈现应用。",
+    "keywords": [
+      "Gemini",
+      "实时",
+      "虚拟形象",
+      "交互"
+    ]
+  }
+]
