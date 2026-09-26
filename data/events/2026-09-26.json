@@ -1,0 +1,127 @@
+[
+  {
+    "id": "204cc4ef541aa343",
+    "title": "Introducing agentic video understanding with Gemini",
+    "summary": "",
+    "published_at": "Tue, 01 Sep 2026 17:08:51 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 8.5,
+    "facts": "Google DeepMind 发布博客，介绍 Gemini 中的 agentic 视频理解能力。",
+    "analysis": "该发布标志着视频理解从被动分析转向主动代理式交互，可能涉及多模态推理、工具调用和长视频处理。",
+    "technical_value": "高：代理式视频理解需要结合视觉编码、时序推理和决策规划，是 multimodal agent 的重要进展。",
+    "impact": "可能推动视频编辑、监控、教育等领域的自动化，并加剧与 OpenAI、Anthropic 的竞争。",
+    "keywords": [
+      "Gemini",
+      "agentic video",
+      "multimodal",
+      "video understanding"
+    ]
+  },
+  {
+    "id": "295e3a83fd6fbde0",
+    "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+    "summary": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome.",
+    "published_at": "Tue, 08 Sep 2026 14:00:15 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 4.9,
+    "ai_score": 8.0,
+    "facts": "Google DeepMind 发布 AlphaGenome Atlas，预测人类基因组中 90 亿个单字母 DNA 变异的分子效应。",
+    "analysis": "该工作将 AI 应用于基因组学，提供大规模变异效应预测，可能加速疾病研究和药物开发。",
+    "technical_value": "高：涉及基因组语言模型和大规模预测，是 AI for Science 的里程碑。",
+    "impact": "对遗传学、医学和生物技术产生深远影响。",
+    "keywords": [
+      "AlphaGenome",
+      "genomics",
+      "DNA variants",
+      "AI for science"
+    ]
+  },
+  {
+    "id": "a5b5573760534fe5",
+    "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+    "summary": "",
+    "published_at": "Thu, 03 Sep 2026 15:02:08 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 7.5,
+    "facts": "Google DeepMind 发布 WeatherNext 3，称其为最先进、准确的全球天气 AI 模型。",
+    "analysis": "天气预测是 AI for Science 的重要应用，高精度模型可改善灾害预警和气候研究。",
+    "technical_value": "高：可能采用新的架构或训练方法，提升时空预测能力。",
+    "impact": "对气象行业、农业、航空等产生实际影响，并展示 AI 在科学计算中的潜力。",
+    "keywords": [
+      "WeatherNext",
+      "weather forecasting",
+      "AI for science",
+      "climate"
+    ]
+  },
+  {
+    "id": "69e1fb158ded63b8",
+    "title": "Your Agent Aced the Task. Will It Do It Again?",
+    "summary": "",
+    "published_at": "Tue, 15 Sep 2026 16:00:44 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 7.0,
+    "facts": "Hugging Face 博客发布 IBM Research 关于 agent 任务一致性的文章，探讨 agent 能否重复成功。",
+    "analysis": "该研究关注 agent 的可靠性和可重复性，是 agent 从演示走向生产的关键挑战。",
+    "technical_value": "中高：涉及评估方法、一致性度量，可能提出新的基准或框架。",
+    "impact": "提升企业采用 agent 的信心，推动标准化评估。",
+    "keywords": [
+      "agent",
+      "consistency",
+      "reliability",
+      "evaluation"
+    ]
+  },
+  {
+    "id": "47f2ab12df583672",
+    "title": "Introducing Gemini 3.8 Live with Live Avatar",
+    "summary": "",
+    "published_at": "Thu, 24 Sep 2026 16:20:39 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 4.9,
+    "ai_score": 7.0,
+    "facts": "Google DeepMind 发布 Gemini 3.8 Live with Live Avatar。",
+    "analysis": "实时 avatar 结合多模态交互，可能用于虚拟助手、游戏和社交。",
+    "technical_value": "中高：涉及实时生成、唇形同步和低延迟推理。",
+    "impact": "增强人机交互体验，推动虚拟人应用。",
+    "keywords": [
+      "Gemini",
+      "Live Avatar",
+      "real-time",
+      "multimodal"
+    ]
+  }
+]
