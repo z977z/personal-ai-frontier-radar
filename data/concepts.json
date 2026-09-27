@@ -352,5 +352,18 @@
     "evidence_urls": [
       "https://deepmind.google/blog/introducing-agentic-video-in-gemini/"
     ]
+  },
+  {
+    "date": "2026-09-27",
+    "name_zh": "智能体式程序合成",
+    "name_en": "Agentic Program Synthesis",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "指由编码智能体在给定任务描述与环境访问权限下，自主决定交互方式、迭代生成并精炼可执行程序，最终在未见实例上冻结评估的范式。其核心是把领域知识固化为可泛化程序，而非依赖手工工程或单次生成。",
+    "why_now": "近期多项工作（广义 TAMP、机器人示教编程）显示编码智能体在复杂规划与机器人任务中可超越手工规划器与一次性生成基线，且能通过交互校准物理模型、测试边界情况，使自动程序合成从软件任务扩展到具身与规划领域。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.30233v1",
+      "https://arxiv.org/abs/2609.30249v1"
+    ]
   }
 ]
