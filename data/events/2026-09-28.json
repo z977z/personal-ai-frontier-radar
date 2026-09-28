@@ -1,0 +1,136 @@
+[
+  {
+    "id": "1024eaf2d6b84b60",
+    "title": "DeepEdu-v1: Efficient and Scalable Agentic LLMs for Vietnamese Education",
+    "summary": "AI tutoring could markedly improve learning outcomes for students in developing regions such as Vietnam, yet the two obvious paths both fall short. Cloud assistants such as ChatGPT route sensitive student data to foreign servers---violating data-sovereignty laws such as Vietnam's Decree 53---and, pre-trained on Western-centric corpora, are not organized around the national textbook curriculum, so their knowledge of local content is unsystematic and frequently hallucinated. Self-hosting an open model keeps data on-premise but hits a two-fold wall: post-training quantization (AWQ, GPTQ) tames the static weight footprint, yet the dynamic KV cache and prefill latency of long tutoring contexts still cause out-of-memory failures and slow responses on consumer GPUs, while the model keeps hallucinating on region-specific material. We present DeepEdu-v1, an AI-tutoring system for Vietnamese education built on SCALE (Self-improving Context-Aware Learning Engine), a framework with two innovations. First, a long-context inference engine amortizes token selection from per-sub-chunk to per-cluster granularity; on long-context retrieval it issues x7.7 fewer retrieval calls than a state-of-the-art selective-attention baseline, cutting prefill latency (TTFT) by roughly 35% while matching or improving task accuracy. Second, a self-improving agentic layer continuously curates a verified playbook from past interactions instead of fine-tuning, a design intended to progressively reduce reliance on dominant-language priors as trustworthy local knowledge accumulates. In its deployed configuration, DeepEdu achieves a nearly x2 TTFT speedup over standard vLLM serving and lifts agentic accuracy from 70.0% to 79.5% on complex tasks, with the strongest per-track gains across financial-reasoning and",
+    "published_at": "2026-09-25T17:33:41Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.31568v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.9,
+    "ai_score": 7.5,
+    "facts": "论文提出DeepEdu-v1，一个面向越南教育的AI辅导系统，基于SCALE（Self-improving Context-Aware Learning Engine）框架。SCALE包含两项创新：一是长上下文推理引擎，将token选择从每个子块粒度摊销到每个簇粒度，在长上下文检索中比最先进的选择性注意力基线减少7.7倍检索调用，将预填充延迟（TTFT）降低约35%，同时匹配或提升任务准确率；二是自改进智能体层，从过往交互中持续整理经过验证的playbook，而非微调。部署配置下，DeepEdu相比标准vLLM服务实现近2倍TTFT加速，并将复杂任务上的智能体准确率从70.0%提升至79.5%，在金融推理等赛道增益最强。",
+    "analysis": "该工作针对发展中国家教育场景中数据主权与本地化知识两大痛点，提出不依赖微调的自改进智能体方案，思路具有差异化。长上下文推理的簇级摊销策略在工程上具备可迁移性，但论文摘要未披露完整实验细节与基线对比范围，需关注其泛化性与实际部署成本。",
+    "technical_value": "簇级token选择摊销降低检索调用与TTFT，自改进playbook替代微调以积累本地可信知识，两项技术对长上下文推理与领域适配均有参考价值。",
+    "impact": "若验证充分，可推动主权合规的本地化教育AI落地，并为长上下文推理优化提供新思路，对东南亚等地区教育AI部署有示范意义。",
+    "keywords": [
+      "教育AI",
+      "长上下文推理",
+      "自改进智能体",
+      "数据主权",
+      "越南教育",
+      "TTFT优化"
+    ]
+  },
+  {
+    "id": "0b3ae1a24777592d",
+    "title": "Learning to Stop without Learning to Stop: Self-Supervised Confidence Training Improves Reasoning Efficiency",
+    "summary": "Reasoning models often generate very long reasoning traces, making inference computationally expensive. Existing approaches typically improve efficiency either through inference-time early-stopping mechanisms or by explicitly encouraging shorter reasoning during training, for example through reinforcement learning with length penalties. We show that substantial efficiency gains can instead emerge from a different kind of supervision: \\textit{confidence}. Using a self-supervised procedure, we fine-tune reasoning models to predict their confidence in the answer at intermediate points along their own reasoning trajectories using only 600 training problems. Confidence is used only as a training target: the loss contains no objective for reasoning length, efficiency, or stopping. At inference, the fine-tuned models use the standard generation procedure, with no confidence elicitation or early-stopping mechanism. Despite this, self-supervised confidence fine-tuning makes reasoning more efficient, reducing generated tokens by up to 25\\% at matched accuracy across Gemma, Qwen, Nemotron, and GPT-OSS models on mathematical, scientific, and coding reasoning benchmarks, with efficiency gains comparable to methods that explicitly optimize for shorter reasoning. Analysis of reasoning episodes further shows that confidence supervision largely preserves the base models' high-level reasoning composition rather than selectively suppressing particular behaviors. Our results suggest that efficient reasoning may emerge as a downstream consequence of learning metacognitive signals, without being directly optimized.",
+    "published_at": "2026-09-25T17:59:52Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.31619v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 7.0,
+    "facts": "论文提出一种自监督置信度微调方法：仅用600道训练题，让推理模型在自身推理轨迹的中间点预测对答案的置信度。置信度仅作为训练目标，损失函数中不含推理长度、效率或停止的优化目标。推理时使用标准生成流程，无置信度引出或早停机制。在Gemma、Qwen、Nemotron和GPT-OSS模型上，数学、科学和编码推理基准中，匹配准确率下生成token最多减少25%，效率增益与显式优化短推理的方法相当。分析显示置信度监督基本保留了基座模型的高层推理构成。",
+    "analysis": "该工作揭示了一种反直觉现象：仅通过自监督元认知信号训练，即可在不显式优化效率的情况下获得推理效率提升。方法简洁、训练成本低（600题），且跨模型家族有效，具备较强可复现性与实用潜力。但摘要未说明置信度预测的具体形式与校准质量，需关注其在不同推理任务上的稳定性。",
+    "technical_value": "以置信度作为唯一训练目标实现推理效率提升，无需推理时干预或长度惩罚，为推理效率优化提供了新的训练范式。",
+    "impact": "若广泛适用，可降低推理模型部署成本，并启发对元认知信号与推理效率关系的进一步研究，对推理模型训练与推理优化均有影响。",
+    "keywords": [
+      "推理效率",
+      "置信度",
+      "自监督微调",
+      "元认知",
+      "早停",
+      "token压缩"
+    ]
+  },
+  {
+    "id": "cee2da23933edcd4",
+    "title": "Multi-agent Scaling Across Disjunctive and Compensatory Tasks",
+    "summary": "Multi-agent LLM systems are often expected to improve as team size increases, yet the scaling behavior may depend on task structure. Our central contribution is to introduce Steiner's taxonomy of group tasks as a framework for analyzing multi-agent LLM scaling and focusing the analysis on disjunctive and compensatory tasks. We model independently sampled agents as conditionally independent given the item, which yields their large-team limits: plurality voting converges to the model's modal answer, and averaging converges to the model's item-level bias. Across selected representative benchmarks, 13 open-weight models, and teams of up to 30 agents, we find qualitatively different scaling behavior. On disjunctive tasks, the probability that at least one agent is correct grows by 5-20 points with team size, but plurality voting over agents that answer directly realises almost none of this potential, as the model predicts to within 0.5 points on average. Multi-round revision raises accuracy considerably, yet the gain is nearly the same with one peer as with 29. In contrast, scaling provides little benefit on Fermi estimation, despite its natural suitability for aggregation: item-level biases shared across the samples of a model account for about 87% of the squared error, so averaging reduces error by only about 6%. Combining model families helps on Fermi estimation but does not surpass the strongest member on disjunctive tasks. These results show that task structure, together with the mechanism combining member outputs, is a fundamental determinant of team scaling.",
+    "published_at": "2026-09-25T17:29:15Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.31563v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 6.5,
+    "facts": "论文引入Steiner的群体任务分类法作为分析多智能体LLM扩展的框架，聚焦析取任务与补偿任务。将独立采样的智能体建模为在给定项目下条件独立，得出大团队极限：多数投票收敛于模型的众数答案，平均收敛于模型的项目级偏差。在选定代表性基准、13个开源权重模型和最多30个智能体的团队上，发现定性不同的扩展行为。析取任务上，至少一个智能体正确的概率随团队规模增长5-20个百分点，但直接回答的多数投票几乎未实现该潜力，模型预测平均误差在0.5个百分点内。多轮修订显著提高准确率，但1个同伴与29个同伴的增益几乎相同。补偿任务（如Fermi估计）上扩展收益甚微，项目级偏差约占平方误差的87%，平均仅降低约6%误差。混合模型家族在Fermi估计上有帮助，但在析取任务上未超越最强成员。",
+    "analysis": "该工作以任务结构为切入点，系统揭示多智能体LLM扩展的边界条件，理论建模与大规模实验结合，结论具有较强说服力。其核心启示是团队规模并非万能，任务结构与输出聚合机制才是关键决定因素，对多智能体系统设计有直接指导意义。",
+    "technical_value": "提出基于Steiner分类法的分析框架，给出大团队极限的理论刻画，并通过13个模型、30智能体的实验验证，为多智能体扩展提供可复用的评估方法。",
+    "impact": "可能改变业界对多智能体系统“越大越好”的预期，推动按任务结构设计聚合机制与团队规模，对多智能体LLM应用架构有重要影响。",
+    "keywords": [
+      "多智能体",
+      "LLM扩展",
+      "任务结构",
+      "析取任务",
+      "补偿任务",
+      "聚合机制"
+    ]
+  },
+  {
+    "id": "dbd057fb72585000",
+    "title": "Compact Documentation for Coding Agents: A Benchmark, an Optimizer, and Why It Does Not Transfer",
+    "summary": "We investigate whether natural-language documentation helps coding agents resolve software issues, and we build the tools to construct and evaluate it. We introduce a roundtrip benchmark that scores code descriptions by whether code regenerated from them passes the original tests, and show that completeness, not length, drives a description's fidelity. Using the benchmark as an optimization signal, we discover a description-writing prompt that reaches full fidelity and generalizes to unseen files. We then test the hypothesis that motivated the work: that better documentation helps an agent resolve real repository issues. Across two model families and ten repositories, and against a positive control confirming that our evaluation can detect a genuine improvement, we find that it does not. When the source is present, neither static compact documentation nor retrieved context beats the issue alone. We report this negative result together with the benchmark and the optimizer, and we characterize the boundary at which documentation helps.",
+    "published_at": "2026-09-25T17:42:22Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.31587v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 6.0,
+    "facts": "论文研究自然语言文档是否帮助编码智能体解决软件问题，并构建了工具进行构建与评估。提出roundtrip基准，通过从代码描述重新生成的代码是否通过原始测试来评分描述质量，表明完整性而非长度决定描述保真度。以该基准为优化信号，发现一个描述写作提示可达到完全保真度并泛化到未见文件。随后测试核心假设：更好的文档是否帮助智能体解决真实仓库问题。在两个模型家族和十个仓库上，并设有阳性对照确认评估能检测真实改进，结果发现并不帮助。当源代码存在时，静态紧凑文档和检索上下文均未优于仅提供issue。论文报告了这一负面结果及基准与优化器，并刻画了文档有帮助的边界。",
+    "analysis": "该工作以严谨的对照实验给出负面结果，对当前编码智能体依赖文档增强的假设提出质疑。roundtrip基准与优化器本身具有工具价值，但结论受限于所选模型、仓库与任务类型，需关注其边界条件的普适性。",
+    "technical_value": "roundtrip基准以测试通过率衡量描述保真度，提供可复用的文档质量评估方法；负面结果有助于避免在编码智能体流程中过度投入文档增强。",
+    "impact": "可能促使编码智能体研究重新审视文档与检索增强的实际收益，推动更精细的上下文利用策略，对AI辅助软件开发实践有纠偏意义。",
+    "keywords": [
+      "编码智能体",
+      "文档",
+      "基准测试",
+      "负面结果",
+      "检索增强",
+      "软件工程"
+    ]
+  },
+  {
+    "id": "204cc4ef541aa343",
+    "title": "Introducing agentic video understanding with Gemini",
+    "summary": "",
+    "published_at": "Tue, 01 Sep 2026 17:08:51 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 6.0,
+    "facts": "Google DeepMind发布博客，介绍Gemini中的智能体视频理解能力。",
+    "analysis": "官方博客通常展示产品化能力，智能体视频理解意味着模型可对视频进行多步推理与操作，可能拓展多模态智能体在视频分析、交互等场景的应用。但摘要为空，具体能力边界、可用性与技术细节需查阅原文。",
+    "technical_value": "智能体视频理解将多模态感知与智能体决策结合，可能推动视频理解从被动识别向主动任务执行演进。",
+    "impact": "若能力成熟，可影响视频分析、内容创作、教育等领域的AI应用形态，并加剧多模态智能体竞争。",
+    "keywords": [
+      "智能体",
+      "视频理解",
+      "Gemini",
+      "多模态",
+      "Google DeepMind"
+    ]
+  }
+]

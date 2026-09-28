@@ -365,5 +365,19 @@
       "https://arxiv.org/abs/2609.30233v1",
       "https://arxiv.org/abs/2609.30249v1"
     ]
+  },
+  {
+    "date": "2026-09-28",
+    "name_zh": "智能体化推理效率与多智能体扩展",
+    "name_en": "Agentic Reasoning Efficiency and Multi-Agent Scaling",
+    "score": 7.5,
+    "maturity": "Emerging",
+    "explanation": "该概念涵盖两个相互关联的前沿方向：一是通过自监督置信度、长上下文推理优化等手段提升智能体推理效率；二是研究多智能体系统在不同任务结构下的扩展规律与聚合机制。两者共同指向智能体从单次演示走向可靠、高效、可扩展部署的核心挑战。",
+    "why_now": "推理模型生成冗长推理链导致成本高企，多智能体系统被广泛期待但扩展收益依赖任务结构，同时本地化与主权合规需求推动高效自托管方案，这些因素共同使该方向成为当前研究热点。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.31619v1",
+      "https://arxiv.org/abs/2609.31563v1",
+      "https://arxiv.org/abs/2609.31568v1"
+    ]
   }
 ]
