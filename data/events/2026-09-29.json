@@ -1,0 +1,126 @@
+[
+  {
+    "id": "bfe5b3143f6e9e59",
+    "title": "FinAutoRubric: Expert-Guided Automatic Rubric Generation for Evaluating Financial Research Agents",
+    "summary": "Evaluating finance research agents requires rubrics that reflect expert standards and fix the values correct as of an information cutoff. Expert-reviewed finance benchmarks rely on fixed, per-item rubrics, which are costly to extend and cannot encode each institution's own standard. In FinAutoRubric, experts specify reusable evaluation guidance, while agents and code carry out query-specific rubric generation, review, and validation. This expert guidance governs every agent, as prompts and as rules that code enforces, and a Task Bank of reusable criteria carries it across tasks. In long-horizon loops that follow the expert guidance, a writer agent researches every expected value and a reviewer agent verifies it, and failures escalate to a human. On three expert-authored finance benchmarks, its rubrics track expert scoring as closely as the strongest evaluated generator while stating the expert rubric's expected value for more criteria, their scores agree with human grading, and in-house analysts prefer them in a blind review. The released 100-query FinAutoRubric Benchmark, built from in-house analysts' key questions across 78 tasks and eight asset classes, shows that rubrics from an earlier model generation still leave headroom for a later one.",
+    "published_at": "2026-09-28T17:55:06Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.35744v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.7,
+    "ai_score": 8.5,
+    "facts": "FinAutoRubric 提出专家引导的自动评分标准生成方法，用于评估金融研究智能体。专家指定可复用的评估指导，智能体和代码执行查询特定的评分标准生成、审查和验证。在长周期循环中，写作智能体研究每个预期值，审查智能体验证，失败升级至人类。在三个专家编写的金融基准上，其评分标准与专家评分跟踪紧密，在更多标准上陈述专家评分标准的预期值，分数与人工评分一致，内部分析师在盲审中更偏好它们。发布的 100 查询 FinAutoRubric 基准来自内部分析师在 78 个任务和八个资产类别中的关键问题，显示早期模型生成的评分标准仍为后续模型留下提升空间。",
+    "analysis": "该工作针对金融领域智能体评估中专家评分标准成本高、难以扩展和定制的问题，提出了一种结合专家指导与自动化生成的混合方法。其核心创新在于将专家知识编码为可复用的提示和规则，并通过智能体协作实现动态评分标准生成与验证，同时引入人类升级机制保证质量。实验表明该方法在多个基准上达到与最强生成器相当的专家一致性，且在实际分析师盲审中更受青睐，表明其具有较高的实用价值。",
+    "technical_value": "高。提供了一种可扩展的专家引导自动评分标准生成框架，解决了金融领域评估中专家标准难以规模化的问题，且开源了基准数据集，促进了可重复研究。",
+    "impact": "对金融 AI 智能体的评估和部署有直接影响，可降低评估成本，提高评估的领域适应性，并可能推动金融领域智能体标准化评估的发展。",
+    "keywords": [
+      "金融智能体",
+      "自动评分标准",
+      "专家引导",
+      "评估基准",
+      "金融研究"
+    ]
+  },
+  {
+    "id": "ab7a62abdd555545",
+    "title": "TokenCast: Forecasting Token Consumption During LLM Agent Execution",
+    "summary": "When a large language model (LLM) agent executes the same task, token consumption can vary by over an order of magnitude across runs. The agent chooses its next steps based on tool feedback and intermediate results, while the growing context steadily inflates the input size of every subsequent call. The total consumption of a task is therefore hard to predict before execution and the prediction must be revised as the run unfolds. In this paper, we propose TokenCast, which learns a composable cost representation for each execution segment, recording its own consumption and the context growth it introduces. Composing adjacent segments yields a cumulative estimate that captures the extra input cost incurred when context from earlier segments is re-read by every later call. As execution unfolds, newly observed evidence refreshes the forecast, requiring no additional LLM calls and incurring a mean cumulative prediction time of 32.8 ms per run on SWE-bench Verified. Across 4 task suites and 6 agent models, TokenCast's mean absolute error reduction against the strongest comparator averages 14.5% over 96 evaluated combinations. In offline budget-control replay, TokenCast uses 21.3% fewer tokens on average than a fixed-budget policy at matched trace completion. The code is available at https://github.com/DEFENSE-SEU/TokenCast.",
+    "published_at": "2026-09-28T17:59:09Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.35760v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.3,
+    "ai_score": 7.5,
+    "facts": "TokenCast 提出预测 LLM 智能体执行期间 token 消耗的方法。同一任务多次运行 token 消耗可能相差一个数量级。TokenCast 为每个执行段学习可组合的成本表示，记录自身消耗和引入的上下文增长。组合相邻段得到累积估计，捕捉早期段上下文被后续调用重新读取的额外输入成本。随着执行展开，新观察到的证据刷新预测，无需额外 LLM 调用，在 SWE-bench Verified 上平均累积预测时间为每次运行 32.8 毫秒。在 4 个任务套件和 6 个智能体模型上，TokenCast 相对于最强比较器的平均绝对误差降低平均为 14.5%（96 个评估组合）。在离线预算控制重放中，TokenCast 在匹配轨迹完成时比固定预算策略平均少用 21.3% 的 token。代码已在 GitHub 开源。",
+    "analysis": "TokenCast 解决了 LLM 智能体执行中 token 消耗难以预测的问题，这对于成本控制和资源分配至关重要。其创新点在于将执行分解为段，学习可组合的成本表示，并动态更新预测，无需额外 LLM 调用，效率高。实验表明在多个任务和模型上显著降低预测误差，并在预算控制中节省 token。",
+    "technical_value": "高。提供了一种高效、准确的 token 消耗预测方法，可集成到智能体框架中，优化资源使用。",
+    "impact": "对 LLM 智能体的成本管理和部署有直接帮助，可降低运营成本，提高预算控制能力。",
+    "keywords": [
+      "token 预测",
+      "LLM 智能体",
+      "成本控制",
+      "预算管理"
+    ]
+  },
+  {
+    "id": "e1daae41a1bd441f",
+    "title": "Holo4: powering generalist computer-use agents",
+    "summary": "",
+    "published_at": "Mon, 28 Sep 2026 09:44:05 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/Hcompany/holo4",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 7.0,
+    "facts": "Holo4 是一个通用计算机使用智能体，发布在 Hugging Face 博客上，但摘要为空。",
+    "analysis": "由于缺乏具体内容，仅从标题推断，Holo4 可能是一个旨在提升计算机使用智能体通用性的模型或框架。计算机使用智能体是当前 AI 智能体的重要方向，能够操作图形界面完成复杂任务。但缺乏细节，无法评估其技术贡献。",
+    "technical_value": "未知，需进一步信息。",
+    "impact": "可能推动通用计算机使用智能体的发展，但影响程度取决于具体技术细节。",
+    "keywords": [
+      "计算机使用智能体",
+      "通用智能体",
+      "Holo4"
+    ]
+  },
+  {
+    "id": "69e1fb158ded63b8",
+    "title": "Your Agent Aced the Task. Will It Do It Again?",
+    "summary": "",
+    "published_at": "Tue, 15 Sep 2026 16:00:44 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 6.5,
+    "facts": "标题为“Your Agent Aced the Task. Will It Do It Again?”，来自 Hugging Face 博客，摘要为空。",
+    "analysis": "从标题推测，该文章可能讨论智能体任务执行的一致性和可重复性问题。智能体在单次任务中表现优异，但能否稳定重复成功是关键挑战。这可能涉及评估方法、鲁棒性改进或一致性度量。",
+    "technical_value": "可能提供关于智能体一致性的评估框架或改进方法，但缺乏细节。",
+    "impact": "对智能体在实际部署中的可靠性有重要意义。",
+    "keywords": [
+      "智能体一致性",
+      "可重复性",
+      "评估"
+    ]
+  },
+  {
+    "id": "90b999ec1cb453ce",
+    "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+    "summary": "",
+    "published_at": "Mon, 21 Sep 2026 13:44:34 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+        "type": "official"
+      }
+    ],
+    "pre_score": 4.9,
+    "ai_score": 6.5,
+    "facts": "标题为“Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem”，来自 Hugging Face 博客，摘要为空。",
+    "analysis": "该文章可能提出一种新的 LLM 剪枝方法，将块移除视为 Ising 优化问题。这借鉴了物理学中的优化方法，可能提供更高效的剪枝策略。",
+    "technical_value": "可能提供创新的剪枝算法，但缺乏细节。",
+    "impact": "对 LLM 压缩和高效推理有潜在影响。",
+    "keywords": [
+      "LLM 剪枝",
+      "Ising 模型",
+      "优化",
+      "模型压缩"
+    ]
+  }
+]

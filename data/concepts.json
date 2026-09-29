@@ -379,5 +379,19 @@
       "https://arxiv.org/abs/2609.31563v1",
       "https://arxiv.org/abs/2609.31568v1"
     ]
+  },
+  {
+    "date": "2026-09-29",
+    "name_zh": "智能体评估与优化",
+    "name_en": "Agent Evaluation and Optimization",
+    "score": 8.0,
+    "maturity": "Emerging",
+    "explanation": "智能体评估与优化涵盖对 AI 智能体性能、可靠性、成本效率的评估和改进方法。包括自动评分标准生成、一致性评估、token 消耗预测等。随着智能体在复杂任务中的应用增多，如何可靠地评估和优化其行为成为关键挑战。",
+    "why_now": "LLM 智能体正从研究走向实际部署，但在金融、软件工程等领域的评估仍依赖昂贵的人工专家，且执行成本难以预测。近期研究如 FinAutoRubric 和 TokenCast 提供了自动化评估和成本预测的解决方案，推动了该领域的发展。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.35744v1",
+      "https://arxiv.org/abs/2609.35760v1",
+      "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
+    ]
   }
 ]
