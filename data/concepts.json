@@ -393,5 +393,17 @@
       "https://arxiv.org/abs/2609.35760v1",
       "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
     ]
+  },
+  {
+    "date": "2026-09-30",
+    "name_zh": "智能体元推理",
+    "name_en": "Agentic Meta-Reasoning",
+    "score": 8.5,
+    "maturity": "Emerging",
+    "explanation": "Agentic meta-reasoning 是一种推理时控制框架，将 agent 执行过程中的控制决策（如选择部分工作、重新开始、停止）提升为显式的结构化推理过程。Worker 负责任务级计算，Controller 负责整合状态、探索选项、评估预算并派发工作，同时维护持久记忆和紧凑状态表示。",
+    "why_now": "随着 agent 处理更长更复杂的任务，控制执行本身成为瓶颈。传统直接控制策略在长时程任务上容易平台化，而 meta-reasoning 通过显式控制层持续改进，在多个前沿模型和基准上验证有效。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.38147v1"
+    ]
   }
 ]

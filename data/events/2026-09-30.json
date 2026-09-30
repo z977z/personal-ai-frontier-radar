@@ -1,0 +1,127 @@
+[
+  {
+    "id": "0de238eb664b3384",
+    "title": "Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning",
+    "summary": "As agents take on longer and more complex problems, controlling the execution becomes a task in its own right. Each step in the run brings new control choices, like which partial work to build on, whether to start fresh, or when to stop. We introduce agentic meta-reasoning, an inference-time harness that makes these choices an explicit and structured reasoning process. Workers carry out the task-level computation, while a controller consolidates what the run has established, explores next options, assesses what each option is worth under the remaining budget, and dispatches the chosen work with context drawn from persistent memory. Between decisions the controller carries only a compact account of the run rather than replaying its full history. Our baselines span production coding agents and research harnesses, together with a Direct Control Agent using the same workers and compute budget allowance. On ProgramBench, which tests long-horizon agentic capability through program reconstruction, meta-reasoning achieves 71.5% with GPT-5.5 against 58.0% for Codex; with Opus 4.8 it achieves 67.2% against 65.5% for Claude Code. On the other benchmarks, spanning abstract reasoning, multi-domain long-horizon reasoning, and proof generation, it gains between 3.6 and 4.2 points over direct control, averaged across three frontier models. It keeps improving over the tested budget ranges where direct control plateaus, though its overhead can hurt at small budgets. Artifact-graph analysis reveals more reuse of earlier work, higher coverage of correct solutions in most settings, and nonuniform gains in final selection. These results indicate that spending computation on structured control becomes more important as agents scale to longer runs.",
+    "published_at": "2026-09-29T17:57:25Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.38147v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.6,
+    "ai_score": 8.5,
+    "facts": "论文提出 agentic meta-reasoning，一种推理时控制框架，将执行控制作为显式结构化推理过程。Worker 执行任务级计算，Controller 整合已建立内容、探索下一步选项、评估剩余预算下的价值，并从持久记忆派发工作。Controller 在决策间只保留紧凑运行记录而非完整历史。在 ProgramBench 上，GPT-5.5 达 71.5% 对比 Codex 58.0%；Opus 4.8 达 67.2% 对比 Claude Code 65.5%。其他基准（抽象推理、多域长时推理、证明生成）平均提升 3.6-4.2 分。在直接控制平台期仍持续改进，但小预算下开销可能有害。Artifact-graph 分析显示更多复用、更高正确解覆盖率和非均匀最终选择增益。",
+    "analysis": "该工作将 agent 执行控制从隐式策略提升为显式推理层，是 agentic inference 扩展的关键方向。其核心洞察是：随着运行变长，控制决策本身成为瓶颈，需要专门的计算预算。与直接控制相比，meta-reasoning 在长时任务上优势明显，但小预算下开销问题表明需要自适应控制粒度。与同批次的 Meta-Skill 工作形成互补：一个优化控制过程，一个优化环境构建。",
+    "technical_value": "提出可复用的推理时控制架构，分离 worker 与 controller，引入持久记忆和紧凑状态表示。在多个前沿模型和基准上验证，具有较强泛化性。Artifact-graph 分析提供了机制性理解。",
+    "impact": "对长时程 agent 系统设计有直接指导意义，可能推动生产级 coding agent 和研究 harness 的控制层重构。",
+    "keywords": [
+      "agentic meta-reasoning",
+      "inference-time control",
+      "long-horizon agents",
+      "ProgramBench",
+      "controller-worker"
+    ]
+  },
+  {
+    "id": "b006ca7e3072cdb9",
+    "title": "Learning Meta-Skills for Agent Harness Design in Test-Time AI4AI",
+    "summary": "Agent performance depends on both reasoning ability and the environment in which it acts. We study test-time AI-for-AI, asking how a Builder can learn to construct better execution environments for a Target while both models' weights remain fixed. To make the Builder's experience reusable, we introduce Meta-Skill: principles specifying when support is needed and what resources to provide. The Builder learns these principles from Target's execution feedback on the development set, then uses the frozen skill bank to construct harnesses for unseen tasks. Across Harness-Bench and NewtonBench, full-bank meta-skills improve macro-average performance by 8.95 percentage points over no-skill construction, and 12.02 points over direct delivery of the same bank to the Target. These results highlight the value of translating experience into executable support. Gains when the same model serves both roles further suggest a path to system level self-improvement through learning to build better environments.",
+    "published_at": "2026-09-29T17:55:56Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.38143v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.9,
+    "ai_score": 7.5,
+    "facts": "论文研究 test-time AI-for-AI，Builder 在权重固定下为 Target 构建更好执行环境。引入 Meta-Skill：指定何时需要支持及提供什么资源的原则。Builder 从 Target 在开发集上的执行反馈中学习这些原则，然后用冻结技能库为未见任务构建 harness。在 Harness-Bench 和 NewtonBench 上，全库 meta-skills 比无技能构建提升 8.95 个百分点，比直接交付同一技能库给 Target 提升 12.02 个百分点。同一模型担任两角色时也有增益。",
+    "analysis": "该工作将 agent 性能归因于推理能力和执行环境两方面，提出通过元技能学习来构建环境。与 meta-reasoning 工作互补：一个优化控制过程，一个优化环境构建。同一模型自构建的增益暗示了系统级自我改进路径。",
+    "technical_value": "提出 Meta-Skill 概念和可复用的技能库构建方法，在多个基准上验证。冻结技能库的泛化能力是关键贡献。",
+    "impact": "对 agent harness 设计和自动化 AI 研发有推动作用，可能降低为特定任务设计环境的成本。",
+    "keywords": [
+      "meta-skills",
+      "agent harness",
+      "test-time AI4AI",
+      "Harness-Bench",
+      "self-improvement"
+    ]
+  },
+  {
+    "id": "204cc4ef541aa343",
+    "title": "Introducing agentic video understanding with Gemini",
+    "summary": "",
+    "published_at": "Tue, 01 Sep 2026 17:08:51 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 7.0,
+    "facts": "Google DeepMind 博客宣布在 Gemini 中引入 agentic video understanding。摘要为空。",
+    "analysis": "Agentic video understanding 意味着模型能主动规划、检索和推理视频内容，而非被动处理。这是多模态 agent 的重要扩展，可能涉及长视频理解和交互式查询。",
+    "technical_value": "将 agent 能力引入视频理解，可能涉及工具调用、记忆和规划在视频领域的适配。",
+    "impact": "对视频分析、监控、内容检索等应用有直接影响。",
+    "keywords": [
+      "agentic video understanding",
+      "Gemini",
+      "multimodal agents"
+    ]
+  },
+  {
+    "id": "e1daae41a1bd441f",
+    "title": "Holo4: powering generalist computer-use agents",
+    "summary": "",
+    "published_at": "Mon, 28 Sep 2026 09:44:05 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/Hcompany/holo4",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 6.5,
+    "facts": "Hugging Face 博客介绍 Holo4，定位为通用计算机使用 agent。摘要为空。",
+    "analysis": "通用计算机使用 agent 是当前热点，Holo4 可能涉及 GUI 操作、跨应用任务执行。需要关注其泛化能力和实际部署表现。",
+    "technical_value": "通用 computer-use agent 的技术挑战包括视觉 grounding、动作空间设计和长时程规划。",
+    "impact": "可能推动 RPA 和自动化办公场景的变革。",
+    "keywords": [
+      "computer-use agents",
+      "Holo4",
+      "generalist agents"
+    ]
+  },
+  {
+    "id": "9b5f151e6c69ca58",
+    "title": "Skill-Space Shooting for Autonomous Robot Policy Improvement",
+    "summary": "Robots deployed in the physical world must be able to improve beyond their initial training as they encounter new situations and failures. For this improvement to scale across tasks, it must make effective use of experience without requiring human demonstration of each correction. Recent agentic systems offer a way to reduce this reliance on human effort by using foundation models to autonomously compose learned behaviors to complete tasks. Yet completing tasks this way does not itself teach a task policy to overcome its own failures; that requires turning these behaviors into learnable corrections for the policy. Our insight is that many such corrections are familiar short behaviors, or skills: they recur across tasks and describe actions that foundation models can reason about from a scene. We introduce skill-space shooting, which uses foundation model guidance to explore corrections through these reusable skills and turn successful trials into policy improvement. Real-world experiments show repeated improvement in policies acting autonomously, while skills can also be shared to reduce the teaching needed to improve on new tasks. By making reusable skills a source of corrective supervision, skill-space shooting enables scalable and generalizable policy improvement within and across tasks. Additional results and videos at https://skill-space-shooting.github.io.",
+    "published_at": "2026-09-29T17:59:55Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.38178v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.3,
+    "ai_score": 6.5,
+    "facts": "论文提出 skill-space shooting，利用基础模型引导通过可复用技能探索纠正行为，将成功试验转化为策略改进。真实世界实验显示自主策略重复改进，技能可共享以减少新任务教学需求。",
+    "analysis": "该工作将 agentic 系统与机器人策略改进结合，核心洞察是许多纠正行为是可复用的短技能。通过基础模型推理场景中的技能，实现自主策略提升。与 meta-reasoning 和 meta-skill 工作同属 agent 自我改进方向，但聚焦物理机器人。",
+    "technical_value": "提出技能空间探索框架，将基础模型引导与策略学习结合，在真实世界验证。技能共享机制有扩展性。",
+    "impact": "对机器人自主学习和持续改进有推动作用，可能降低部署后的人工干预。",
+    "keywords": [
+      "skill-space shooting",
+      "robot policy improvement",
+      "autonomous learning",
+      "foundation models"
+    ]
+  }
+]
