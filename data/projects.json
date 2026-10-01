@@ -679,5 +679,26 @@
     "code_size": "2000-5000 行",
     "v2": "引入自适应控制粒度、多 Controller 协作、跨任务记忆迁移和 artifact-graph 分析工具。",
     "status": "idea"
+  },
+  {
+    "date": "2026-10-01",
+    "name_zh": "3D世界审计代理",
+    "name_en": "3D World Auditor Agent",
+    "tagline": "自动探索并识别3D环境中的异常",
+    "why_today": "多模态模型已具备基础视觉推理和动作生成能力，结合3D仿真环境可构建原型。",
+    "scenarios": [
+      "游戏测试",
+      "仿真环境验证",
+      "虚拟世界质量检查"
+    ],
+    "flow": "代理在3D环境中导航，通过视觉观察识别潜在异常，并采取动作验证，最终报告异常列表。",
+    "ai_role": "使用VLM进行视觉推理，VLA或VLM代理进行动作选择，实现探索与识别的闭环。",
+    "stack": "Unreal Engine 5 / Three.js 环境，VLM（如GPT-4V），VLA（如RT-2），强化学习或规划算法。",
+    "mvp": "在简单3D场景中实现异常检测，支持基本导航和视觉识别。",
+    "difficulty": "高",
+    "time": "3-6个月",
+    "code_size": "中等",
+    "v2": "引入主动学习，优化探索策略，支持多代理协作和复杂异常类型。",
+    "status": "idea"
   }
 ]

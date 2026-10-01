@@ -1,0 +1,130 @@
+[
+  {
+    "id": "e6970cc1f678f687",
+    "title": "WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents",
+    "summary": "As interactive 3D worlds are increasingly used to study intelligent behavior, it becomes important to develop efficient pipelines for identifying anomalies in these simulated environments, such as floating objects, traversable walls, or objects inconsistent with the surrounding scene. Multimodal AI systems, including vision-language models (VLMs) and vision-language-action models (VLAs), have shown potential for automating this task. However, 3D world auditing is complex, requiring the close coupling of two distinct capabilities: action, to navigate the 3D world and search for anomalies systematically and efficiently; and visual reasoning, to understand the environment and identify anomalies from multimodal observations. It remains largely unexplored whether multimodal agents can effectively couple these two capabilities, using visual reasoning to identify potential anomalies while taking actions to validate them. In this paper, we introduce WorldAuditBench, a benchmark for 3D world auditing comprising 213 anomaly tasks across 13 environments built with Unreal Engine 5 and Three.js, spanning five anomaly families. We evaluate five frontier models under a fixed exploration budget using two auditing paradigms: VLA-based exploration followed by VLM-based anomaly identification, and an end-to-end VLM agent in which visual reasoning directly guides action selection. Across the evaluated models and two paradigms, success rates range from 6.6% to 42.3%, substantially below human performance (83.4%). Through the task of world auditing, WorldAuditBench provides a testbed for studying how multimodal agents couple action and visual reasoning in interactive 3D environments, while highlighting current limitations in their ability to gather and interpret evidence during exploration.",
+    "published_at": "2026-09-30T17:55:29Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.40325v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.3,
+    "ai_score": 6.3,
+    "facts": "论文提出 WorldAuditBench，一个用于 3D 世界审计的基准，包含 213 个异常任务，覆盖 13 个由 Unreal Engine 5 和 Three.js 构建的环境，涉及五类异常。评估了五种前沿模型在固定探索预算下的两种审计范式：基于 VLA 的探索后接基于 VLM 的异常识别，以及端到端 VLM 代理（视觉推理直接指导动作选择）。成功率范围为 6.6% 至 42.3%，人类表现为 83.4%。",
+    "analysis": "该工作首次系统性地将 3D 世界审计形式化为需要动作与视觉推理紧密耦合的任务，并提供了可量化的基准。结果揭示了当前多模态代理在长视野探索和证据收集方面的显著不足，为未来研究指明了方向。",
+    "technical_value": "提供了标准化的评估框架和任务套件，有助于推动多模态代理在交互式 3D 环境中的动作-推理耦合研究。",
+    "impact": "可能促进更鲁棒的 3D 世界审计代理的发展，应用于游戏测试、仿真验证等领域。",
+    "keywords": [
+      "3D世界审计",
+      "多模态代理",
+      "基准测试",
+      "视觉语言模型",
+      "视觉语言动作模型"
+    ]
+  },
+  {
+    "id": "a4678728b0be238a",
+    "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+    "summary": "",
+    "published_at": "Tue, 29 Sep 2026 13:07:00 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+        "type": "official"
+      }
+    ],
+    "pre_score": 6.2,
+    "ai_score": 6.2,
+    "facts": "博客文章标题为“Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents”，来自 Hugging Face 博客，作者为 MultiverseComputingCAI。",
+    "analysis": "该文章强调在 MCP 代理中验证信息来源而不仅仅是事实本身，可能涉及代理在调用工具或检索信息时对来源可信度的评估。这反映了对代理可靠性和可解释性的关注。",
+    "technical_value": "可能提出一种来源感知的验证机制，提升 MCP 代理决策的可靠性。",
+    "impact": "对构建可信赖的 AI 代理系统有潜在影响，尤其是在需要高准确性的场景中。",
+    "keywords": [
+      "MCP代理",
+      "来源验证",
+      "可信AI",
+      "代理可靠性"
+    ]
+  },
+  {
+    "id": "26ce6be13b8caf2c",
+    "title": "Semifactual Credit-Augmented Policy Optimization",
+    "summary": "Reinforcement learning with verifiable rewards (RLVR) has improved the reasoning capabilities of large language models (LLMs), yet their predictions remain sensitive to task-irrelevant prompt features. We investigate this sensitivity through semifactual prompt interventions that preserve the underlying problem and its answer. Our analysis reveals substantial variation in token-level sensitivity and shows that suppressing high-drift token candidates during decoding improves reasoning accuracy without updating model weights. These findings highlight a limitation of Group Relative Policy Optimization (GRPO), which assigns the same outcome-derived advantage to every response token and may reinforce potential spurious dependence alongside useful reasoning. Motivated by this observation, we introduce Semifactual Credit-Augmented Policy Optimization (SCAPO), a causally inspired variant of GRPO that incorporates semifactual stability into token-level credit assignment. SCAPO measures token probability drift for fixed responses under semifactual interventions and uses normalized stability scores to reduce advantages for relatively unstable tokens during early training, while granting no additional credit for stability alone. On Qwen3-4B-Base and Qwen3-1.7B-Base, SCAPO improves AIME 2024-2026 accuracy over GRPO by 5.63 and 4.17 percentage points, respectively. At both model scales, SCAPO achieves the best results on most evaluated mathematics benchmarks and all evaluated out-of-distribution benchmarks among the compared methods. These results suggest that semifactual stability provides an effective training signal for improving reasoning and generalization through finer-grained credit assignment in RLVR. The code is available at https://github.com/DtYXs/SCAPO.",
+    "published_at": "2026-09-30T17:59:56Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.40360v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 5.7,
+    "facts": "论文提出 Semifactual Credit-Augmented Policy Optimization (SCAPO)，一种因果启发的 GRPO 变体，将半事实稳定性纳入 token 级信用分配。在 Qwen3-4B-Base 和 Qwen3-1.7B-Base 上，SCAPO 在 AIME 2024-2026 上比 GRPO 分别提升 5.63 和 4.17 个百分点。代码已开源。",
+    "analysis": "该工作识别了 GRPO 在 token 级信用分配中可能强化虚假依赖的问题，并通过半事实干预测量 token 概率漂移来调整优势值。方法在多个数学基准和分布外基准上取得最佳结果，表明半事实稳定性是一种有效的训练信号。",
+    "technical_value": "提供了一种改进 RLVR 中信用分配的方法，可提升 LLM 的推理准确性和泛化能力。",
+    "impact": "对强化学习与 LLM 推理的结合有推动作用，可能影响未来 RLHF 和 RLVR 的研究方向。",
+    "keywords": [
+      "强化学习",
+      "信用分配",
+      "半事实干预",
+      "GRPO",
+      "LLM推理"
+    ]
+  },
+  {
+    "id": "7a59fffbe088e7c9",
+    "title": "Turbo Harness: Instance-Adaptive Harness Optimization",
+    "summary": "Automating the search for effective harnesses is an important step toward enabling agents to recursively self-improve. Existing harness optimizations typically produce a single global harness that is applied uniformly across task instances. However, a harness that works well on average may not be optimal for every instance. We introduce Turbo Harness, a framework that can adapt a globally optimized harness to each instance by reusing information generated during the original optimization process. Specifically, Turbo Harness recycles artifacts produced during a completed global harness optimization run, and summarizes them into a structured playbook. We train a harness editor to leverage this prior optimization experience to generate instance-specific patches to the global harness. At inference time, the editor uses the instance and the playbook to construct a tailored harness in which the execution model operates. Through numerical experiments, we show that Turbo Harness consistently outperforms existing harness optimization baselines across seven benchmarks spanning interactive agent tasks, software engineering, and long-horizon terminal tasks.",
+    "published_at": "2026-09-30T17:56:09Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.40330v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 5.7,
+    "facts": "论文提出 Turbo Harness，一个实例自适应 harness 优化框架。它重用全局 harness 优化过程中产生的工件，总结成结构化 playbook，并训练 harness 编辑器生成实例特定的补丁。在七个基准上（包括交互式代理任务、软件工程和长视野终端任务）持续优于现有基线。",
+    "analysis": "该工作解决了现有 harness 优化产生单一全局 harness 的局限性，通过实例自适应提升性能。方法利用了优化过程中的历史信息，训练编辑器生成定制化 harness，在多个领域验证了有效性。",
+    "technical_value": "为代理的自我改进提供了一种新思路，通过实例级适应提升任务表现。",
+    "impact": "可能推动自动化代理优化和递归自我改进的研究，应用于复杂任务自动化。",
+    "keywords": [
+      "harness优化",
+      "实例自适应",
+      "代理自我改进",
+      "元学习"
+    ]
+  },
+  {
+    "id": "c39e7b6066766102",
+    "title": "Scaling Laws for Looped Mixture of Experts",
+    "summary": "Looped transformers and Mixture-of-Experts (MoE) offer complementary routes to efficient scaling: recurrence increases computational depth at fixed parameters, while MoE sparsity expands total capacity at fixed active compute. Yet existing scaling laws model recurrence or sparsity in isolation. In this work, we introduce Loop Scaling Laws, the first scaling law to jointly model recurrence and sparsity alongside model size and data. At its core is a bounded, sparsity-conditional recurrence mapping that characterizes the effective-parameter gain from looping and how sparsity raises this gain. The laws predict the held-out loss of looped models more accurately than prior alternatives, and recover the standard dense and MoE scaling laws as special cases. Beyond prediction, the fitted laws provide a principled foundation for designing looped MoE models under compute and memory constraints. Downstream evaluations further demonstrate the complementary benefits of the two axes: sparsity delivers ~3x active-parameter efficiency, recurrence yields ~2x total-parameter efficiency on reasoning, and joint scaling further advances the performance frontier. As a practical extension, we show these gains hold at trillion-token scale: at matched training compute, a looped MoE with law-derived recurrence matches a ~2x larger non-looped MoE on the reasoning benchmarks, while enabling test-time scaling through recurrence.",
+    "published_at": "2026-09-30T17:53:47Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2609.40316v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 5.7,
+    "facts": "论文提出 Loop Scaling Laws，首个联合建模循环（recurrence）和稀疏性（sparsity）以及模型大小和数据的缩放定律。核心是一个有界的、稀疏条件循环映射，刻画了循环带来的有效参数增益以及稀疏性如何提高该增益。定律能更准确预测循环模型的留出损失，并恢复标准密集和 MoE 缩放定律作为特例。下游评估显示稀疏性带来约 3 倍活跃参数效率，循环带来约 2 倍总参数效率，联合缩放进一步推进性能前沿。在万亿 token 规模下，匹配训练计算时，循环 MoE 在推理基准上匹配约 2 倍大的非循环 MoE。",
+    "analysis": "该工作首次将循环和稀疏性联合纳入缩放定律，为设计高效模型提供了理论指导。实验表明两者互补，联合使用可在相同计算下达到更大模型的效果，且支持测试时缩放。",
+    "technical_value": "为高效大模型架构设计提供了新的缩放定律和实用指导，可能推动循环 MoE 架构的应用。",
+    "impact": "对大规模模型训练和推理的效率提升有重要意义，可能影响未来模型架构设计。",
+    "keywords": [
+      "缩放定律",
+      "循环Transformer",
+      "混合专家",
+      "高效缩放",
+      "参数效率"
+    ]
+  }
+]

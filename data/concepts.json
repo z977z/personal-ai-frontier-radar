@@ -405,5 +405,17 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2609.38147v1"
     ]
+  },
+  {
+    "date": "2026-10-01",
+    "name_zh": "多模态代理的3D世界审计",
+    "name_en": "Multimodal Agent 3D World Auditing",
+    "score": 6.3,
+    "maturity": "Emerging",
+    "explanation": "指利用多模态AI代理（如VLM和VLA）在交互式3D环境中系统性地探索并识别异常（如悬浮物体、可穿越墙壁等），需要耦合动作与视觉推理能力。",
+    "why_now": "随着交互式3D世界在智能行为研究中的普及，自动化审计需求增加，而多模态模型的发展使得这一任务成为可能，但当前性能远低于人类，亟待突破。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.40325v1"
+    ]
   }
 ]
