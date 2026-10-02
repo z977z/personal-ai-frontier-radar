@@ -417,5 +417,17 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2609.40325v1"
     ]
+  },
+  {
+    "date": "2026-10-02",
+    "name_zh": "视觉长时程推理",
+    "name_en": "Visual Long-Horizon Reasoning",
+    "score": 8.0,
+    "maturity": "Emerging",
+    "explanation": "视觉长时程推理指多模态模型在交互环境中通过视觉观察进行长期推理的能力，需要模型维护视觉记忆并主动检索以支持决策。VISTA 通过无损视觉记忆和主动检索机制实现了这一能力，在 ARC-AGI-3 上取得突破性表现。",
+    "why_now": "多模态模型推理能力增强，但缺乏有效的视觉记忆机制来支持长时程任务。VISTA 的出现表明适当的 harness 可以释放模型潜力，推动通用视觉智能体发展。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.02200v1"
+    ]
   }
 ]

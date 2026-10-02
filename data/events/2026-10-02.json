@@ -1,0 +1,130 @@
+[
+  {
+    "id": "0f7b1f2e8e9f23e7",
+    "title": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+    "summary": "We show that multimodal models possess strong reasoning abilities and that an appropriate harness can unlock their potential to solve tasks across diverse interactive environments. We introduce VISTA, a visual harness that gives a general-purpose multimodal model long-horizon vision. VISTA allows the model to directly perceive the environment through visual observations and maintains a lossless visual memory that preserves past observations in their original form. The model can actively retrieve these observations and reorganize its visual input as it reasons. On ARC-AGI-3, VISTA improves Claude Opus 5.0's Relative Human Action Efficiency score from 40.68 to a perfect 100.00, with the model completing all 25 public games using 57.4% fewer actions than first-time human participants. VISTA's simple design also allows it to extend naturally to diverse visual environments with minimal adaptation. Across three additional benchmarks covering a diverse range of visual games and puzzles, it substantially outperforms baselines using the same underlying model with minimal harnesses. Our results highlight VISTA's potential as a general-purpose visual harness for advancing multimodal agents in complex visual environments.",
+    "published_at": "2026-10-01T17:59:45Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.02200v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.3,
+    "ai_score": 8.5,
+    "facts": "VISTA 是一种视觉 harness，使通用多模态模型具备长时程视觉能力，通过视觉观察直接感知环境，并维护无损视觉记忆，保留原始观察形式。模型可主动检索这些观察并重组视觉输入进行推理。在 ARC-AGI-3 上，VISTA 将 Claude Opus 5.0 的相对人类行动效率分数从 40.68 提升至 100.00，完成全部 25 个公开游戏，比首次参与的人类少用 57.4% 的动作。在三个额外基准上，VISTA 显著优于使用相同基础模型但仅用最小 harness 的基线。",
+    "analysis": "VISTA 的核心创新在于将视觉记忆与主动检索机制结合，使多模态模型能够在交互环境中进行长时程推理。其无损视觉记忆避免了信息压缩带来的损失，主动检索则让模型能够根据推理需求动态重组视觉输入。在 ARC-AGI-3 上的完美表现表明，适当的 harness 可以极大释放多模态模型的推理潜力，且设计简洁，易于扩展到多样视觉环境。",
+    "technical_value": "提供了一种通用的视觉 harness 设计范式，通过无损视觉记忆和主动检索机制增强多模态模型的长时程推理能力，可广泛应用于需要视觉交互的智能体任务。",
+    "impact": "可能推动多模态智能体在复杂视觉环境中的通用化发展，为 ARC-AGI 等通用智能基准提供新的解决思路，并降低对人类动作效率的依赖。",
+    "keywords": [
+      "多模态模型",
+      "视觉推理",
+      "长时程记忆",
+      "交互环境",
+      "ARC-AGI"
+    ]
+  },
+  {
+    "id": "c95a56b2873d5d0a",
+    "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+    "summary": "LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts' intent into tool invocations. However, existing evaluations focus on knowledge-based assessments or end-to-end agentic tasks, and do not directly measure LLMs' ability to generate executable commands for real-world cybersecurity tools. This gap is critical because cybersecurity operations rely on strict command-line interfaces (CLIs), where minor syntax errors, incorrect flag--value bindings, or argument misordering can invalidate execution. We introduce KaliBench, a fine-grained benchmark and dataset for natural-language--to--CLI translation on Kali Linux, comprising 8,504 query--command pairs spanning 1,642 tools across 23 capability dimensions and 5 security phases. KaliBench is constructed via a manuscript-grounded pipeline with deterministic canonicalization and alias-aware evaluation, enabling precise and reproducible assessment of tool selection and argument construction. To ensure both semantic correctness and practical executability, we develop a multi-stage verification pipeline that combines LLM-based validation, sandboxed terminal execution, and human-in-the-loop refinement. Building on these fine-grained, deterministic signals, KaliBench further enables runtime-free verifiable rewards for training. Across three evaluation modes and 24 configurations of general-purpose and security-focused open-weight models, no open-weight model exceeds 42% exact-command accuracy in the unrestricted setting, highlighting the difficulty of accurate CLI-based cybersecurity tool use without explicit tool hints. We further show that supervised fine-tuning and reinforcement learning with verifiable rewards derived from KaliBench significantly improve an 8B model and achieve p",
+    "published_at": "2026-10-01T17:59:55Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.02206v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 7.5,
+    "facts": "KaliBench 是一个细粒度基准和数据集，用于 Kali Linux 上的自然语言到 CLI 翻译，包含 8,504 个查询-命令对，覆盖 1,642 个工具、23 个能力维度和 5 个安全阶段。通过手稿基础流程构建，具有确定性规范化和别名感知评估。多阶段验证流程结合 LLM 验证、沙箱终端执行和人工细化。在三种评估模式和 24 种配置下，没有开源权重模型在无限制设置中超过 42% 的精确命令准确率。监督微调和基于可验证奖励的强化学习显著提升了 8B 模型。",
+    "analysis": "KaliBench 填补了网络安全工具使用评估的空白，强调命令行的精确性。低准确率表明当前模型在生成可执行命令方面存在显著不足，而基于该基准的训练方法能有效提升性能。",
+    "technical_value": "提供了细粒度、可验证的基准和训练信号，推动 LLM 在网络安全 CLI 工具使用中的精确性和可执行性。",
+    "impact": "可能提升网络安全自动化水平，减少因命令错误导致的操作失败，并为其他领域 CLI 翻译提供参考。",
+    "keywords": [
+      "网络安全",
+      "CLI翻译",
+      "基准",
+      "可验证奖励",
+      "Kali Linux"
+    ]
+  },
+  {
+    "id": "026f4723a3768b82",
+    "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
+    "summary": "What makes great scientists great? Even as AI systems start to make progress on open problems, scientists remain far ahead of them at sensing which prior idea, buried in an ever-growing archive of research, a new problem needs. To study this skill, we draw on researchers who know firsthand which earlier work advanced their completed projects, with papers serving as pointers to the ideas within. Using our automated pipeline that makes author annotation scalable, we build ScholarCatalyst by having 184 lead authors of 207 recent computer science papers label which candidates did or could have advanced their project, each with a detailed rationale. We introduce a retrieval task with author-provided judgments: given an initial research question, retrieve these papers from only the literature available when the project began. Agentic search does no better than embedding retrieval (0.42 vs. 0.48 Recall@20) despite calling that same retriever as a tool. Even an agent built on Claude Fable 5.1, which may have seen the completed papers during training, reaches only 0.51 R@20. These results highlight the need for new training recipes that equip models with expert intuition for searching broad corpora. We envision ScholarCatalyst as a step toward scientific agents that can take a half-formed idea and point to the prior research it needs.",
+    "published_at": "2026-10-01T17:59:47Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.02202v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.0,
+    "ai_score": 7.0,
+    "facts": "ScholarCatalyst 是一个基准，用于检索能激发新研究的论文。通过自动化流程，184 位主要作者对 207 篇近期计算机科学论文的候选参考文献进行标注，提供详细理由。检索任务中，智能体搜索（0.42 Recall@20）不如嵌入检索（0.48），即使基于 Claude Fable 5.1 的智能体也仅达到 0.51 R@20。",
+    "analysis": "该基准揭示了当前 AI 系统在模拟专家直觉检索方面的不足，即使先进模型也难以匹敌简单的嵌入检索。这表明需要新的训练方法，使模型具备在广泛文献中搜索专家级直觉的能力。",
+    "technical_value": "提供了一个作者标注的检索基准，用于评估和推动科学文献检索中专家直觉的建模，促进科学智能体发展。",
+    "impact": "可能引导未来研究关注如何训练模型具备专家级文献检索直觉，加速科学发现中的文献调研过程。",
+    "keywords": [
+      "科学文献检索",
+      "基准",
+      "专家直觉",
+      "智能体搜索"
+    ]
+  },
+  {
+    "id": "18379e61776b93ff",
+    "title": "Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents",
+    "summary": "Building reliable robot capabilities across diverse tasks requires substantial human effort to develop and maintain skills, design rewards, and integrate perception with control. We present Reconstruct, Practice, Go Real (RPG), a framework for autonomous improvement of robot execution systems without updating model weights. RPG identifies manipulation capabilities in an offline dataset and constructs related practice tasks in simulation. During practice, RPG uses execution feedback, privileged simulator state, and available dataset videos to diagnose failures. It develops new reusable symbolic skills, refines existing skills, and revises the system prompt based on these diagnoses. Cross-task evaluation tests individual candidate changes and merged revisions before they are retained for reuse. At test time, a multimodal LLM uses the resulting system prompt and skill library to coordinate perception and robot control. On held-out initializations of 22 manipulation tasks, RPG improves task success from 28.6% after the first practice round to 95.0% after 15 rounds, outperforming all evaluated baselines, including ASPIRE (75.5%) and CaP-Agent0 powered by GPT-6 Astra Pro (60.0%). After a common calibration and hardware-adaptation procedure, the frozen system succeeds in all 30 physical trials, with ten trials on each of three tasks. Project Website: https://rpg-robot.github.io/",
+    "published_at": "2026-10-01T17:59:50Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.02204v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.3,
+    "ai_score": 7.0,
+    "facts": "RPG 框架用于具身智能体的自主改进，无需更新模型权重。在 22 个操作任务的保留初始化上，任务成功率从第一轮练习后的 28.6% 提升至 15 轮后的 95.0%，优于 ASPIRE（75.5%）和 GPT-6 Astra Pro 驱动的 CaP-Agent0（60.0%）。经过校准和硬件适配后，冻结系统在 30 次物理试验中全部成功。",
+    "analysis": "RPG 通过离线数据集识别能力，在模拟中构建练习任务，利用执行反馈和特权状态诊断失败，开发可重用符号技能并修订系统提示。跨任务评估确保改进的泛化性。该方法无需微调模型，即可显著提升机器人操作成功率。",
+    "technical_value": "提供了一种不更新权重、通过技能库和提示修订实现机器人自主改进的框架，具有高样本效率和跨任务泛化能力。",
+    "impact": "可能大幅降低机器人技能开发的人力成本，加速机器人在多样任务中的部署。",
+    "keywords": [
+      "具身智能体",
+      "自主改进",
+      "机器人操作",
+      "技能库",
+      "模拟到现实"
+    ]
+  },
+  {
+    "id": "62c44fc36fe267c6",
+    "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+    "summary": "",
+    "published_at": "Fri, 02 Oct 2026 04:01:31 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 6.5,
+    "facts": "AutoSynthData 是一种为企业智能体生成训练数据的方法，来自 ServiceNow AI 的博客。",
+    "analysis": "企业智能体需要大量高质量训练数据，但获取成本高。AutoSynthData 可能通过自动化合成数据解决这一问题，加速企业智能体的开发与部署。",
+    "technical_value": "提供了一种自动生成企业智能体训练数据的方案，可能降低数据收集成本，提高智能体在特定企业场景中的适应性。",
+    "impact": "可能推动企业级智能体的快速定制与落地，促进 AI 在企业工作流中的集成。",
+    "keywords": [
+      "企业智能体",
+      "训练数据",
+      "数据合成",
+      "ServiceNow"
+    ]
+  }
+]
