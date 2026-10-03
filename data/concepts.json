@@ -429,5 +429,18 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2610.02200v1"
     ]
+  },
+  {
+    "date": "2026-10-03",
+    "name_zh": "视觉智能体",
+    "name_en": "Visual Agent",
+    "score": 8.5,
+    "maturity": "Emerging",
+    "explanation": "视觉智能体是指能够通过视觉感知环境、进行长时程推理并主动采取行动的多模态AI系统。其核心在于结合视觉记忆、主动检索和推理能力，在交互式环境中完成复杂任务。",
+    "why_now": "多模态模型能力提升，但缺乏有效的harness来释放其在交互环境中的潜力。VISTA等工作表明，合适的视觉harness能显著提升模型在ARC-AGI等任务上的表现，推动通用视觉智能体的发展。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.02200v1",
+      "https://deepmind.google/blog/introducing-agentic-video-in-gemini/"
+    ]
   }
 ]

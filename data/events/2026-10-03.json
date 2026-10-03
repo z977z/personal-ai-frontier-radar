@@ -1,0 +1,134 @@
+[
+  {
+    "id": "0f7b1f2e8e9f23e7",
+    "title": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+    "summary": "We show that multimodal models possess strong reasoning abilities and that an appropriate harness can unlock their potential to solve tasks across diverse interactive environments. We introduce VISTA, a visual harness that gives a general-purpose multimodal model long-horizon vision. VISTA allows the model to directly perceive the environment through visual observations and maintains a lossless visual memory that preserves past observations in their original form. The model can actively retrieve these observations and reorganize its visual input as it reasons. On ARC-AGI-3, VISTA improves Claude Opus 5.0's Relative Human Action Efficiency score from 40.68 to a perfect 100.00, with the model completing all 25 public games using 57.4% fewer actions than first-time human participants. VISTA's simple design also allows it to extend naturally to diverse visual environments with minimal adaptation. Across three additional benchmarks covering a diverse range of visual games and puzzles, it substantially outperforms baselines using the same underlying model with minimal harnesses. Our results highlight VISTA's potential as a general-purpose visual harness for advancing multimodal agents in complex visual environments.",
+    "published_at": "2026-10-01T17:59:45Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.02200v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.3,
+    "ai_score": 8.5,
+    "facts": "VISTA 是一种视觉 harness，使通用多模态模型具备长时程视觉能力。模型通过视觉观察直接感知环境，并维护无损视觉记忆，保留原始观察结果。模型可在推理时主动检索这些观察并重组视觉输入。在 ARC-AGI-3 上，VISTA 将 Claude Opus 5.0 的相对人类行动效率分数从 40.68 提升至 100.00，模型完成全部 25 个公开游戏，所用行动比首次参与的人类少 57.4%。VISTA 设计简单，可自然扩展到多种视觉环境，在三个额外基准上显著优于使用相同基础模型但仅用最小 harness 的基线。",
+    "analysis": "VISTA 的核心创新在于将视觉记忆与主动检索机制结合，使多模态模型在交互式环境中实现长时程推理。其无损视觉记忆避免了信息压缩带来的损失，主动检索则让模型能根据推理需求动态重组视觉输入。在 ARC-AGI-3 上的显著提升表明，合适的 harness 能充分释放多模态模型的推理潜力。该工作强调了 harness 设计在提升模型交互能力中的关键作用，为多模态智能体在复杂视觉环境中的通用化提供了新思路。",
+    "technical_value": "提出了一种通用的视觉 harness 架构，通过无损视觉记忆和主动检索机制增强多模态模型的长时程视觉推理能力。设计简洁，易于扩展到不同视觉环境，为多模态智能体的研究提供了可复用的技术框架。",
+    "impact": "有望推动多模态智能体在游戏、机器人、GUI 交互等复杂视觉环境中的应用，提升模型在长时程任务中的自主决策能力。对 ARC-AGI 等通用智能基准的突破具有示范意义。",
+    "keywords": [
+      "多模态模型",
+      "视觉harness",
+      "长时程推理",
+      "视觉记忆",
+      "ARC-AGI",
+      "智能体"
+    ]
+  },
+  {
+    "id": "c95a56b2873d5d0a",
+    "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+    "summary": "LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts' intent into tool invocations. However, existing evaluations focus on knowledge-based assessments or end-to-end agentic tasks, and do not directly measure LLMs' ability to generate executable commands for real-world cybersecurity tools. This gap is critical because cybersecurity operations rely on strict command-line interfaces (CLIs), where minor syntax errors, incorrect flag--value bindings, or argument misordering can invalidate execution. We introduce KaliBench, a fine-grained benchmark and dataset for natural-language--to--CLI translation on Kali Linux, comprising 8,504 query--command pairs spanning 1,642 tools across 23 capability dimensions and 5 security phases. KaliBench is constructed via a manuscript-grounded pipeline with deterministic canonicalization and alias-aware evaluation, enabling precise and reproducible assessment of tool selection and argument construction. To ensure both semantic correctness and practical executability, we develop a multi-stage verification pipeline that combines LLM-based validation, sandboxed terminal execution, and human-in-the-loop refinement. Building on these fine-grained, deterministic signals, KaliBench further enables runtime-free verifiable rewards for training. Across three evaluation modes and 24 configurations of general-purpose and security-focused open-weight models, no open-weight model exceeds 42% exact-command accuracy in the unrestricted setting, highlighting the difficulty of accurate CLI-based cybersecurity tool use without explicit tool hints. We further show that supervised fine-tuning and reinforcement learning with verifiable rewards derived from KaliBench significantly improve an 8B model and achieve p",
+    "published_at": "2026-10-01T17:59:55Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.02206v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 7.5,
+    "facts": "KaliBench 是一个细粒度基准和数据集，用于 Kali Linux 上的自然语言到 CLI 翻译，包含 8,504 个查询-命令对，覆盖 1,642 个工具、23 个能力维度和 5 个安全阶段。通过基于手稿的流程构建，采用确定性规范化和别名感知评估。开发了多阶段验证流程，结合 LLM 验证、沙箱终端执行和人工精炼。在三种评估模式和 24 种配置下，没有开源模型在无限制设置中超过 42% 的精确命令准确率。使用 KaliBench 衍生的可验证奖励进行监督微调和强化学习，显著提升了 8B 模型。",
+    "analysis": "KaliBench 填补了网络安全领域 LLM 工具使用评估的空白，专注于命令级精确性。其细粒度标注和可验证奖励机制为训练更可靠的网络安全智能体提供了基础。实验表明，当前开源模型在无提示情况下生成精确 CLI 命令的能力有限，但通过针对性训练可显著提升。该工作强调了在安全关键领域，精确的 CLI 生成能力仍需专门优化。",
+    "technical_value": "提供了大规模、细粒度的自然语言到 CLI 翻译基准，支持可验证奖励的训练。多阶段验证流程确保了数据质量。为网络安全领域的 LLM 微调提供了有效方法。",
+    "impact": "有望提升 LLM 在网络安全运维中的自动化水平，减少人为错误，加速安全任务执行。对安全智能体的开发和评估具有重要参考价值。",
+    "keywords": [
+      "网络安全",
+      "CLI",
+      "基准",
+      "可验证奖励",
+      "Kali Linux",
+      "LLM智能体"
+    ]
+  },
+  {
+    "id": "026f4723a3768b82",
+    "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
+    "summary": "What makes great scientists great? Even as AI systems start to make progress on open problems, scientists remain far ahead of them at sensing which prior idea, buried in an ever-growing archive of research, a new problem needs. To study this skill, we draw on researchers who know firsthand which earlier work advanced their completed projects, with papers serving as pointers to the ideas within. Using our automated pipeline that makes author annotation scalable, we build ScholarCatalyst by having 184 lead authors of 207 recent computer science papers label which candidates did or could have advanced their project, each with a detailed rationale. We introduce a retrieval task with author-provided judgments: given an initial research question, retrieve these papers from only the literature available when the project began. Agentic search does no better than embedding retrieval (0.42 vs. 0.48 Recall@20) despite calling that same retriever as a tool. Even an agent built on Claude Fable 5.1, which may have seen the completed papers during training, reaches only 0.51 R@20. These results highlight the need for new training recipes that equip models with expert intuition for searching broad corpora. We envision ScholarCatalyst as a step toward scientific agents that can take a half-formed idea and point to the prior research it needs.",
+    "published_at": "2026-10-01T17:59:47Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.02202v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.0,
+    "ai_score": 7.0,
+    "facts": "ScholarCatalyst 是一个基准，用于检索能激发新研究的论文。研究团队通过自动化流程，让 184 位主要作者对 207 篇近期计算机科学论文的候选参考文献进行标注，判断哪些论文推进了他们的项目，并提供详细理由。任务设定为：给定初始研究问题，仅从项目开始时可用的文献中检索这些论文。结果显示，智能体搜索（0.42 Recall@20）并不优于嵌入检索（0.48 Recall@20），即使智能体调用了相同的检索器。基于 Claude Fable 5.1 的智能体（可能已在训练中见过完整论文）仅达到 0.51 R@20。",
+    "analysis": "该研究揭示了当前 AI 系统在模拟专家直觉方面的不足：即使是最先进的智能体，在检索能激发新研究的论文时，表现也仅略高于嵌入检索。这表明，科学发现中的“灵感”检索需要新的训练方法，而不仅仅是扩大模型规模或调用工具。ScholarCatalyst 提供了一个可量化的基准，推动科学智能体向具备专家直觉的方向发展。",
+    "technical_value": "构建了一个基于作者标注的检索基准，提供了细粒度的相关性判断和理由，可用于训练和评估科学文献检索模型。揭示了智能体搜索在科学灵感检索任务中的局限性。",
+    "impact": "对科学发现自动化、文献检索系统和 AI 辅助研究工具的设计具有指导意义，强调了开发新训练范式的必要性。",
+    "keywords": [
+      "科学文献检索",
+      "基准",
+      "智能体搜索",
+      "专家直觉",
+      "AI4Science"
+    ]
+  },
+  {
+    "id": "204cc4ef541aa343",
+    "title": "Introducing agentic video understanding with Gemini",
+    "summary": "",
+    "published_at": "Tue, 01 Sep 2026 17:08:51 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 7.0,
+    "facts": "Google DeepMind 发布博客，介绍 Gemini 中的智能体视频理解功能。",
+    "analysis": "智能体视频理解意味着模型不仅能理解视频内容，还能主动进行推理和交互，可能涉及长视频理解、事件定位、因果推理等。这扩展了多模态模型在视频分析、监控、内容创作等领域的应用。Gemini 作为 Google 的旗舰多模态模型，其视频理解能力的提升将推动智能体在动态视觉环境中的自主性。",
+    "technical_value": "将智能体能力与视频理解结合，可能涉及视频记忆、主动检索、多步推理等技术，提升了模型对长时程视频内容的处理能力。",
+    "impact": "对视频监控、自动驾驶、内容审核、教育等需要视频理解的行业有潜在影响，推动多模态智能体向更复杂的动态环境发展。",
+    "keywords": [
+      "Gemini",
+      "视频理解",
+      "智能体",
+      "多模态",
+      "Google DeepMind"
+    ]
+  },
+  {
+    "id": "62c44fc36fe267c6",
+    "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+    "summary": "",
+    "published_at": "Fri, 02 Oct 2026 04:01:31 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 6.5,
+    "facts": "ServiceNow AI 在 Hugging Face 博客发布 AutoSynthData，用于为企业智能体生成训练数据。",
+    "analysis": "企业智能体需要大量高质量、领域特定的训练数据，但真实数据往往稀缺或敏感。AutoSynthData 可能提供了一种自动化合成数据的方法，以降低数据收集成本并保护隐私。这对企业级智能体的快速定制和部署具有重要意义。",
+    "technical_value": "提出了一种自动合成训练数据的流程，可能涉及数据生成、过滤和验证，有助于解决企业智能体训练中的数据瓶颈。",
+    "impact": "可加速企业智能体在客服、IT 运维、流程自动化等场景的落地，降低对真实数据的依赖。",
+    "keywords": [
+      "合成数据",
+      "企业智能体",
+      "训练数据",
+      "ServiceNow",
+      "自动化"
+    ]
+  }
+]
