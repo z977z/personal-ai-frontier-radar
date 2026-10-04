@@ -442,5 +442,17 @@
       "https://arxiv.org/abs/2610.02200v1",
       "https://deepmind.google/blog/introducing-agentic-video-in-gemini/"
     ]
+  },
+  {
+    "date": "2026-10-04",
+    "name_zh": "视觉智能体框架",
+    "name_en": "Visual Agent Harness",
+    "score": 8.5,
+    "maturity": "Emerging",
+    "explanation": "视觉智能体框架是一种为多模态模型提供长时程视觉推理能力的外围架构。它通过无损视觉记忆和主动检索机制，让模型能够在交互环境中直接感知、记忆和重组视觉信息，从而完成复杂任务。VISTA 是该概念的一个典型实现，在 ARC-AGI-3 上取得了显著效果。",
+    "why_now": "多模态模型的基础能力日益强大，但缺乏有效的外围架构来释放其在长时程视觉任务中的潜力。VISTA 的成功表明，简单的 harness 设计可以大幅提升模型表现，这为构建通用视觉智能体提供了新思路。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.02200v1"
+    ]
   }
 ]
