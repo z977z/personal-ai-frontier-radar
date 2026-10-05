@@ -1,0 +1,130 @@
+[
+  {
+    "id": "efc73c0bd598cff0",
+    "title": "4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes",
+    "summary": "We introduce 4DCodeBench, a benchmark for 4D inverse graphics through code generation, in which agents reconstruct dynamic scenes from video as executable graphics programs. To accomplish this, agents must translate visual observations into compact representations of scene structure and dynamics, by implementing abstractions such as physical simulations to reproduce complex behavior. To evaluate this capability, we curate a set of real-world videos and construct synthetic scenes spanning diverse physical phenomena, including deformation, fluid flow, and fracture. We perform extensive benchmarking of frontier models, finding that strong static reconstruction capabilities do not yet translate into reliable reconstruction of complex dynamics. 4DCodeBench provides a testbed for tracking progress toward agents that can interpret the dynamics of the world through code. Our benchmark is available at https://github.com/4DCodeBench/4DCodeBench",
+    "published_at": "2026-10-02T17:58:49Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.03715v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 7.0,
+    "facts": "论文《4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes》于2026年10月2日发布在arXiv。该基准测试通过代码生成评估代理在4D逆图形学中的能力，要求代理从视频中重建动态场景为可执行的图形程序。研究包含真实视频和合成场景，涵盖变形、流体、断裂等物理现象。对前沿模型的基准测试发现，强大的静态重建能力尚未转化为可靠的复杂动态重建。基准已开源。",
+    "analysis": "4DCodeBench填补了动态场景逆图形学基准的空白，强调从视觉观察到可执行代码的转换，涉及物理模拟等抽象。技术价值在于推动代理理解动态世界并生成代码，可能促进机器人、仿真等领域发展。影响在于为动态场景理解提供标准化评估，揭示当前模型在动态重建上的不足，引导未来研究。",
+    "technical_value": "提供首个4D逆图形学代码生成基准，包含多样物理现象，可评估代理的动态场景理解和代码生成能力。",
+    "impact": "可能推动动态场景重建、物理推理和代码生成交叉领域的研究，为具身智能等应用提供测试平台。",
+    "keywords": [
+      "4D逆图形学",
+      "基准测试",
+      "动态场景",
+      "代码生成",
+      "代理"
+    ]
+  },
+  {
+    "id": "d6771a5d9fa77d3c",
+    "title": "What Should World Models Forget? Stratified Retention for Continual Adaptation",
+    "summary": "Continual learning treats degradation on previously seen data as evidence of failure, a convention inherited from settings with a stationary prediction target, where a correct label remains correct indefinitely. World models do not satisfy this condition. Their prediction target is the environment, which changes, so knowledge that was accurate when acquired may later become false, and discarding it is required behavior rather than a defect. Non-stationary ground truth is well studied in the concept drift literature and in the temporal factuality of language models, but has not been formulated for world models, which are distinctive in that they also encode knowledge that must never be revised. We argue that continual world models require retention stratified by invariance timescale, separating invariants such as physics and object permanence, which must never be revised, from instance-level facts that should be revised as soon as the environment changes. Standard forgetting metrics cannot distinguish a world model that has correctly revised outdated knowledge from one that has suffered catastrophic forgetting, and consequently rank a frozen model highest, while existing physical-reasoning benchmarks evaluate only frozen checkpoints. We propose differential retention, which reports invariant regression testing across the adaptation stream jointly with revision latency, without aggregation.",
+    "published_at": "2026-10-02T17:58:14Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.03713v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 6.8,
+    "facts": "论文《What Should World Models Forget? Stratified Retention for Continual Adaptation》于2026年10月2日发布在arXiv。文章指出世界模型的预测目标（环境）会变化，因此需要按不变性时间尺度分层保留知识：物理等不变量永不修订，实例级事实应随环境变化修订。标准遗忘指标无法区分正确修订与灾难性遗忘，现有物理推理基准仅评估冻结检查点。提出差分保留方法，报告不变量回归测试和修订延迟。",
+    "analysis": "该研究挑战了持续学习中‘遗忘即失败’的传统观念，针对世界模型提出分层保留框架。技术价值在于区分必须保留的不变量和应更新的实例知识，为持续世界模型提供评估新范式。影响可能改变世界模型训练和评估方式，推动适应非平稳环境的代理发展。",
+    "technical_value": "提出差分保留评估方法，结合不变量回归测试和修订延迟，为持续世界模型提供更合理的评估指标。",
+    "impact": "对持续学习、世界模型和具身智能领域有重要影响，可能引导更鲁棒的适应机制设计。",
+    "keywords": [
+      "世界模型",
+      "持续学习",
+      "分层保留",
+      "灾难性遗忘",
+      "非平稳环境"
+    ]
+  },
+  {
+    "id": "a4678728b0be238a",
+    "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+    "summary": "",
+    "published_at": "Tue, 29 Sep 2026 13:07:00 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+        "type": "official"
+      }
+    ],
+    "pre_score": 6.2,
+    "ai_score": 6.5,
+    "facts": "该博客文章标题为《Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents》，由Hugging Face发布，发布时间为2026年9月29日。文章讨论MCP（模型上下文协议）代理的源感知验证，强调在验证事实时需关注信息来源。",
+    "analysis": "该文章针对MCP代理的验证机制提出源感知方法，可能涉及如何让代理在调用工具或检索信息时验证数据来源的可靠性。这反映了AI代理在复杂环境中对信息可信度的需求，尤其是在多源信息整合时。技术价值在于提升代理决策的鲁棒性，减少错误信息传播。影响可能推动MCP协议在验证层面的标准化，增强企业级代理的可靠性。",
+    "technical_value": "提出源感知验证框架，可能包含对MCP代理的验证流程改进，如来源追踪、可信度评分等，有助于构建更可靠的代理系统。",
+    "impact": "对基于MCP的代理开发有指导意义，可能促进代理在金融、医疗等对信息准确性要求高的领域应用。",
+    "keywords": [
+      "MCP",
+      "代理验证",
+      "源感知",
+      "可信AI"
+    ]
+  },
+  {
+    "id": "469bd0ed0add1569",
+    "title": "FrugalEvo: Towards Cost-Aware LLM-Guided Program Evolution",
+    "summary": "LLM-guided evolutionary methods, such as AlphaEvolve, have emerged as powerful approaches for challenging computational optimization problems, such as circle packing. However, prior work typically optimizes performance gain over a fixed number of iterations. We argue that practical optimization should maximize gain per unit cost. To this end, we propose FrugalEvo, a cost-aware evolutionary framework where a stronger, higher-cost LLM explores solution strategies, and a cheaper LLM implements them and iteratively refines the resulting code. We also design a cache-efficient evolution process, where our harness and prompts maximize the sharing of prefixes across different evolution steps, to improve cache reuse. To measure solution quality throughout a fixed cost budget, we introduce Budget-Aware Area Under the Curve (BA-AUC), defined as the area under the best-so-far evaluation score curve over cumulative LLM cost, up to the budget. Across 10 mathematical and systems optimization tasks, FrugalEvo matches or surpasses state-of-the-art baselines, including OpenEvolve, ShinkaEvolve, AdaEvolve, and EvoX, in final solution quality and achieves higher BA-AUC on 9 tasks. It also achieves higher average performance than these baselines on 10 algorithmic optimization tasks from ALE-Bench-Lite. Notably, on circle packing, FrugalEvo achieves new state-of-the-art performance with GPT-5.6 Terra and Luna for only 1.68 USD and with GLM-5.3 and its Flash variant for only 0.55 USD, matching or surpassing all baselines, including multi-agent methods such as CORAL and SwarmResearch, which cost approximately 50 USD on average.",
+    "published_at": "2026-10-02T17:44:05Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.03675v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.1,
+    "ai_score": 6.3,
+    "facts": "论文《FrugalEvo: Towards Cost-Aware LLM-Guided Program Evolution》于2026年10月2日发布在arXiv。提出FrugalEvo，成本感知的进化框架，使用强LLM探索策略，廉价LLM实现和优化代码。设计缓存高效进化过程，引入预算感知AUC（BA-AUC）。在10个数学和系统优化任务中，FrugalEvo在最终解质量和BA-AUC上匹配或超越基线。在圆填充问题上，以1.68美元达到新SOTA，成本远低于多代理方法。",
+    "analysis": "FrugalEvo强调成本效益的LLM引导程序进化，通过分工和缓存优化降低开销。技术价值在于提供成本感知的优化框架，影响可能推动LLM在自动化编程中的经济性应用。",
+    "technical_value": "提出BA-AUC指标和缓存高效进化过程，实现低成本高性能的程序优化。",
+    "impact": "降低LLM引导优化的成本门槛，促进在资源有限场景的应用。",
+    "keywords": [
+      "FrugalEvo",
+      "程序进化",
+      "成本感知",
+      "LLM",
+      "优化"
+    ]
+  },
+  {
+    "id": "a5b5573760534fe5",
+    "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+    "summary": "",
+    "published_at": "Thu, 03 Sep 2026 15:02:08 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6.2,
+    "facts": "Google DeepMind于2026年9月3日发布博客《Introducing WeatherNext 3, our most advanced and accurate global weather AI model》，介绍WeatherNext 3，其最先进和准确的全球天气AI模型。",
+    "analysis": "该博客展示DeepMind在天气预测AI方面的进展，可能涉及高分辨率建模和长期预测。技术价值在于提升天气预报准确性，影响可能应用于气候监测、灾害预警等。",
+    "technical_value": "WeatherNext 3可能采用新的神经网络架构，提高预测精度和效率。",
+    "impact": "对气象学和相关行业有重要影响，展示AI在科学计算中的潜力。",
+    "keywords": [
+      "WeatherNext",
+      "天气预测",
+      "AI模型",
+      "DeepMind"
+    ]
+  }
+]
