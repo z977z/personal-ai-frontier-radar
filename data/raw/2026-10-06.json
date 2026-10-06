@@ -1,0 +1,202 @@
+[
+  {
+    "title": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
+    "url": "https://huggingface.co/blog/tiiuae/falcon-emirati",
+    "source": "Hugging Face",
+    "published_at": "Tue, 06 Oct 2026 06:44:39 GMT",
+    "retrieved_at": "2026-10-06T06:49:37.545340+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "The Agent Said It Was Done. The Database Disagreed.",
+    "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+    "source": "Hugging Face",
+    "published_at": "Sat, 03 Oct 2026 22:56:48 GMT",
+    "retrieved_at": "2026-10-06T06:49:37.545367+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+    "url": "https://huggingface.co/blog/allenai/astabrief",
+    "source": "Hugging Face",
+    "published_at": "Fri, 02 Oct 2026 15:19:50 GMT",
+    "retrieved_at": "2026-10-06T06:49:37.545373+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+    "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+    "source": "Hugging Face",
+    "published_at": "Fri, 02 Oct 2026 04:01:31 GMT",
+    "retrieved_at": "2026-10-06T06:49:37.545376+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
+    "url": "https://huggingface.co/blog/open-tts-leaderboard",
+    "source": "Hugging Face",
+    "published_at": "Wed, 30 Sep 2026 00:00:00 GMT",
+    "retrieved_at": "2026-10-06T06:49:37.545380+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+    "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
+    "source": "Hugging Face",
+    "published_at": "Tue, 29 Sep 2026 15:30:38 GMT",
+    "retrieved_at": "2026-10-06T06:49:37.545383+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+    "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+    "source": "Hugging Face",
+    "published_at": "Tue, 29 Sep 2026 13:07:00 GMT",
+    "retrieved_at": "2026-10-06T06:49:37.545386+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Holo4: powering generalist computer-use agents",
+    "url": "https://huggingface.co/blog/Hcompany/holo4",
+    "source": "Hugging Face",
+    "published_at": "Mon, 28 Sep 2026 09:44:05 GMT",
+    "retrieved_at": "2026-10-06T06:49:37.545389+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Welcome RL Environments to the hub",
+    "url": "https://huggingface.co/blog/rl-environments",
+    "source": "Hugging Face",
+    "published_at": "Mon, 28 Sep 2026 00:00:00 GMT",
+    "retrieved_at": "2026-10-06T06:49:37.545393+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
+    "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+    "source": "Hugging Face",
+    "published_at": "Thu, 24 Sep 2026 14:08:57 GMT",
+    "retrieved_at": "2026-10-06T06:49:37.545395+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+    "url": "https://huggingface.co/blog/evaleval-aisi",
+    "source": "Hugging Face",
+    "published_at": "Tue, 22 Sep 2026 00:00:00 GMT",
+    "retrieved_at": "2026-10-06T06:49:37.545398+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Transformers now runs llama.cpp quants",
+    "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+    "source": "Hugging Face",
+    "published_at": "Tue, 22 Sep 2026 00:00:00 GMT",
+    "retrieved_at": "2026-10-06T06:49:37.545401+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "One Figure, Every Canvas: Editable Flowchart Relayout via Agentic Pipeline",
+    "url": "https://arxiv.org/abs/2610.06852v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-05T17:59:54Z",
+    "retrieved_at": "2026-10-06T06:49:37.732794+00:00",
+    "summary": "Pipeline figures in ML papers must be repurposed across many canvases, including paper columns, 16:9 slides, portrait posters, 1:1 social teasers, 9:16 phone previews. Each format imposes a different aspect ratio on the same computational graph, where any silently broken connection misrepresents the method. We formulate aspect-ratio-adaptive flowchart relayout as a distinct task: given a raster flowchart and a target ratio, produce a structurally faithful, hallucination-free, editable layout. Existing methods fail characteristically: image-to-image models stretch blocks and reject extreme ratios, text-to-image agentic systems hallucinate content, and parse-then-render systems mis-route edges. We propose an agentic pipeline factored into Parse, Style, and Layout stages, each pairing a main agent with a critic that combines deterministic constraint checks with VLM visual feedback so connectivity is explicitly checked and prevented from being silently broken. Outputs are draw.io-editable mxGraph XML. On a curated benchmark of 100 flowcharts at five aspect ratios, evaluated by Gemini 3.1 Pro and validated against human judgments, our method reaches 68.6% Content Fidelity versus 11.2-41.4% for prior work. Project page: https://onefigureeverycanvas.vercel.app/",
+    "content": "Pipeline figures in ML papers must be repurposed across many canvases, including paper columns, 16:9 slides, portrait posters, 1:1 social teasers, 9:16 phone previews. Each format imposes a different aspect ratio on the same computational graph, where any silently broken connection misrepresents the method. We formulate aspect-ratio-adaptive flowchart relayout as a distinct task: given a raster flowchart and a target ratio, produce a structurally faithful, hallucination-free, editable layout. Existing methods fail characteristically: image-to-image models stretch blocks and reject extreme ratios, text-to-image agentic systems hallucinate content, and parse-then-render systems mis-route edges. We propose an agentic pipeline factored into Parse, Style, and Layout stages, each pairing a main agent with a critic that combines deterministic constraint checks with VLM visual feedback so connectivity is explicitly checked and prevented from being silently broken. Outputs are draw.io-editable mxGraph XML. On a curated benchmark of 100 flowcharts at five aspect ratios, evaluated by Gemini 3.1 Pro and validated against human judgments, our method reaches 68.6% Content Fidelity versus 11.2-41.4% for prior work. Project page: https://onefigureeverycanvas.vercel.app/",
+    "source_type": "research"
+  },
+  {
+    "title": "Base Models Can Reason By Taking a Cue From Training Data",
+    "url": "https://arxiv.org/abs/2610.06851v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-05T17:59:52Z",
+    "retrieved_at": "2026-10-06T06:49:37.732834+00:00",
+    "summary": "In this paper, we study how training data creates associations between the tokens at the start of a base model's response and the reasoning behavior that follows. First, we demonstrate that fixing particular starting token cues makes a base model's performance competitive with that of its reinforcement learning (RL)-trained counterparts on math and coding. For instance, the cue \".\\n\\nOkay\" raises Olmo-3-7B's MATH-500 pass@1 accuracy from 42% to 78%, while \"Alright,\" raises Qwen3-14B's from 72% to 87%. Second, RL makes these cues more likely, while fixing them recovers much of its performance gain over the base model. Third, we trace the reasoning effects of token cues to the training data. We perform causal data interventions to turn an arbitrary word, such as \"chicken\", into an effective reasoning cue, or remove an existing cue's effect. A similar edit makes the prompt instruction \"Think duck duck goose\" as effective as \"Think step by step\" at eliciting reasoning. We also find that the hidden state representations induced by different cues correlate with different document types from the training set. Finally, we extend our study of token cues with a case study in language model safety, finding that different cues elicit distinct refusal and compliance behaviors that correspond to different types of training data.",
+    "content": "In this paper, we study how training data creates associations between the tokens at the start of a base model's response and the reasoning behavior that follows. First, we demonstrate that fixing particular starting token cues makes a base model's performance competitive with that of its reinforcement learning (RL)-trained counterparts on math and coding. For instance, the cue \".\\n\\nOkay\" raises Olmo-3-7B's MATH-500 pass@1 accuracy from 42% to 78%, while \"Alright,\" raises Qwen3-14B's from 72% to 87%. Second, RL makes these cues more likely, while fixing them recovers much of its performance gain over the base model. Third, we trace the reasoning effects of token cues to the training data. We perform causal data interventions to turn an arbitrary word, such as \"chicken\", into an effective reasoning cue, or remove an existing cue's effect. A similar edit makes the prompt instruction \"Think duck duck goose\" as effective as \"Think step by step\" at eliciting reasoning. We also find that the hidden state representations induced by different cues correlate with different document types from the training set. Finally, we extend our study of token cues with a case study in language model safety, finding that different cues elicit distinct refusal and compliance behaviors that correspond to different types of training data.",
+    "source_type": "research"
+  },
+  {
+    "title": "BiasFlow: Geometric Monitoring and Backbone Regularization for Spurious Feature Reliance",
+    "url": "https://arxiv.org/abs/2610.06846v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-05T17:59:28Z",
+    "retrieved_at": "2026-10-06T06:49:37.732862+00:00",
+    "summary": "Worst-group accuracy (WGA) evaluates a trained predictor but does not characterize how its frozen backbone behaves when a new head is learned. We introduce BiasFlow, a hook-based toolkit for monitoring class-attribute centroid alignment (IBMI), within-class centroid separation (W-IBMI), and feature-projection sensitivity. IBMI is confounded by class-attribute correlation and is not a measure of causal feature reliance. We pair these diagnostics with BiasFlow Regularization (BFR), a supervised, composable class-conditional centroid-alignment penalty. W-IBMI verifies the quantity BFR optimizes; it is scale dependent and does not independently establish attribute removal. Across the reported small-scale benchmarks, adding BFR improves or preserves mean WGA, with gains up to +26.0 pp on UrbanCars. The principal independent stress test freezes CelebA-Std backbones and trains fresh heads on biased data: BFR+GroupDRO improves WGA from 40.7% to 64.1%, while Male probe accuracy decreases from 92.5% to 72.2%. Attribute information remains recoverable, and cross-task results are mixed. A controlled synthetic-watermark ImageNet experiment additionally improves watermark-shift accuracy by +23.0 pp under matched training. These results support evaluating centroid geometry and resistance to biased head retraining alongside WGA, within the tested protocols.",
+    "content": "Worst-group accuracy (WGA) evaluates a trained predictor but does not characterize how its frozen backbone behaves when a new head is learned. We introduce BiasFlow, a hook-based toolkit for monitoring class-attribute centroid alignment (IBMI), within-class centroid separation (W-IBMI), and feature-projection sensitivity. IBMI is confounded by class-attribute correlation and is not a measure of causal feature reliance. We pair these diagnostics with BiasFlow Regularization (BFR), a supervised, composable class-conditional centroid-alignment penalty. W-IBMI verifies the quantity BFR optimizes; it is scale dependent and does not independently establish attribute removal. Across the reported small-scale benchmarks, adding BFR improves or preserves mean WGA, with gains up to +26.0 pp on UrbanCars. The principal independent stress test freezes CelebA-Std backbones and trains fresh heads on biased data: BFR+GroupDRO improves WGA from 40.7% to 64.1%, while Male probe accuracy decreases from 92.5% to 72.2%. Attribute information remains recoverable, and cross-task results are mixed. A controlled synthetic-watermark ImageNet experiment additionally improves watermark-shift accuracy by +23.0 pp under matched training. These results support evaluating centroid geometry and resistance to biased head retraining alongside WGA, within the tested protocols.",
+    "source_type": "research"
+  },
+  {
+    "title": "Learning to Read the Contextual Tokens in Diffusion Transformers",
+    "url": "https://arxiv.org/abs/2610.06844v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-05T17:59:17Z",
+    "retrieved_at": "2026-10-06T06:49:37.732893+00:00",
+    "summary": "Multimodal Diffusion Transformers (MM-DiTs) jointly process visual and textual representations throughout generation. These models repeatedly update the text tokens through multimodal attention, forming dynamic contextual tokens whose function is not well understood. In this work, we introduce a framework for reading this contextual space through natural-language interrogation. We train a lightweight bottleneck network that maps intermediate contextual tokens into the input space of a frozen Large Language Model (LLM), allowing the LLM to answer questions about the emerging image directly from these hidden representations. Our reader reveals that contextual tokens encode a rich, global representation of the emerging scene: generation-specific semantics, including attributes left underspecified by the prompt, are accessible surprisingly early in denoising, while increasingly fine-grained details become readable over time. Remarkably, this information remains decodable even when the MM-DiT receives an empty prompt, showing that contextual tokens accumulate substantial image-specific information from the evolving visual representation itself. We further find that generations with more readable contextual representations tend to receive higher human-preference scores. Building on these observations, we introduce Contextual Alignment, a training technique that explicitly reinforces the visual-semantic information encoded in the contextual tokens, improving generation quality and distributional coverage. Together, our results establish contextual tokens as both an interpretable view into the internal dynamics of MM-DiTs and an effective target for improving generative models.",
+    "content": "Multimodal Diffusion Transformers (MM-DiTs) jointly process visual and textual representations throughout generation. These models repeatedly update the text tokens through multimodal attention, forming dynamic contextual tokens whose function is not well understood. In this work, we introduce a framework for reading this contextual space through natural-language interrogation. We train a lightweight bottleneck network that maps intermediate contextual tokens into the input space of a frozen Large Language Model (LLM), allowing the LLM to answer questions about the emerging image directly from these hidden representations. Our reader reveals that contextual tokens encode a rich, global representation of the emerging scene: generation-specific semantics, including attributes left underspecified by the prompt, are accessible surprisingly early in denoising, while increasingly fine-grained details become readable over time. Remarkably, this information remains decodable even when the MM-DiT receives an empty prompt, showing that contextual tokens accumulate substantial image-specific information from the evolving visual representation itself. We further find that generations with more readable contextual representations tend to receive higher human-preference scores. Building on these observations, we introduce Contextual Alignment, a training technique that explicitly reinforces the visual-semantic information encoded in the contextual tokens, improving generation quality and distributional coverage. Together, our results establish contextual tokens as both an interpretable view into the internal dynamics of MM-DiTs and an effective target for improving generative models.",
+    "source_type": "research"
+  },
+  {
+    "title": "Recursive Video In-Context Learning for Agentic Robot",
+    "url": "https://arxiv.org/abs/2610.06843v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-05T17:59:11Z",
+    "retrieved_at": "2026-10-06T06:49:37.732919+00:00",
+    "summary": "LLM agents that orchestrate frozen vision-language-action (VLA) policies improve across episodes through text memory, which records what the agent did but not how the task is done. A demonstration video shows it, but fits poorly into an agent's context. The full video slows every turn, fixed keyframes lose the contact detail that decides whether a grasp holds, and what the agent needs shifts from the task's structure while planning to the frames around each contact. We introduce Recursive Video In-Context Learning (RV-ICL), a training-free method that turns a demonstration into a hierarchy the agent navigates rather than a prompt it receives. The hierarchy is built from the sub-events of the demonstration, such as grasps and releases. Its levels grow finer, from keyframes of the whole task to phases, moments and short clips, and are exposed through read-only tools. The agent reads the coarse levels before planning. During execution it re-enters the hierarchy whenever a step needs more detail and loads only the clip of its current sub-goal. One demonstration per task is enough. Built on RPent, RV-ICL raises success from 92.6% to 96.5% on LIBERO-PRO and from 86.7% to 95.8% on LIBERO-Plus.",
+    "content": "LLM agents that orchestrate frozen vision-language-action (VLA) policies improve across episodes through text memory, which records what the agent did but not how the task is done. A demonstration video shows it, but fits poorly into an agent's context. The full video slows every turn, fixed keyframes lose the contact detail that decides whether a grasp holds, and what the agent needs shifts from the task's structure while planning to the frames around each contact. We introduce Recursive Video In-Context Learning (RV-ICL), a training-free method that turns a demonstration into a hierarchy the agent navigates rather than a prompt it receives. The hierarchy is built from the sub-events of the demonstration, such as grasps and releases. Its levels grow finer, from keyframes of the whole task to phases, moments and short clips, and are exposed through read-only tools. The agent reads the coarse levels before planning. During execution it re-enters the hierarchy whenever a step needs more detail and loads only the clip of its current sub-goal. One demonstration per task is enough. Built on RPent, RV-ICL raises success from 92.6% to 96.5% on LIBERO-PRO and from 86.7% to 95.8% on LIBERO-Plus.",
+    "source_type": "research"
+  },
+  {
+    "title": "UniSlider: Perceptually Uniform Sliders for Continuous Image Editing",
+    "url": "https://arxiv.org/abs/2610.06831v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-05T17:58:11Z",
+    "retrieved_at": "2026-10-06T06:49:37.732950+00:00",
+    "summary": "Sliders provide an intuitive interface for continuous image editing. In current generative approaches, however, the slider is simply a rescaling of the method's strength parameter, such as an adapter coefficient, a prompt weight, or an interpolation factor. This strength relates poorly to perceptual change. The image can partially revert as the slider moves, long stretches of the range produce no visible difference, and short intervals transform the image abruptly. Remapping the strength could fix this uneven pace, but only if the trajectory is monotone, which current methods do not enforce. We therefore distinguish the slider from the strength, and require perceptual distance from the input to grow linearly with the slider value. We introduce UniSlider, a lightweight LoRA trained on a few-step editing backbone so that its strength approximates this ideal slider. Few-step sampling lets us impose this objective in pixel space without intermediate ground truth, and the backbone's output is preserved at full strength. However, a low-rank adapter cannot make the strength fully uniform. Our slider is thus an inference-time remapping of the strength, obtained by adaptive sampling. Since training optmizes to make the trajectory monotone, this remapping closes the remaining gap without extra training or parameters. On a new benchmark of 300 continuous edits evaluating uniformity, monotonicity, edit fidelity, and identity preservation, UniSlider outperforms all prior methods and is preferred in a user study.",
+    "content": "Sliders provide an intuitive interface for continuous image editing. In current generative approaches, however, the slider is simply a rescaling of the method's strength parameter, such as an adapter coefficient, a prompt weight, or an interpolation factor. This strength relates poorly to perceptual change. The image can partially revert as the slider moves, long stretches of the range produce no visible difference, and short intervals transform the image abruptly. Remapping the strength could fix this uneven pace, but only if the trajectory is monotone, which current methods do not enforce. We therefore distinguish the slider from the strength, and require perceptual distance from the input to grow linearly with the slider value. We introduce UniSlider, a lightweight LoRA trained on a few-step editing backbone so that its strength approximates this ideal slider. Few-step sampling lets us impose this objective in pixel space without intermediate ground truth, and the backbone's output is preserved at full strength. However, a low-rank adapter cannot make the strength fully uniform. Our slider is thus an inference-time remapping of the strength, obtained by adaptive sampling. Since training optmizes to make the trajectory monotone, this remapping closes the remaining gap without extra training or parameters. On a new benchmark of 300 continuous edits evaluating uniformity, monotonicity, edit fidelity, and identity preservation, UniSlider outperforms all prior methods and is preferred in a user study.",
+    "source_type": "research"
+  },
+  {
+    "title": "MemPilot: Orchestrating On-Demand Multimodal Memory Curation for LLM Agents",
+    "url": "https://arxiv.org/abs/2610.06830v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-05T17:58:06Z",
+    "retrieved_at": "2026-10-06T06:49:37.732980+00:00",
+    "summary": "Memory has become integral to the LLM agent ecosystem, supporting information retention and reuse across interactions. However, most existing agent memory systems construct memory in a query-agnostic manner, which can incur unnecessary preprocessing cost and discard details that later prove essential. Recent studies have begun shifting memory processing toward runtime adaptation, but typically specialize in particular operations or fixed processing schemes, leaving flexible control over performance, cost, and latency largely underexplored. To address this challenge, we present \\textbf{MemPilot}, a flexible framework that orchestrates on-demand memory curation under different performance--cost--latency preferences. Specifically, we optimize a multi-step LLM policy via reinforcement learning to iteratively choose between retrieving from query-agnostic memory and delegating query-specific curation of raw multimodal history to heterogeneous LLMs and VLMs. The policy jointly controls evidence amount, curation instructions, model selection, and visual access, enabling fine-grained allocation of runtime computation. To optimize this policy under competing objectives, we adapt objective-wise advantage decoupling by separately estimating each objective's advantage before aggregation. Moreover, we introduce prefix-based marginal utility estimation for fine-grained credit assignment across multi-step rollouts. Experiments on five multimodal agent-memory benchmarks demonstrate favorable performance--cost--latency trade-offs across optimization preferences, with preference sweeps yielding broader frontiers than existing trade-off-aware baselines.",
+    "content": "Memory has become integral to the LLM agent ecosystem, supporting information retention and reuse across interactions. However, most existing agent memory systems construct memory in a query-agnostic manner, which can incur unnecessary preprocessing cost and discard details that later prove essential. Recent studies have begun shifting memory processing toward runtime adaptation, but typically specialize in particular operations or fixed processing schemes, leaving flexible control over performance, cost, and latency largely underexplored. To address this challenge, we present \\textbf{MemPilot}, a flexible framework that orchestrates on-demand memory curation under different performance--cost--latency preferences. Specifically, we optimize a multi-step LLM policy via reinforcement learning to iteratively choose between retrieving from query-agnostic memory and delegating query-specific curation of raw multimodal history to heterogeneous LLMs and VLMs. The policy jointly controls evidence amount, curation instructions, model selection, and visual access, enabling fine-grained allocation of runtime computation. To optimize this policy under competing objectives, we adapt objective-wise advantage decoupling by separately estimating each objective's advantage before aggregation. Moreover, we introduce prefix-based marginal utility estimation for fine-grained credit assignment across multi-step rollouts. Experiments on five multimodal agent-memory benchmarks demonstrate favorable performance--cost--latency trade-offs across optimization preferences, with preference sweeps yielding broader frontiers than existing trade-off-aware baselines.",
+    "source_type": "research"
+  },
+  {
+    "title": "CLIFT: Conformal Self-Verification for Web Agent Training and Test-Time Scaling",
+    "url": "https://arxiv.org/abs/2610.06829v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-05T17:57:51Z",
+    "retrieved_at": "2026-10-06T06:49:37.733015+00:00",
+    "summary": "Open-source web agents are now strong enough to execute realistic browser tasks, but training them with reinforcement learning still depends on weak supervision: binary task success is too sparse for credit assignment, while frontier-language-model judges are too expensive to call at every step and cannot be assumed available at deployment. We introduce CLIFT, a training and test-time scaling method built around conformal self-verification. During training, the agent answers natural-language verification questions about its own rollouts; a Compositional Conformal Certifier keeps only question signals whose URL-conditional evidence agrees with a training-time judge, assigns signed trust weights through polarity-aware lift, and blends the resulting verifier score into per-step rewards in a way that never subtracts from the judge baseline. At test time, the same certified bank is frozen and reused as structured evidence for Conformal Trajectory Selection (CTS): the agent samples a greedy rollout and one or more diverse retries, the self-verifier summarises each URL trace, and a conservative majority-vote rule chooses whether to swap away from the current incumbent without calling any external judge. This single mechanism supports three settings. On WebArena Infinity, CLIFT achieves state-of-the-art performance among open-source web agents. On VisualWebArena, a bank trained with the open model transfers to GPT-5.5 at test time and reaches state-of-the-art performance under the canonical harness. On Online Mind2Web, without training an agent on the benchmark, translating the certified question bank improves a live-web agent in zero-shot evaluation. Together these results position conformal self-verification as a way to turn costly judge feedback into a reusable training sign",
+    "content": "Open-source web agents are now strong enough to execute realistic browser tasks, but training them with reinforcement learning still depends on weak supervision: binary task success is too sparse for credit assignment, while frontier-language-model judges are too expensive to call at every step and cannot be assumed available at deployment. We introduce CLIFT, a training and test-time scaling method built around conformal self-verification. During training, the agent answers natural-language verification questions about its own rollouts; a Compositional Conformal Certifier keeps only question signals whose URL-conditional evidence agrees with a training-time judge, assigns signed trust weights through polarity-aware lift, and blends the resulting verifier score into per-step rewards in a way that never subtracts from the judge baseline. At test time, the same certified bank is frozen and reused as structured evidence for Conformal Trajectory Selection (CTS): the agent samples a greedy rollout and one or more diverse retries, the self-verifier summarises each URL trace, and a conservative majority-vote rule chooses whether to swap away from the current incumbent without calling any external judge. This single mechanism supports three settings. On WebArena Infinity, CLIFT achieves state-of-the-art performance among open-source web agents. On VisualWebArena, a bank trained with the open model transfers to GPT-5.5 at test time and reaches state-of-the-art performance under the canonical harness. On Online Mind2Web, without training an agent on the benchmark, translating the certified question bank improves a live-web agent in zero-shot evaluation. Together these results position conformal self-verification as a way to turn costly judge feedback into a reusable training sign",
+    "source_type": "research"
+  }
+]

@@ -466,5 +466,19 @@
     "evidence_urls": [
       "https://deepmind.google/blog/introducing-agentic-video-in-gemini/"
     ]
+  },
+  {
+    "date": "2026-10-06",
+    "name_zh": "代理自验证与来源感知",
+    "name_en": "Agent Self-Verification & Source Awareness",
+    "score": 8.0,
+    "maturity": "Emerging",
+    "explanation": "指代理系统在训练与推理过程中，通过保形预测、来源溯源、确定性约束与视觉反馈等机制，对自身输出、信息来源与任务完成状态进行可验证的自我检查，以降低幻觉、虚假完成与不可靠引用。",
+    "why_now": "2026年代理大规模进入企业工作流与Web操作场景，传统二元成功信号与昂贵judge无法满足训练与部署需求，保形自验证、来源感知验证与状态一致性校验成为刚需。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.06829v1",
+      "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+      "https://huggingface.co/blog/microsoft/thinkingbox"
+    ]
   }
 ]
