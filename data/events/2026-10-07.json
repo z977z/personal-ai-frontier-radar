@@ -1,0 +1,128 @@
+[
+  {
+    "id": "a4678728b0be238a",
+    "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+    "summary": "",
+    "published_at": "Tue, 29 Sep 2026 13:07:00 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+        "type": "official"
+      }
+    ],
+    "pre_score": 6.2,
+    "ai_score": 6.2,
+    "facts": "Hugging Face 发布博客《Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents》，提出针对 MCP（Model Context Protocol）代理的源感知验证方法，强调在验证事实时需同时验证信息来源。",
+    "analysis": "该工作聚焦于 MCP 代理的可靠性问题，指出仅验证事实本身不足，还需追溯来源。这反映了代理系统在工具调用和外部数据依赖中日益增长的信任与安全需求，可能推动 MCP 生态中验证层的发展。",
+    "technical_value": "提出源感知验证框架，可能涉及来源追踪、可信度评分和跨源一致性检查，为 MCP 代理提供更鲁棒的验证机制。",
+    "impact": "提升 MCP 代理在复杂环境中的可信度，对构建企业级代理应用有直接价值，可能成为 MCP 协议的标准组件。",
+    "keywords": [
+      "MCP",
+      "源感知验证",
+      "代理可靠性",
+      "事实核查"
+    ]
+  },
+  {
+    "id": "41c5f7bd2793ecf7",
+    "title": "Agent in a Bottle: Can LLM Agents Turn Their Capabilities Into Cheap, Scalable Artifacts?",
+    "summary": "Large language models (LLMs) can solve many narrow tasks, but querying them separately for millions of related instances can be prohibitively expensive. Can LLM agents autonomously create cheaper solutions for such workloads? We call this ability \"bottling\": the ability to turn general capabilities into task-specific solutions that balance answer quality and amortised cost. We introduce BOTTLED, a benchmark in which agents receive an entire unlabelled workload and must complete it under fixed time, compute and LLM API budgets. Agents choose their own approach, such as training a small model or writing a reusable program. Across ten models and three tasks, we find that strong zero-shot task performance does not reliably translate into strong bottling capabilities. Models with similar zero-shot scores can differ substantially after bottling, and 48 of 60 bottling runs score below the lower bound of the 95% confidence interval of their model's zero-shot performance. Moreover, 31 of 60 runs underperform the stronger of two small-model distillation baselines with the same token budget. Nevertheless, bottling can yield substantial savings: on query-product relevance classification, Opus 5 retains about 82% of its zero-shot macro-F1 at roughly 657 times lower reported cost. Bottling is also competitive with Jev, a \"system one\" model built especially for cheap, repetitive inference: Opus 5 on the same task recovers about 94% of Jev's macro-F1 at a quarter of Jev's projected full-workload cost. BOTTLED provides a basis for evaluating and improving agents' ability to invest limited resources in reusable solutions for large, repetitive workloads.",
+    "published_at": "2026-10-06T17:57:19Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.08775v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 5.7,
+    "facts": "arXiv 论文《Agent in a Bottle: Can LLM Agents Turn Their Capabilities Into Cheap, Scalable Artifacts?》提出 BOTTLED 基准，评估 LLM 代理将通用能力转化为低成本、可复用解决方案（“bottling”）的能力。实验涉及 10 个模型和 3 个任务，发现零样本性能与 bottling 能力不直接相关，48/60 次 bottling 运行低于零样本性能置信区间下界，31/60 次低于小模型蒸馏基线。但 bottling 可大幅降低成本：Opus 5 在查询-产品相关性分类上保留约 82% 零样本 macro-F1，成本降低约 657 倍。",
+    "analysis": "该研究揭示了代理在资源受限下自主优化工作负载的潜力与局限。bottling 能力与零样本性能脱钩，说明需要专门评估和训练代理的资源投资策略。成本节省显著，但质量下降风险需权衡。",
+    "technical_value": "提供首个评估代理“bottling”能力的基准，推动代理从一次性推理向可复用工件生成发展，涉及小模型训练、程序合成和成本-质量权衡。",
+    "impact": "对大规模重复性任务的经济性有重大影响，可能改变企业部署代理的方式，促进“系统一”模型与代理协作的范式。",
+    "keywords": [
+      "BOTTLED",
+      "代理优化",
+      "成本摊销",
+      "可复用工件",
+      "基准测试"
+    ]
+  },
+  {
+    "id": "204cc4ef541aa343",
+    "title": "Introducing agentic video understanding with Gemini",
+    "summary": "",
+    "published_at": "Tue, 01 Sep 2026 17:08:51 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "Google DeepMind 发布博客《Introducing agentic video understanding with Gemini》，介绍 Gemini 的代理式视频理解能力。",
+    "analysis": "代理式视频理解意味着模型能主动分解视频任务、调用工具并整合多模态信息。这扩展了 Gemini 在视频分析、监控、内容审核等场景的应用，可能推动视频代理的发展。",
+    "technical_value": "结合代理框架与视频理解，可能涉及时序推理、工具调用和多步规划，提升复杂视频任务的自动化处理能力。",
+    "impact": "增强 Gemini 在多模态代理市场的竞争力，为视频内容分析、交互式视频应用提供新可能。",
+    "keywords": [
+      "Gemini",
+      "代理式视频理解",
+      "多模态",
+      "视频代理"
+    ]
+  },
+  {
+    "id": "bedbfc27a8437030",
+    "title": "The Agent Said It Was Done. The Database Disagreed.",
+    "summary": "",
+    "published_at": "Sat, 03 Oct 2026 22:56:48 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "Hugging Face 博客《The Agent Said It Was Done. The Database Disagreed.》由微软发布，讨论代理声称任务完成但数据库状态不一致的问题。",
+    "analysis": "该问题揭示了代理在真实环境中执行操作时，对状态变更的验证不足。代理可能基于错误假设报告成功，导致数据不一致。这强调了代理需要与外部系统进行状态同步和验证。",
+    "technical_value": "涉及代理的自我验证、事务一致性和外部状态检查，可能提出新的验证协议或框架。",
+    "impact": "对企业级代理部署至关重要，避免因代理误报导致的数据损坏或业务逻辑错误。",
+    "keywords": [
+      "代理验证",
+      "状态一致性",
+      "数据库",
+      "任务完成"
+    ]
+  },
+  {
+    "id": "62c44fc36fe267c6",
+    "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+    "summary": "",
+    "published_at": "Fri, 02 Oct 2026 04:01:31 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "Hugging Face 博客《AutoSynthData: Generating Training Data for Enterprise Agents》由 ServiceNow AI 发布，介绍自动合成企业代理训练数据的方法。",
+    "analysis": "企业代理需要领域特定的训练数据，但获取成本高。AutoSynthData 可能利用 LLM 自动生成高质量、多样化的训练样本，降低数据标注成本，加速企业代理的定制化。",
+    "technical_value": "自动合成数据 pipeline，可能涉及提示工程、数据过滤和质量评估，提升代理在特定企业任务上的表现。",
+    "impact": "降低企业采用代理的门槛，促进代理在垂直行业的落地。",
+    "keywords": [
+      "AutoSynthData",
+      "合成数据",
+      "企业代理",
+      "训练数据"
+    ]
+  }
+]

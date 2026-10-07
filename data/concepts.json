@@ -480,5 +480,17 @@
       "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
       "https://huggingface.co/blog/microsoft/thinkingbox"
     ]
+  },
+  {
+    "date": "2026-10-07",
+    "name_zh": "代理资源优化",
+    "name_en": "Agent Resource Optimization",
+    "score": 7.5,
+    "maturity": "Emerging",
+    "explanation": "代理资源优化指 LLM 代理在有限时间、计算和 API 预算下，自主选择策略（如训练小模型、编写程序）将通用能力转化为低成本、可复用解决方案的能力。BOTTLED 基准首次系统评估该能力，揭示其与零样本性能脱钩，但可大幅降低成本。",
+    "why_now": "随着代理处理大规模重复任务，API 成本成为瓶颈。代理需要自主优化资源，而模型能力的提升使这种元认知成为可能。BOTTLED 的提出标志着该方向开始被量化研究。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.08775v1"
+    ]
   }
 ]
