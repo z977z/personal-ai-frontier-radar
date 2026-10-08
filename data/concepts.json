@@ -492,5 +492,17 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2610.08775v1"
     ]
+  },
+  {
+    "date": "2026-10-08",
+    "name_zh": "来源感知验证",
+    "name_en": "Source-Aware Verification",
+    "score": 7.0,
+    "maturity": "Emerging",
+    "explanation": "来源感知验证是一种针对 AI 智能体（特别是 MCP 智能体）的验证方法，不仅验证事实的正确性，还验证信息来源的可靠性和可信度。它通过追踪智能体调用外部工具或数据源的过程，评估来源的权威性、时效性和一致性，从而提升智能体决策的可靠性和可审计性。",
+    "why_now": "随着 MCP 等协议使智能体能够广泛调用外部工具和数据，来源的可靠性成为影响智能体输出质量的关键因素。传统的事实验证不足以应对来源偏见或错误信息，因此来源感知验证成为迫切需求。",
+    "evidence_urls": [
+      "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source"
+    ]
   }
 ]

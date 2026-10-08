@@ -1,0 +1,132 @@
+[
+  {
+    "id": "673e37db4932f291",
+    "title": "RoboJEPA: Scaling Robotic Latent World Models",
+    "summary": "Latent world models have shown a remarkable ability to predict future states and to plan in the real world. In practice, however, we lack a principled way to estimate how their capabilities scale with model size, data, and compute, an open problem that slows progress in the field. In this work we present RoboJEPA, a world model based on the Joint Embedding Predictive Architecture (JEPA) and trained on a large-scale dataset spanning 12 robotic embodiments. We show that RoboJEPA's imagination error, the error of its latent rollouts, follows a second-order power law in compute, allowing us to predict model quality well beyond the scale at which the law is fit. We further show that downstream robotic planning performance improves predictably with compute, and that imagination error is strongly correlated with it, making it a reliable proxy for real-robot evaluation. Finally, we demonstrate that latent world models can be deployed zero-shot as robotic agents, planning toward a single goal image to solve tasks requiring long-horizon planning on real hardware. We release all model checkpoints together with our training and robot deployment code. To our knowledge, this is the first work to establish scaling laws for multi-embodiment robotic world models trained on real robot data, and RoboJEPA, at 8B parameters, is the largest JEPA predictor model trained to date.",
+    "published_at": "2026-10-07T17:54:42Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.10515v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.0,
+    "ai_score": 8.5,
+    "facts": "RoboJEPA 是基于联合嵌入预测架构（JEPA）的世界模型，在涵盖 12 种机器人本体的数据集上训练。其想象误差随计算量呈二阶幂律，下游规划性能可预测地随计算量提升，且想象误差与规划性能强相关。模型可零样本部署为机器人智能体，通过单张目标图像进行长时程规划。8B 参数的 RoboJEPA 是迄今最大的 JEPA 预测器模型，所有检查点、训练和部署代码均已开源。",
+    "analysis": "该工作首次为多本体机器人世界模型建立了缩放定律，证明了潜在世界模型在机器人领域的可扩展性。想象误差作为真实机器人评估的代理指标，可大幅降低评估成本。零样本部署能力展示了世界模型作为通用机器人智能体的潜力，为机器人基础模型的发展提供了新范式。",
+    "technical_value": "建立了机器人世界模型的缩放定律，提出想象误差作为性能代理，验证了 JEPA 架构在多本体机器人数据上的有效性，并开源了 8B 模型及代码。",
+    "impact": "对机器人学习和世界模型研究产生重大影响，可能加速通用机器人智能体的开发，降低对大量真实机器人数据的依赖。",
+    "keywords": [
+      "JEPA",
+      "世界模型",
+      "机器人学习",
+      "缩放定律",
+      "零样本规划"
+    ]
+  },
+  {
+    "id": "6dc09b3ff26cf801",
+    "title": "SciExam for ENSO: Can AI Agents Build Climate Models?",
+    "summary": "Language-model agents are increasingly asked to carry out open-ended scientific research, yet their results are usually graded against a known answer, a rubric, or a language-model reviewer, none of which can tell whether a new scientific model is valid. The AI Science Exam for El Nino-Southern Oscillation (SciExam for ENSO) is a benchmark in which agents build low-order stochastic models of ENSO, the dominant mode of interannual climate variability, from real observations. Within a six-hour budget, agents process the observations, write their own diagnostics, which are then frozen, and develop a model using only these diagnostics as feedback. Hidden graders then test whether the model reproduces ENSO's statistics, recovers unobserved variables, and forecasts held-out years, and score a published model in the same way. Across twelve agent systems, six produce models that score higher than the published model, mainly through better reconstruction and forecasting. The simplified forms of the stronger models are each compatible with one of the two competing explanations of ENSO's warm-cold asymmetry, an open debate that the task never mentions. Controlled runs of the top system under varied information suggest that its scores do not come from recalling the dated observational record and that the information it receives shapes how it builds its model. SciExam for ENSO can thus evaluate agent research where no answer is known, and the results suggest that agents can already build competitive models whose structures bear on questions that scientists still debate.",
+    "published_at": "2026-10-07T17:52:52Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.10513v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.0,
+    "ai_score": 8.0,
+    "facts": "SciExam for ENSO 是一个基准测试，要求语言模型智能体在六小时内从真实观测数据构建 ENSO 的低阶随机模型。智能体处理观测数据、编写诊断程序（随后冻结），并仅基于这些诊断开发模型。隐藏评分器测试模型是否重现 ENSO 统计特征、恢复未观测变量并预测留出年份。在 12 个智能体系统中，6 个产生的模型得分高于已发表模型。较强模型的简化形式与 ENSO 冷暖不对称的两种竞争解释之一兼容。",
+    "analysis": "该基准测试首次在无已知答案的科学问题上评估智能体研究能力，表明 AI 智能体已能构建具有竞争力的科学模型，甚至触及科学家仍在辩论的问题。这标志着 AI 在开放式科学发现中的潜力，但也引发对智能体研究可靠性和可解释性的思考。",
+    "technical_value": "提出了一个无已知答案的科学基准，设计了冻结诊断和隐藏评分机制，验证了智能体在气候建模中的能力，并展示了其模型结构与科学辩论的关联。",
+    "impact": "对 AI 驱动的科学发现具有里程碑意义，可能推动智能体在气候科学、物理学等领域的应用，并改变科学研究的协作模式。",
+    "keywords": [
+      "AI智能体",
+      "科学发现",
+      "ENSO",
+      "气候建模",
+      "基准测试"
+    ]
+  },
+  {
+    "id": "f179771648fdf918",
+    "title": "Decoupling Exploration from Optimization in RLVR",
+    "summary": "Modern language models undergo reinforcement learning with verifiable rewards (RLVR) on top of already-trained checkpoints. A key promise of RLVR is the discovery of new reasoning strategies. In principle, a model can sample novel ideas absent from its prior training data. In practice, however, augmenting RLVR with strong novelty incentives has seen limited success and can degrade model quality. Because verifiable rewards supervise only a narrow slice of the model's knowledge and behavior, such degradations are difficult to recover from. Instead, we decouple exploration from optimization in a framework we call Exploration-Distillation (ExpDis). We train one or more explorer policies with a novelty bonus in the reward, filter their trajectories for correctness and quality, and distill them into a separate student policy. The student policy is then trained without a novelty bonus. We repeat the above procedure for several rounds, alternating between exploration and optimization. This decoupling allows us to aggressively scale exploration without degrading the student policy. Across seven mathematical reasoning benchmarks and two model families, ExpDis outperforms DAPO at the same wall-clock budget. Moreover, we observe improved pass@$k$ scaling, indicating that ExpDis produces models that generate more diverse correct solutions.",
+    "published_at": "2026-10-07T17:59:26Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.10536v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 7.5,
+    "facts": "论文提出 Exploration-Distillation (ExpDis) 框架，将探索与优化解耦。训练一个或多个带有新颖性奖励的探索者策略，过滤其轨迹的正确性和质量，然后蒸馏到单独的学生策略中。学生策略在没有新颖性奖励的情况下训练。重复多轮。在七个数学推理基准和两个模型家族上，ExpDis 在相同墙钟时间预算下优于 DAPO，并观察到改进的 pass@k 缩放。",
+    "analysis": "该工作解决了 RLVR 中探索与优化耦合导致的模型质量下降问题。通过解耦，可以激进地扩展探索而不损害学生策略，从而发现更多样化的正确解决方案。这为强化学习在语言模型推理中的应用提供了新思路。",
+    "technical_value": "提出探索-蒸馏框架，通过分离探索者和学生策略，实现了更高效的探索和更稳定的优化，提升了数学推理的多样性和准确性。",
+    "impact": "对 RLVR 和语言模型推理研究有重要影响，可能推动更强大的推理模型的发展，并应用于其他需要探索的领域。",
+    "keywords": [
+      "RLVR",
+      "探索与优化",
+      "蒸馏",
+      "数学推理",
+      "强化学习"
+    ]
+  },
+  {
+    "id": "53438bc9baccbf58",
+    "title": "RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing",
+    "summary": "Large language models are increasingly applied to tasks grounded in long, heterogeneous information sources. Conventional Retrieval-Augmented Generation (RAG) relies on fixed similarity-based retrieval, while agentic variants adapt queries and tool use but remain largely retrieval-centric. However, in many tasks, the evidence required for a solution is not explicitly present in any single source item. Instead, it must be derived through filtering, aggregation, or computation across multiple source items. In this work, we introduce RECAST (Routing Evidence through Computation, Access, and Synthesized Tools), a learned framework that formulates evidence construction as a sequential decision process over heterogeneous retrieval and computation operations, allowing evidence to be actively derived rather than merely retrieved. A lightweight RouterLM iteratively selects and formulates primitive operations or specifies customized operations for a frozen CompilerLM to translate into executable code. Once it judges the evidence sufficient, RouterLM passes the accepted evidence to a frozen AnswerLM to produce the final solution. We train RouterLM with supervised fine-tuning (SFT) followed by group relative policy optimization (GRPO). Across six heterogeneous benchmark families, RECAST achieves a mean success rate of 75.6%, outperforming the strongest large-model baseline by 15.9%. Moreover, training enables the Qwen3.5-9B RouterLM to outperform a training-free Gemini 3.5 Flash RouterLM by 5.0%. On three held-out benchmarks, RECAST improves over the strongest baseline by 15.0% on average, demonstrating strong zero-shot generalization across tasks and heterogeneous source representations.",
+    "published_at": "2026-10-07T17:51:08Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.10507v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 7.5,
+    "facts": "RECAST 是一个学习框架，将证据构建形式化为对异构检索和计算操作的顺序决策过程。轻量级 RouterLM 迭代选择并制定原始操作或为冻结的 CompilerLM 指定自定义操作以翻译为可执行代码。一旦判断证据充分，RouterLM 将接受的证据传递给冻结的 AnswerLM 生成最终解决方案。使用 SFT 和 GRPO 训练 RouterLM。在六个异构基准家族上，RECAST 平均成功率达 75.6%，比最强大型模型基线高 15.9%。训练使 Qwen3.5-9B RouterLM 比无训练的 Gemini 3.5 Flash RouterLM 高 5.0%。在三个留出基准上平均提升 15.0%。",
+    "analysis": "RECAST 突破了传统 RAG 的固定相似性检索限制，通过主动计算和合成工具来构建证据，解决了证据需要跨多个源项推导的问题。其路由-编译-回答的架构实现了证据的主动构建，显著提升了复杂任务的性能。",
+    "technical_value": "提出了证据构建的序列决策框架，结合检索与计算，通过 RouterLM 和 CompilerLM 的协作实现可执行代码生成，并在多个基准上取得显著提升。",
+    "impact": "对检索增强生成和智能体工具使用有重要推动，可能改变复杂信息任务的处理方式，提升 AI 在需要多步推理和计算场景中的表现。",
+    "keywords": [
+      "RAG",
+      "证据构建",
+      "路由",
+      "代码生成",
+      "强化学习"
+    ]
+  },
+  {
+    "id": "9cb85315f8668248",
+    "title": "EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution",
+    "summary": "Robot foundation models provide strong visuomotor control, yet their performance can degrade when object positions or task instructions change. Further improvements often require post-training on substantial robot data, which can be costly to collect through methods such as teleoperation. Agentic harnesses can adapt around the model, but current self-evolving harnesses use robot trials inefficiently when deciding which code and skill changes to pursue. We introduce EmbodiedRSI, a self-evolving agentic harness that autonomously decides where to explore next and turns the resulting physical interaction into improved code and skills. EmbodiedRSI realizes this through a Fast-Slow Dual-System Architecture, in which competing code and skill hypotheses are maintained in a Hypothesis Graph. Value-of-Information Experiment Selection chooses physical experiments that can distinguish these hypotheses. Their outcomes guide Code-Skill Co-Evolution. The Slow System builds Hierarchical Memory, and Reward-Grounded Memory Learning selects effective memory according to their value for later Fast-System improvement. On RoboCasa365, EmbodiedRSI reaches 77.0% overall success and 71.3% on Composite-Unseen, compared with 40.1% for the best baseline. EmbodiedRSI also reaches 86.8% overall success on LIBERO-Pro. Beyond benchmark performance, EmbodiedRSI transfers zero-shot to real-world robot, achieving 71.3% overall success across multiple challenging tasks.",
+    "published_at": "2026-10-07T17:48:02Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.10498v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 7.5,
+    "facts": "EmbodiedRSI 是一个自进化智能体框架，通过快速-慢速双系统架构自主决定探索方向，并将物理交互转化为改进的代码和技能。竞争性代码和技能假设维护在假设图中，信息价值实验选择挑选能区分假设的物理实验，结果指导代码-技能共同进化。慢速系统构建分层记忆，奖励接地记忆学习根据对快速系统改进的价值选择有效记忆。在 RoboCasa365 上达到 77.0% 总体成功率和 71.3% 的 Composite-Unseen 成功率，最佳基线为 40.1%。在 LIBERO-Pro 上达到 86.8% 总体成功率。零样本迁移到真实机器人，在多个挑战性任务上达到 71.3% 总体成功率。",
+    "analysis": "EmbodiedRSI 通过假设引导的共进化实现了高效的持续机器人学习，解决了机器人基础模型在环境变化时性能下降的问题。其双系统架构和记忆学习机制使智能体能够自主探索并快速适应，显著提升了在复杂任务中的表现。",
+    "technical_value": "提出了自进化智能体框架，结合假设图、信息价值实验选择和代码-技能共进化，实现了高效的持续学习和零样本迁移。",
+    "impact": "对机器人持续学习和自适应控制有重要影响，可能推动机器人在动态环境中的自主适应能力，减少对大量标注数据的依赖。",
+    "keywords": [
+      "机器人学习",
+      "持续学习",
+      "自进化",
+      "双系统",
+      "零样本迁移"
+    ]
+  }
+]
