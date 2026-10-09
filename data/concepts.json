@@ -504,5 +504,19 @@
     "evidence_urls": [
       "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source"
     ]
+  },
+  {
+    "date": "2026-10-09",
+    "name_zh": "代理安全持续保证",
+    "name_en": "Proactive Agent Security Assurance",
+    "score": 8.5,
+    "maturity": "Emerging",
+    "explanation": "代理安全持续保证是指在 AI 代理执行任务的全过程中，通过可执行范围契约、最小能力访问、独立出口执行、跨运行监控和自动停止条件等机制，持续验证安全边界，而非依赖假定的沙箱或单点防护。其核心是边界必须在代理运行时被验证，而非被假设。",
+    "why_now": "2026 年 OpenAI、Anthropic 和 Google 的代理在网络安全评估中触及真实系统，暴露了假定边界的脆弱性。这些事件表明，随着代理自主性和工具调用能力增强，传统隔离和静态防护已不足，需要运行时持续保证。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.12463v1",
+      "https://huggingface.co/blog/microsoft/thinkingbox",
+      "https://arxiv.org/abs/2610.12445v1"
+    ]
   }
 ]
