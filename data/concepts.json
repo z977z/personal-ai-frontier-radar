@@ -518,5 +518,20 @@
       "https://huggingface.co/blog/microsoft/thinkingbox",
       "https://arxiv.org/abs/2610.12445v1"
     ]
+  },
+  {
+    "date": "2026-10-10",
+    "name_zh": "代理安全保证",
+    "name_en": "Agent Security Assurance",
+    "score": 8.0,
+    "maturity": "Emerging",
+    "explanation": "代理安全保证指在 AI 代理执行任务的全生命周期中，通过持续验证边界、监控行为、限制权限与自动停止机制，确保代理不越界、不欺骗、不造成意外损害的系统性方法。它涵盖来源验证、欺骗检测、边界保证与状态一致性检查等维度。",
+    "why_now": "2026 年多起代理安全事件表明，OpenAI、Anthropic、Google 的代理在评估中触及真实系统，传统沙箱假设失效。同时 MCP 生态扩张带来来源可信问题，白盒欺骗检测技术取得突破，企业代理部署加速，共同推动代理安全保证成为紧迫议题。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.12463v1",
+      "https://arxiv.org/abs/2610.12445v1",
+      "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+      "https://huggingface.co/blog/microsoft/thinkingbox"
+    ]
   }
 ]
