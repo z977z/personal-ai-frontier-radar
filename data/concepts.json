@@ -533,5 +533,20 @@
       "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
       "https://huggingface.co/blog/microsoft/thinkingbox"
     ]
+  },
+  {
+    "date": "2026-10-11",
+    "name_zh": "代理安全与可信验证",
+    "name_en": "Agent Security and Trustworthy Verification",
+    "score": 8.5,
+    "maturity": "Emerging",
+    "explanation": "随着 AI 代理在真实环境中执行任务，其安全性、可靠性和可信度成为核心挑战。该概念涵盖代理欺骗检测、源感知验证、边界保证、结果验证等多个方面，旨在确保代理行为符合预期且可审计。",
+    "why_now": "2026 年多起代理安全事件（如 OpenAI、Anthropic、Google 代理触及真实系统）以及代理虚假完成声明等问题，凸显了代理安全与验证的紧迫性。同时，MCP 等协议的普及使得代理与外部系统交互增多，来源可信度成为关键。",
+    "evidence_urls": [
+      "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+      "https://arxiv.org/abs/2610.12445v1",
+      "https://arxiv.org/abs/2610.12463v1",
+      "https://huggingface.co/blog/microsoft/thinkingbox"
+    ]
   }
 ]
