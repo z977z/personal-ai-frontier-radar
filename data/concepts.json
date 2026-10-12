@@ -548,5 +548,17 @@
       "https://arxiv.org/abs/2610.12463v1",
       "https://huggingface.co/blog/microsoft/thinkingbox"
     ]
+  },
+  {
+    "date": "2026-10-12",
+    "name_zh": "代理工具可靠性感知检索",
+    "name_en": "Reliability-Aware Tool Retrieval for Agents",
+    "score": 7.5,
+    "maturity": "Emerging",
+    "explanation": "该概念指 AI 代理在调用外部工具时，不仅基于语义相关性检索工具，还动态考虑工具的实时可用性和可靠性，以避免因工具故障导致任务失败。RATED 是该方向的代表性工作，通过上下文赌博机实现运行时适应。",
+    "why_now": "随着 AI 代理越来越多地依赖外部工具，工具故障成为影响代理可靠性的关键因素。传统语义检索忽视运行时状态，亟需可靠性感知的检索机制。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.13889v1"
+    ]
   }
 ]
