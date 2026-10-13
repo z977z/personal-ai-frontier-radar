@@ -1,0 +1,127 @@
+[
+  {
+    "id": "a4678728b0be238a",
+    "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+    "summary": "",
+    "published_at": "Tue, 29 Sep 2026 13:07:00 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+        "type": "official"
+      }
+    ],
+    "pre_score": 6.2,
+    "ai_score": 6.2,
+    "facts": "Hugging Face 博客发布文章《Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents》，讨论 MCP 代理的来源感知验证。",
+    "analysis": "该文章聚焦于 MCP 代理的验证机制，强调来源正确性而非仅事实正确性，可能涉及代理工具调用中的溯源与可信度问题。",
+    "technical_value": "提出来源感知验证概念，可能为 MCP 代理的可靠性提供新思路。",
+    "impact": "对构建可信 AI 代理系统有参考价值，尤其在多工具调用场景。",
+    "keywords": [
+      "MCP",
+      "来源验证",
+      "代理",
+      "可信AI"
+    ]
+  },
+  {
+    "id": "86306d9a78c0f866",
+    "title": "RATED: Reliability-Aware AI Agent Tool Retrieval via Execution Dynamics",
+    "summary": "As AI agents increasingly rely on external tools, accurate retrieval is essential for reliable behavior. Existing methods optimize semantic relevance but largely ignore tool availability during execution. To address this gap, we propose RATED (Reliability-Aware Tool Retrieval via Execution Dynamics), a retrieval framework that combines robust semantic matching with dynamic reliability adaptation. RATED employs a frozen dual-encoder with contrastive fine-tuning for semantic matching, and a lightweight contextual bandit module that re-ranks candidates based on real-time execution feedback. This design enables rapid adaptation to runtime tool failures without expensive model retraining. We introduce EcoAgent, a benchmark of 5,172 real-world tools and over 210,000 query-tool pairs for offline retrieval and dynamic reliability evaluation. Experimental results demonstrate that RATED achieves a 52.2% relative MRR improvement over the ToolLLM API retriever on real-world queries, and reduces fault selection rate from 86.2% to 2.9% under severe API outage scenarios with a 30% failure rate, while incurring negligible latency overhead of less than 1 ms over encode-only inference. The code and dataset are available at https://github.com/Elliotes/EcoAgent.",
+    "published_at": "2026-10-09T17:38:11Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.13889v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 5.7,
+    "facts": "arXiv 论文提出 RATED 框架，结合语义匹配与动态可靠性适应，使用冻结双编码器和上下文老虎机模块，在 EcoAgent 基准上实现 52.2% 的 MRR 提升，故障选择率从 86.2% 降至 2.9%，延迟增加小于 1ms。",
+    "analysis": "RATED 通过实时执行反馈动态调整工具检索，解决了传统方法忽略工具可用性的问题，具有较高的实用性和创新性。",
+    "technical_value": "结合对比学习与强化学习，实现轻量级动态重排序，提升代理工具检索的鲁棒性。",
+    "impact": "有望提升 AI 代理在真实环境中的可靠性，减少因工具故障导致的失败。",
+    "keywords": [
+      "工具检索",
+      "可靠性",
+      "动态适应",
+      "代理"
+    ]
+  },
+  {
+    "id": "9bfcbcef3858c937",
+    "title": "SpatialASM: Internalizing Active Mentalization for Spatial Reasoning",
+    "summary": "When solving complex spatial reasoning tasks, ordinary humans naturally revisit the scenes from task-relevant viewpoints and mentally reconstruct the spatial layouts from those viewpoints. But can Large Vision-Language Models (LVLMs) proactively think in the same way? We term this ability Active Spatial Mentalization (ASM), an intrinsic component of visual intelligence that remains substantially underdeveloped in current LVLMs. To bridge this gap, we introduce SpatialASM, a scalable framework to internalize ASM into LVLMs through training-time spatial simulation. SpatialASM employs an allocentric novel-view generator to ground hypothetical viewpoints in visual evidence and produces two complementary forms of supervision: i) explicit ASM trajectories that teach LVLMs when and how to adaptively invoke view planning and imagination during spatial reasoning, and ii) automatically-constructed perspective-taking tasks that further strengthens viewpoint-conditioned scene imagination. On seven benchmarks spanning relatively perception-oriented spatial understanding to more challenging tasks requiring multi-image, cross-view and viewpoint-transformation reasoning, SpatialASM yields performance gain on LVLMs of four LVLM backbones in spatial reasoning while retaining their original general vision capabilities. The experimental results demonstrate that our approach improves average accuracy across the seven spatial benchmarks. And the synthesis of ASM trajectories provides a scalable pathway to alleviate the scarcity of spatial Chain-of-Thought (CoT) supervision for eliciting active viewpoint exploration and mental scene simulation.",
+    "published_at": "2026-10-09T16:39:50Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.13832v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 5.7,
+    "facts": "arXiv 论文提出 SpatialASM 框架，通过训练时空间模拟将主动空间心理化能力内化到 LVLM 中，使用异中心新视角生成器，在七个空间推理基准上提升平均准确率。",
+    "analysis": "SpatialASM 让 LVLM 主动进行视角规划和心理场景模拟，弥补了当前模型在空间推理上的不足，方法具有可扩展性。",
+    "technical_value": "引入显式 ASM 轨迹和视角转换任务，为空间链式思维监督提供新途径。",
+    "impact": "推动视觉语言模型在空间推理任务上的能力边界，适用于机器人、导航等领域。",
+    "keywords": [
+      "空间推理",
+      "LVLM",
+      "主动心理化",
+      "视角规划"
+    ]
+  },
+  {
+    "id": "bedbfc27a8437030",
+    "title": "The Agent Said It Was Done. The Database Disagreed.",
+    "summary": "",
+    "published_at": "Sat, 03 Oct 2026 22:56:48 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "Hugging Face 博客发布文章《The Agent Said It Was Done. The Database Disagreed.》，由微软发布，讨论代理声称任务完成但数据库状态不一致的问题。",
+    "analysis": "该文章可能探讨代理执行任务后的状态验证与一致性检查，强调代理行为与实际系统状态之间的差距。",
+    "technical_value": "涉及代理任务完成验证与数据库事务一致性，对构建可靠代理系统有启示。",
+    "impact": "提醒开发者关注代理执行结果的真实性与可验证性。",
+    "keywords": [
+      "代理",
+      "数据库",
+      "状态验证",
+      "一致性"
+    ]
+  },
+  {
+    "id": "62c44fc36fe267c6",
+    "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+    "summary": "",
+    "published_at": "Fri, 02 Oct 2026 04:01:31 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "Hugging Face 博客发布文章《AutoSynthData: Generating Training Data for Enterprise Agents》，由 ServiceNow AI 发布，介绍自动合成企业代理训练数据的方法。",
+    "analysis": "AutoSynthData 可能利用生成式 AI 自动创建高质量训练数据，解决企业代理训练数据稀缺问题。",
+    "technical_value": "自动化数据合成可降低人工标注成本，提升代理训练效率。",
+    "impact": "对企业级 AI 代理的快速部署和迭代有积极意义。",
+    "keywords": [
+      "训练数据",
+      "企业代理",
+      "数据合成",
+      "自动化"
+    ]
+  }
+]

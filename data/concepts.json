@@ -560,5 +560,17 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2610.13889v1"
     ]
+  },
+  {
+    "date": "2026-10-13",
+    "name_zh": "代理工具检索与可靠性",
+    "name_en": "Agent Tool Retrieval and Reliability",
+    "score": 7.5,
+    "maturity": "Emerging",
+    "explanation": "随着 AI 代理依赖外部工具，工具检索的准确性和执行可靠性成为关键。RATED 等工作通过动态适应执行反馈提升检索鲁棒性，代表该方向的前沿探索。",
+    "why_now": "代理系统日益复杂，工具故障和动态环境要求检索机制具备实时适应能力，传统语义检索已不足。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.13889v1"
+    ]
   }
 ]
