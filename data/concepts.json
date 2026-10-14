@@ -572,5 +572,19 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2610.13889v1"
     ]
+  },
+  {
+    "date": "2026-10-14",
+    "name_zh": "智能体可信验证",
+    "name_en": "Agent Trustworthy Verification",
+    "score": 7.5,
+    "maturity": "Emerging",
+    "explanation": "智能体可信验证指在智能体（Agent）执行任务过程中，对其决策、工具调用、数据来源和行动结果进行验证，以确保其可靠性、安全性和公平性。涵盖来源感知验证、工具调用参数验证、状态一致性检查等。",
+    "why_now": "随着 LLM 智能体在企业和个人场景中广泛应用，其错误操作可能带来严重后果。近期多项研究（如 MCP 智能体源感知验证、工具调用推导差距、数据库状态不一致）集中涌现，表明该领域正成为关键瓶颈。",
+    "evidence_urls": [
+      "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+      "https://arxiv.org/abs/2610.18497v1",
+      "https://huggingface.co/blog/microsoft/thinkingbox"
+    ]
   }
 ]

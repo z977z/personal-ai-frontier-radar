@@ -1,0 +1,128 @@
+[
+  {
+    "id": "a4678728b0be238a",
+    "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+    "summary": "",
+    "published_at": "Tue, 29 Sep 2026 13:07:00 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+        "type": "official"
+      }
+    ],
+    "pre_score": 6.2,
+    "ai_score": 6.2,
+    "facts": "标题为《Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents》，来源为 Hugging Face 官方博客，发布时间 2026-09-29。摘要为空。",
+    "analysis": "该事件聚焦 MCP（Model Context Protocol）智能体的验证问题，强调不仅要验证事实本身，还要验证信息来源。这反映了智能体在工具调用和外部数据交互中日益增长的可靠性需求。",
+    "technical_value": "提出源感知验证（Source-Aware Verification）概念，可能涉及对 MCP 智能体调用链中数据来源的追踪与可信度评估，对提升智能体决策可靠性有直接价值。",
+    "impact": "若被广泛采用，可减少智能体因错误来源导致的幻觉或错误操作，推动 MCP 生态的信任机制建设。",
+    "keywords": [
+      "MCP",
+      "智能体验证",
+      "来源感知",
+      "可信AI"
+    ]
+  },
+  {
+    "id": "f8ac0deab32d39ce",
+    "title": "EgoOmniWorld: Unifying Egocentric Understanding via Ego-Action-World Interactions",
+    "summary": "Egocentric video understanding spans diverse capabilities, modalities, and evaluation formats, yet these are often studied in isolation despite their tight coupling in real-world interaction. We propose the Ego-Action-World interaction loop as a unifying principle: the wearer perceives the world, forms goals, acts, changes the world, and uses feedback to guide subsequent behavior. Based on this view, we introduce EgoOmniWorld, a benchmark organized around four complementary interaction structures: Node captures ego, action, and world states; Edge captures directed relations among them; Chain captures linked dependencies; and Loop captures feedback-closed interactions. We develop an interaction-first, evidence-grounded data pipeline that extracts structured interactions from egocentric videos, grounds them in visual and auditory evidence, and generates questions according to their interaction structure. Required modalities and single- or multi-turn formats follow naturally from the supporting evidence and dependencies. EgoOmniWorld contains 24,166 QA groups, including 20,284 training and 3,882 test samples. Experiments on representative open- and closed-source multimodal large language models reveal substantial and uneven limitations across interaction structures. Models trained on EgoOmniWorld improve in-domain interaction understanding and generalize to existing egocentric benchmarks. EgoOmniWorld provides a unified foundation for evaluating and advancing egocentric video understanding. Data, code, and models will be released.",
+    "published_at": "2026-10-13T14:53:16Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.18499v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.8,
+    "ai_score": 5.8,
+    "facts": "论文提出 EgoOmniWorld，一个以自我中心视频理解为核心的基准，基于 Ego-Action-World 交互循环，包含 Node、Edge、Chain、Loop 四种交互结构。数据集含 24,166 个 QA 组（20,284 训练，3,882 测试）。实验显示现有多模态大模型在交互结构上存在显著且不均衡的局限，基于该数据训练可提升域内理解并泛化到现有基准。",
+    "analysis": "该工作将自我中心视频理解统一到交互循环框架下，弥补了以往孤立研究各能力的不足。基准设计强调证据 grounding 和交互结构，有望推动更贴近真实世界交互的具身智能研究。",
+    "technical_value": "提供了首个围绕交互结构组织的自我中心视频理解基准，包含多模态（视觉、听觉）和单/多轮 QA，为评估和提升模型在动态环境中的理解能力提供了标准化测试平台。",
+    "impact": "可能促进具身智能、AR/VR 助手、机器人等领域的视频理解技术发展，并为多模态大模型的交互能力评估树立新标准。",
+    "keywords": [
+      "自我中心视频",
+      "多模态理解",
+      "交互基准",
+      "具身智能"
+    ]
+  },
+  {
+    "id": "833f908e6ec32770",
+    "title": "Judges Follow the Reference: The Derivation Gap in Verifying Tool-Call Arguments",
+    "summary": "Tool-call judges evaluate argument values proposed by LLM agents. We find that they accept a correct value less often when their input holds no reference for it, that is, no text that says what the value should be. This happens when the value is a default value from the function schema that the user did not mention, when it has to be inferred, or when the text it comes from was cut from the judge input. We call this drop in acceptance the derivation gap. It appears across all seven judges we evaluate, including System One models CLM and Jev. The gap is not only a truncation artifact: correct default values have the largest gap on a benchmark with no truncation. A controlled source-relocation test shows that judges follow the reference in their input: they favor a visible incorrect value over a correct value whose source is hidden. We introduce DeRef (Derived Reference): a separate model reads the full history without seeing the candidate and writes a reference for the judge. Across three benchmarks, DeRef improves overall argument AUROC for all judges tested. On the controlled test, it raises AUROC from chance or below to between 98.40 and 99.59.",
+    "published_at": "2026-10-13T14:52:59Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.18497v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 5.7,
+    "facts": "论文发现工具调用评判器（judges）在输入中缺少参考值时，接受正确值的概率降低，称为“推导差距”（derivation gap）。该现象在七个评判器中均存在，包括 System One 模型 CLM 和 Jev。在无截断的基准上，正确默认值的差距最大。控制实验表明评判器倾向于可见的错误值而非来源隐藏的正确值。提出 DeRef（Derived Reference），让独立模型读取完整历史并生成参考，在三个基准上提升所有评判器的 AUROC，控制实验中 AUROC 从随机或以下提升至 98.40–99.59。",
+    "analysis": "该研究揭示了工具调用验证中评判器对参考文本的过度依赖，导致对正确但未显式提及的值的误判。DeRef 方法通过分离参考生成与评判，有效缓解了这一问题，提升了验证的鲁棒性。",
+    "technical_value": "为工具调用参数验证提供了新的诊断指标（推导差距）和解决方案（DeRef），可集成到智能体框架中，提高工具调用的准确性和可靠性。",
+    "impact": "对依赖工具调用的 LLM 智能体系统（如 API 调用、数据库操作）有直接改进意义，可减少因验证错误导致的任务失败。",
+    "keywords": [
+      "工具调用",
+      "验证",
+      "推导差距",
+      "DeRef",
+      "LLM智能体"
+    ]
+  },
+  {
+    "id": "8dc5c91cdcf5f241",
+    "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+    "summary": "",
+    "published_at": "Tue, 13 Oct 2026 17:05:48 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "标题为《Run fast, private agents on-device with LFM2.5-24B-A2B》，来源为 Hugging Face 官方博客，发布时间 2026-10-13。摘要为空。",
+    "analysis": "该事件介绍了一种可在设备端运行快速、私密智能体的模型 LFM2.5-24B-A2B，可能采用稀疏激活（A2B 或指激活参数 2B）以平衡性能与效率。",
+    "technical_value": "设备端智能体模型有助于隐私保护和低延迟，LFM2.5-24B-A2B 可能通过架构优化实现高效推理，推动边缘 AI 发展。",
+    "impact": "若性能达标，可促进个人助手、隐私敏感场景的本地化部署，减少对云端的依赖。",
+    "keywords": [
+      "设备端AI",
+      "隐私",
+      "智能体",
+      "LFM2.5"
+    ]
+  },
+  {
+    "id": "bedbfc27a8437030",
+    "title": "The Agent Said It Was Done. The Database Disagreed.",
+    "summary": "",
+    "published_at": "Sat, 03 Oct 2026 22:56:48 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 5.5,
+    "facts": "标题为《The Agent Said It Was Done. The Database Disagreed.》，来源为 Hugging Face 官方博客（微软），发布时间 2026-10-03。摘要为空。",
+    "analysis": "标题暗示智能体声称任务完成但数据库状态不一致，可能讨论智能体在操作外部系统时的状态同步与验证问题。",
+    "technical_value": "可能涉及智能体与数据库交互的可靠性机制，如事务一致性、状态确认等，对构建可信智能体系统有参考价值。",
+    "impact": "提醒开发者关注智能体行动与实际系统状态的一致性，推动更鲁棒的智能体设计。",
+    "keywords": [
+      "智能体",
+      "数据库",
+      "状态一致性",
+      "可靠性"
+    ]
+  }
+]
