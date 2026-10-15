@@ -586,5 +586,18 @@
       "https://arxiv.org/abs/2610.18497v1",
       "https://huggingface.co/blog/microsoft/thinkingbox"
     ]
+  },
+  {
+    "date": "2026-10-15",
+    "name_zh": "合成经验学习",
+    "name_en": "Synthetic Experience Learning",
+    "score": 8.2,
+    "maturity": "Emerging",
+    "explanation": "合成经验学习指通过程序化生成的环境和任务，让AI代理在模拟中获取交互经验，并通过强化学习或后训练提升能力。该方法可扩展、可验证，并能覆盖真实数据难以触及的状态空间。",
+    "why_now": "随着代理任务复杂化，真实演示数据成本高且覆盖有限；合成环境可提供无限、可验证的训练信号，结合RL显著提升代理性能，近期在游戏和计算机使用领域取得突破。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.20584v1",
+      "https://arxiv.org/abs/2610.20597v1"
+    ]
   }
 ]

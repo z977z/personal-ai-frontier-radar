@@ -1,0 +1,130 @@
+[
+  {
+    "id": "ab35285b442cdd24",
+    "title": "Player-1: Learning to Play from Synthetic Experience",
+    "summary": "Computer-use agents have demonstrated strong capabilities in interpreting screens and executing keyboard and mouse actions. However, games, with their visually rich worlds and diverse mechanics, remain challenging and offer a demanding next step toward general digital control. Current game-agent learning pipelines often rely on large-scale demonstrations with limited coverage of dynamic game states, while scalable environments for interactive training remain difficult to obtain. We introduce Player-1, a post-training framework for learning game control beyond demonstrations through synthetic experience. We extend the computer-use action space with relative pointer motion, sustained inputs, and composite actions. For supervised initialization, we fine-tune computer-use models on 6,044 curated gameplay trajectories that pair recorded actions with task instructions and visual reasoning. We construct Player-1-Gym, sixteen synthetic 2D and 3D environments designed around control demands shared across games. Programmatically verifiable rewards and randomized observations and control dynamics support multi-environment reinforcement learning with PPO. The resulting Player-1-9B and Player-1-35B-A3B improve MineDojo-300 success over their SFT policies by 27.8 and 17.7 percentage points, respectively. Player-1-9B reaches 38.33% success compared with 12.63% for the strongest evaluated baseline, with further gains over SFT on ViZDoom-10 and GameWorld. Further analyses show that broader synthetic environment coverage improves transfer, while the use of composite actions that combine multiple keyboard and mouse inputs increases during RL. We demonstrate that learning from synthetic experience substantially improves game control beyond supervised initialization, with gains that general",
+    "published_at": "2026-10-14T17:57:12Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.20584v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.9,
+    "ai_score": 7.8,
+    "facts": "arXiv 论文《Player-1: Learning to Play from Synthetic Experience》提出 Player-1 后训练框架，通过合成经验学习游戏控制。扩展了计算机使用动作空间（相对指针移动、持续输入、复合动作），在 6,044 条精选游戏轨迹上微调，并构建 Player-1-Gym（16 个合成 2D/3D 环境）用于 PPO 多环境强化学习。Player-1-9B 和 Player-1-35B-A3B 在 MineDojo-300 上分别比 SFT 策略提升 27.8 和 17.7 个百分点，Player-1-9B 达到 38.33% 成功率，最强基线为 12.63%。在 ViZDoom-10 和 GameWorld 上也有提升。分析表明更广泛的合成环境覆盖改善迁移，复合动作使用在 RL 中增加。",
+    "analysis": "该工作展示了合成经验在游戏代理训练中的有效性，通过程序化可验证奖励和随机化观察/控制动态实现多环境 RL，显著超越监督初始化。复合动作的引入和 RL 中的自发使用表明代理学会了更复杂的控制策略。",
+    "technical_value": "提出了可扩展的合成环境构建方法和动作空间扩展，为通用数字控制代理的训练提供了新范式，代码和模型可能开源。",
+    "impact": "推动游戏 AI 和通用计算机使用代理的发展，合成经验方法可迁移至其他需要交互学习的领域。",
+    "keywords": [
+      "游戏代理",
+      "合成经验",
+      "强化学习",
+      "计算机使用",
+      "Player-1"
+    ]
+  },
+  {
+    "id": "6cb07a4443a42043",
+    "title": "Co-Evolving Acting and Forecasting for Language Agents",
+    "summary": "Training language agents is bottlenecked by the high cost of long-horizon rollouts, yet standard agentic reinforcement learning (RL) learns only from a terminal scalar reward, leaving the supervision in intermediate steps largely unused. Prior work exploits this supervision through value targets that estimate per-step success probabilities or observation targets that fit environment response. Both are hard to construct well: (1) value targets come from the same single scalar signal for each step in the trajectory, and (2) observation targets, such as web pages and terminal logs, are long and noisy and reach only one step ahead. We propose \\name, which adds a third kind of multi-step action targets. On successful on-policy trajectories, \\name trains the policy backbone to generate the action sequences that follows each history. Each action is also supervised when forecast from the preceding histories, forming a temporal ensemble that the shared backbone absorbs during training, and this enables acting and forecasting to co-evolve. The policy still acts one step at a time at inference, with no overhead. Across five benchmarks (ALFWorld, ScienceWorld, WebShop, $τ^2$-bench, and AppWorld), \\name (1) achieves stronger aggregate performance than GRPO and RL baselines with predictive auxiliary targets across simulated environments, while improving overall performance on both realistic applications; (2) delivers up to $1.9\\times$ and $2.0\\times$ higher sample efficiency than ECHO and GRPO, respectively, on ScienceWorld; and (3) achieves these gains with a single policy backbone, without additional models, separate pretraining, or inference overhead. The codebase is available at https://github.com/ulab-uiuc/CoPE.",
+    "published_at": "2026-10-14T17:59:28Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.20597v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 7.2,
+    "facts": "arXiv 论文《Co-Evolving Acting and Forecasting for Language Agents》提出 CoPE 方法，在成功轨迹上训练策略骨干生成后续动作序列，并对每个动作从先前历史进行预测监督，形成时间集成，使行动与预测协同进化。在 ALFWorld、ScienceWorld、WebShop、τ²-bench 和 AppWorld 五个基准上，CoPE 聚合性能优于 GRPO 和 RL 基线，在 ScienceWorld 上样本效率比 ECHO 和 GRPO 分别高 1.9 倍和 2.0 倍，且无需额外模型或推理开销。代码在 https://github.com/ulab-uiuc/CoPE。",
+    "analysis": "该工作通过多步动作目标提供更丰富的中间监督，解决了长时程 rollout 中稀疏奖励的问题。时间集成机制使策略在训练中同时学习行动和预测，提升了样本效率和最终性能。",
+    "technical_value": "提出了一种新的辅助训练目标，可无缝集成到现有 RL 流程中，不增加推理成本，具有较高的实用性和可复现性。",
+    "impact": "为语言代理的 RL 训练提供了高效方案，有望降低训练成本并加速代理在复杂任务中的部署。",
+    "keywords": [
+      "语言代理",
+      "强化学习",
+      "协同进化",
+      "样本效率",
+      "CoPE"
+    ]
+  },
+  {
+    "id": "45703054869e6083",
+    "title": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
+    "summary": "",
+    "published_at": "Wed, 07 Oct 2026 12:45:31 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6.8,
+    "facts": "Hugging Face 博客《One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO》介绍 NVIDIA 微调 Nemotron 模型在 IOI 和 IMO 竞赛中取得金牌级成绩。",
+    "analysis": "该工作展示了通过微调通用模型在高度复杂的推理任务（信息学奥林匹克和数学奥林匹克）上达到顶尖水平，体现了模型在代码和数学推理方面的潜力。",
+    "technical_value": "微调策略和训练数据构建可能对复杂推理任务有借鉴意义。",
+    "impact": "推动 AI 在竞赛级推理任务中的应用，激励教育领域探索。",
+    "keywords": [
+      "Nemotron",
+      "IOI",
+      "IMO",
+      "微调",
+      "推理"
+    ]
+  },
+  {
+    "id": "a4678728b0be238a",
+    "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+    "summary": "",
+    "published_at": "Tue, 29 Sep 2026 13:07:00 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+        "type": "official"
+      }
+    ],
+    "pre_score": 6.2,
+    "ai_score": 6.5,
+    "facts": "Hugging Face 发布博客《Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents》，提出面向 MCP（Model Context Protocol）代理的源感知验证方法，强调在验证事实时需同时验证信息来源。",
+    "analysis": "该工作针对 MCP 代理在调用外部工具或数据源时可能引用不可靠来源的问题，提出源感知验证机制。这有助于提升代理输出的可信度与可追溯性，是代理安全与可靠性方向的重要补充。",
+    "technical_value": "为 MCP 代理引入来源验证层，可能涉及来源可信度评分、来源与事实的联合校验等技术，可增强代理在开放环境中的鲁棒性。",
+    "impact": "推动 MCP 生态中代理验证标准的形成，对构建可信 AI 代理有直接指导意义。",
+    "keywords": [
+      "MCP",
+      "源感知验证",
+      "代理可信度",
+      "事实核查"
+    ]
+  },
+  {
+    "id": "57dc1fe77b7c95ff",
+    "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+    "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+    "published_at": "Wed, 14 Oct 2026 02:00:14 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6.5,
+    "facts": "Google DeepMind 与新加坡政府合作，使用轻量级端侧 Gemma 模型在私人聊天中拦截对话诈骗，实现零云数据出口。",
+    "analysis": "该合作展示了端侧 AI 在隐私保护场景下的实际部署，通过微调 Gemma 模型检测诈骗对话，避免数据上传云端。",
+    "technical_value": "端侧模型微调和部署方案，平衡隐私与检测效果。",
+    "impact": "为政府和企业提供隐私保护的诈骗检测方案，可推广至其他地区。",
+    "keywords": [
+      "端侧AI",
+      "诈骗检测",
+      "Gemma",
+      "隐私保护"
+    ]
+  }
+]
