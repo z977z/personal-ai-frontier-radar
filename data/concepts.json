@@ -599,5 +599,20 @@
       "https://arxiv.org/abs/2610.20584v1",
       "https://arxiv.org/abs/2610.20597v1"
     ]
+  },
+  {
+    "date": "2026-10-16",
+    "name_zh": "智能体交付工程",
+    "name_en": "Agent Delivery Engineering",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "智能体交付工程指将 AI 智能体从明确任务求解推进到真实客户场景交付的工程实践，涵盖模糊需求澄清、未明确约束发现、生产系统操作、业务指标优化与利益相关者交互。FDE-Gym 基准与 MLExpert 等工作共同指向这一方向：智能体不仅需完成任务，还需在真实业务环境中创造可衡量的客户价值。",
+    "why_now": "当前智能体基准多评估明确任务，而真实客户交付存在需求模糊、约束隐含、系统复杂等挑战。FDE-Gym 显示最佳配置仅解决 95 个任务中的 14 个，揭示巨大差距；MLExpert 在 MLE 任务上的突破表明后训练与强化学习可显著提升长周期交付能力。企业级智能体落地需求迫切，推动该方向成为研究与应用热点。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.22350v1",
+      "https://arxiv.org/abs/2610.22344v1",
+      "https://huggingface.co/blog/microsoft/thinkingbox",
+      "https://huggingface.co/blog/ServiceNow-AI/autosynthdata"
+    ]
   }
 ]
