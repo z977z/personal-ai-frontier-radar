@@ -614,5 +614,17 @@
       "https://huggingface.co/blog/microsoft/thinkingbox",
       "https://huggingface.co/blog/ServiceNow-AI/autosynthdata"
     ]
+  },
+  {
+    "date": "2026-10-17",
+    "name_zh": "前向部署工程师智能体",
+    "name_en": "Forward-Deployed Engineer Agent",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "指能够在真实客户环境中澄清模糊需求、发现未明示约束、操作类生产系统并交付可衡量业务价值的AI智能体。FDE-Gym基准显示当前最佳模型仅解决14/95个任务，揭示从规范任务到真实交付存在显著鸿沟。",
+    "why_now": "企业AI落地进入深水区，智能体需要从演示走向真实客户交付；FDE-Gym提供了首个端到端交付评测框架，暴露了隐性约束发现与业务价值转化的瓶颈。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.22350v1"
+    ]
   }
 ]

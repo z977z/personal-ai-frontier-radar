@@ -1,0 +1,135 @@
+[
+  {
+    "id": "1510675aeb24ae48",
+    "title": "FDE-Gym: The Last Mile of AI Delivery",
+    "summary": "Existing agent benchmarks typically evaluate agents on well-specified tasks defined by issue reports, specifications, or task tickets. Real-world customer delivery is different: forward-deployed engineers (FDEs) must clarify ambiguous requirements, work in live systems, and uncover unstated constraints. We introduce FDE-Gym, a benchmark of 95 end-to-end delivery tasks from 20 customer scenarios across 18 sectors, each adapted by industry experts from real-world delivery projects. In simulated customer environments with scripted stakeholders and modifiable customer systems, agents interact with stakeholders and operate on production-like systems to deliver working solutions. FDE-Gym scores a delivery by how much it improves the customer's own success metric, normalized between 0 (unchanged system) and 1 (reference solution), with penalties for stakeholder interactions (messages, trial runs, and waiting time). An online platform lets humans practice FDE skills under the same grading criteria. We evaluate 13 model configurations from seven providers. In the realistic setting, where unstated constraints must be discovered, the best configuration achieves a mean FDE-Gym score of 0.56 and resolves only 14 of the 95 tasks (a score of at least 0.8 with no incident). Discovering unstated constraints is the primary bottleneck: performance drops sharply when models must uncover them without explicit guidance. Yet information discovery alone does not account for the gap: even on the 23 tasks where the best configuration obtains every key fact from stakeholders, it reaches a normalized business uplift of 0.8 or above on only 10. These results reveal a substantial gap between solving well-specified tasks and delivering effective AI systems for real customers.",
+    "published_at": "2026-10-15T17:57:23Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.22350v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 8,
+    "facts": "论文提出FDE-Gym基准，包含来自18个行业20个客户场景的95个端到端交付任务，由行业专家改编自真实交付项目。在模拟客户环境中，智能体需与脚本化利益相关者交互并在类生产系统上操作。评分基于客户成功指标的归一化提升（0为未改变，1为参考方案），并对交互（消息、试运行、等待时间）施加惩罚。评测13个模型配置（来自7家提供商），最佳配置平均得分0.56，95个任务中仅14个解决（得分≥0.8且无事故）。发现未明示约束是主要瓶颈；即使最佳配置在23个任务中获取了全部关键事实，也仅10个达到0.8以上业务提升。",
+    "analysis": "该工作将评测焦点从规范明确的任务转向真实客户交付，揭示了当前智能体在需求澄清、隐性约束发现和业务价值转化上的系统性短板。信息发现不足只是部分原因，即便信息完备，模型仍难以将信息转化为有效交付，说明存在“信息到行动”的转化鸿沟。这为智能体训练和评测提供了更贴近产业落地的方向。",
+    "technical_value": "提供了可复现的端到端交付评测框架，包含模拟客户环境、脚本化利益相关者、可修改客户系统和业务指标归一化评分，并引入交互成本惩罚，对智能体在模糊需求下的规划、探索与执行能力形成综合压力测试。",
+    "impact": "对AI交付与咨询行业有直接参考价值，可能推动智能体评测从静态任务基准转向动态客户环境基准，并促使模型训练关注隐性约束发现与业务价值对齐。",
+    "keywords": [
+      "FDE-Gym",
+      "智能体评测",
+      "客户交付",
+      "隐性约束",
+      "业务指标",
+      "模拟环境"
+    ]
+  },
+  {
+    "id": "37f698fe857803b1",
+    "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
+    "summary": "Large language models (LLMs) are expanding from assisting scientific research and engineering to autonomously developing and improving AI systems, advancing AI for AI (AI4AI) as a pathway toward recursive self-improvement (RSI). Workflow-driven machine learning engineering (MLE) systems provide a practical path toward this pursuit through complex orchestration that manages long-horizon experimentation, while recent MLE systems adopt model-directed interaction, allowing models to autonomously organize experiments and adapt optimization strategies based on execution feedback. However, feedback from each experiment reflects several preceding decisions, and a long MLE run contains many such costly experiments. Training must therefore select useful supervision from long interaction trajectories and learn from intermediate outcomes. We propose a post-training method for autonomous long-horizon MLE optimization and apply it to train MLExpert, a 35B Mixture-of-Experts agentic model. We design the Kaggle-MLE Factory to construct executable tasks and an interaction harness for model-directed experimentation. Hierarchical agentic SFT transfers general tool-use and coding capabilities to MLE through outcome-guided supervision. Windowed Interaction RL (WIRL) treats the multi-turn decisions between successive experiment results as an execution window and assigns it a shared outcome-based reward. Asynchronous collection and policy correction support policy updates before the trajectory ends. On MLE-Bench Lite, MLExpert improves the average medal rate of the base model from 37.9% to 72.7%, achieving performance comparable to larger frontier models such as Kimi-K3 and GLM-5.3. Further experiments show that MLExpert improves performance on NatureBench Lite, agent scaffold optimization, a",
+    "published_at": "2026-10-15T17:56:32Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.22344v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.6,
+    "ai_score": 8,
+    "facts": "论文提出面向长时程机器学习工程（MLE）优化的后训练方法，并训练了MLExpert——一个35B混合专家智能体模型。设计Kaggle-MLE Factory构建可执行任务和交互框架；采用分层智能体SFT传递工具使用与编码能力；提出窗口化交互强化学习（WIRL），将连续实验结果之间的多轮决策视为执行窗口并赋予共享结果奖励；支持异步收集与策略校正。在MLE-Bench Lite上，平均奖牌率从基座模型的37.9%提升至72.7%，与Kimi-K3、GLM-5.3等更大前沿模型相当；在NatureBench Lite和智能体脚手架优化上也有提升。",
+    "analysis": "该工作将AI4AI/递归自我改进的叙事落到可训练的长时程MLE智能体上，核心贡献在于从长交互轨迹中提取有效监督信号，并用窗口化结果奖励解决信用分配问题。35B MoE达到前沿模型水平，说明数据与训练方法对MLE任务的重要性可能超过单纯参数规模。",
+    "technical_value": "分层SFT与WIRL结合，配合异步策略校正，为长时程、多轮实验型智能体提供了可复用的后训练范式；Kaggle-MLE Factory提供了可执行任务构造与交互测试框架。",
+    "impact": "对自动化机器学习工程、AI研发提效和智能体后训练方法有较强推动，可能加速AI4AI方向的工程化落地，并影响未来MLE智能体的训练标准。",
+    "keywords": [
+      "MLExpert",
+      "MLE",
+      "AI4AI",
+      "窗口化交互RL",
+      "混合专家",
+      "后训练"
+    ]
+  },
+  {
+    "id": "68973188e8e72fe4",
+    "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
+    "summary": "",
+    "published_at": "Fri, 16 Oct 2026 00:00:00 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/reflection-beam",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 7,
+    "facts": "Reflection发布博客，介绍Beam——一个501B参数的开源模型，强调可拥有、可定制和可扩展。",
+    "analysis": "501B开源模型延续了超大开源权重模型的趋势，强调“可拥有”意味着可能支持本地或私有化部署。超大模型的开源对生态有显著影响，但实际可用性取决于许可证、推理成本和微调工具链。",
+    "technical_value": "超大开源权重模型为研究和企业定制提供基础，但推理与部署门槛较高；需关注其架构、许可证和评测表现。",
+    "impact": "可能加剧开源大模型竞争，推动私有化部署和定制化需求，但资源门槛限制了广泛直接使用。",
+    "keywords": [
+      "Beam",
+      "开源大模型",
+      "501B",
+      "Reflection",
+      "可定制"
+    ]
+  },
+  {
+    "id": "e5cf4f44bd62d2ba",
+    "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+    "summary": "",
+    "published_at": "Thu, 15 Oct 2026 00:00:00 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/meta-muse-spark-open",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 7,
+    "facts": "Meta在Hugging Face发布博客，介绍Muse Spark Open——开放权重的 frontier 多模态混合专家模型。",
+    "analysis": "Meta持续扩展开放权重多模态模型阵容，MoE架构有助于在推理成本与能力之间取得平衡。该发布可能强化开源多模态生态，但具体基准和许可证信息需查看全文。",
+    "technical_value": "开放权重前沿多模态MoE模型可支持研究和产品定制，降低多模态能力获取门槛。",
+    "impact": "对开源多模态模型竞争格局有影响，可能推动更多企业基于开放权重构建应用。",
+    "keywords": [
+      "Muse Spark Open",
+      "Meta",
+      "多模态",
+      "MoE",
+      "开放权重"
+    ]
+  },
+  {
+    "id": "42ba9d1ff5c3faa1",
+    "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
+    "summary": "Personalization is essential for general-purpose robots to transition into household environments and achieve true practicality. While general robotic manipulation has been extensively studied, personalized robotic manipulation (PeRM) lacks a controlled benchmark for separating task completion from preference satisfaction. We introduce LIBERO-PeRM, a benchmark for preference learning in embodied agents. LIBERO-PeRM studies five questions: 1) how policies follow preferences in zero-shot settings; 2) how they learn single preferences from demonstrations; 3) how efficiently they acquire preferences as demonstrations increase; 4) how learned preferences generalize across layouts and tasks; and 5) how policies compose preferences and behave under conflicts. We propose a controlled formulation and taxonomy of observable preferences in simulation, covering motion, skill, and user-profile choices. This formulation is restricted to language-expressible preferences that can be instantiated in LIBERO without changing the task goal, evaluated automatically, and reused across tasks. Building on LIBERO, our procedural pipeline generates paired demonstrations with and without preferences. We create five task suites (312 tasks) with high-quality demonstrations, rich metadata, and preference-satisfaction metrics. Experiments show that current VLA policies struggle with zero-shot personalization, while SFT makes preferences learnable. Mixed training achieves better no-preference retention than sequential adaptation and improves performance with contextual prompts compared with preference-only training, but can weaken motion-preference learning; preference generalization, decomposition, and conflict handling remain difficult. The code, datasets, and demos can be found on the project websi",
+    "published_at": "2026-10-15T17:59:59Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.22372v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.2,
+    "ai_score": 7,
+    "facts": "论文提出LIBERO-PeRM，一个用于具身智能体偏好学习的基准，研究五个问题：零样本偏好遵循、从演示学习单一偏好、演示增加时的偏好获取效率、偏好跨布局与任务泛化、偏好组合与冲突处理。提出受控的偏好分类体系，覆盖运动、技能和用户画像选择，限于语言可表达且不改变任务目标的偏好。基于LIBERO构建程序化流水线，生成带偏好与不带偏好的配对演示，创建5个任务套件（312个任务）。实验表明当前VLA策略零样本个性化困难，SFT可使偏好可学习；混合训练在无偏好保持上优于顺序适应，上下文提示下优于仅偏好训练，但可能削弱运动偏好学习；偏好泛化、分解和冲突处理仍困难。",
+    "analysis": "该工作填补了机器人操作中“任务完成”与“偏好满足”分离评测的空白，将个性化从模糊概念转化为可度量维度。结果说明当前VLA模型在个性化上仍处于早期，混合训练存在权衡，偏好组合与冲突是开放难题。",
+    "technical_value": "提供了受控的偏好学习基准、配对演示生成流水线和多维度评测指标，为具身智能体个性化研究建立可比较的实验基础。",
+    "impact": "对家用机器人和服务机器人个性化有推动作用，可能引导VLA模型训练从单一任务成功转向任务成功加偏好满足。",
+    "keywords": [
+      "LIBERO-PeRM",
+      "个性化机器人操作",
+      "偏好学习",
+      "VLA",
+      "具身智能",
+      "基准"
+    ]
+  }
+]
