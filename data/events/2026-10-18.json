@@ -1,0 +1,132 @@
+[
+  {
+    "id": "1510675aeb24ae48",
+    "title": "FDE-Gym: The Last Mile of AI Delivery",
+    "summary": "Existing agent benchmarks typically evaluate agents on well-specified tasks defined by issue reports, specifications, or task tickets. Real-world customer delivery is different: forward-deployed engineers (FDEs) must clarify ambiguous requirements, work in live systems, and uncover unstated constraints. We introduce FDE-Gym, a benchmark of 95 end-to-end delivery tasks from 20 customer scenarios across 18 sectors, each adapted by industry experts from real-world delivery projects. In simulated customer environments with scripted stakeholders and modifiable customer systems, agents interact with stakeholders and operate on production-like systems to deliver working solutions. FDE-Gym scores a delivery by how much it improves the customer's own success metric, normalized between 0 (unchanged system) and 1 (reference solution), with penalties for stakeholder interactions (messages, trial runs, and waiting time). An online platform lets humans practice FDE skills under the same grading criteria. We evaluate 13 model configurations from seven providers. In the realistic setting, where unstated constraints must be discovered, the best configuration achieves a mean FDE-Gym score of 0.56 and resolves only 14 of the 95 tasks (a score of at least 0.8 with no incident). Discovering unstated constraints is the primary bottleneck: performance drops sharply when models must uncover them without explicit guidance. Yet information discovery alone does not account for the gap: even on the 23 tasks where the best configuration obtains every key fact from stakeholders, it reaches a normalized business uplift of 0.8 or above on only 10. These results reveal a substantial gap between solving well-specified tasks and delivering effective AI systems for real customers.",
+    "published_at": "2026-10-15T17:57:23Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.22350v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 8,
+    "facts": "论文提出FDE-Gym基准，包含来自18个行业20个客户场景的95个端到端交付任务，由行业专家改编自真实交付项目。在模拟客户环境中，智能体需与脚本化利益相关者交互并在类生产系统上操作。评分基于客户自身成功指标的提升，归一化到0-1，并对交互（消息、试运行、等待时间）施加惩罚。评估了7家供应商的13种模型配置；最佳配置平均得分0.56，95个任务中仅14个解决（得分≥0.8且无事故）。发现未明示约束是主要瓶颈；即便在23个任务中最佳配置从利益相关者处获取了全部关键事实，也仅有10个达到0.8以上归一化业务提升。",
+    "analysis": "该工作将评测重心从“任务规格明确”转向“真实客户交付”，填补了智能体基准与FDE实际工作之间的空白。其核心发现——信息发现并非唯一瓶颈，即使关键事实齐备，业务价值转化仍不足——说明当前模型在需求澄清后的方案设计、系统操作与价值对齐上存在系统性短板。惩罚机制将交互成本纳入评分，更贴近交付经济性。",
+    "technical_value": "提供了可复现的端到端交付评测框架，包含脚本化利益相关者、可修改客户系统与业务指标归一化评分；对长程交互、约束发现与业务价值转化三类能力可分别诊断，适合作为智能体交付能力的压力测试集。",
+    "impact": "对智能体在真实企业交付中的能力预期形成校准，提示“基准高分”不等于“可交付”；将推动FDE辅助工具、需求澄清与约束发现方向的研究，并影响企业采购智能体方案时的评估标准。",
+    "keywords": [
+      "FDE",
+      "agent benchmark",
+      "customer delivery",
+      "constraint discovery",
+      "business uplift"
+    ]
+  },
+  {
+    "id": "37f698fe857803b1",
+    "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
+    "summary": "Large language models (LLMs) are expanding from assisting scientific research and engineering to autonomously developing and improving AI systems, advancing AI for AI (AI4AI) as a pathway toward recursive self-improvement (RSI). Workflow-driven machine learning engineering (MLE) systems provide a practical path toward this pursuit through complex orchestration that manages long-horizon experimentation, while recent MLE systems adopt model-directed interaction, allowing models to autonomously organize experiments and adapt optimization strategies based on execution feedback. However, feedback from each experiment reflects several preceding decisions, and a long MLE run contains many such costly experiments. Training must therefore select useful supervision from long interaction trajectories and learn from intermediate outcomes. We propose a post-training method for autonomous long-horizon MLE optimization and apply it to train MLExpert, a 35B Mixture-of-Experts agentic model. We design the Kaggle-MLE Factory to construct executable tasks and an interaction harness for model-directed experimentation. Hierarchical agentic SFT transfers general tool-use and coding capabilities to MLE through outcome-guided supervision. Windowed Interaction RL (WIRL) treats the multi-turn decisions between successive experiment results as an execution window and assigns it a shared outcome-based reward. Asynchronous collection and policy correction support policy updates before the trajectory ends. On MLE-Bench Lite, MLExpert improves the average medal rate of the base model from 37.9% to 72.7%, achieving performance comparable to larger frontier models such as Kimi-K3 and GLM-5.3. Further experiments show that MLExpert improves performance on NatureBench Lite, agent scaffold optimization, a",
+    "published_at": "2026-10-15T17:56:32Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.22344v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.6,
+    "ai_score": 8,
+    "facts": "论文提出面向长程自主机器学习工程（MLE）优化的后训练方法，训练出35B混合专家智能体模型MLExpert。设计Kaggle-MLE Factory构建可执行任务与交互框架；采用分层智能体SFT迁移工具使用与编码能力；提出窗口化交互强化学习（WIRL），将相邻实验结果之间的多轮决策视为执行窗口并赋予共享结果奖励；支持异步收集与策略校正。在MLE-Bench Lite上，平均奖牌率从基座37.9%提升至72.7%，与Kimi-K3、GLM-5.3等更大前沿模型相当；在NatureBench Lite、智能体脚手架优化等实验上亦有提升。",
+    "analysis": "该工作针对MLE长程实验中“反馈归因困难、监督信号稀疏”的核心问题，用执行窗口聚合多轮决策并以结果奖励训练，是AI4AI/RSI路径上较务实的工程化推进。35B MoE达到与更大模型可比的表现，说明数据构造与训练信号设计比单纯扩大参数更关键。",
+    "technical_value": "WIRL将多轮交互压缩为带共享奖励的执行窗口，配合异步收集与策略校正，缓解长轨迹信用分配问题；Kaggle-MLE Factory提供可执行任务与交互框架，具备可复用性。",
+    "impact": "若方法可泛化，将降低自主ML工程智能体的训练门槛，推动AI系统自我改进的工程闭环；对企业自动化建模、模型调优服务有直接应用潜力，同时引发对自主实验安全与可审计性的关注。",
+    "keywords": [
+      "MLE",
+      "agentic model",
+      "reinforcement learning",
+      "MoE",
+      "AI4AI"
+    ]
+  },
+  {
+    "id": "57dc1fe77b7c95ff",
+    "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+    "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+    "published_at": "Wed, 14 Oct 2026 02:00:14 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 7,
+    "facts": "Google DeepMind与新加坡GovTech合作，使用轻量级端侧Gemma模型在私人聊天中拦截对话式诈骗，实现零云端数据外泄。",
+    "analysis": "该合作将端侧小模型用于高隐私敏感的实时对话风险识别，技术路线强调数据不出设备，兼顾隐私合规与低延迟。政府场景的落地验证有助于形成可复制的公共安全AI范式。",
+    "technical_value": "端侧Gemma微调用于对话诈骗检测，需在有限算力下平衡召回率与误报；零数据外泄架构对隐私敏感部署具有参考价值。",
+    "impact": "为公共部门在私人通信中部署AI风控提供样板，可能推动更多地区采用端侧隐私保护方案，并影响端侧模型在安全领域的标准化。",
+    "keywords": [
+      "on-device",
+      "Gemma",
+      "scam detection",
+      "privacy",
+      "GovTech"
+    ]
+  },
+  {
+    "id": "42ba9d1ff5c3faa1",
+    "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
+    "summary": "Personalization is essential for general-purpose robots to transition into household environments and achieve true practicality. While general robotic manipulation has been extensively studied, personalized robotic manipulation (PeRM) lacks a controlled benchmark for separating task completion from preference satisfaction. We introduce LIBERO-PeRM, a benchmark for preference learning in embodied agents. LIBERO-PeRM studies five questions: 1) how policies follow preferences in zero-shot settings; 2) how they learn single preferences from demonstrations; 3) how efficiently they acquire preferences as demonstrations increase; 4) how learned preferences generalize across layouts and tasks; and 5) how policies compose preferences and behave under conflicts. We propose a controlled formulation and taxonomy of observable preferences in simulation, covering motion, skill, and user-profile choices. This formulation is restricted to language-expressible preferences that can be instantiated in LIBERO without changing the task goal, evaluated automatically, and reused across tasks. Building on LIBERO, our procedural pipeline generates paired demonstrations with and without preferences. We create five task suites (312 tasks) with high-quality demonstrations, rich metadata, and preference-satisfaction metrics. Experiments show that current VLA policies struggle with zero-shot personalization, while SFT makes preferences learnable. Mixed training achieves better no-preference retention than sequential adaptation and improves performance with contextual prompts compared with preference-only training, but can weaken motion-preference learning; preference generalization, decomposition, and conflict handling remain difficult. The code, datasets, and demos can be found on the project websi",
+    "published_at": "2026-10-15T17:59:59Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.22372v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.2,
+    "ai_score": 7,
+    "facts": "论文提出LIBERO-PeRM，面向具身智能体偏好学习的基准，研究五个问题：零样本偏好遵循、从演示学习单一偏好、随演示增加的学习效率、偏好跨布局与任务泛化、偏好组合与冲突处理。提出受控形式化与可观察偏好分类（运动、技能、用户画像），限于可用语言表达且不改变任务目标的偏好。基于LIBERO构建程序化流水线生成成对演示，创建5个任务套件共312个任务，含高质量演示、元数据与偏好满足度指标。实验显示当前VLA策略零样本个性化困难，SFT可使偏好可学习；混合训练在无偏好保持上优于顺序适应，并在上下文提示下优于仅偏好训练，但可能削弱运动偏好学习；偏好泛化、分解与冲突处理仍困难。",
+    "analysis": "该基准将“任务完成”与“偏好满足”解耦，填补了个性化机器人操作缺乏受控评测的空白。结果揭示VLA策略在个性化上的系统性不足，且混合训练存在能力权衡，说明偏好学习不是简单微调问题。",
+    "technical_value": "提供受控偏好形式化、成对演示生成流水线与偏好满足度指标，支持对零样本、少样本、泛化与冲突处理的分项诊断，具备可复用性。",
+    "impact": "为家庭服务机器人个性化提供评测基础设施，推动VLA策略从“会做”走向“按用户偏好做”；对机器人产品化中的用户适配与安全边界有直接意义。",
+    "keywords": [
+      "personalized manipulation",
+      "VLA",
+      "benchmark",
+      "preference learning",
+      "embodied AI"
+    ]
+  },
+  {
+    "id": "8dc5c91cdcf5f241",
+    "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+    "summary": "",
+    "published_at": "Tue, 13 Oct 2026 17:05:48 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 6,
+    "facts": "LiquidAI在Hugging Face博客发布LFM2.5-24B-A2B，标题称可在设备端运行快速、私密的智能体。输入未提供正文细节。",
+    "analysis": "标题指向端侧智能体与隐私保护两个卖点，24B-A2B命名暗示总参数24B、激活约2B的稀疏架构，符合端侧算力约束下的效率取向。但缺少正文，无法确认量化方式、内存占用、延迟与工具调用能力。",
+    "technical_value": "若确为低激活稀疏MoE，可在消费级设备上以较低算力运行智能体推理，减少云端数据外泄；具体技术指标需以原文为准。",
+    "impact": "端侧私有智能体是隐私敏感场景（个人助理、企业内网）的关键方向，可能推动本地化部署与混合云边架构的采用。",
+    "keywords": [
+      "on-device",
+      "private agents",
+      "LFM2.5",
+      "MoE",
+      "edge AI"
+    ]
+  }
+]
