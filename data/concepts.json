@@ -638,5 +638,19 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2610.22350v1"
     ]
+  },
+  {
+    "date": "2026-10-19",
+    "name_zh": "端侧隐私智能体",
+    "name_en": "On-device Private Agents",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "在用户设备本地运行的小型或稀疏化大模型驱动的智能体，推理与数据均不出设备，兼顾低延迟与隐私合规。",
+    "why_now": "LFM2.5-24B-A2B 等稀疏端侧模型与 EmbeddingGemma 2 等轻量组件成熟，叠加新加坡政府端侧反诈等真实部署，端侧 agent 从概念走向可落地。",
+    "evidence_urls": [
+      "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+      "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/"
+    ]
   }
 ]
