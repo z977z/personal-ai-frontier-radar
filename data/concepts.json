@@ -652,5 +652,17 @@
       "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
       "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/"
     ]
+  },
+  {
+    "date": "2026-10-20",
+    "name_zh": "多模态智能体工具使用框架",
+    "name_en": "Multimodal Agentic Tool-Use Harness",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "以能力层统一封装异构工具、将输出渲染为模型可读证据，并用持久多模态记忆跨推理步骤保留图像、结构化数据与引用，配合代码接口完成多工具结果组合计算，形成获取-检查-组合证据的迭代推理闭环。",
+    "why_now": "OpenVLHarness 在22个基准、8个骨干上验证工具+记忆+代码组合显著优于单纯扩大推理预算，且token效率更高，表明该范式已具备工程可行性并进入快速迭代期。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.26860v1"
+    ]
   }
 ]

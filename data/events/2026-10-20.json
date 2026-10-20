@@ -1,0 +1,131 @@
+[
+  {
+    "id": "710bec7cc8ee55a2",
+    "title": "OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory",
+    "summary": "Multimodal large language models (MLLMs) have made rapid progress on visual reasoning, yet many tasks require evidence that is difficult to obtain through internal reasoning alone: our controlled study on 22 benchmarks shows that simply increasing the inference budget of the base model yields only modest gains. Such tasks demand grounded perception, external knowledge, and numerical measurements obtained through heterogeneous tools, whose outputs must be made interpretable to the model and retained across reasoning steps. We introduce OpenVLHarness, a multimodal reasoning harness organized around a capability layer and persistent multimodal memory. The capability layer combines task-level tool interfaces with evidence rendering, providing consistent access to heterogeneous backends and converting their outputs into model-readable observations. Persistent multimodal memory retains the corresponding images, structured data, and web references as addressable artifacts throughout each query. A coding interface executes generated programs over stored data, enabling computations that combine results from multiple tools. Together, these mechanisms support an iterative process of acquiring, inspecting, and composing multimodal evidence. Evaluated on 22 benchmarks with eight open and proprietary backbones, OpenVLHarness improves average scores by 9.7-12.6 points over matched no-tool baselines, including +11.2 with Qwen3-VL-8B, +9.7 with Kimi K3, and +9.9 with GPT-6 Astra. With GPT-6 Luna at medium reasoning effort, OpenVLHarness outperforms the base model, Codex, and Visual Sketchpad at maximum effort by 7.7-8.5 points while incurring at most 37% of their model-token cost.",
+    "published_at": "2026-10-19T17:59:58Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.26860v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.3,
+    "ai_score": 8,
+    "facts": "OpenVLHarness 是一个多模态推理框架，由能力层与持久化多模态记忆组成。能力层将任务级工具接口与证据渲染结合，把异构后端输出转为模型可读观察；持久化记忆保留图像、结构化数据与网页引用为可寻址工件；编码接口可在存储数据上执行生成程序。在22个基准、8个开源与专有骨干模型上评估，平均分较无工具基线提升9.7-12.6分（Qwen3-VL-8B +11.2，Kimi K3 +9.7，GPT-6 Astra +9.9）。GPT-6 Luna 中等推理强度下，比基础模型、Codex、Visual Sketchpad 最高强度高7.7-8.5分，模型token成本至多为其37%。",
+    "analysis": "该工作针对MLLM内部推理难以获取外部证据的问题，提出工具调用+持久记忆+代码执行的组合范式，属于视觉智能体工具使用方向的重要工程化推进。其关键洞察是单纯扩大推理预算收益有限，而结构化证据获取与复用更有效。",
+    "technical_value": "高。能力层抽象、证据渲染、可寻址多模态记忆与代码接口的组合具有可复用架构价值，且跨8个骨干验证泛化性，token效率优势明显。",
+    "impact": "对视觉智能体、多模态RAG与工具增强推理有直接推动，可能成为多模态agent harness的参考设计。",
+    "keywords": [
+      "多模态智能体",
+      "工具调用",
+      "持久记忆",
+      "证据渲染",
+      "代码执行"
+    ]
+  },
+  {
+    "id": "d602913b9363822b",
+    "title": "WeAct: Dynamic Weight Switching as Agent Actions",
+    "summary": "Long-horizon agents must learn heterogeneous capabilities from interleaved trajectories. Updating shared parameters to learn new capabilities can degrade previously acquired ones, resulting in catastrophic forgetting. As a trajectory unfolds, different stages may require different capabilities, yet conventional joint training and static adapter merging maintain a fixed parameter configuration throughout execution. We introduce WeAct (Weight-level Internal Actions), which trains independent capability-specific LoRA adapters over a frozen backbone and adds adapter selection to the agent's action space. These internal actions use the model's native tool-calling interface for on-demand capability composition in a shared context. Across eight deep-research benchmarks, Qwen3-32B with WeAct improves average accuracy by 6.2% relative to full fine-tuning counterparts despite using less compute, and by 27.5% relative to the strongest static LoRA-merging method. WeAct also supports modular continual adaptation, by adding a new code computation adapter to expand the agent's capabilities and updating the existing writing adapter to improve report quality. Both updates leave the backbone and other adapters unchanged, supporting modular continual adaptation in agents.",
+    "published_at": "2026-10-19T17:59:19Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.26847v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.0,
+    "ai_score": 7,
+    "facts": "WeAct 在冻结骨干上训练独立的能力专用LoRA适配器，并将适配器选择加入智能体动作空间，通过模型原生工具调用接口在共享上下文中按需组合能力。在8个深度研究基准上，Qwen3-32B+WeAct 平均准确率较全量微调提升6.2%（计算更少），较最强静态LoRA合并方法提升27.5%。支持模块化持续适配：新增代码计算适配器、更新写作适配器，骨干与其他适配器不变。",
+    "analysis": "该工作将权重切换建模为智能体内部动作，缓解长程任务中的灾难性遗忘，并避免静态适配器合并的固定参数配置问题。模块化持续学习特性对生产级agent迭代有实际意义。",
+    "technical_value": "较高。适配器即动作的抽象简洁有效，与原生工具调用接口对齐，降低集成成本；但依赖多适配器训练与选择策略。",
+    "impact": "对长程agent能力组合、持续学习与参数高效微调方向有启发，可能影响agent框架的模块化设计。",
+    "keywords": [
+      "LoRA适配器",
+      "智能体动作空间",
+      "灾难性遗忘",
+      "持续学习",
+      "深度研究"
+    ]
+  },
+  {
+    "id": "247c7889e00d5d0e",
+    "title": "AnyGoal: On World Model Generalization Beyond Expert Rollouts",
+    "summary": "The goal of a world model is to capture the dynamics of an environment. This has the great appeal that it allows agents to plan and simulate a course of actions with the help of a world model. For these uses to be reliable, however, the learned dynamics must behave well beyond the specific state-action combinations observed in expert rollouts. Despite this, the relationship between data coverage, dynamics generalization, and downstream planning performance remains underexplored. We study this relationship through the lens of compositional generalization: can a world model recombine familiar state and action factors into valid dynamics? To answer this, we introduce AnyGoal, a benchmark of goal-shifted task variants built from widely used world-model environments, together with an open-source library. Each task is designed to be within reach of a world model that has learned the underlying dynamics: individual state factors and actions remain within their training support, but their combinations are underrepresented in expert trajectories. Across multiple environments and world model families, we find that current models consistently exhibit failures under these recombinations. By examining dynamics and representation failures across model families, interaction regimes, and evaluation metrics, we study where current world models generalize and where challenges remain for goal-shifted prediction and planning. Together, this framework, benchmark, and analysis provide a basis for evaluating progress toward world models that generalize to new planning tasks.",
+    "published_at": "2026-10-19T17:59:05Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.26844v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 6,
+    "facts": "AnyGoal 是面向世界模型组合泛化的基准与开源库，基于常用世界模型环境构建目标偏移任务变体：单个状态因子与动作仍在训练支持内，但其组合在专家轨迹中欠代表。跨多环境与世界模型家族评估发现，当前模型在这些重组下持续失败，并分析了动力学与表征失败。",
+    "analysis": "该工作揭示世界模型在专家轨迹覆盖之外的泛化短板，将数据覆盖、动力学泛化与下游规划性能联系起来，属于评测驱动的基础研究。",
+    "technical_value": "中等偏高。基准与开源库填补组合泛化评测空白，但未提出新方法，主要价值在诊断与度量。",
+    "impact": "对世界模型、基于模型的规划与agent仿真可靠性研究有推动作用，提示需关注轨迹分布外组合。",
+    "keywords": [
+      "世界模型",
+      "组合泛化",
+      "目标偏移",
+      "规划",
+      "基准评测"
+    ]
+  },
+  {
+    "id": "57dc1fe77b7c95ff",
+    "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+    "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+    "published_at": "Wed, 14 Oct 2026 02:00:14 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6,
+    "facts": "Google DeepMind 与新加坡 GovTech 合作，使用轻量端侧 Gemma 模型在私聊中拦截对话式诈骗，零云数据外泄。",
+    "analysis": "该合作展示端侧小模型在公共安全场景的落地路径，隐私保护（无云数据出口）是核心卖点，属于AI for social good的典型案例。",
+    "technical_value": "中等。微调Gemma用于诈骗检测的技术门槛不高，但端侧部署与隐私架构有参考价值。",
+    "impact": "对政府AI应用、端侧安全模型与隐私计算方向有示范效应。",
+    "keywords": [
+      "端侧AI",
+      "Gemma",
+      "诈骗检测",
+      "隐私保护",
+      "政府合作"
+    ]
+  },
+  {
+    "id": "6dda7fd716d706dc",
+    "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+    "summary": "",
+    "published_at": "Tue, 06 Oct 2026 19:57:04 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6,
+    "facts": "Google DeepMind 发布 EmbeddingGemma 2，定位为开放、轻量级多模态嵌入模型，输入未提供具体参数与评测。",
+    "analysis": "多模态嵌入模型是RAG与检索系统的关键组件，开放轻量定位利于端侧与低成本部署。",
+    "technical_value": "待定，需看维度、上下文长度与多模态对齐质量。",
+    "impact": "可能影响多模态检索与嵌入模型选型生态。",
+    "keywords": [
+      "多模态嵌入",
+      "EmbeddingGemma",
+      "检索",
+      "开放模型"
+    ]
+  }
+]
