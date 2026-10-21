@@ -664,5 +664,17 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2610.26860v1"
     ]
+  },
+  {
+    "date": "2026-10-21",
+    "name_zh": "语义可观测性",
+    "name_en": "Semantic Observability",
+    "score": 7,
+    "maturity": "Emerging",
+    "explanation": "将异构日志与遥测统一建模为属性图，结合因果图算法与多智能体编排，再由LLM生成根因分析与修复建议的自主诊断范式。",
+    "why_now": "微服务与分布式基础设施规模膨胀导致日志异构且级联故障排障困难，LLM与图推理能力成熟使结构化语义诊断成为可行路径。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.28611v1"
+    ]
   }
 ]

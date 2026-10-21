@@ -1,0 +1,134 @@
+[
+  {
+    "id": "aa629cc284bedb3f",
+    "title": "Semantic Observability for Autonomous Systems Diagnostics",
+    "summary": "Modern distributed microservice deployments generate massive volumes of heterogeneous, multi-format observability logs across physically and logically partitioned infrastructure. Isolating root causes during cascading failures remains an arduous task for Site Reliability Engineers (SREs), bottlenecked by manual keyword filtering and disjointed temporal correlation across monitoring dashboards. We introduce Semantic Observability, an autonomous multi-agent framework that unifies disparate log streams into a dynamic, queryable Property Graph Database. By modeling physical infrastructure topologies, logical software dependencies, and chronological event sequences as attributed nodes and directed relations, it bridges the semantic gap inherent in flat, unstructured log repositories. Building on this unified substrate, we deploy a stateful multi-agent system orchestrated through Directed Cyclic Graphs (DCGs). The system autonomously navigates the topology, applying causal graph algorithms and temporal back-traversal to isolate the precise blast radius of anomalies. The pruned subgraph is then interpreted by a Large Language Model (LLM) reasoning engine to generate contextualized, code-level Root Cause Analyses (RCA) and actionable remediations. This paper establishes the foundational system architecture, formal relational ontology, and multi-agent control loops of Semantic Observability. We show conceptually how the framework eliminates ambient telemetry noise, reduces Mean Time to Resolution (MTTR), compresses LLM token consumption, and prevents structural hallucinations. We also specify an open-source validation framework on standard benchmarks (LogHub and Train-Ticket), laying the groundwork for a forthcoming companion paper on exhaustive quantitative evaluation and produ",
+    "published_at": "2026-10-20T17:53:32Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.28611v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.3,
+    "ai_score": 7,
+    "facts": "论文提出Semantic Observability框架：将分布式微服务的异构日志流统一建模为可查询的属性图数据库，节点与有向边表示物理拓扑、软件依赖和时间序列；在此之上用有向循环图（DCG）编排有状态多智能体系统，结合因果图算法与时间回溯定位异常影响范围，再由LLM推理引擎生成代码级根因分析（RCA）与修复建议。论文称该架构可降低MTTR、压缩LLM token消耗并抑制结构性幻觉，并计划在LogHub与Train-Ticket基准上开源验证。",
+    "analysis": "该工作切中SRE在级联故障中手工关键词过滤与跨面板时间关联的痛点，思路是把非结构化日志转为结构化图，再用多智能体在图上做因果剪枝，最后才交给LLM解释，属于'先结构化再推理'的降幻觉路线。但当前论文仅给出架构、关系本体与控制循环的概念性描述，定量评估留待后续论文，实际降噪与MTTR收益尚缺证据。",
+    "technical_value": "核心价值在于日志到属性图的语义建模与DCG多智能体控制循环的组合，以及用因果图剪枝压缩LLM上下文的设计，可作为AIOps根因分析的可复用架构范式。",
+    "impact": "若后续定量结果成立，将影响可观测性平台与SRE工具链的产品形态，推动从关键词检索式排障向图推理式自主诊断演进。",
+    "keywords": [
+      "可观测性",
+      "根因分析",
+      "多智能体",
+      "属性图",
+      "LLM推理",
+      "AIOps"
+    ]
+  },
+  {
+    "id": "fcb85698db8fd300",
+    "title": "GBClaw: An agentic AI framework for atomistic grain boundary research and mechanistic discovery",
+    "summary": "Agentic artificial intelligence (AI) systems hold immense potential for automating complex workflows in materials discovery and design, but extending them to domain-intensive mechanistic investigations remains challenging. Here, we present GBClaw, an agentic AI framework for investigating the structure and deformation of general grain boundaries (GBs). Although general GBs constitute the vast majority of real-world interfaces in polycrystalline materials, they remain understudied because their structural complexity and interfacial mismatch complicate experimental and modeling research. GBClaw integrates large language models (LLMs) into a modular architecture comprising an orchestrator, specialized agents, domain-specific tools, simulation interfaces, and hierarchical memory. Through dynamic replanning and iterative workflow refinement, the framework effectively connects systematic simulations with targeted mechanistic analysis. Applied to 14 general asymmetric tilt GBs in nickel, GBClaw characterized interfacial defect structures and identified diverse deformation modes across these incommensurate boundaries. Comparing boundary sliding with and without secondary GB misfit dislocations revealed substantial differences in shear strength, underscoring the critical role of defect hierarchies in sliding resistance. Furthermore, researcher-guided follow-up calculations traced an anomalously high shear resistance to metastable boundary structures. This work demonstrates that combining agentic AI with domain expertise bridges high-throughput computational screening with deep physical understanding of complex material interfaces.",
+    "published_at": "2026-10-20T17:59:40Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.28629v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.6,
+    "ai_score": 7,
+    "facts": "论文提出GBClaw，一个面向一般晶界（GB）结构与变形研究的智能体AI框架，架构包含编排器、专用智能体、领域工具、仿真接口与分层记忆，通过动态重规划与迭代工作流优化连接系统仿真与机理分析。应用于镍中14个一般非对称倾斜晶界，表征界面缺陷结构并识别多种变形模式；对比有无二次晶界错配位错的滑移，发现剪切强度显著差异，并追踪到异常高剪切阻力源于亚稳晶界结构。",
+    "analysis": "该工作展示了智能体AI在领域密集型机理研究中的落地路径：LLM负责编排与重规划，领域工具与仿真接口承担计算，分层记忆维持上下文。其价值在于把高通量计算筛选与深层物理理解衔接，而非仅做流程自动化。局限是案例集中于镍的特定晶界类型，泛化性待验证。",
+    "technical_value": "模块化智能体架构加动态重规划与分层记忆的设计，可迁移到其他材料界面与缺陷研究场景。",
+    "impact": "对材料计算与智能体科研自动化方向有示范意义，可能推动领域专用科研智能体框架的发展。",
+    "keywords": [
+      "智能体AI",
+      "晶界",
+      "材料发现",
+      "LLM编排",
+      "机理分析"
+    ]
+  },
+  {
+    "id": "b217fc5c573dbdb9",
+    "title": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
+    "summary": "Motivated by the human ability to integrate experience across language, perception, and action, we introduce UniWALM, a unified world-action-language model that learns video, action, and language in a single shared representation, where each modality is both a conditioning signal and a supervision target. We ask: can jointly generating language enrich this shared representation, improving manipulation and supporting memory-dependent behavior? Unlike prior approaches that attach a reasoning or vision-language model to a video-action backbone and run them as distinct stages, UniWALM unifies all three modalities inside a single mixture-of-transformers backbone whose per-modality diffusion heads co-denoise synchronously, decoding subtask and textual memory in the same pass as action with no separate planning stage; the generated language is re-consumed on the next step, closing a language-as-memory loop without an external planner or memory bank. To keep the action stream reliable under this richer objective, we further introduce Flow Matching with Correction (FMC), a training objective that teaches recovery from perturbed action trajectories at no inference-time cost. UniWALM consistently improves over same-backbone baselines (e.g., FastWAM) on compositional pick-and-place (MolmoSpaces) and across the memory-dependent subset of RMBench, where it reaches 34.5% without any pretrained language or reasoning model and exceeds Mem-0's keyframe-equipped setup (28.5%) using only a single anchor frame. On a real-world Find-the-Item task, generating textual memory lifts success from 11.1% to 61.1%, while state-of-the-art VLAs stay at or below chance (<=33.3%).",
+    "published_at": "2026-10-20T17:59:04Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.28626v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.3,
+    "ai_score": 7,
+    "facts": "论文提出UniWALM，统一世界-动作-语言模型，在单一混合Transformer骨干中联合学习视频、动作与语言，各模态既是条件信号也是监督目标；各模态扩散头同步协同去噪，在同一次前向中解码子任务与文本记忆及动作，无需独立规划阶段，生成的语言在下一步被重新消费形成语言即记忆闭环。引入Flow Matching with Correction（FMC）训练目标以从扰动动作轨迹中恢复。在MolmoSpaces组合式抓放与RMBench记忆依赖子集上优于同骨干基线，RMBench达34.5%（无预训练语言或推理模型），超过Mem-0的28.5%；真实Find-the-Item任务中生成文本记忆将成功率从11.1%提升至61.1%，而SOTA VLA不超过33.3%。",
+    "analysis": "该工作把语言生成从外挂规划器变为模型内部记忆机制，用单骨干多模态协同去噪替代多阶段流水线，减少阶段间误差传递。真实任务中文本记忆带来的大幅提升说明语言作为记忆对长程依赖任务有效。局限在于评测任务仍偏受控，真实场景泛化与安全性待验证。",
+    "technical_value": "单骨干多模态联合生成加语言即记忆闭环，以及FMC训练目标，对具身智能体架构设计有较高参考价值。",
+    "impact": "可能影响VLA与具身控制的研究路线，推动语言记忆内化而非外挂规划器。",
+    "keywords": [
+      "具身智能",
+      "VLA",
+      "世界模型",
+      "语言记忆",
+      "流匹配",
+      "多模态"
+    ]
+  },
+  {
+    "id": "666d056dc06215c5",
+    "title": "Benchmarking Arabic Dialects for Math Problems",
+    "summary": "Mathematical reasoning remains underexplored for low-resource languages, including Dialectal Arabic. To bridge this gap, we introduce the DAR-MGSM (Dialectal Arabic Multilingual Grade School Math) Benchmark, the first manually curated benchmark for evaluating mathematical reasoning in Dialectal Arabic. DAR-MGSM consists of math word problems (MWPs) requiring multi-step reasoning and covers five major Arabic dialects alongside Modern Standard Arabic (MSA). The benchmark comprises two parallel versions: translated-only and translated & culturally localized. The latter version adapts entities and references to regional varieties. We evaluate eleven Arabic-centric and multilingual large language models on DAR-MGSM. The results show that the performance generally declines on the localized version, highlighting the challenges introduced by culturally grounded adaptations. However, the magnitude of this effect varies across models, with Arabic-centric models exhibiting different levels of sensitivity to localization. A mechanistic interpretability analysis shows that translated and localized variants of the same MWPs often induce distinct internal reasoning trajectories, even when aggregate accuracy remains similar. Overall, our results show that mathematical reasoning performance depends on both linguistic variety and cultural context.",
+    "published_at": "2026-10-20T17:50:13Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.28607v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 6,
+    "facts": "论文发布DAR-MGSM基准，是首个面向方言阿拉伯语的数学推理评测集，包含需多步推理的数学应用题，覆盖五种主要阿拉伯方言及现代标准阿拉伯语，并提供纯翻译版与翻译加文化本地化版两个平行版本。作者评测了11个阿拉伯语中心及多语言大模型，结果显示本地化版本上性能普遍下降，且翻译版与本地化版即使总体准确率相近，内部推理轨迹也常不同。",
+    "analysis": "该工作把低资源语言评测从'翻译即等价'推进到文化语境维度，揭示本地化会改变模型内部推理路径而非仅改变表面表述，对多语言模型评测方法论有参考意义。局限在于基准规模与方言覆盖有限，且结论主要基于准确率与机制可解释性观察。",
+    "technical_value": "提供了可复用的平行对照评测设计（翻译版vs文化本地化版）与机制可解释性分析手段，可用于诊断多语言模型的文化敏感性。",
+    "impact": "影响阿拉伯语NLP评测标准与多语言模型的文化适配评估，提醒开发者本地化并非简单翻译。",
+    "keywords": [
+      "方言阿拉伯语",
+      "数学推理",
+      "基准评测",
+      "文化本地化",
+      "多语言模型"
+    ]
+  },
+  {
+    "id": "57dc1fe77b7c95ff",
+    "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+    "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+    "published_at": "Wed, 14 Oct 2026 02:00:14 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6,
+    "facts": "Google DeepMind与新加坡政府科技局（GovTech）合作，使用轻量级端侧Gemma模型在私聊中拦截对话式诈骗，强调零云端数据外泄。",
+    "analysis": "端侧小模型加零数据出云的组合，兼顾隐私合规与实时拦截，是政府场景下AI落地的典型范式。具体检测准确率与误报率未在摘要中给出。",
+    "technical_value": "展示了轻量模型在端侧隐私敏感场景的部署路径，可作为反诈与内容安全产品的参考架构。",
+    "impact": "对公共安全AI部署与隐私保护政策有示范效应，可能推动更多政府采用端侧模型方案。",
+    "keywords": [
+      "端侧AI",
+      "Gemma",
+      "反诈骗",
+      "隐私保护",
+      "政府合作"
+    ]
+  }
+]
