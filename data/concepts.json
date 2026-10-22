@@ -676,5 +676,18 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2610.28611v1"
     ]
+  },
+  {
+    "date": "2026-10-22",
+    "name_zh": "模型共演化基准",
+    "name_en": "LLM Co-Evolution Benchmark",
+    "score": 7,
+    "maturity": "Emerging",
+    "explanation": "以模型互相生成环境、互相求解并量化彼此影响的方式，评测模型作为创作者与求解者的双重能力，并观察排名传递性、设计收敛与训练迁移等生态现象。",
+    "why_now": "前沿模型越来越多地吸收彼此与网络合成数据，自博弈与合成环境成为训练关键环节，但缺乏可控、可复现的度量框架；Environment Duels 与 Quant-Arena 等基准同期出现，标志评测从单任务分数转向生态互动。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.30116v1",
+      "https://arxiv.org/abs/2610.30113v1"
+    ]
   }
 ]
