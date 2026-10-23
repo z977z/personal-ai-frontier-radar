@@ -1,0 +1,128 @@
+[
+  {
+    "id": "388ed99050423c40",
+    "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+    "summary": "",
+    "published_at": "Thu, 22 Oct 2026 22:24:34 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 7,
+    "facts": "微软在 Hugging Face 官方博客发布 ThinkingBox，介绍将数据库评分（database grading）转化为强化学习奖励，用于后训练智能体（post-training agents）。",
+    "analysis": "把可验证的数据库执行结果作为 RL 奖励信号，属于“可验证奖励强化学习”（RLVR）思路在智能体训练上的延伸，能缓解人工标注奖励的瓶颈。",
+    "technical_value": "将结构化数据库校验结果自动转为奖励，可用于训练具备 SQL/数据操作能力的智能体，降低奖励建模成本。",
+    "impact": "对智能体后训练流程有直接参考价值，可能推动数据密集型任务智能体的自动化训练。",
+    "keywords": [
+      "RLVR",
+      "agent post-training",
+      "database grading",
+      "reward modeling",
+      "Microsoft"
+    ]
+  },
+  {
+    "id": "57dc1fe77b7c95ff",
+    "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+    "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+    "published_at": "Wed, 14 Oct 2026 02:00:14 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6,
+    "facts": "Google DeepMind 与新加坡政府科技局（GovTech）合作，使用轻量级端侧 Gemma 模型在私聊中拦截对话式诈骗，数据不出设备（零云端数据外泄）。",
+    "analysis": "端侧小模型+政府场景落地，兼顾隐私与实时性，是 Gemma 系列在公共安全领域的典型应用。",
+    "technical_value": "端侧微调 Gemma 做对话诈骗检测，强调零数据外泄，涉及小模型微调与本地推理优化。",
+    "impact": "为政府与公共服务场景提供隐私友好的 AI 部署范式，可复制到反诈、内容安全等领域。",
+    "keywords": [
+      "Gemma",
+      "on-device AI",
+      "scam detection",
+      "privacy",
+      "GovTech"
+    ]
+  },
+  {
+    "id": "6dda7fd716d706dc",
+    "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+    "summary": "",
+    "published_at": "Tue, 06 Oct 2026 19:57:04 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6,
+    "facts": "Google DeepMind 发布 EmbeddingGemma 2，定位为开放、轻量级多模态嵌入模型。",
+    "analysis": "延续 Gemma 开放权重路线，多模态嵌入模型是 RAG、检索与聚类等下游应用的基础组件，轻量化利于端侧部署。",
+    "technical_value": "开放多模态嵌入模型可降低检索与向量化应用的接入门槛，适合本地化部署。",
+    "impact": "对 RAG 与多模态检索生态有直接推动作用。",
+    "keywords": [
+      "EmbeddingGemma",
+      "multimodal embedding",
+      "open model",
+      "RAG"
+    ]
+  },
+  {
+    "id": "68973188e8e72fe4",
+    "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
+    "summary": "",
+    "published_at": "Fri, 16 Oct 2026 00:00:00 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/reflection-beam",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6,
+    "facts": "Reflection 发布 Beam，一个 501B 参数的开源模型，强调可拥有、可定制、可扩展。",
+    "analysis": "超大开源权重模型继续涌现，反映开放模型与闭源前沿模型的差距在缩小，但部署成本高。",
+    "technical_value": "501B 开放模型为大规模定制与私有化部署提供选项，对算力要求高。",
+    "impact": "对开源大模型生态与私有化部署市场有显著影响。",
+    "keywords": [
+      "Beam",
+      "501B",
+      "open model",
+      "Reflection"
+    ]
+  },
+  {
+    "id": "6dcebe3869f41391",
+    "title": "Gemini 4 Argon: Built to solve your hardest problems",
+    "summary": "",
+    "published_at": "Tue, 13 Oct 2026 16:01:52 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 4.9,
+    "ai_score": 6,
+    "facts": "Google DeepMind 正式发布 Gemini 4 Argon，定位为解决最难问题的新一代模型。",
+    "analysis": "前沿模型代际更新，是本期事件中影响力最大的模型发布，但输入未提供具体基准数据。",
+    "technical_value": "新一代旗舰模型，具体能力提升需以官方技术报告为准。",
+    "impact": "对开发者生态与竞品格局有广泛影响。",
+    "keywords": [
+      "Gemini 4 Argon",
+      "frontier model",
+      "Google DeepMind"
+    ]
+  }
+]

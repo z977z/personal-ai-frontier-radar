@@ -689,5 +689,17 @@
       "https://arxiv.org/abs/2610.30116v1",
       "https://arxiv.org/abs/2610.30113v1"
     ]
+  },
+  {
+    "date": "2026-10-23",
+    "name_zh": "可验证奖励强化学习",
+    "name_en": "Reinforcement Learning with Verifiable Rewards",
+    "score": 8,
+    "maturity": "Growing",
+    "explanation": "用可程序化验证的结果（如数据库查询是否正确、代码是否通过测试）作为强化学习奖励信号，替代昂贵的人工偏好标注，用于后训练智能体与推理模型。",
+    "why_now": "ThinkingBox 将数据库评分转化为 RL 奖励，显示该范式正从数学/代码扩展到数据操作等更广泛的可验证任务。",
+    "evidence_urls": [
+      "https://huggingface.co/blog/microsoft/thinkingbox-training"
+    ]
   }
 ]

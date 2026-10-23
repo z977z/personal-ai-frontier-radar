@@ -1156,5 +1156,26 @@
     "code_size": "约 3k–8k 行",
     "v2": "扩展多环境类型与多模态交互，加入环境去重与收敛检测、提示增益到下游基准的预测模型，并接入自动 RL 课程调度。",
     "status": "idea"
+  },
+  {
+    "date": "2026-10-23",
+    "name_zh": "数据库智能体RL训练器",
+    "name_en": "DB-Agent RL Trainer",
+    "tagline": "用数据库执行结果自动打分，后训练你的 SQL 智能体",
+    "why_today": "ThinkingBox 展示了数据库评分转 RL 奖励的可行路径，开源工具链已具备复现条件。",
+    "scenarios": [
+      "Text-to-SQL 智能体训练",
+      "数据分析智能体后训练",
+      "企业内部数据操作助手"
+    ],
+    "flow": "构造任务→智能体生成 SQL/操作→在沙箱数据库执行→按结果正确性打分→作为奖励回传→策略更新",
+    "ai_role": "智能体生成数据库操作，评分器自动验证结果并产生奖励信号",
+    "stack": "Python、SQLite/Postgres 沙箱、TRL/verl 等 RL 框架、开源小模型",
+    "mvp": "单表 Text-to-SQL 任务集+执行结果比对奖励+小模型 LoRA 强化学习微调",
+    "difficulty": "中高",
+    "time": "2-4 周",
+    "code_size": "约 2000-4000 行",
+    "v2": "扩展多表 JOIN、增加执行效率与安全性奖励、支持多轮工具调用智能体",
+    "status": "idea"
   }
 ]
