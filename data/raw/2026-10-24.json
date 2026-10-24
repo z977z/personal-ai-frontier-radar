@@ -1,0 +1,322 @@
+[
+  {
+    "title": "Beyond tree cover: mapping the world’s forest types",
+    "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+    "source": "Google DeepMind",
+    "published_at": "Thu, 22 Oct 2026 14:30:24 +0000",
+    "retrieved_at": "2026-10-24T04:59:31.827561+00:00",
+    "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+    "content": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+    "source_type": "official"
+  },
+  {
+    "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+    "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+    "source": "Google DeepMind",
+    "published_at": "Thu, 15 Oct 2026 16:08:03 +0000",
+    "retrieved_at": "2026-10-24T04:59:31.827595+00:00",
+    "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
+    "content": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
+    "source_type": "official"
+  },
+  {
+    "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+    "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 14 Oct 2026 02:00:14 +0000",
+    "retrieved_at": "2026-10-24T04:59:31.827604+00:00",
+    "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+    "content": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+    "source_type": "official"
+  },
+  {
+    "title": "Developing Gemini 4 Argon responsibly and safely",
+    "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 13 Oct 2026 19:43:07 +0000",
+    "retrieved_at": "2026-10-24T04:59:31.827609+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini 4 Argon for Robotics",
+    "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 13 Oct 2026 16:01:58 +0000",
+    "retrieved_at": "2026-10-24T04:59:31.827613+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini 4 Argon: Built to solve your hardest problems",
+    "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 13 Oct 2026 16:01:52 +0000",
+    "retrieved_at": "2026-10-24T04:59:31.827616+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+    "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 06 Oct 2026 19:57:04 +0000",
+    "retrieved_at": "2026-10-24T04:59:31.827619+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini 4 Argon: our next era of frontier intelligence",
+    "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 30 Sep 2026 20:01:45 +0000",
+    "retrieved_at": "2026-10-24T04:59:31.827622+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Introducing SynthID Bio",
+    "url": "https://deepmind.google/blog/introducing-synthid-bio/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 30 Sep 2026 15:03:07 +0000",
+    "retrieved_at": "2026-10-24T04:59:31.827628+00:00",
+    "summary": "Proof of concept for watermarking AI-generated proteins while preserving biological function.",
+    "content": "Proof of concept for watermarking AI-generated proteins while preserving biological function.",
+    "source_type": "official"
+  },
+  {
+    "title": "Introducing Gemini 3.8 Live with Live Avatar",
+    "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+    "source": "Google DeepMind",
+    "published_at": "Thu, 24 Sep 2026 16:20:39 +0000",
+    "retrieved_at": "2026-10-24T04:59:31.827631+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Advancing Private AI Compute with secure, server-side memory",
+    "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 23 Sep 2026 16:00:57 +0000",
+    "retrieved_at": "2026-10-24T04:59:31.827636+00:00",
+    "summary": "Introducing private, server-side memory to Private AI Compute for personal AI.",
+    "content": "Introducing private, server-side memory to Private AI Compute for personal AI.",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini 3.8 text-to-speech says hello",
+    "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 23 Sep 2026 15:25:14 +0000",
+    "retrieved_at": "2026-10-24T04:59:31.827639+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+    "url": "https://huggingface.co/blog/allenai/litpivot",
+    "source": "Hugging Face",
+    "published_at": "Fri, 23 Oct 2026 16:15:50 GMT",
+    "retrieved_at": "2026-10-24T04:59:31.956094+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Does Your Model Run on AWS Trainium? Look It Up",
+    "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+    "source": "Hugging Face",
+    "published_at": "Fri, 23 Oct 2026 00:00:00 GMT",
+    "retrieved_at": "2026-10-24T04:59:31.956117+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+    "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+    "source": "Hugging Face",
+    "published_at": "Thu, 22 Oct 2026 22:24:34 GMT",
+    "retrieved_at": "2026-10-24T04:59:31.956121+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Ensemble forecasting with IBM Granite time-series models",
+    "url": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
+    "source": "Hugging Face",
+    "published_at": "Thu, 22 Oct 2026 07:51:31 GMT",
+    "retrieved_at": "2026-10-24T04:59:31.956125+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+    "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+    "source": "Hugging Face",
+    "published_at": "Wed, 21 Oct 2026 18:26:30 GMT",
+    "retrieved_at": "2026-10-24T04:59:31.956127+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+    "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+    "source": "Hugging Face",
+    "published_at": "Wed, 21 Oct 2026 17:35:36 GMT",
+    "retrieved_at": "2026-10-24T04:59:31.956130+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+    "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+    "source": "Hugging Face",
+    "published_at": "Wed, 21 Oct 2026 16:04:43 GMT",
+    "retrieved_at": "2026-10-24T04:59:31.956133+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+    "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+    "source": "Hugging Face",
+    "published_at": "Wed, 21 Oct 2026 14:58:18 GMT",
+    "retrieved_at": "2026-10-24T04:59:31.956137+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Hugging Face ❤️ TorchTPU: TPUs, Natively",
+    "url": "https://huggingface.co/blog/hf-torchtpu",
+    "source": "Hugging Face",
+    "published_at": "Tue, 20 Oct 2026 00:00:00 GMT",
+    "retrieved_at": "2026-10-24T04:59:31.956140+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms",
+    "url": "https://huggingface.co/blog/anylanguagemodel-1-0",
+    "source": "Hugging Face",
+    "published_at": "Tue, 20 Oct 2026 00:00:00 GMT",
+    "retrieved_at": "2026-10-24T04:59:31.956143+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "MPS in PyTorch 2.15",
+    "url": "https://huggingface.co/blog/mps-pytorch-2-15",
+    "source": "Hugging Face",
+    "published_at": "Tue, 20 Oct 2026 00:00:00 GMT",
+    "retrieved_at": "2026-10-24T04:59:31.956146+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
+    "url": "https://huggingface.co/blog/hf-torchneuron",
+    "source": "Hugging Face",
+    "published_at": "Mon, 19 Oct 2026 00:00:00 GMT",
+    "retrieved_at": "2026-10-24T04:59:31.956148+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning",
+    "url": "https://arxiv.org/abs/2610.31667v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-22T17:59:48Z",
+    "retrieved_at": "2026-10-24T04:59:32.095613+00:00",
+    "summary": "Test-time scaling has emerged as a key inference strategy for reasoning models, where a model generates a large number of candidate solutions in the hope of finding at least one correct solution. Running all candidate solutions to completion can be computationally demanding, so recent work prunes the candidate pool after generating only a short prefix, committing further computation only to the surviving candidates. Existing pruning strategies divide broadly into two categories: Quality-based methods assign a score to each partial solution and discard those predicted to ultimately lead to an incorrect final solution, while diversity-based methods select partial solutions that follow different reasoning trajectories and are therefore likely to cover different final solutions. The tension between these two objectives is an instance of exploration versus exploitation, yet little to no prior work on pruning exposes this trade-off directly, let alone optimizes it. In this paper, we introduce a pruning procedure that addresses this trade-off directly by optimizing pass@$k$ over the selected solution pool. In particular, it chooses the pool to maximize the probability that at least one of its partial solutions, when continued to completion, yields a correct answer. Because this objective simultaneously rewards high-quality partial solutions and penalizes redundancy among them, quality and diversity are naturally balanced by the criterion itself rather than through separate ad-hoc design choices. On eight open-weight reasoning models, our method outperforms existing quality-based and diversity-based pruning strategies. The gains are particularly pronounced when the pruning procedure keeps a moderate number of partial solutions for continued generation, highlighting the value of",
+    "content": "Test-time scaling has emerged as a key inference strategy for reasoning models, where a model generates a large number of candidate solutions in the hope of finding at least one correct solution. Running all candidate solutions to completion can be computationally demanding, so recent work prunes the candidate pool after generating only a short prefix, committing further computation only to the surviving candidates. Existing pruning strategies divide broadly into two categories: Quality-based methods assign a score to each partial solution and discard those predicted to ultimately lead to an incorrect final solution, while diversity-based methods select partial solutions that follow different reasoning trajectories and are therefore likely to cover different final solutions. The tension between these two objectives is an instance of exploration versus exploitation, yet little to no prior work on pruning exposes this trade-off directly, let alone optimizes it. In this paper, we introduce a pruning procedure that addresses this trade-off directly by optimizing pass@$k$ over the selected solution pool. In particular, it chooses the pool to maximize the probability that at least one of its partial solutions, when continued to completion, yields a correct answer. Because this objective simultaneously rewards high-quality partial solutions and penalizes redundancy among them, quality and diversity are naturally balanced by the criterion itself rather than through separate ad-hoc design choices. On eight open-weight reasoning models, our method outperforms existing quality-based and diversity-based pruning strategies. The gains are particularly pronounced when the pruning procedure keeps a moderate number of partial solutions for continued generation, highlighting the value of",
+    "source_type": "research"
+  },
+  {
+    "title": "Cost-Aware Abstention for LLM-Based IT Ticket Classification",
+    "url": "https://arxiv.org/abs/2610.31657v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-22T17:58:52Z",
+    "retrieved_at": "2026-10-24T04:59:32.095674+00:00",
+    "summary": "Wrong automatic routing of an IT support ticket can cost more than human triage. We evaluate cost-aware abstention as an offline, cost-conditional readiness assessment: select a routing policy on calibration data under explicit costs, then evaluate that frozen policy once on held-out test data. On a public 47,837-ticket, eight-class corpus, we compare four trained non-LLM classifiers with four large language models under zero- and few-shot prompting. Under the illustrative cost model (c_ok, c_triage, c_wrong) = (0, 1, 5), TF-IDF with logistic regression and a threshold of 0.60 selected on calibration reduces test cost from 0.763 to 0.472, a 38.1% relative reduction (paired ratio-bootstrap 95% CI [35.7%, 40.4%]), while lowering wrong routes from 15.3% to 3.5%. Frozen calibration-selected policies also beat both always-route and always-defer on held-out test data in 14 of 16 settings in a post-hoc cost-parameter analysis. The strongest prompted configuration reaches 0.477 accuracy on a stratified 1,000-ticket test subset, versus 0.879 for fine-tuned DistilBERT on the same tickets. Isotonic lowers expected calibration error without reliably improving discrimination: GPT-4o-mini few-shot has one confidence value before and after recalibration and correctness AUROC 0.500. We therefore report correctness AUROC and tie-aware risk-coverage area alongside ECE. At the analytically derived break-even probability 0.80, seven prompted configurations defer all tickets; Haiku few-shot routes only 19/1,000. An LLM-only agreement control and margin/entropy rejection baselines further separate calibration from discrimination. The findings are scoped to this dataset, prompt design, model endpoints, and illustrative costs; the work is an evaluation framework, not a new abstention algorithm",
+    "content": "Wrong automatic routing of an IT support ticket can cost more than human triage. We evaluate cost-aware abstention as an offline, cost-conditional readiness assessment: select a routing policy on calibration data under explicit costs, then evaluate that frozen policy once on held-out test data. On a public 47,837-ticket, eight-class corpus, we compare four trained non-LLM classifiers with four large language models under zero- and few-shot prompting. Under the illustrative cost model (c_ok, c_triage, c_wrong) = (0, 1, 5), TF-IDF with logistic regression and a threshold of 0.60 selected on calibration reduces test cost from 0.763 to 0.472, a 38.1% relative reduction (paired ratio-bootstrap 95% CI [35.7%, 40.4%]), while lowering wrong routes from 15.3% to 3.5%. Frozen calibration-selected policies also beat both always-route and always-defer on held-out test data in 14 of 16 settings in a post-hoc cost-parameter analysis. The strongest prompted configuration reaches 0.477 accuracy on a stratified 1,000-ticket test subset, versus 0.879 for fine-tuned DistilBERT on the same tickets. Isotonic lowers expected calibration error without reliably improving discrimination: GPT-4o-mini few-shot has one confidence value before and after recalibration and correctness AUROC 0.500. We therefore report correctness AUROC and tie-aware risk-coverage area alongside ECE. At the analytically derived break-even probability 0.80, seven prompted configurations defer all tickets; Haiku few-shot routes only 19/1,000. An LLM-only agreement control and margin/entropy rejection baselines further separate calibration from discrimination. The findings are scoped to this dataset, prompt design, model endpoints, and illustrative costs; the work is an evaluation framework, not a new abstention algorithm",
+    "source_type": "research"
+  },
+  {
+    "title": "METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2610.31656v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-22T17:58:27Z",
+    "retrieved_at": "2026-10-24T04:59:32.095703+00:00",
+    "summary": "Meta-reinforcement learning aims to train agents that adapt quickly to unseen tasks from limited interaction, but this requires representing task evidence over long interaction histories. Classical recurrent agents compress experience into hidden states, while transformer-based agents retrieve from past trajectories at quadratic memory and computation cost. In this work, we propose Memory-Enhanced Test-Time Adaptation (METTA) for meta-reinforcement learning. It decomposes the fast adaptation phase into two temporal scales: a causal neural memory performs fine-grained within-episode adaptation with linear sequence complexity, while compact episode-level summaries support long-range cross-episode task inference without attending over the full interaction history. Moreover, equipping agents with neural memory provides sufficient expressive capacity and test-time training capability, enabling effective adaptation to unseen held-out tasks and task families at meta-test time. On unseen held-out Meta-World ML10/45 test environments, METTA achieves a success rate over $50\\%$ while maintaining a low training budget and short wall-clock time. On long-context sparse-reward PointMaze tasks, it outperforms transformer-based baselines by exhibiting more structured exploration behavior. These results show that METTA provides an efficient path toward more adaptive and scalable long-context meta-RL.",
+    "content": "Meta-reinforcement learning aims to train agents that adapt quickly to unseen tasks from limited interaction, but this requires representing task evidence over long interaction histories. Classical recurrent agents compress experience into hidden states, while transformer-based agents retrieve from past trajectories at quadratic memory and computation cost. In this work, we propose Memory-Enhanced Test-Time Adaptation (METTA) for meta-reinforcement learning. It decomposes the fast adaptation phase into two temporal scales: a causal neural memory performs fine-grained within-episode adaptation with linear sequence complexity, while compact episode-level summaries support long-range cross-episode task inference without attending over the full interaction history. Moreover, equipping agents with neural memory provides sufficient expressive capacity and test-time training capability, enabling effective adaptation to unseen held-out tasks and task families at meta-test time. On unseen held-out Meta-World ML10/45 test environments, METTA achieves a success rate over $50\\%$ while maintaining a low training budget and short wall-clock time. On long-context sparse-reward PointMaze tasks, it outperforms transformer-based baselines by exhibiting more structured exploration behavior. These results show that METTA provides an efficient path toward more adaptive and scalable long-context meta-RL.",
+    "source_type": "research"
+  },
+  {
+    "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+    "url": "https://arxiv.org/abs/2610.31650v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-22T17:57:04Z",
+    "retrieved_at": "2026-10-24T04:59:32.095732+00:00",
+    "summary": "Tool-using language model agents rely on environmental facts to decide whether an action is permitted. When a tool response omits a safety-relevant fact, an agent may carry out a prohibited action even though the user request is benign and every returned statement is true. We introduce \\bench{}, an executable benchmark for evaluating unsafe execution, safety boundaries, and evidence recovery in LLM agents under missing evidence. It contains 300 matched unsafe/safe task pairs across six domains. By systematically suppressing critical facts, the benchmark measures unsafe execution under critical evidence omission and determines the minimum observed failure cardinality, including failures with full evidence and cases with no observed failure after exhaustive testing. An independent audit tool tests whether agents seek missing facts and then withhold prohibited actions while completing permissible tasks. The benchmark reveals substantial variation across the ten models in omission robustness, evidence acquisition, and appropriate action. Resistance to missing evidence does not necessarily translate into useful recovery. Recovery access reduces unsafe execution for all ten models, but agents differ in whether they actively obtain the missing facts and use them to act appropriately in both worlds.",
+    "content": "Tool-using language model agents rely on environmental facts to decide whether an action is permitted. When a tool response omits a safety-relevant fact, an agent may carry out a prohibited action even though the user request is benign and every returned statement is true. We introduce \\bench{}, an executable benchmark for evaluating unsafe execution, safety boundaries, and evidence recovery in LLM agents under missing evidence. It contains 300 matched unsafe/safe task pairs across six domains. By systematically suppressing critical facts, the benchmark measures unsafe execution under critical evidence omission and determines the minimum observed failure cardinality, including failures with full evidence and cases with no observed failure after exhaustive testing. An independent audit tool tests whether agents seek missing facts and then withhold prohibited actions while completing permissible tasks. The benchmark reveals substantial variation across the ten models in omission robustness, evidence acquisition, and appropriate action. Resistance to missing evidence does not necessarily translate into useful recovery. Recovery access reduces unsafe execution for all ten models, but agents differ in whether they actively obtain the missing facts and use them to act appropriately in both worlds.",
+    "source_type": "research"
+  },
+  {
+    "title": "Low-Bit N-Gram Embeddings for Language Models",
+    "url": "https://arxiv.org/abs/2610.31646v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-22T17:56:13Z",
+    "retrieved_at": "2026-10-24T04:59:32.095765+00:00",
+    "summary": "Many recent open-weight language models use n-gram embedding tables to improve performance. These tables store learned representations of short token sequences, such as pairs or triples of consecutive tokens, which the model retrieves during processing. However, they can require substantial memory: DeepSeek-V4.1-Flash, for example, allocates 196 billion parameters to its Engram n-gram memory. We therefore investigate whether this memory cost can be reduced while preserving the performance improvement that the tables provide. We propose storing n-gram embeddings at low precision and systematically investigate different quantization methods and bit allocations across tables. Across nanochat-, Llama-, and GPT-2-family models trained from scratch, four-bit tables save approximately 75% of table memory while preserving more than 99% of the validation-loss improvement from adding the tables. Using fewer bits leads to a larger drop in performance, although we find that a short fine-tuning phase recovers a significant part of this loss. In addition, reinvesting the saved memory in larger tables can improve performance beyond that of the original full-precision tables while still using less memory. These table memory savings also extend to large existing models: on DeepSeek-V4.1-Flash and Qwen3.8-Flash-Next, low-bit tables save 47-55% of table memory, with perplexity increases of less than 1.2% and largely preserved downstream task performance. These findings establish low-bit precision as a practical way to reduce the memory requirements of n-gram embeddings and use the saved capacity to improve model performance.",
+    "content": "Many recent open-weight language models use n-gram embedding tables to improve performance. These tables store learned representations of short token sequences, such as pairs or triples of consecutive tokens, which the model retrieves during processing. However, they can require substantial memory: DeepSeek-V4.1-Flash, for example, allocates 196 billion parameters to its Engram n-gram memory. We therefore investigate whether this memory cost can be reduced while preserving the performance improvement that the tables provide. We propose storing n-gram embeddings at low precision and systematically investigate different quantization methods and bit allocations across tables. Across nanochat-, Llama-, and GPT-2-family models trained from scratch, four-bit tables save approximately 75% of table memory while preserving more than 99% of the validation-loss improvement from adding the tables. Using fewer bits leads to a larger drop in performance, although we find that a short fine-tuning phase recovers a significant part of this loss. In addition, reinvesting the saved memory in larger tables can improve performance beyond that of the original full-precision tables while still using less memory. These table memory savings also extend to large existing models: on DeepSeek-V4.1-Flash and Qwen3.8-Flash-Next, low-bit tables save 47-55% of table memory, with perplexity increases of less than 1.2% and largely preserved downstream task performance. These findings establish low-bit precision as a practical way to reduce the memory requirements of n-gram embeddings and use the saved capacity to improve model performance.",
+    "source_type": "research"
+  },
+  {
+    "title": "Causal Chain of Thought: Mitigating Attention Leakage via Context Isolation",
+    "url": "https://arxiv.org/abs/2610.31639v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-22T17:52:56Z",
+    "retrieved_at": "2026-10-24T04:59:32.095790+00:00",
+    "summary": "Chain-of-thought (CoT) prompting elicits step-by-step rationales that appear to explain model predictions, but there is no guarantee these steps causally drive the final answer. In standard autoregressive generation, dense attention allows each reasoning step to attend to the full context, enabling the model to derive answers through direct lookup while generating plausible-sounding but post-hoc justifications. We introduce CausalCoT, an inference framework that enforces causal transparency by decomposing problems into a directed acyclic graph of atomic sub-questions, evaluating each node in an isolated context containing only its direct causal parents. This Markovian structure removes attention pathways to non-parent content, making downstream predictions sensitive to local reasoning rather than global context leakage. Across a diverse suite of reasoning benchmarks, CausalCoT preserves competitive predictive performance while improving explanation faithfulness, increasing causal sensitivity of intermediate reasoning steps by an average of 12 and up to 21 percentage points over the strongest baseline. The structured dependency graph additionally enables test-time interventions in which local corrections propagate predictably through downstream reasoning.",
+    "content": "Chain-of-thought (CoT) prompting elicits step-by-step rationales that appear to explain model predictions, but there is no guarantee these steps causally drive the final answer. In standard autoregressive generation, dense attention allows each reasoning step to attend to the full context, enabling the model to derive answers through direct lookup while generating plausible-sounding but post-hoc justifications. We introduce CausalCoT, an inference framework that enforces causal transparency by decomposing problems into a directed acyclic graph of atomic sub-questions, evaluating each node in an isolated context containing only its direct causal parents. This Markovian structure removes attention pathways to non-parent content, making downstream predictions sensitive to local reasoning rather than global context leakage. Across a diverse suite of reasoning benchmarks, CausalCoT preserves competitive predictive performance while improving explanation faithfulness, increasing causal sensitivity of intermediate reasoning steps by an average of 12 and up to 21 percentage points over the strongest baseline. The structured dependency graph additionally enables test-time interventions in which local corrections propagate predictably through downstream reasoning.",
+    "source_type": "research"
+  },
+  {
+    "title": "Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3",
+    "url": "https://arxiv.org/abs/2610.31624v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-22T17:44:41Z",
+    "retrieved_at": "2026-10-24T04:59:32.095826+00:00",
+    "summary": "Instrumental convergence is often invoked as a general reason to expect capable agents to acquire or express power-seeking subgoals: self-preservation, resource acquisition, deception, or resistance to oversight which poses an important threat to the society. For LLMs, reinforcement learning is the first stage of post-training that directly optimizes behavior against an objective; therefore, it is the stage where convergent instrumental behavior, on IC grounds, likely to appear. Does reinforcement learning with verifiable rewards (RLVR) make a model more likely to express instrumental-convergence behavior, or does this depend on the training regime, evaluation frame, and stage of post-training? We study this question as a checkpoint-conditioned behavioral trajectory rather than as a single before/after safety score. Using InstrumentalEval, we evaluate OLMo-3-7B-Think across SFT, DPO, 13 intermediate RLVR checkpoints, and the final RLVR model. The trajectory is nonmonotonic: instrumental rate rises from 25.0% at SFT to 46.1% near RLVR step 200, then falls to 11.8% at the final checkpoint. Paired item-level tests and step-wise regression support the final SFT-to-RLVR reduction. Prompt framing does not explain this pattern: a harmful-prompt indicator combined with other framing effects explains only 15% of within-checkpoint score variance on average, and Iterative Null-space Projection (INLP) removes a detectable framing direction without changing the SFT-to-final-RLVR gap. Together with preliminary 32B endpoint results (35.53% SFT to 22.37% RLVR final), these findings indicate that RLVR does not monotonically increase instrumental behavior in this setting: the rate rises early, then falls below the SFT baseline. The result is specific to this model family and benchmark, a",
+    "content": "Instrumental convergence is often invoked as a general reason to expect capable agents to acquire or express power-seeking subgoals: self-preservation, resource acquisition, deception, or resistance to oversight which poses an important threat to the society. For LLMs, reinforcement learning is the first stage of post-training that directly optimizes behavior against an objective; therefore, it is the stage where convergent instrumental behavior, on IC grounds, likely to appear. Does reinforcement learning with verifiable rewards (RLVR) make a model more likely to express instrumental-convergence behavior, or does this depend on the training regime, evaluation frame, and stage of post-training? We study this question as a checkpoint-conditioned behavioral trajectory rather than as a single before/after safety score. Using InstrumentalEval, we evaluate OLMo-3-7B-Think across SFT, DPO, 13 intermediate RLVR checkpoints, and the final RLVR model. The trajectory is nonmonotonic: instrumental rate rises from 25.0% at SFT to 46.1% near RLVR step 200, then falls to 11.8% at the final checkpoint. Paired item-level tests and step-wise regression support the final SFT-to-RLVR reduction. Prompt framing does not explain this pattern: a harmful-prompt indicator combined with other framing effects explains only 15% of within-checkpoint score variance on average, and Iterative Null-space Projection (INLP) removes a detectable framing direction without changing the SFT-to-final-RLVR gap. Together with preliminary 32B endpoint results (35.53% SFT to 22.37% RLVR final), these findings indicate that RLVR does not monotonically increase instrumental behavior in this setting: the rate rises early, then falls below the SFT baseline. The result is specific to this model family and benchmark, a",
+    "source_type": "research"
+  },
+  {
+    "title": "How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions",
+    "url": "https://arxiv.org/abs/2610.31606v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-22T17:36:14Z",
+    "retrieved_at": "2026-10-24T04:59:32.095859+00:00",
+    "summary": "Purpose: To describe an evidence-aware retrieval evaluation protocol for a clinical retrieval-augmented generation (RAG) system over breast lesion management literature, addressing the dependence of retrieval scores on annotation coverage. Methods: An 18-document corpus and an 18-query development benchmark, with one Yes/No or WH-question per document, were used. Retrieval combined dense embeddings, BM25, and cross-encoder reranking. Chunk sizes of 128 to 1024 tokens, overlaps of 0 to 20%, and four retriever configurations were evaluated. Relevance was defined by evidence spans mapped to all containing chunks, treating overlapping chunks with equivalent evidence as relevant. Retrieval was evaluated using R-Precision, Recall@K, MRR, and nDCG@K. Separately, generation was assessed on a 512-token index at K=1 to 5 using DeepEval claim-level metrics, with deepseek-v4-pro as the LLM judge, and BLEU/ROUGE metrics. Results: The selected hybrid retriever, using 384-token chunks and 20% overlap, retrieved accepted evidence in the top three results for 17 of 18 queries. Recall@3, R-Precision, MRR@3, and nDCG@3 each reached 0.94. Ground-truth curation increased evidence spans from 25 to 37 and accepted chunk targets from 36 to 51 without changing retrieval rankings. Conclusion: Cross-encoder reranking achieved the highest retrieval scores. Expanded relevance annotations increased recognized evidence without changing rankings, highlighting annotation sensitivity. The small development set and retrieval-informed curation require independent validation, including radiologist assessment of evidence sufficiency.",
+    "content": "Purpose: To describe an evidence-aware retrieval evaluation protocol for a clinical retrieval-augmented generation (RAG) system over breast lesion management literature, addressing the dependence of retrieval scores on annotation coverage. Methods: An 18-document corpus and an 18-query development benchmark, with one Yes/No or WH-question per document, were used. Retrieval combined dense embeddings, BM25, and cross-encoder reranking. Chunk sizes of 128 to 1024 tokens, overlaps of 0 to 20%, and four retriever configurations were evaluated. Relevance was defined by evidence spans mapped to all containing chunks, treating overlapping chunks with equivalent evidence as relevant. Retrieval was evaluated using R-Precision, Recall@K, MRR, and nDCG@K. Separately, generation was assessed on a 512-token index at K=1 to 5 using DeepEval claim-level metrics, with deepseek-v4-pro as the LLM judge, and BLEU/ROUGE metrics. Results: The selected hybrid retriever, using 384-token chunks and 20% overlap, retrieved accepted evidence in the top three results for 17 of 18 queries. Recall@3, R-Precision, MRR@3, and nDCG@3 each reached 0.94. Ground-truth curation increased evidence spans from 25 to 37 and accepted chunk targets from 36 to 51 without changing retrieval rankings. Conclusion: Cross-encoder reranking achieved the highest retrieval scores. Expanded relevance annotations increased recognized evidence without changing rankings, highlighting annotation sensitivity. The small development set and retrieval-informed curation require independent validation, including radiologist assessment of evidence sufficiency.",
+    "source_type": "research"
+  }
+]

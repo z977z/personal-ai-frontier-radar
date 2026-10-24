@@ -701,5 +701,17 @@
     "evidence_urls": [
       "https://huggingface.co/blog/microsoft/thinkingbox-training"
     ]
+  },
+  {
+    "date": "2026-10-24",
+    "name_zh": "缺失证据下的智能体安全",
+    "name_en": "Agent Safety under Missing Evidence",
+    "score": 7,
+    "maturity": "Emerging",
+    "explanation": "指工具调用型 LLM 智能体在环境返回信息不完整、关键安全事实被省略时，仍可能执行被禁止动作的风险，以及智能体主动求证缺失事实并恰当行动的能力。",
+    "why_now": "智能体大规模接入真实工具与业务系统，返回信息不完整是常态；现有安全评测多关注显式有害请求，忽视“所有返回语句为真但关键事实缺失”的隐蔽失效模式。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.31650v1"
+    ]
   }
 ]
