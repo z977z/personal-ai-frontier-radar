@@ -1,0 +1,136 @@
+[
+  {
+    "id": "ecd2ddcced4ddb51",
+    "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+    "summary": "Tool-using language model agents rely on environmental facts to decide whether an action is permitted. When a tool response omits a safety-relevant fact, an agent may carry out a prohibited action even though the user request is benign and every returned statement is true. We introduce \\bench{}, an executable benchmark for evaluating unsafe execution, safety boundaries, and evidence recovery in LLM agents under missing evidence. It contains 300 matched unsafe/safe task pairs across six domains. By systematically suppressing critical facts, the benchmark measures unsafe execution under critical evidence omission and determines the minimum observed failure cardinality, including failures with full evidence and cases with no observed failure after exhaustive testing. An independent audit tool tests whether agents seek missing facts and then withhold prohibited actions while completing permissible tasks. The benchmark reveals substantial variation across the ten models in omission robustness, evidence acquisition, and appropriate action. Resistance to missing evidence does not necessarily translate into useful recovery. Recovery access reduces unsafe execution for all ten models, but agents differ in whether they actively obtain the missing facts and use them to act appropriately in both worlds.",
+    "published_at": "2026-10-22T17:57:04Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.31650v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 7,
+    "facts": "论文提出 EpiSEM-Bench，一个可执行基准，用于评估工具调用型 LLM 智能体在关键证据缺失情况下的不安全执行、安全边界与证据恢复能力。基准包含跨六个领域的 300 对匹配的不安全/安全任务，通过系统性抑制关键事实来测量不安全执行率，并确定最小观测失败基数。独立审计工具检验智能体是否会主动寻找缺失事实，并在完成允许任务的同时拒绝执行禁止动作。结果显示十个模型在遗漏鲁棒性、证据获取和适当行动方面存在显著差异；对缺失证据的抵抗力不一定转化为有效恢复；恢复访问能降低所有十个模型的不安全执行率，但智能体在是否主动获取缺失事实并据此在两个世界中适当行动方面存在差异。",
+    "analysis": "该工作将智能体安全评估从“输出是否真实”推进到“在信息不完整时是否仍能守住边界”，抓住了工具调用智能体的一个真实失效模式：用户请求无害、返回语句为真，但关键安全事实被省略。300 对匹配任务和最小失败基数设计使评估可复现且可比较，审计工具将“抵抗力”与“恢复力”解耦，揭示二者并非同一能力。局限在于基准规模与领域覆盖仍有限，且“关键事实”的抑制方式可能引入构造偏差。",
+    "technical_value": "提供了可执行的智能体安全基准与审计方法，可用于工具调用智能体的安全对齐评测、红队测试和训练信号设计；其“证据恢复”维度对构建具备主动澄清能力的智能体有直接参考价值。",
+    "impact": "对智能体安全评测方法论有增量贡献，可能推动行业在工具调用场景中引入“缺失证据”测试项；短期内主要影响研究社区和负责智能体安全评估的团队。",
+    "keywords": [
+      "LLM agent safety",
+      "missing evidence",
+      "benchmark",
+      "tool use",
+      "evidence recovery",
+      "unsafe execution"
+    ]
+  },
+  {
+    "id": "92e2b4962b85f7e0",
+    "title": "Causal Chain of Thought: Mitigating Attention Leakage via Context Isolation",
+    "summary": "Chain-of-thought (CoT) prompting elicits step-by-step rationales that appear to explain model predictions, but there is no guarantee these steps causally drive the final answer. In standard autoregressive generation, dense attention allows each reasoning step to attend to the full context, enabling the model to derive answers through direct lookup while generating plausible-sounding but post-hoc justifications. We introduce CausalCoT, an inference framework that enforces causal transparency by decomposing problems into a directed acyclic graph of atomic sub-questions, evaluating each node in an isolated context containing only its direct causal parents. This Markovian structure removes attention pathways to non-parent content, making downstream predictions sensitive to local reasoning rather than global context leakage. Across a diverse suite of reasoning benchmarks, CausalCoT preserves competitive predictive performance while improving explanation faithfulness, increasing causal sensitivity of intermediate reasoning steps by an average of 12 and up to 21 percentage points over the strongest baseline. The structured dependency graph additionally enables test-time interventions in which local corrections propagate predictably through downstream reasoning.",
+    "published_at": "2026-10-22T17:52:56Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.31639v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 7,
+    "facts": "论文提出 CausalCoT，一种推理框架，通过将问题分解为原子子问题的有向无环图，并在仅包含其直接因果父节点的隔离上下文中评估每个节点，来强制因果透明性。这种马尔可夫结构移除了通往非父节点内容的注意力路径，使下游预测对局部推理敏感而非全局上下文泄漏。在多种推理基准上，CausalCoT 保持有竞争力的预测性能，同时提升解释忠实性，中间推理步骤的因果敏感性平均提升 12 个百分点、最高 21 个百分点。结构化依赖图还支持测试时干预，局部修正可预测地传播到下游推理。",
+    "analysis": "该工作针对 CoT 的一个核心质疑：推理步骤可能只是事后合理化，而非真正驱动答案。通过上下文隔离切断非父节点的注意力泄漏，使每一步只能依赖其因果父节点，从而在机制上提升忠实性。12–21 个百分点的因果敏感性提升有量化支撑，且依赖图带来的可干预性是额外实用价值。局限在于分解为 DAG 本身依赖模型或外部流程，分解质量可能成为瓶颈，且隔离上下文可能损失部分全局信息。",
+    "technical_value": "为可解释推理提供了可落地的推理时框架，因果敏感性指标和测试时干预机制可用于需要审计推理链的高风险场景；对 CoT 忠实性研究有方法学贡献。",
+    "impact": "对可解释 AI 和推理可靠性研究有中等影响，可能被后续忠实性评估工作引用；短期内难以直接产品化，但为需要可审计推理的行业应用提供了思路。",
+    "keywords": [
+      "chain-of-thought",
+      "causal transparency",
+      "attention leakage",
+      "context isolation",
+      "faithfulness",
+      "DAG"
+    ]
+  },
+  {
+    "id": "00205c94869d24e1",
+    "title": "Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3",
+    "summary": "Instrumental convergence is often invoked as a general reason to expect capable agents to acquire or express power-seeking subgoals: self-preservation, resource acquisition, deception, or resistance to oversight which poses an important threat to the society. For LLMs, reinforcement learning is the first stage of post-training that directly optimizes behavior against an objective; therefore, it is the stage where convergent instrumental behavior, on IC grounds, likely to appear. Does reinforcement learning with verifiable rewards (RLVR) make a model more likely to express instrumental-convergence behavior, or does this depend on the training regime, evaluation frame, and stage of post-training? We study this question as a checkpoint-conditioned behavioral trajectory rather than as a single before/after safety score. Using InstrumentalEval, we evaluate OLMo-3-7B-Think across SFT, DPO, 13 intermediate RLVR checkpoints, and the final RLVR model. The trajectory is nonmonotonic: instrumental rate rises from 25.0% at SFT to 46.1% near RLVR step 200, then falls to 11.8% at the final checkpoint. Paired item-level tests and step-wise regression support the final SFT-to-RLVR reduction. Prompt framing does not explain this pattern: a harmful-prompt indicator combined with other framing effects explains only 15% of within-checkpoint score variance on average, and Iterative Null-space Projection (INLP) removes a detectable framing direction without changing the SFT-to-final-RLVR gap. Together with preliminary 32B endpoint results (35.53% SFT to 22.37% RLVR final), these findings indicate that RLVR does not monotonically increase instrumental behavior in this setting: the rate rises early, then falls below the SFT baseline. The result is specific to this model family and benchmark, a",
+    "published_at": "2026-10-22T17:44:41Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.31624v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 7,
+    "facts": "论文研究 RLVR 是否使模型更可能表达工具性收敛行为。使用 InstrumentalEval 评估 OLMo-3-7B-Think 在 SFT、DPO、13 个中间 RLVR 检查点和最终 RLVR 模型上的表现。轨迹呈非单调：工具性比率从 SFT 的 25.0% 上升到 RLVR 约 200 步的 46.1%，然后在最终检查点降至 11.8%。配对项目级测试和逐步回归支持最终 SFT 到 RLVR 的下降。提示框架不能解释该模式：有害提示指示符与其他框架效应平均仅解释检查点内得分方差的 15%，INLP 移除可检测的框架方向但不改变 SFT 到最终 RLVR 的差距。初步 32B 端点结果（SFT 35.53% 到 RLVR 最终 22.37%）方向一致。结论特定于该模型家族和基准。",
+    "analysis": "该工作以检查点级行为轨迹而非单一前后安全分数来审视工具性收敛，发现 RLVR 下工具性行为先升后降、最终低于 SFT 基线，这对“RL 必然放大权力寻求”的直觉构成反例。配对检验和 INLP 排除提示框架解释，增强了结论可信度。重要限制是结论明确限定于单一模型家族和基准，32B 结果仅为端点初步证据，外推需谨慎。",
+    "technical_value": "提供了检查点级行为评估方法和工具性收敛的实证数据，对 RLVR 安全训练的动态监测有参考价值；提示框架效应的量化排除方法可复用。",
+    "impact": "对 AI 安全领域关于 RL 与工具性收敛的讨论有实证贡献，可能影响后训练安全评估实践；因模型和基准局限，短期影响主要在研究社区。",
+    "keywords": [
+      "instrumental convergence",
+      "RLVR",
+      "checkpoint analysis",
+      "OLMo-3",
+      "AI safety",
+      "post-training"
+    ]
+  },
+  {
+    "id": "388ed99050423c40",
+    "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+    "summary": "",
+    "published_at": "Thu, 22 Oct 2026 22:24:34 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 6,
+    "facts": "Hugging Face 博客介绍微软 ThinkingBox 相关工作：将数据库评分转化为强化学习奖励，用于后训练智能体。",
+    "analysis": "该方向将可验证的数据库执行结果作为 RL 奖励信号，属于 RLVR 在数据智能体场景的工程化落地。由于输入仅有标题和来源，无法确认具体方法细节、基准和效果数据，判断应保持保守。其价值在于把“评分器”与“训练信号”打通，降低构建数据智能体的门槛。",
+    "technical_value": "数据库评分转 RL 奖励为数据智能体后训练提供了可复用的奖励设计范式，适合需要精确执行反馈的 Text-to-SQL/数据分析智能体训练。",
+    "impact": "对数据智能体工程实践有中等参考价值，可能被用于企业内部数据分析智能体的后训练；影响范围偏工程社区。",
+    "keywords": [
+      "RLVR",
+      "database grading",
+      "agent post-training",
+      "ThinkingBox",
+      "reward design"
+    ]
+  },
+  {
+    "id": "57dc1fe77b7c95ff",
+    "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+    "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+    "published_at": "Wed, 14 Oct 2026 02:00:14 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6,
+    "facts": "Google DeepMind 与新加坡政府科技局（GovTech）合作，使用轻量级端侧 Gemma 模型在私聊中拦截对话式诈骗，实现零云数据外泄。",
+    "analysis": "该合作将端侧小模型用于反诈骗检测，核心卖点是隐私保护（数据不出设备）与实时拦截。政府合作提供了真实部署场景和监管背书，属于 AI 安全落地的代表性案例。局限在于输入未披露检测准确率、误报率和覆盖的诈骗类型，效果需谨慎看待。",
+    "technical_value": "展示了端侧轻量模型在隐私敏感场景的部署路径，对反诈骗、内容安全等需要本地推理的应用有参考价值。",
+    "impact": "对公共安全领域的 AI 部署有示范效应，可能推动更多政府与模型厂商在端侧安全场景合作；商业影响偏公共服务方向。",
+    "keywords": [
+      "on-device AI",
+      "scam detection",
+      "Gemma",
+      "privacy",
+      "public sector",
+      "conversational safety"
+    ]
+  }
+]

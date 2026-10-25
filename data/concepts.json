@@ -713,5 +713,17 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2610.31650v1"
     ]
+  },
+  {
+    "date": "2026-10-25",
+    "name_zh": "缺失证据下的智能体安全",
+    "name_en": "Agent Safety under Missing Evidence",
+    "score": 7,
+    "maturity": "Emerging",
+    "explanation": "指工具调用型 LLM 智能体在环境返回信息不完整、关键安全事实被省略时，仍可能执行被禁止动作的失效模式。其核心不是输出虚假，而是所有返回语句为真但证据不全，智能体缺乏主动获取缺失事实并据此守住安全边界的能力。",
+    "why_now": "智能体正从对话走向工具调用与自主执行，安全评估多关注输出真实性和显式有害请求，对“信息缺失导致的不安全执行”覆盖不足；EpiSEM-Bench 等可执行基准的出现使该问题可量化，恰逢智能体落地加速期。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.31650v1"
+    ]
   }
 ]
