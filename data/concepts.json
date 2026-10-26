@@ -725,5 +725,18 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2610.31650v1"
     ]
+  },
+  {
+    "date": "2026-10-26",
+    "name_zh": "可验证奖励的智能体后训练",
+    "name_en": "Verifiable-Reward Agent Post-Training",
+    "score": 7,
+    "maturity": "Emerging",
+    "explanation": "用确定性判分器（如数据库判分、单元测试、仿真约束检查）替代人工偏好标注，为 agent 后训练提供稠密、可自动化的强化学习奖励信号。ThinkingBox 将数据库判分转为 RL 奖励是典型实例；SceneBloom 用物理约束编译筛选场景亦可视为可验证信号的一种变体。",
+    "why_now": "通用偏好数据昂贵且噪声大，而代码、数据库、仿真等环境天然可判分；RL 后训练在推理与工具使用任务上收益明确，推动该范式从研究走向工程化。",
+    "evidence_urls": [
+      "https://huggingface.co/blog/microsoft/thinkingbox-training",
+      "https://arxiv.org/abs/2610.32978v1"
+    ]
   }
 ]
