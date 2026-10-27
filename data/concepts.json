@@ -738,5 +738,17 @@
       "https://huggingface.co/blog/microsoft/thinkingbox-training",
       "https://arxiv.org/abs/2610.32978v1"
     ]
+  },
+  {
+    "date": "2026-10-27",
+    "name_zh": "内部表示探针式实时安全判定",
+    "name_en": "Probe-based Real-time Safety Verdict",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "不依赖LLM生成式输出，而是将上下文（威胁模型、静态分析、调用图）注入单次前向传播，用训练好的探针读取模型内部表示直接给出判定，从而在保持智能体级准确率的同时实现实时、低成本检测。",
+    "why_now": "编码智能体生成代码速度超过人工审查能力，智能体式检测虽准但每次判定需数分钟算力，无法实时门禁；探针方案在PrimeVul上以250倍速度、十分之一成本达到SOTA智能体检测器水平，且比直接生成判定更可靠。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.35829v1"
+    ]
   }
 ]
