@@ -750,5 +750,17 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2610.35829v1"
     ]
+  },
+  {
+    "date": "2026-10-28",
+    "name_zh": "多智能体记忆压缩",
+    "name_en": "Multi-Agent Memory Compression",
+    "score": 7,
+    "maturity": "Emerging",
+    "explanation": "指在多智能体或LLM群体讨论后，将冗长讨论压缩为短记忆供最终决策者使用，核心问题是保留哪些事实以及如何避免归属偏置。CrossProfile基准显示直觉启发式在隐藏剖面任务上系统性失效。",
+    "why_now": "多智能体辩论与群体决策应用增多，但记忆压缩策略缺乏受控评测；新基准揭示相关性过滤与社会证明偏置的具体失效点，使该问题进入可测量阶段。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.37624v1"
+    ]
   }
 ]

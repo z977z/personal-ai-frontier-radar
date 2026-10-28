@@ -1,0 +1,322 @@
+[
+  {
+    "title": "Genie 4: A new generation of world simulation",
+    "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 27 Oct 2026 16:01:38 +0000",
+    "retrieved_at": "2026-10-28T06:14:40.842993+00:00",
+    "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+    "content": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+    "source_type": "official"
+  },
+  {
+    "title": "Beyond tree cover: mapping the world’s forest types",
+    "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+    "source": "Google DeepMind",
+    "published_at": "Thu, 22 Oct 2026 14:30:24 +0000",
+    "retrieved_at": "2026-10-28T06:14:40.843029+00:00",
+    "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+    "content": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+    "source_type": "official"
+  },
+  {
+    "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+    "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+    "source": "Google DeepMind",
+    "published_at": "Thu, 15 Oct 2026 16:08:03 +0000",
+    "retrieved_at": "2026-10-28T06:14:40.843042+00:00",
+    "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
+    "content": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
+    "source_type": "official"
+  },
+  {
+    "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+    "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 14 Oct 2026 02:00:14 +0000",
+    "retrieved_at": "2026-10-28T06:14:40.843055+00:00",
+    "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+    "content": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+    "source_type": "official"
+  },
+  {
+    "title": "Developing Gemini 4 Argon responsibly and safely",
+    "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 13 Oct 2026 19:43:07 +0000",
+    "retrieved_at": "2026-10-28T06:14:40.843062+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini 4 Argon for Robotics",
+    "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 13 Oct 2026 16:01:58 +0000",
+    "retrieved_at": "2026-10-28T06:14:40.843069+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini 4 Argon: Built to solve your hardest problems",
+    "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 13 Oct 2026 16:01:52 +0000",
+    "retrieved_at": "2026-10-28T06:14:40.843079+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+    "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 06 Oct 2026 19:57:04 +0000",
+    "retrieved_at": "2026-10-28T06:14:40.843084+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini 4 Argon: our next era of frontier intelligence",
+    "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 30 Sep 2026 20:01:45 +0000",
+    "retrieved_at": "2026-10-28T06:14:40.843089+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Introducing SynthID Bio",
+    "url": "https://deepmind.google/blog/introducing-synthid-bio/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 30 Sep 2026 15:03:07 +0000",
+    "retrieved_at": "2026-10-28T06:14:40.843099+00:00",
+    "summary": "Proof of concept for watermarking AI-generated proteins while preserving biological function.",
+    "content": "Proof of concept for watermarking AI-generated proteins while preserving biological function.",
+    "source_type": "official"
+  },
+  {
+    "title": "Introducing Gemini 3.8 Live with Live Avatar",
+    "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+    "source": "Google DeepMind",
+    "published_at": "Thu, 24 Sep 2026 16:20:39 +0000",
+    "retrieved_at": "2026-10-28T06:14:40.843105+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Advancing Private AI Compute with secure, server-side memory",
+    "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 23 Sep 2026 16:00:57 +0000",
+    "retrieved_at": "2026-10-28T06:14:40.843113+00:00",
+    "summary": "Introducing private, server-side memory to Private AI Compute for personal AI.",
+    "content": "Introducing private, server-side memory to Private AI Compute for personal AI.",
+    "source_type": "official"
+  },
+  {
+    "title": "Build specialized multimodal models with LFM3",
+    "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+    "source": "Hugging Face",
+    "published_at": "Tue, 27 Oct 2026 17:16:52 GMT",
+    "retrieved_at": "2026-10-28T06:14:41.006140+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Can we trust LLMs to judge whether a research idea is novel?",
+    "url": "https://huggingface.co/blog/allenai/novelty-bench",
+    "source": "Hugging Face",
+    "published_at": "Tue, 27 Oct 2026 16:12:42 GMT",
+    "retrieved_at": "2026-10-28T06:14:41.006162+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Does Your Model Run on AWS Trainium? Look It Up",
+    "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+    "source": "Hugging Face",
+    "published_at": "Fri, 23 Oct 2026 00:00:00 GMT",
+    "retrieved_at": "2026-10-28T06:14:41.006169+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+    "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+    "source": "Hugging Face",
+    "published_at": "Thu, 22 Oct 2026 22:24:34 GMT",
+    "retrieved_at": "2026-10-28T06:14:41.006175+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Ensemble forecasting with IBM Granite time-series models",
+    "url": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
+    "source": "Hugging Face",
+    "published_at": "Thu, 22 Oct 2026 07:51:31 GMT",
+    "retrieved_at": "2026-10-28T06:14:41.006180+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+    "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+    "source": "Hugging Face",
+    "published_at": "Wed, 21 Oct 2026 18:26:30 GMT",
+    "retrieved_at": "2026-10-28T06:14:41.006186+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+    "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+    "source": "Hugging Face",
+    "published_at": "Wed, 21 Oct 2026 17:35:36 GMT",
+    "retrieved_at": "2026-10-28T06:14:41.006191+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+    "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+    "source": "Hugging Face",
+    "published_at": "Wed, 21 Oct 2026 16:04:43 GMT",
+    "retrieved_at": "2026-10-28T06:14:41.006196+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+    "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+    "source": "Hugging Face",
+    "published_at": "Wed, 21 Oct 2026 14:58:18 GMT",
+    "retrieved_at": "2026-10-28T06:14:41.006203+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Hugging Face ❤️ TorchTPU: TPUs, Natively",
+    "url": "https://huggingface.co/blog/hf-torchtpu",
+    "source": "Hugging Face",
+    "published_at": "Tue, 20 Oct 2026 00:00:00 GMT",
+    "retrieved_at": "2026-10-28T06:14:41.006209+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms",
+    "url": "https://huggingface.co/blog/anylanguagemodel-1-0",
+    "source": "Hugging Face",
+    "published_at": "Tue, 20 Oct 2026 00:00:00 GMT",
+    "retrieved_at": "2026-10-28T06:14:41.006214+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "MPS in PyTorch 2.15",
+    "url": "https://huggingface.co/blog/mps-pytorch-2-15",
+    "source": "Hugging Face",
+    "published_at": "Tue, 20 Oct 2026 00:00:00 GMT",
+    "retrieved_at": "2026-10-28T06:14:41.006219+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction",
+    "url": "https://arxiv.org/abs/2610.37668v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-27T17:59:59Z",
+    "retrieved_at": "2026-10-28T06:14:41.116104+00:00",
+    "summary": "Novel view synthesis and 3D reconstruction have advanced rapidly with radiance fields and splatting, yet their memory and computational demands limit their use in resource-constrained settings. We introduce Hexels: novel planar hexagonal surface elements with a first-order spatial color field for efficient 3D scene and 2D image representation. Hexels exploit locally planar regions with smoothly varying appearance using fewer, larger primitives. Their hexagonal support provides an area- and boundary-efficient domain, while the local color field captures appearance variation within each primitive. Across 34 scenes, Hexels improve PSNR over memory-matched 2DGS by 4.53-7.38 dB across datasets while requiring lower training VRAM. We further ablate Hexels by showing that per primitive, Hexels outperform 2DGS by upto 4.74 dB while using lower training VRAM and having 2.31 times faster FPS. Even in unconstrained settings, Hexels offers complementary quality-memory trade-offs. For efficient 3D surface reconstruction, Hexels reduce error by 28.9% compared with memory-matched 2DGS across 15 DTU scans. On 6 Tanks and Temples surface scenes, Hexels achieves the highest mean F1 among compared methods (34.38%, versus 31.72% for 2DGS). We further also show that Hexels, as a general primitive, improves 2D image representation over Image-GS. Hexels push the Pareto frontier on the quality-efficiency trade-off of surface-aligned primitives.",
+    "content": "Novel view synthesis and 3D reconstruction have advanced rapidly with radiance fields and splatting, yet their memory and computational demands limit their use in resource-constrained settings. We introduce Hexels: novel planar hexagonal surface elements with a first-order spatial color field for efficient 3D scene and 2D image representation. Hexels exploit locally planar regions with smoothly varying appearance using fewer, larger primitives. Their hexagonal support provides an area- and boundary-efficient domain, while the local color field captures appearance variation within each primitive. Across 34 scenes, Hexels improve PSNR over memory-matched 2DGS by 4.53-7.38 dB across datasets while requiring lower training VRAM. We further ablate Hexels by showing that per primitive, Hexels outperform 2DGS by upto 4.74 dB while using lower training VRAM and having 2.31 times faster FPS. Even in unconstrained settings, Hexels offers complementary quality-memory trade-offs. For efficient 3D surface reconstruction, Hexels reduce error by 28.9% compared with memory-matched 2DGS across 15 DTU scans. On 6 Tanks and Temples surface scenes, Hexels achieves the highest mean F1 among compared methods (34.38%, versus 31.72% for 2DGS). We further also show that Hexels, as a general primitive, improves 2D image representation over Image-GS. Hexels push the Pareto frontier on the quality-efficiency trade-off of surface-aligned primitives.",
+    "source_type": "research"
+  },
+  {
+    "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+    "url": "https://arxiv.org/abs/2610.37666v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-27T17:59:52Z",
+    "retrieved_at": "2026-10-28T06:14:41.116175+00:00",
+    "summary": "Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning from them faces a fundamental trade-off between scalable data and explicit action grounding. We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination. ThinkWorld represents each action thought as a Chain-of-Dynamics (CoD), a sequence of discrete motion tokens that captures the intermediate dynamics connecting the current world to a future state and serves as a common action representation across embodiments. We first initialize CoD with action-labeled demonstrations, then predict the future induced by each CoD and reinforce those whose predictions better match the observed outcome. This enables videos without action annotations to provide direct supervision from observed state transitions, allowing human and robot experience to refine the same reasoning space. Experiments in simulation and on real robots demonstrate effective human-to-robot transfer and strong generalization to unseen tasks and environments.",
+    "content": "Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning from them faces a fundamental trade-off between scalable data and explicit action grounding. We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination. ThinkWorld represents each action thought as a Chain-of-Dynamics (CoD), a sequence of discrete motion tokens that captures the intermediate dynamics connecting the current world to a future state and serves as a common action representation across embodiments. We first initialize CoD with action-labeled demonstrations, then predict the future induced by each CoD and reinforce those whose predictions better match the observed outcome. This enables videos without action annotations to provide direct supervision from observed state transitions, allowing human and robot experience to refine the same reasoning space. Experiments in simulation and on real robots demonstrate effective human-to-robot transfer and strong generalization to unseen tasks and environments.",
+    "source_type": "research"
+  },
+  {
+    "title": "Attention as Lattice Gauge Theory: Relations Interact Only Through Wilson Loops",
+    "url": "https://arxiv.org/abs/2610.37656v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-27T17:58:48Z",
+    "retrieved_at": "2026-10-28T06:14:41.116266+00:00",
+    "summary": "Relations compose through the entity they share - Alice is Bob's mother and Bob is Carol's father, so Alice is Carol's grandmother - and the order matters, since a father's mother is not a mother's father; verifying a composed relation means closing the loop. We show that if each entity's coordinate frame may be rotated independently (per-entity frame freedom), three things follow. In the pure-gauge sector, relations that share no cycle cannot interact at all. The only gauge-invariant score of a triangle is a class function of its holonomy $H = T_{ij} T_{jk} T_{ki}$ - a Wilson loop. And the only equivariant update of an edge is $U = Ψ(H)\\, T_{ij}$ with $Ψ$ conjugation-equivariant. Edge attention by Wilson loops is therefore not one design among many but the unique form the symmetry permits. Three communities hold pieces of this form: the commuting-operator embeddings of knowledge graphs are its abelian (commuting) sector; AlphaFold's triangle update and the Edge Transformer have its shape - an edge updated through the third vertex - without its constraints; and lattice QCD builds it equivariantly on lattices. We instantiate the equivariant sub-family on general relational graphs as holonomy attention. With no training and composition alone, it infers unobserved $S_4$ relations on sparse graphs at 0.88 with a fifth of the edges corrupted, at or slightly below specialist synchronization algorithms, where every commutative architecture is capped at 0.083; its holonomy score flags corrupted triangles at AUC 0.99 where commuting scores are capped at 0.76 by a second selection rule, and it separates clusters without labels.",
+    "content": "Relations compose through the entity they share - Alice is Bob's mother and Bob is Carol's father, so Alice is Carol's grandmother - and the order matters, since a father's mother is not a mother's father; verifying a composed relation means closing the loop. We show that if each entity's coordinate frame may be rotated independently (per-entity frame freedom), three things follow. In the pure-gauge sector, relations that share no cycle cannot interact at all. The only gauge-invariant score of a triangle is a class function of its holonomy $H = T_{ij} T_{jk} T_{ki}$ - a Wilson loop. And the only equivariant update of an edge is $U = Ψ(H)\\, T_{ij}$ with $Ψ$ conjugation-equivariant. Edge attention by Wilson loops is therefore not one design among many but the unique form the symmetry permits. Three communities hold pieces of this form: the commuting-operator embeddings of knowledge graphs are its abelian (commuting) sector; AlphaFold's triangle update and the Edge Transformer have its shape - an edge updated through the third vertex - without its constraints; and lattice QCD builds it equivariantly on lattices. We instantiate the equivariant sub-family on general relational graphs as holonomy attention. With no training and composition alone, it infers unobserved $S_4$ relations on sparse graphs at 0.88 with a fifth of the edges corrupted, at or slightly below specialist synchronization algorithms, where every commutative architecture is capped at 0.083; its holonomy score flags corrupted triangles at AUC 0.99 where commuting scores are capped at 0.76 by a second selection rule, and it separates clusters without labels.",
+    "source_type": "research"
+  },
+  {
+    "title": "KPPax: preprocess differentiable kinetic ODE for machine learning in atmospheric chemistry",
+    "url": "https://arxiv.org/abs/2610.37655v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-27T17:58:40Z",
+    "retrieved_at": "2026-10-28T06:14:41.116334+00:00",
+    "summary": "Atmospheric chemical mechanisms are commonly distributed in the language of the Kinetic PreProcessor (KPP), which generates efficient Fortran or C code but does not fit into the differentiable programming frameworks in which machine-learning models are developed. We present KPPax, a kinetic preprocessor that generates differentiable, just-in-time compiled, and vectorisable chemistry code in JAX from mechanisms written in the KPP language. KPPax evaluates the rate law with sparse operations in log space, which keeps it differentiable, and integrates the stiff system with the implicit solvers and the forward- and reverse-mode adjoints of the \\texttt{diffrax} library, so that exact sensitivities are obtained without hand-derived adjoint code. We demonstrate two applications with the POLLU benchmark mechanism. In the first, the Fisher information matrix computed from an automatically differentiated Jacobian predicts, before any fit, which of the 25 rate coefficients a flow-tube-like design can identify, and noisy synthetic estimation confirms the predicted uncertainties of the nine identifiable rate coefficients to within about 30\\% while revealing clusters of fast reactions of which only ratios are constrained. In the second, a neural-network correction of an emission inventory is trained offline on per-scenario 4D-Var retrievals and then fine-tuned online through the chemical model, which reduces the error of the biogenic correction by a factor of 2.4--5 and recovers information on low-temperature emissions that the individual retrievals lose. KPPax makes KPP mechanisms directly usable for parameter estimation and hybrid physics--machine-learning modelling.",
+    "content": "Atmospheric chemical mechanisms are commonly distributed in the language of the Kinetic PreProcessor (KPP), which generates efficient Fortran or C code but does not fit into the differentiable programming frameworks in which machine-learning models are developed. We present KPPax, a kinetic preprocessor that generates differentiable, just-in-time compiled, and vectorisable chemistry code in JAX from mechanisms written in the KPP language. KPPax evaluates the rate law with sparse operations in log space, which keeps it differentiable, and integrates the stiff system with the implicit solvers and the forward- and reverse-mode adjoints of the \\texttt{diffrax} library, so that exact sensitivities are obtained without hand-derived adjoint code. We demonstrate two applications with the POLLU benchmark mechanism. In the first, the Fisher information matrix computed from an automatically differentiated Jacobian predicts, before any fit, which of the 25 rate coefficients a flow-tube-like design can identify, and noisy synthetic estimation confirms the predicted uncertainties of the nine identifiable rate coefficients to within about 30\\% while revealing clusters of fast reactions of which only ratios are constrained. In the second, a neural-network correction of an emission inventory is trained offline on per-scenario 4D-Var retrievals and then fine-tuned online through the chemical model, which reduces the error of the biogenic correction by a factor of 2.4--5 and recovers information on low-temperature emissions that the individual retrievals lose. KPPax makes KPP mechanisms directly usable for parameter estimation and hybrid physics--machine-learning modelling.",
+    "source_type": "research"
+  },
+  {
+    "title": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+    "url": "https://arxiv.org/abs/2610.37649v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-27T17:57:00Z",
+    "retrieved_at": "2026-10-28T06:14:41.116384+00:00",
+    "summary": "Scientific discovery often begins with an unexpected observation that prompts a new research question. In a world with altered physical laws, can large language models (LLMs) notice unexpected behavior, such as heavier objects falling more slowly, and discover the law through experiments without being told what to investigate? To evaluate this ability, we introduce LongChang, an automated framework that creates simulated worlds with altered physics, where one or more laws differ from ordinary physics. The evaluated LLMs act as explorers, manipulating objects and building tools to investigate their own questions without research tasks or hints about these laws. Separate LLM agents generate and review scenes, review tool designs, and evaluate reports for correctness and experimental support using the altered physical laws and exploration records. These records guide scene evolution for further exploration, allowing the full cycle to run without human intervention. Among 12 LLMs, GPT-6-Astra achieves a discovery rate of 16.7%, while the other 11 score 0%. The exploration records reveal uninvestigated anomalies and only partial identification of the altered physical laws.",
+    "content": "Scientific discovery often begins with an unexpected observation that prompts a new research question. In a world with altered physical laws, can large language models (LLMs) notice unexpected behavior, such as heavier objects falling more slowly, and discover the law through experiments without being told what to investigate? To evaluate this ability, we introduce LongChang, an automated framework that creates simulated worlds with altered physics, where one or more laws differ from ordinary physics. The evaluated LLMs act as explorers, manipulating objects and building tools to investigate their own questions without research tasks or hints about these laws. Separate LLM agents generate and review scenes, review tool designs, and evaluate reports for correctness and experimental support using the altered physical laws and exploration records. These records guide scene evolution for further exploration, allowing the full cycle to run without human intervention. Among 12 LLMs, GPT-6-Astra achieves a discovery rate of 16.7%, while the other 11 score 0%. The exploration records reveal uninvestigated anomalies and only partial identification of the altered physical laws.",
+    "source_type": "research"
+  },
+  {
+    "title": "MuonGS: Pretraining LLMs with Relaxed Weight-Norm Control",
+    "url": "https://arxiv.org/abs/2610.37647v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-27T17:56:40Z",
+    "retrieved_at": "2026-10-28T06:14:41.116474+00:00",
+    "summary": "Weight decay and explicit weight-norm constraints improve optimizer performance in language model pretraining, yet a unified understanding of why such control helps and how much is needed remains incomplete. We analyze norm control in Muon over the entire training trajectory using the \\emph{accumulated effective learning rate}, $C_T=\\sum_{t<T}η_t/\\|W_t\\|_F$, where $η_t$ is the nominal learning rate and $η_t/\\|W_t\\|_F$ is the effective learning rate relative to the weight norm. For bounded update directions, accumulation over any training interval bounds relative weight displacement. We show that vanilla Muon can accumulate only logarithmically, potentially limiting exploration and helping explain its slower empirical progress, whereas MuonW and MuonH guarantee at least linear accumulation under the stated conditions. Going beyond bounded-norm control, we show that sufficiently slow norm growth guarantees faster accumulation than the logarithmic worst case, opening up less restrictive optimizer designs. Based on this insight, we propose MuonGS, which uses Gram--Schmidt (GS) projection to remove the radial component of each Muon update without fixing the weight norm. With bounded update directions and a constant nominal learning rate, we prove that the weight norm grows at most proportionally to $\\sqrt{t}$ after $t$ steps. Consequently, MuonGS guarantees $C_T=Ω(\\sqrt{T})$, with accumulation sustained even in later training. Further, for smooth scale-invariant objectives we establish its $O(T^{-1/2})$ stationarity guarantee. In pretraining experiments with 160M- and 400M-parameter dense models as well as a 135M active- and 1B total- parameter MoE model, MuonGS achieves lower validation perplexity than MuonH at long training horizons. In particular, for the dense model it a",
+    "content": "Weight decay and explicit weight-norm constraints improve optimizer performance in language model pretraining, yet a unified understanding of why such control helps and how much is needed remains incomplete. We analyze norm control in Muon over the entire training trajectory using the \\emph{accumulated effective learning rate}, $C_T=\\sum_{t<T}η_t/\\|W_t\\|_F$, where $η_t$ is the nominal learning rate and $η_t/\\|W_t\\|_F$ is the effective learning rate relative to the weight norm. For bounded update directions, accumulation over any training interval bounds relative weight displacement. We show that vanilla Muon can accumulate only logarithmically, potentially limiting exploration and helping explain its slower empirical progress, whereas MuonW and MuonH guarantee at least linear accumulation under the stated conditions. Going beyond bounded-norm control, we show that sufficiently slow norm growth guarantees faster accumulation than the logarithmic worst case, opening up less restrictive optimizer designs. Based on this insight, we propose MuonGS, which uses Gram--Schmidt (GS) projection to remove the radial component of each Muon update without fixing the weight norm. With bounded update directions and a constant nominal learning rate, we prove that the weight norm grows at most proportionally to $\\sqrt{t}$ after $t$ steps. Consequently, MuonGS guarantees $C_T=Ω(\\sqrt{T})$, with accumulation sustained even in later training. Further, for smooth scale-invariant objectives we establish its $O(T^{-1/2})$ stationarity guarantee. In pretraining experiments with 160M- and 400M-parameter dense models as well as a 135M active- and 1B total- parameter MoE model, MuonGS achieves lower validation perplexity than MuonH at long training horizons. In particular, for the dense model it a",
+    "source_type": "research"
+  },
+  {
+    "title": "What Improves During Pretraining? Tracking Knowledge Acquisition with Point-in-Time Models",
+    "url": "https://arxiv.org/abs/2610.37631v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-27T17:52:38Z",
+    "retrieved_at": "2026-10-28T06:14:41.116532+00:00",
+    "summary": "Language models pretrained on web corpora collected over multiple years learn both general and domain-specific knowledge. How these different kinds of knowledge are learned as pretraining progresses remains unclear. Recent point-in-time models trained on web snapshots from different years provide a way to probe how knowledge prevalence varies over time. Using these models, we propose a temporal variability score (TVS), defined as the coefficient of variation of an item's negative log-likelihood across models. A higher score suggests that the knowledge may be less consistently represented across years of web text. We evaluate six benchmarks covering diverse topics using six models from multiple open-source model families. We find that low- and high-TVS items are learned similarly early in training, but high-TVS items improve faster later on. At the end of the pretraining run, high-TVS items outperform low-TVS items in 34 of 36 model-benchmark settings, with an average advantage of 7.3 points of chance-normalized accuracy. This pattern is most robust on knowledge-intensive tasks, even when comparing items of similar difficulty. Our findings reveal differences in how knowledge is learned over the course of pretraining, with temporal variability providing a diagnostic of these learning dynamics beyond aggregate benchmark scores.",
+    "content": "Language models pretrained on web corpora collected over multiple years learn both general and domain-specific knowledge. How these different kinds of knowledge are learned as pretraining progresses remains unclear. Recent point-in-time models trained on web snapshots from different years provide a way to probe how knowledge prevalence varies over time. Using these models, we propose a temporal variability score (TVS), defined as the coefficient of variation of an item's negative log-likelihood across models. A higher score suggests that the knowledge may be less consistently represented across years of web text. We evaluate six benchmarks covering diverse topics using six models from multiple open-source model families. We find that low- and high-TVS items are learned similarly early in training, but high-TVS items improve faster later on. At the end of the pretraining run, high-TVS items outperform low-TVS items in 34 of 36 model-benchmark settings, with an average advantage of 7.3 points of chance-normalized accuracy. This pattern is most robust on knowledge-intensive tasks, even when comparing items of similar difficulty. Our findings reveal differences in how knowledge is learned over the course of pretraining, with temporal variability providing a diagnostic of these learning dynamics beyond aggregate benchmark scores.",
+    "source_type": "research"
+  },
+  {
+    "title": "Rare, Relevant, and Still Wrong: How Memory Fails LLM Group Decisions",
+    "url": "https://arxiv.org/abs/2610.37624v1",
+    "source": "arXiv AI",
+    "published_at": "2026-10-27T17:49:39Z",
+    "retrieved_at": "2026-10-28T06:14:41.116595+00:00",
+    "summary": "When an LLM group's discussion is compressed into a short memory for a final decision maker, what should the memory keep? Two natural heuristics keep the rarest claims or the claims relevant to the decision criteria. On hidden-profile tasks both look attractive, because how widely a fact is held is confounded with whether it helps. We introduce CrossProfile, a diagnostic benchmark of 60 templates with automatically verified answer keys, in which the ownership of supporting, decoy, and irrelevant facts is crossed while their text is held fixed (480 tasks). Across Qwen2.5-7B, Llama-3.1-8B, and two DeepSeek models, both heuristics fail in predictable places. Selecting by relevance readmits decoys, because decoys are on topic: even a perfect relevance filter loses 23 to 31 points to rarest-first selection in the classic hidden-profile configuration. Rarest-first selection is no better than random selection on average and wins only where the rare facts happen to be the useful ones. In both cases accuracy follows the balance of evidence the memory keeps, not the policy that kept it. The decision model adds a third failure, a form of social proof: it gives extra weight to facts attributed to many agents. Removing the attribution tags, or reassigning them at random with line order fixed, raises accuracy in the classic configuration by 13 to 24 points. In natural discussions the evidence is lost before any memory acts: the complete transcript yields lower accuracy than no notes at all.",
+    "content": "When an LLM group's discussion is compressed into a short memory for a final decision maker, what should the memory keep? Two natural heuristics keep the rarest claims or the claims relevant to the decision criteria. On hidden-profile tasks both look attractive, because how widely a fact is held is confounded with whether it helps. We introduce CrossProfile, a diagnostic benchmark of 60 templates with automatically verified answer keys, in which the ownership of supporting, decoy, and irrelevant facts is crossed while their text is held fixed (480 tasks). Across Qwen2.5-7B, Llama-3.1-8B, and two DeepSeek models, both heuristics fail in predictable places. Selecting by relevance readmits decoys, because decoys are on topic: even a perfect relevance filter loses 23 to 31 points to rarest-first selection in the classic hidden-profile configuration. Rarest-first selection is no better than random selection on average and wins only where the rare facts happen to be the useful ones. In both cases accuracy follows the balance of evidence the memory keeps, not the policy that kept it. The decision model adds a third failure, a form of social proof: it gives extra weight to facts attributed to many agents. Removing the attribution tags, or reassigning them at random with line order fixed, raises accuracy in the classic configuration by 13 to 24 points. In natural discussions the evidence is lost before any memory acts: the complete transcript yields lower accuracy than no notes at all.",
+    "source_type": "research"
+  }
+]
