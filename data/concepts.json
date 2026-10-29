@@ -762,5 +762,19 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2610.37624v1"
     ]
+  },
+  {
+    "date": "2026-10-29",
+    "name_zh": "可验证奖励强化学习",
+    "name_en": "RL with Verifiable Rewards",
+    "score": 7,
+    "maturity": "Growing",
+    "explanation": "以可自动验证的评分信号（如数据库查询结果、单元测试、物理模拟结果）作为强化学习奖励，替代或补充人工偏好奖励，用于后训练代理与推理模型。",
+    "why_now": "多条输入同时指向该方向：ThinkingBox将数据库评分转为RL奖励，LongChang用模拟世界与自动评审评估探索，CrossProfile提供自动验证答案键的基准，说明可验证信号正成为代理训练与评估的共同基础设施。",
+    "evidence_urls": [
+      "https://huggingface.co/blog/microsoft/thinkingbox-training",
+      "https://arxiv.org/abs/2610.37649v1",
+      "https://arxiv.org/abs/2610.37624v1"
+    ]
   }
 ]

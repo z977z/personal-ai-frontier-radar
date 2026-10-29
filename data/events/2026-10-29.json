@@ -1,0 +1,131 @@
+[
+  {
+    "id": "9b92836cc0dee1a4",
+    "title": "Rare, Relevant, and Still Wrong: How Memory Fails LLM Group Decisions",
+    "summary": "When an LLM group's discussion is compressed into a short memory for a final decision maker, what should the memory keep? Two natural heuristics keep the rarest claims or the claims relevant to the decision criteria. On hidden-profile tasks both look attractive, because how widely a fact is held is confounded with whether it helps. We introduce CrossProfile, a diagnostic benchmark of 60 templates with automatically verified answer keys, in which the ownership of supporting, decoy, and irrelevant facts is crossed while their text is held fixed (480 tasks). Across Qwen2.5-7B, Llama-3.1-8B, and two DeepSeek models, both heuristics fail in predictable places. Selecting by relevance readmits decoys, because decoys are on topic: even a perfect relevance filter loses 23 to 31 points to rarest-first selection in the classic hidden-profile configuration. Rarest-first selection is no better than random selection on average and wins only where the rare facts happen to be the useful ones. In both cases accuracy follows the balance of evidence the memory keeps, not the policy that kept it. The decision model adds a third failure, a form of social proof: it gives extra weight to facts attributed to many agents. Removing the attribution tags, or reassigning them at random with line order fixed, raises accuracy in the classic configuration by 13 to 24 points. In natural discussions the evidence is lost before any memory acts: the complete transcript yields lower accuracy than no notes at all.",
+    "published_at": "2026-10-27T17:49:39Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.37624v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 7,
+    "facts": "论文提出CrossProfile诊断基准，含60个模板、480个任务，通过交叉支持性、诱饵与无关事实的归属并固定文本，测试LLM群体决策中的记忆压缩。在Qwen2.5-7B、Llama-3.1-8B及两个DeepSeek模型上，按相关性选择会重新引入诱饵，在经典隐藏剖面配置中即使完美相关性过滤也比最稀有优先选择低23至31分；最稀有优先平均不优于随机选择。决策模型对社会证明敏感，移除或随机重排归属标签可使经典配置准确率提升13至24分。完整转录的准确率低于无笔记。",
+    "analysis": "该研究揭示LLM群体决策中记忆选择启发式的系统性失效，并指出社会证明偏差是独立于记忆策略的第三类失败来源。其价值在于将“记忆保留什么”与“决策者如何使用归属信息”解耦，提供了可复现的受控基准。",
+    "technical_value": "提供自动验证答案键的隐藏剖面基准，可区分事实持有广度与有用性混淆；对多智能体记忆压缩、辩论聚合与决策归因设计有直接诊断价值。",
+    "impact": "对多智能体协作、LLM委员会决策与长上下文记忆压缩的工程实践构成警示：简单相关性或稀有性启发式不可靠，归属标签可能引入偏差。",
+    "keywords": [
+      "LLM群体决策",
+      "记忆压缩",
+      "隐藏剖面",
+      "社会证明",
+      "基准测试"
+    ]
+  },
+  {
+    "id": "2b460a85342fe2b6",
+    "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+    "summary": "Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning from them faces a fundamental trade-off between scalable data and explicit action grounding. We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination. ThinkWorld represents each action thought as a Chain-of-Dynamics (CoD), a sequence of discrete motion tokens that captures the intermediate dynamics connecting the current world to a future state and serves as a common action representation across embodiments. We first initialize CoD with action-labeled demonstrations, then predict the future induced by each CoD and reinforce those whose predictions better match the observed outcome. This enables videos without action annotations to provide direct supervision from observed state transitions, allowing human and robot experience to refine the same reasoning space. Experiments in simulation and on real robots demonstrate effective human-to-robot transfer and strong generalization to unseen tasks and environments.",
+    "published_at": "2026-10-27T17:59:52Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.37666v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.3,
+    "ai_score": 7,
+    "facts": "论文提出ThinkWorld，VLA学习框架，将动作思维表示为Chain-of-Dynamics（CoD），即离散运动token序列，连接当前世界与未来状态并作为跨具身通用动作表示。先用带动作标注的示范初始化CoD，再预测每个CoD诱导的未来并强化预测更匹配观测结果者，使无动作标注视频可通过观测状态转移提供直接监督。仿真与真实机器人实验显示有效的人到机器人迁移及对未见任务与环境的泛化。",
+    "analysis": "该工作将世界动力学预测作为动作推理的中间表示，并用强化学习利用无标注视频，缓解了VLA对动作标注数据的依赖。CoD作为跨具身表示是关键设计。",
+    "technical_value": "CoD提供可跨具身共享的离散动作表示，结合世界想象强化，使人类视频成为直接监督源；对数据效率与泛化有实质贡献。",
+    "impact": "对具身智能数据规模化、人到机器人技能迁移与VLA泛化有较强推动，工程上可降低对机器人遥操作数据的依赖。",
+    "keywords": [
+      "VLA",
+      "Chain-of-Dynamics",
+      "世界模型",
+      "强化学习",
+      "人到机器人迁移"
+    ]
+  },
+  {
+    "id": "09e65db6440397e6",
+    "title": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+    "summary": "Scientific discovery often begins with an unexpected observation that prompts a new research question. In a world with altered physical laws, can large language models (LLMs) notice unexpected behavior, such as heavier objects falling more slowly, and discover the law through experiments without being told what to investigate? To evaluate this ability, we introduce LongChang, an automated framework that creates simulated worlds with altered physics, where one or more laws differ from ordinary physics. The evaluated LLMs act as explorers, manipulating objects and building tools to investigate their own questions without research tasks or hints about these laws. Separate LLM agents generate and review scenes, review tool designs, and evaluate reports for correctness and experimental support using the altered physical laws and exploration records. These records guide scene evolution for further exploration, allowing the full cycle to run without human intervention. Among 12 LLMs, GPT-6-Astra achieves a discovery rate of 16.7%, while the other 11 score 0%. The exploration records reveal uninvestigated anomalies and only partial identification of the altered physical laws.",
+    "published_at": "2026-10-27T17:57:00Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.37649v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.6,
+    "ai_score": 6,
+    "facts": "论文提出LongChang自动化框架，构建物理定律被改变的模拟世界，LLM作为探索者自主操纵物体、设计工具并提出研究问题，另有LLM代理生成审查场景、审查工具设计并依据改变后的物理定律评估报告。12个LLM中GPT-6-Astra发现率为16.7%，其余11个为0%。探索记录显示存在未调查的异常，且仅部分识别出改变后的物理定律。",
+    "analysis": "该工作将科学发现能力评估从给定任务转为开放式探索，揭示了当前LLM在自主提出假设、设计实验与识别异常方面的显著不足。发现率极低说明自由探索范式仍处早期。",
+    "technical_value": "提供无人工干预的闭环模拟世界与多代理评审机制，可作为LLM自主科学发现能力的压力测试平台；但发现率指标对模型能力区分度有限。",
+    "impact": "对AI驱动科学发现、自主实验代理与模拟环境研究有方向性意义，短期工程落地价值有限。",
+    "keywords": [
+      "自主科学发现",
+      "LLM探索",
+      "改变物理定律",
+      "多代理评审",
+      "模拟世界"
+    ]
+  },
+  {
+    "id": "388ed99050423c40",
+    "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+    "summary": "",
+    "published_at": "Thu, 22 Oct 2026 22:24:34 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 6,
+    "facts": "微软在Hugging Face博客发布ThinkingBox，主题为将数据库评分转化为强化学习奖励，用于后训练代理。",
+    "analysis": "将可验证的数据库评分作为RL奖励信号，属于“可验证奖励强化学习”在代理任务上的延伸，可降低对人工偏好数据的依赖。具体方法细节未在输入中给出。",
+    "technical_value": "数据库评分天然可自动验证，适合作为代理后训练的稠密奖励；需关注奖励黑客与评分覆盖度问题。",
+    "impact": "对代理后训练流水线与可验证奖励设计有参考价值，具体效果需待原文数据。",
+    "keywords": [
+      "强化学习",
+      "代理后训练",
+      "数据库评分",
+      "可验证奖励",
+      "ThinkingBox"
+    ]
+  },
+  {
+    "id": "976840a24674d704",
+    "title": "Genie 4: A new generation of world simulation",
+    "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+    "published_at": "Tue, 27 Oct 2026 16:01:38 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6,
+    "facts": "Google DeepMind发布Genie 4，称其为新一代世界模型，在实时模拟中实现前所未有的真实感。输入未提供技术细节与评测数据。",
+    "analysis": "世界模型方向持续迭代，实时性与真实感是核心卖点；但缺少可核验指标，难以判断相对前代的实质提升。",
+    "technical_value": "若实时高真实感世界模拟成立，对具身智能训练环境与交互式内容生成有潜在价值。",
+    "impact": "可能影响世界模型与机器人仿真数据生成赛道，需关注后续技术报告。",
+    "keywords": [
+      "世界模型",
+      "实时模拟",
+      "Genie",
+      "Google DeepMind"
+    ]
+  }
+]
