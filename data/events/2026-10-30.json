@@ -1,0 +1,136 @@
+[
+  {
+    "id": "c9e9827daeaed86a",
+    "title": "Collaborative AI agents for autonomous experimental research with solid-state quantum spins",
+    "summary": "An autonomous research laboratory could conduct an entire study, from formulating questions to preparing manuscripts. Artificial intelligence (AI) offers one route towards this goal. Recent AI systems take on several research roles, but may draw conclusions that the evidence does not support. Here, we present an autonomous research laboratory in which agents based on large language models assess one another's work and can stop or redirect investigations. They can generate and reject research questions, require separate theoretical checks and conduct experiments designed to challenge their claims. We demonstrate these capabilities by investigating ensembles of quantum spins in diamond. The agents derived the minimum number of calibration settings needed to predict responses to a defined family of microwave pulse sequences. They checked the result computationally and designed experiments to distinguish competing predictions. An initial experiment agreed with the theoretical predictions, but repeated reference measurements showed that the signal was drifting during data collection. The agents therefore treated the result as inconclusive and revised the measurement protocol without relaxing the acceptance criteria. The revised experiment met those criteria and supported the theoretical predictions. This study demonstrates that collaborating AI agents can select research questions, derive theoretical results and test their predictions experimentally.",
+    "published_at": "2026-10-29T17:47:50Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.40589v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.6,
+    "ai_score": 9,
+    "facts": "论文提出一个由大语言模型智能体组成的自主研究实验室，智能体之间相互评估工作，并可停止或重定向研究。它们能生成并否决研究问题，要求独立的理论校验，并设计实验来挑战自身主张。研究以金刚石中的量子自旋系综为对象：智能体推导出预测特定微波脉冲序列响应所需的最少校准设置数，进行了计算校验，并设计实验区分竞争性预测。初次实验与理论预测一致，但重复参考测量显示数据采集期间信号发生漂移，智能体据此判定结果不确定，并在不放宽验收标准的前提下修订测量协议；修订后的实验满足标准并支持理论预测。",
+    "analysis": "该工作的核心贡献不在于单点算法突破，而在于把'自我批判—拒绝结论—重设计实验'的闭环嵌入科研流程，直接针对当前AI科研系统'结论超出证据支持'的痛点。其可信度机制（智能体互评、独立理论校验、对抗性实验设计）比单纯提升生成能力更具方法论价值。但需注意：实验对象是受控物理系统，问题空间相对封闭，向开放领域迁移的可行性尚未验证；'自主'程度仍依赖人类设定的验收标准与实验平台。",
+    "technical_value": "高。提供了可复用的多智能体科研编排范式：角色分工（提问/理论/实验/审核）、验收标准硬约束、异常检测触发协议修订。对自动化实验平台、AI for Science 工作流设计有直接参考价值。",
+    "impact": "若可泛化，将推动AI从'科研助手'向'可问责的研究执行者'演进，尤其影响材料、量子器件等可自动化实验的领域；同时为AI科研输出的可信度评估提供制度性思路。",
+    "keywords": [
+      "自主实验室",
+      "多智能体协作",
+      "LLM智能体",
+      "量子自旋",
+      "实验自动化",
+      "AI for Science",
+      "自我校验"
+    ]
+  },
+  {
+    "id": "264079c81e60f9e3",
+    "title": "Rethinking Neural Thickets Without Weight Perturbations",
+    "summary": "The Neural Thickets hypothesis posits that pretrained language models lie in dense neighborhoods of task-specific experts in weight space, which random Gaussian perturbations can uncover. We reproduce the reported gains, but show that they do not require this geometric explanation. Perturbing a single decoder block already recovers much of the improvement, while keeping the model entirely frozen and adding a random bias to its output logits matches or exceeds full-weight perturbations on most reasoning tasks. This suggests an alternative explanation based on output diversity, validation-based selection, and voting. We formalize this view as Perturb-Select-Vote (PSV), a general procedure that generates perturbed predictors, selects high-performing members on a small validation set, and aggregates their predictions. This interpretation connects Neural Thickets to established inference-time methods, including sampling, self-consistency, and verifier-guided selection. A first-order analysis further shows that small weight perturbations act primarily through their induced logit shifts. We extend this analysis to vision, where logit PSV substantially improves performance under domain shift, including on Earth observation, while full-weight perturbations provide little additional benefit. Together, these results suggest that the gains attributed to nearby weight-space experts can instead be obtained through output diversity, selection, and voting. Logit PSV realizes these benefits with a fully frozen model, providing a simple, training-free alternative to full-weight perturbation ensembles across language and vision.",
+    "published_at": "2026-10-29T17:59:29Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.40649v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.3,
+    "ai_score": 8,
+    "facts": "论文复现了Neural Thickets报告的增益，但表明这些增益不需要其几何解释：仅扰动单个解码器块即可恢复大部分改进；在模型完全冻结、仅对输出logits加随机偏置的情况下，多数推理任务上可匹配或超过全权重扰动。作者提出Perturb-Select-Vote（PSV）框架：生成扰动预测器、在小验证集上选择高性能成员、聚合预测。一阶分析表明小权重扰动主要通过诱导的logit偏移起作用。在视觉领域，logit PSV在域偏移下显著提升性能（含地球观测），而全权重扰动几乎无额外收益。",
+    "analysis": "这是一篇高质量的证伪性工作，把'权重空间密集专家'的几何叙事还原为输出多样性+选择+投票的经典推理时方法。其价值在于：一是纠正了对Neural Thickets机制的过度解读；二是给出训练无关、全冻结模型的低成本替代方案，工程可操作性极强。局限在于PSV依赖验证集做成员选择，验证集分布偏移时选择环节本身可能失效；且一阶分析对深层非线性交互的解释力有限。",
+    "technical_value": "高。logit PSV实现简单、无需训练、可即插即用，对推理时集成与域偏移鲁棒性有直接工程价值。",
+    "impact": "可能削弱基于权重扰动的集成方法叙事，推动推理时多样性方法在语言与视觉任务中的标准化应用，对低成本提升模型鲁棒性有普遍意义。",
+    "keywords": [
+      "Neural Thickets",
+      "权重扰动",
+      "推理时集成",
+      "Perturb-Select-Vote",
+      "域偏移",
+      "logit偏置",
+      "免训练"
+    ]
+  },
+  {
+    "id": "388ed99050423c40",
+    "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+    "summary": "",
+    "published_at": "Thu, 22 Oct 2026 22:24:34 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 7,
+    "facts": "微软在Hugging Face博客发布ThinkingBox相关内容，标题为《Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox》，正文摘要未提供。",
+    "analysis": "从标题可判断其思路是将数据库任务的评分结果转化为强化学习奖励，用于智能体后训练。这属于'可验证奖励强化学习'在数据/代码智能体方向的延伸，价值在于把结构化任务的确定性判分变成训练信号，降低对人工标注的依赖。但缺少正文，具体奖励设计、任务覆盖与效果数据无法核实。",
+    "technical_value": "中高。若评分器设计稳健，可作为智能体后训练的通用奖励来源，适用于SQL生成、数据操作等可自动判分的场景。",
+    "impact": "可能推动企业级数据智能体的训练范式从监督微调转向可验证奖励RL，影响数据库运维与分析类Agent产品。",
+    "keywords": [
+      "强化学习",
+      "智能体后训练",
+      "数据库",
+      "可验证奖励",
+      "ThinkingBox"
+    ]
+  },
+  {
+    "id": "57dc1fe77b7c95ff",
+    "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+    "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+    "published_at": "Wed, 14 Oct 2026 02:00:14 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 7,
+    "facts": "Google DeepMind与新加坡政府科技局（GovTech）合作，使用轻量级端侧Gemma模型在私聊中拦截对话式诈骗，数据不出云端（zero cloud data egress）。",
+    "analysis": "该案例的技术要点是端侧小模型+隐私保护+对话级诈骗识别，属于'小模型高价值垂直场景'的典型落地。端侧部署规避了聊天内容上云的合规与隐私障碍，这对诈骗检测这类强隐私场景是必要条件而非可选项。挑战在于端侧算力约束下的召回率与误报率平衡，以及诈骗话术的快速演化。",
+    "technical_value": "中高。提供了端侧模型在公共安全场景的可复制范式：本地推理、零数据外传、政府侧微调。",
+    "impact": "对隐私敏感地区的AI公共安全部署有示范效应，可能推动更多政府采用端侧小模型处理敏感对话数据。",
+    "keywords": [
+      "端侧AI",
+      "Gemma",
+      "诈骗检测",
+      "隐私保护",
+      "GovTech",
+      "小模型"
+    ]
+  },
+  {
+    "id": "fb25ba7862951994",
+    "title": "Gemini 4 Carbon: Our next frontier model",
+    "summary": "",
+    "published_at": "Wed, 28 Oct 2026 17:00:58 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6,
+    "facts": "Google DeepMind官方博客发布题为《Gemini 4 Carbon: Our next frontier model》的文章，宣布下一代前沿模型，正文摘要未提供。",
+    "analysis": "属厂商旗舰模型发布公告，标题暗示可能在能效或碳相关维度有专门表述，但无摘要无法确认能力指标、上下文长度、模态支持等关键信息。此类发布通常伴随基准提升与产品集成，需以官方技术报告为准，不宜据标题推断性能。",
+    "technical_value": "待核实。前沿模型发布本身对应用生态影响大，但缺乏可验证细节。",
+    "impact": "若确为新一代旗舰，将影响开发者模型选型与竞品节奏；具体影响取决于定价、可用性与基准表现。",
+    "keywords": [
+      "Gemini",
+      "前沿模型",
+      "Google DeepMind",
+      "模型发布"
+    ]
+  }
+]

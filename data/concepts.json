@@ -776,5 +776,17 @@
       "https://arxiv.org/abs/2610.37649v1",
       "https://arxiv.org/abs/2610.37624v1"
     ]
+  },
+  {
+    "date": "2026-10-30",
+    "name_zh": "可自我批判的自主科研智能体",
+    "name_en": "Self-Critical Autonomous Research Agents",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "指由多个大语言模型智能体分工承担提问、理论推导、实验设计与审核，并通过智能体互评、独立校验和对抗性实验来约束结论、在证据不足时主动判定'不确定'并修订方案的科研自动化范式。其核心不是生成能力，而是对自身结论的可问责性。",
+    "why_now": "近期AI科研系统已能承担多种研究角色，但常得出证据不支持的结论；同时自动化实验平台与量子/材料等可编程实验系统逐步成熟，使'智能体闭环控制真实实验'具备落地条件。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.40589v1"
+    ]
   }
 ]
