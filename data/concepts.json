@@ -788,5 +788,18 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2610.40589v1"
     ]
+  },
+  {
+    "date": "2026-10-31",
+    "name_zh": "多智能体自主科研闭环",
+    "name_en": "Multi-Agent Autonomous Research Loop",
+    "score": 9,
+    "maturity": "Emerging",
+    "explanation": "由多个基于大语言模型的智能体分工承担提问、理论推导、实验设计与结果审查，并通过相互评估、独立校验和严格验收标准形成可证伪的研究闭环，而非单模型一次性生成结论。",
+    "why_now": "最新研究已展示智能体能在真实量子物理实验中否决自身不确定结果并修订协议，同时业界持续推出可验证奖励后训练与端侧/专用模型，使'可问责的AI科研执行'从概念走向可复现工程。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.40589v1",
+      "https://huggingface.co/blog/microsoft/thinkingbox-training"
+    ]
   }
 ]
