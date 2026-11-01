@@ -1,0 +1,130 @@
+[
+  {
+    "id": "c9e9827daeaed86a",
+    "title": "Collaborative AI agents for autonomous experimental research with solid-state quantum spins",
+    "summary": "An autonomous research laboratory could conduct an entire study, from formulating questions to preparing manuscripts. Artificial intelligence (AI) offers one route towards this goal. Recent AI systems take on several research roles, but may draw conclusions that the evidence does not support. Here, we present an autonomous research laboratory in which agents based on large language models assess one another's work and can stop or redirect investigations. They can generate and reject research questions, require separate theoretical checks and conduct experiments designed to challenge their claims. We demonstrate these capabilities by investigating ensembles of quantum spins in diamond. The agents derived the minimum number of calibration settings needed to predict responses to a defined family of microwave pulse sequences. They checked the result computationally and designed experiments to distinguish competing predictions. An initial experiment agreed with the theoretical predictions, but repeated reference measurements showed that the signal was drifting during data collection. The agents therefore treated the result as inconclusive and revised the measurement protocol without relaxing the acceptance criteria. The revised experiment met those criteria and supported the theoretical predictions. This study demonstrates that collaborating AI agents can select research questions, derive theoretical results and test their predictions experimentally.",
+    "published_at": "2026-10-29T17:47:50Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.40589v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.6,
+    "ai_score": 9,
+    "facts": "论文提出一个由大语言模型智能体组成的自主研究实验室，智能体之间互相评估工作，可中止或改变研究方向；能生成并否决研究问题，要求独立理论校验，并设计挑战自身结论的实验。以金刚石量子自旋系综为对象：智能体推导出预测指定微波脉冲序列响应所需的最少校准设置数，进行计算校验并设计区分竞争预测的实验。首次实验与理论一致，但重复参考测量显示采集期间信号漂移，智能体据此判定结果不确定，在不放宽验收标准的前提下修改测量协议，修订后实验满足标准并支持理论预测。",
+    "analysis": "该工作的核心不是单智能体自动化，而是引入智能体间的对抗性审查与自我否决机制，把“结论是否被证据支持”作为可执行流程的一部分。信号漂移案例说明系统具备识别自身实验缺陷并拒绝下结论的能力，这比单纯提升实验吞吐更有价值。但演示局限于单一物理平台和较窄任务，通用性尚未验证。",
+    "technical_value": "展示了LLM智能体在实验闭环中的角色分工：问题生成与否决、理论推导、实验设计、结果审查与协议修订。其“验收标准不放宽”的约束设计可作为自主实验系统的可信性工程参考。",
+    "impact": "对AI驱动科学发现的可信度问题给出可操作范式，可能影响自主实验室的流程设计标准；短期影响集中在量子传感与自动化实验领域。",
+    "keywords": [
+      "自主实验室",
+      "多智能体协作",
+      "LLM智能体",
+      "量子自旋",
+      "实验自我纠错"
+    ]
+  },
+  {
+    "id": "264079c81e60f9e3",
+    "title": "Rethinking Neural Thickets Without Weight Perturbations",
+    "summary": "The Neural Thickets hypothesis posits that pretrained language models lie in dense neighborhoods of task-specific experts in weight space, which random Gaussian perturbations can uncover. We reproduce the reported gains, but show that they do not require this geometric explanation. Perturbing a single decoder block already recovers much of the improvement, while keeping the model entirely frozen and adding a random bias to its output logits matches or exceeds full-weight perturbations on most reasoning tasks. This suggests an alternative explanation based on output diversity, validation-based selection, and voting. We formalize this view as Perturb-Select-Vote (PSV), a general procedure that generates perturbed predictors, selects high-performing members on a small validation set, and aggregates their predictions. This interpretation connects Neural Thickets to established inference-time methods, including sampling, self-consistency, and verifier-guided selection. A first-order analysis further shows that small weight perturbations act primarily through their induced logit shifts. We extend this analysis to vision, where logit PSV substantially improves performance under domain shift, including on Earth observation, while full-weight perturbations provide little additional benefit. Together, these results suggest that the gains attributed to nearby weight-space experts can instead be obtained through output diversity, selection, and voting. Logit PSV realizes these benefits with a fully frozen model, providing a simple, training-free alternative to full-weight perturbation ensembles across language and vision.",
+    "published_at": "2026-10-29T17:59:29Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.40649v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.3,
+    "ai_score": 8,
+    "facts": "论文复现了Neural Thickets报告的增益，但指出无需其几何解释：仅扰动单个解码器块即可恢复大部分提升；保持模型完全冻结、仅在输出logits上加随机偏置，在多数推理任务上匹配或超过全权重扰动。作者提出Perturb-Select-Vote（PSV）框架：生成扰动预测器、在小验证集上选择高性能成员、聚合预测。一阶分析表明小权重扰动主要通过诱导的logit偏移起作用。在视觉领域，logit PSV在域偏移下显著提升性能（含地球观测），全权重扰动额外收益很小。",
+    "analysis": "该工作对Neural Thickets的机理解释提出有力替代：增益来自输出多样性、验证选择与投票，而非权重空间稠密专家邻域。方法训练免费、模型冻结，工程成本极低，且跨语言与视觉任务成立，可信度较高。局限在于仍依赖小验证集做选择，验证集分布偏差可能影响效果。",
+    "technical_value": "提供无需训练的推理时集成方案，将复杂权重扰动简化为logit偏置，显著降低实现门槛，并给出可解释的一阶分析。",
+    "impact": "可能改变对权重空间集成方法的理解，推动logit级集成在推理与域偏移场景的广泛应用。",
+    "keywords": [
+      "Neural Thickets",
+      "logit扰动",
+      "推理时集成",
+      "投票选择",
+      "域偏移"
+    ]
+  },
+  {
+    "id": "ed78fa2868cd3e9e",
+    "title": "From extreme weather to agricultural consequences with agentic AI",
+    "summary": "Extreme weather is forecast days ahead, yet its consequences for agriculture remain hard to predict: a forecast says where a storm will strike, not which crops will suffer or how much is at risk, and the records that could tell span many sources. We present WxCrop, the first agent that judges agricultural hazards from physically interpretable weather indices examined by causal analysis, and the first that combines weather and agricultural information to predict crop loss reliably for past and forecast dates. We demonstrate it in Florida on hurricanes, freezes and dry heat, with a loss model calibrated on insurance records for each, and the same procedure extends to other hazards and areas. Three checks show reliability: the hurricane index detects recorded cyclone days with an AUC of 0.98, recorded losses in held-out years are reproduced to within 2%, and independent production records confirm the county rankings (rank correlation 0.63). Users ask the agent for each crop group's loss as a fraction of expected season value, every number sourced, so that governments, growers and scientists respond to agricultural disasters quickly.",
+    "published_at": "2026-10-29T17:58:53Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.40641v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.3,
+    "ai_score": 8,
+    "facts": "论文提出WxCrop，首个通过因果分析审视物理可解释气象指数来判断农业灾害的智能体，也是首个结合气象与农业信息、对历史与预报日期可靠预测作物损失的智能体。在佛罗里达针对飓风、冰冻和干热验证，损失模型按各灾种保险记录校准。三项检验：飓风指数识别有记录气旋日AUC为0.98；留出年份记录损失复现误差在2%以内；独立产量记录确认县排名（秩相关0.63）。用户可按作物组查询损失占预期季节价值的比例，每个数字均有来源。",
+    "analysis": "将气象指数、因果分析与保险校准损失模型结合，并用多重独立检验验证可靠性，方法论较扎实。AUC 0.98与2%复现误差在特定区域和灾种上表现强，但泛化到其他地区与灾种仍需验证。可溯源输出设计对决策场景友好。",
+    "technical_value": "智能体框架把物理可解释指数与因果分析结合，形成可审计的农业风险评估流水线，具备向其他灾种迁移的接口设计。",
+    "impact": "对政府、种植者与保险业的气象灾害响应有直接应用潜力。",
+    "keywords": [
+      "智能体",
+      "农业风险",
+      "极端天气",
+      "因果分析",
+      "作物损失"
+    ]
+  },
+  {
+    "id": "388ed99050423c40",
+    "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+    "summary": "",
+    "published_at": "Thu, 22 Oct 2026 22:24:34 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 7,
+    "facts": "微软在Hugging Face博客发布ThinkingBox相关内容，标题为将数据库评分转化为强化学习奖励，用于智能体后训练。摘要为空。",
+    "analysis": "标题指向一种以数据库执行/评分结果作为RL奖励信号的智能体后训练方法，属于可验证奖励强化学习在数据密集型任务上的延伸。由于缺少正文细节，具体奖励设计、任务范围和效果数据无法确认。",
+    "technical_value": "若属实，将结构化数据库操作的正确性转化为稠密奖励，可缓解智能体训练中奖励稀疏问题，对Text-to-SQL与数据操作类智能体有直接参考价值。",
+    "impact": "可能推动企业级数据智能体后训练范式，但需正文验证。",
+    "keywords": [
+      "强化学习",
+      "智能体后训练",
+      "数据库",
+      "可验证奖励"
+    ]
+  },
+  {
+    "id": "9040d210bc48e354",
+    "title": "Can we trust LLMs to judge whether a research idea is novel?",
+    "summary": "",
+    "published_at": "Tue, 27 Oct 2026 16:12:42 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/allenai/novelty-bench",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.2,
+    "ai_score": 7,
+    "facts": "AllenAI在Hugging Face发布Novelty Bench相关博客，主题为LLM能否可信判断研究想法的新颖性。摘要为空。",
+    "analysis": "针对LLM作为科研评审者的可靠性问题，属于AI辅助科学中的评估基准建设。具体基准设计与结论未知。",
+    "technical_value": "为LLM科研新颖性判断提供评测框架，有助于识别评审偏差。",
+    "impact": "影响AI辅助同行评审与科研选题工具的信任度。",
+    "keywords": [
+      "新颖性评估",
+      "LLM评审",
+      "基准",
+      "AI for Science"
+    ]
+  }
+]

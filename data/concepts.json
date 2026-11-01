@@ -801,5 +801,17 @@
       "https://arxiv.org/abs/2610.40589v1",
       "https://huggingface.co/blog/microsoft/thinkingbox-training"
     ]
+  },
+  {
+    "date": "2026-11-01",
+    "name_zh": "智能体间对抗性审查的自主实验室",
+    "name_en": "Self-Critical Multi-Agent Autonomous Laboratory",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "由多个LLM智能体分工承担问题生成、理论推导、实验设计与结果审查，并通过智能体间互相评估、要求独立校验、设计挑战性实验来抑制无证据支持的结论。核心特征是系统具备否决自身结果并修订实验协议的能力。",
+    "why_now": "LLM智能体已能承担科研子任务，但结论可靠性成为瓶颈；该范式把审查与自我否决机制工程化，回应了AI科研可信度的关键质疑。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.40589v1"
+    ]
   }
 ]
