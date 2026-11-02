@@ -813,5 +813,17 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2610.40589v1"
     ]
+  },
+  {
+    "date": "2026-11-02",
+    "name_zh": "次二次长上下文注意力",
+    "name_en": "Subquadratic Long-Context Attention",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "通过分层树状索引器等结构，使注意力路由与计算的总成本随序列长度呈次二次（但超线性）增长，从而突破标准注意力二次复杂度的长上下文瓶颈。",
+    "why_now": "长上下文需求（代码库、长程 agent、超长文档）快速增长，而现有稀疏/线性注意力要么表达力受限、要么索引器本身二次；ZHA 等工作将索引结构本身次二次化，并通过短蒸馏适配现有模型，使百万级以上上下文更具可行性。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.42112v1"
+    ]
   }
 ]

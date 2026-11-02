@@ -1,0 +1,131 @@
+[
+  {
+    "id": "318a0c8799d1817a",
+    "title": "Subquadratic Attention with a Hierarchical Tree-Structured Indexer",
+    "summary": "The quadratic scaling of attention is a fundamental bottleneck limiting the long-context capabilities of large language models (LLMs). A variety of approaches have attempted to circumvent this, but they either fail to match attention's expressiveness (e.g., sliding-window or linear attention variants with fixed-size state) or only achieve constant-factor speedups (e.g., sparse attention methods whose indexers themselves scale quadratically). In this paper, we derive an asymptotically subquadratic sparse attention method based on a hierarchical, tree-structured indexer, which we call Zyphra Hierarchical Attention (ZHA). ZHA constructs a tree of recursively compressed key summaries over the KV cache, which future queries traverse from the top down to retrieve a sparse subset of keys. Crucially, by iteratively growing the tree's depth, the total cost including routing and final attention grows sublinearly in sequence length, resulting in overall subquadratic (but superlinear) scaling for attention. We demonstrate that ZHA can be cheaply applied to existing pretrained models with only a short KL distillation training stage over a few billion tokens, and maintains performance on long-context retrieval and challenging reasoning, mathematical, and agentic coding evaluation tasks. Moreover, we show that our method is highly robust to tree geometry including very deep trees of up to 6 levels. Finally, we develop a detailed performance model and show that our approach scales subquadratically, dramatically outperforms competing methods beyond 1 million context, and ultimately has the potential to extend effective context windows to the hundreds of millions or billions of tokens.",
+    "published_at": "2026-10-30T17:48:37Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.42112v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.9,
+    "ai_score": 8,
+    "facts": "论文提出 Zyphra Hierarchical Attention (ZHA)，一种基于分层树状索引器的渐近次二次稀疏注意力方法。它在 KV cache 上构建递归压缩的 key 摘要树，查询自顶向下遍历以检索稀疏 key 子集；通过迭代增加树深度，包含路由与最终注意力的总成本随序列长度次线性增长，整体呈次二次（但超线性）扩展。可通过仅数亿 token 的短 KL 蒸馏训练阶段低成本应用于现有预训练模型，并在长上下文检索及推理、数学、agentic coding 评测上保持性能；对树几何（最深 6 层）高度鲁棒。作者称在超过 100 万上下文时显著优于竞品，有望将有效上下文窗口扩展至数亿至数十亿 token。",
+    "analysis": "该工作针对长上下文 LLM 的核心瓶颈——注意力二次复杂度，提出了一条与滑动窗口/线性注意力（表达力受限）和稀疏注意力（索引器本身二次）不同的路径：把索引结构本身做成次二次的树。关键创新在于将路由成本纳入复杂度分析，使端到端而非仅最终注意力呈次二次。低成本蒸馏适配现有模型降低了落地门槛，6 层深树鲁棒性说明工程可调空间较大。但摘要未给出具体基准数值、与主流方法的定量对比及训练/推理实测吞吐，性能模型为作者自述，需独立复现验证。",
+    "technical_value": "高。提供了可渐近分析的分层稀疏注意力框架，索引器与注意力联合次二次化，且兼容预训练模型的后训练适配，对长上下文架构研究有直接参考价值。",
+    "impact": "若结果可复现，将显著降低超长上下文推理成本，推动百万至十亿级 token 上下文在检索、代码库理解、长程 agent 等场景的实用化，并可能影响 KV cache 管理与推理系统设计。",
+    "keywords": [
+      "稀疏注意力",
+      "长上下文",
+      "分层索引",
+      "次二次复杂度",
+      "KV cache",
+      "知识蒸馏"
+    ]
+  },
+  {
+    "id": "18d7e848d6a0d4a7",
+    "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
+    "summary": "Recent work shows that a frozen robot policy performs far better inside an agent harness, where control code decides when to query the policy, consult vision tools, or command the arm directly. Yet today these harnesses are built by hand and redesigned for each new robot or benchmark. We show that harness design can be automated, offering a strong alternative to finetuning on a novel setup. In RoboArchitect, a coding model observes a robot's rollouts, diagnoses failures, and iteratively revises the harness around the frozen policy. The harness evolves on a set of episodes for its optimization and is evaluated on held-out scenes and tasks. Without updating any model weights, RoboArchitect raises average success from 9.7% to 43.3% on unseen scenes (4.5x) and from 12.7% to 40.2% on unseen tasks (3.2x), across multiple benchmarks and policies. The gains are largest where the benchmark is far from the policy's training data: wrapping a general-purpose policy, the evolved harness yields a specialist that often outperforms even the finetuned version. Intuitive control strategies are automatically designed, such as lifting a jammed arm clear or reaching in horizontally when an obstacle blocks the way from above. The harness also evolves its own persistent memory, carrying learned experience, such as effective grasp depths, into later decisions. These results suggest that substantial headroom in robotic manipulation lies in the agent harness, and its design can be effectively automated and optimized without weight updates.",
+    "published_at": "2026-10-30T17:58:48Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2610.42141v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 7,
+    "facts": "RoboArchitect 让编码模型观察冻结机器人策略的 rollout、诊断失败并迭代修改其 agent harness（控制代码），无需更新任何模型权重。在多个基准与策略上，未见场景平均成功率从 9.7% 提升至 43.3%（4.5 倍），未见任务从 12.7% 提升至 40.2%（3.2 倍）；在基准远离策略训练数据时增益最大，通用策略经演化 harness 包装后常超过微调版本。系统自动设计出抬升卡住机械臂、遇上方障碍改水平接近等控制策略，并演化持久记忆（如有效抓取深度）用于后续决策。",
+    "analysis": "该工作把“agent harness 设计”本身作为优化对象，提出与微调互补的路线：冻结策略 + 自动演化控制代码与记忆。4.5 倍/3.2 倍的提升幅度显著，且泛化到未见场景/任务，说明 harness 中存在大量未被手工设计利用的余量。自动涌现的控制策略与持久记忆具备可解释性。局限在于摘要未披露基准数量、策略类型、演化所需 rollout 预算与失败模式，且 harness 可能对特定机器人形态过拟合，跨 embodiment 迁移性待验证。",
+    "technical_value": "较高。将 LLM 编码能力用于机器人控制栈的自动程序合成与记忆演化，形成“策略冻结、harness 可学习”的新范式，工程可复用性强。",
+    "impact": "可能改变机器人部署流程：从为每个新机器人手工搭 harness 或微调，转向自动演化控制层，降低适配成本；对具身智能 agent 框架与持久记忆研究有推动作用。",
+    "keywords": [
+      "机器人操作",
+      "agent harness",
+      "持久记忆",
+      "程序合成",
+      "冻结策略",
+      "自动设计"
+    ]
+  },
+  {
+    "id": "388ed99050423c40",
+    "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+    "summary": "",
+    "published_at": "Thu, 22 Oct 2026 22:24:34 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 6,
+    "facts": "Hugging Face 官方博客文章，标题为《Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox》，由 Microsoft 发布。输入未提供摘要内容。",
+    "analysis": "从标题可判断其主题是将数据库评分信号转化为强化学习奖励，用于 agent 的后训练，ThinkingBox 应为配套框架或方法。该方向契合当前“可验证奖励 RL”趋势，数据库任务天然具备可自动判分特性。但缺少正文细节，无法评估奖励设计、任务覆盖与效果数据，判断需谨慎。",
+    "technical_value": "待评估。若奖励构造与训练流程可复现，对 agent 后训练与 RL 环境构建有参考价值。",
+    "impact": "可能推动以数据库/代码执行为验证信号的 agent 训练范式，影响企业级数据 agent 的落地方式。",
+    "keywords": [
+      "强化学习",
+      "agent 后训练",
+      "数据库",
+      "可验证奖励",
+      "ThinkingBox"
+    ]
+  },
+  {
+    "id": "fb25ba7862951994",
+    "title": "Gemini 4 Carbon: Our next frontier model",
+    "summary": "",
+    "published_at": "Wed, 28 Oct 2026 17:00:58 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6,
+    "facts": "Google DeepMind 官方博客发布，标题为《Gemini 4 Carbon: Our next frontier model》，发布于 2026-10-28。输入未提供摘要内容。",
+    "analysis": "官方发布新一代前沿模型，命名含“Carbon”，但无正文信息，无法确认能力、参数、上下文长度或评测数据。前沿模型发布通常影响竞争格局与开发者选型，但具体判断需以官方技术报告为准。",
+    "technical_value": "待评估，取决于后续披露的技术细节。",
+    "impact": "可能影响前沿模型竞争格局与 API 生态，需关注定价、上下文与多模态能力。",
+    "keywords": [
+      "Gemini",
+      "前沿模型",
+      "Google DeepMind"
+    ]
+  },
+  {
+    "id": "976840a24674d704",
+    "title": "Genie 4: A new generation of world simulation",
+    "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+    "published_at": "Tue, 27 Oct 2026 16:01:38 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6,
+    "facts": "Google DeepMind 官方博客发布《Genie 4: A new generation of world simulation》，称其为新的世界模型，在实时模拟中实现前所未有的真实感。",
+    "analysis": "世界模型方向持续迭代，Genie 系列聚焦可交互实时模拟。摘要仅强调真实感提升，未给出分辨率、帧率、可控性、训练数据与评测指标，难以量化进步幅度。若实时性与可控性同步提升，对具身智能仿真与游戏/内容生成有实际价值。",
+    "technical_value": "待评估，需关注是否开放接口及技术报告。",
+    "impact": "可能加速机器人仿真训练与交互式内容生成，但需验证实时性能与泛化能力。",
+    "keywords": [
+      "世界模型",
+      "实时模拟",
+      "Genie",
+      "具身智能"
+    ]
+  }
+]
