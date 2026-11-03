@@ -825,5 +825,17 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2610.42112v1"
     ]
+  },
+  {
+    "date": "2026-11-03",
+    "name_zh": "推理策略演化",
+    "name_en": "Inference Strategy Evolution",
+    "score": 8.5,
+    "maturity": "Emerging",
+    "explanation": "将智能体的推理流程（策略）视为可编写为代码、可测试、可复用、可跨任务演化的资产，由元智能体自动检索、生成、评测与修订策略，并沉淀为策略库。",
+    "why_now": "智能体系统能力长期受限于手工编排的推理流程，经验无法跨任务积累；Strategist证明策略层可自动演化并在更低推理成本下取得更优或相当精度，且可迁移到新任务与新模型。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2611.03618v1"
+    ]
   }
 ]

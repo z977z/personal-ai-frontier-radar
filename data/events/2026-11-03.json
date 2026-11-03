@@ -1,0 +1,133 @@
+[
+  {
+    "id": "6fafd65f3109e024",
+    "title": "Strategist: Evolving Reasoning with Agents",
+    "summary": "A model is only half of an AI agent system. The other half is the inference strategy: the reasoning procedure that turns model calls into a response. Today that second half is written by hand, and the experience of building one strategy never carries to the next. We introduce Strategist, a meta-agent that evolves inference strategies across tasks. Each strategy is written as a blueprint,executable code that other strategies can reuse, and together the blueprints form a library. Given a task and a small development set, Strategist retrieves related blueprints, writes candidate strategies, tests them on real samples, and revises them from the results. Every candidate then enters the library, so later tasks build on earlier discoveries. On 30 benchmarks, Strategist beats the strongest baseline on 24 and matches its average accuracy (74.7% vs.74.0%) at 39% lower inference cost. Its strategies also transfer to unseen tasks and other models without further search. The part of an AI system that is not improved on its own now does.",
+    "published_at": "2026-11-02T18:51:04Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.03618v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.3,
+    "ai_score": 8.5,
+    "facts": "论文提出Strategist，一个元智能体（meta-agent），可跨任务演化推理策略。策略以可执行代码蓝图形式编写，可被其他策略复用并汇入策略库。给定任务和小型开发集，Strategist检索相关蓝图、编写候选策略、在真实样本上测试并根据结果修订。候选策略进入库中供后续任务复用。在30个基准上，Strategist在24个上超过最强基线，平均准确率74.7%对74.0%，推理成本低39%；策略可迁移到未见任务和其他模型而无需进一步搜索。",
+    "analysis": "该工作针对智能体系统中长期依赖手工编写推理流程、经验无法跨任务积累的痛点，把“推理策略”本身作为可演化、可复用的代码资产，形成自我改进的闭环。其价值在于将智能体优化从模型层扩展到策略层，且以更低推理成本取得相当或更优精度，迁移性表明策略具有一定通用性。",
+    "technical_value": "高。蓝图即代码的设计使策略可执行、可组合、可检索复用；检索-生成-测试-修订的演化循环具备工程可落地性；成本降低39%对生产部署有直接意义。",
+    "impact": "可能推动智能体框架从手工编排转向策略自动演化与策略库复用，影响Agent开发范式与推理成本结构。",
+    "keywords": [
+      "meta-agent",
+      "推理策略",
+      "策略演化",
+      "代码蓝图",
+      "策略库",
+      "智能体"
+    ]
+  },
+  {
+    "id": "c280246d4b115ff0",
+    "title": "DiabAgent: Toward Agentic Physiological Control",
+    "summary": "As pretraining scales, medical language models have advanced rapidly in clinical question answering. Their ability to achieve effective physiological control through sustained intervention still lacks systematic quantitative evaluation. Type 1 diabetes provides a concrete setting: impaired insulin secretion creates dependence on exogenous insulin, with dosing continually adjusted using information about meals, exercise, illness, and glucose measurements. We introduce DiabAgent, a research suite for agentic physiological control comprising the Agentic Physiological Control (APC) framework, the DiabetSim simulator, and the SweetBench benchmark. APC controls glucose through medical-device tools, using ongoing observations to infer individual states, accumulate personal experience, and choose treatment actions. We build DiabetSim to simulate different patients, events, and device conditions for scalable virtual testing and training. Using DiabetSim, we construct SweetBench by instantiating 32 scenario designs as 212 glucose-control tasks. With Claude Opus 5.5 and a fixed decision interval of one hour, APC achieves a COGI of 73.5, compared with 71.2 for the open-source closed-loop baseline OpenAPS. Ablations further show that individual adaptation and contextual information improve glucose control. Combining high-frequency rule-based control with lower-frequency agent decisions shows potential for balancing control performance and computational cost. Our work provides a framework, simulator, and evaluation foundation for agents to participate in human physiological control.",
+    "published_at": "2026-11-02T18:41:02Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.03601v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.0,
+    "ai_score": 7.8,
+    "facts": "论文提出DiabAgent研究套件，包含Agentic Physiological Control（APC）框架、DiabetSim模拟器和SweetBench基准。APC通过医疗设备工具控制血糖，利用持续观测推断个体状态、积累个人经验并选择治疗动作。DiabetSim模拟不同患者、事件和设备条件。SweetBench由32个场景设计实例化为212个血糖控制任务。使用Claude Opus 5.5、固定一小时决策间隔，APC的COGI为73.5，开源闭环基线OpenAPS为71.2。消融显示个体适应与上下文信息改善血糖控制；高频规则控制结合低频智能体决策可平衡性能与算力成本。",
+    "analysis": "该工作把智能体从文本任务推进到生理闭环控制，提供了框架、模拟器与评测基准三位一体的基础设施，弥补了医学语言模型在持续干预能力上缺乏系统量化评估的空白。结果略优于成熟闭环基线，但幅度有限，且依赖模拟环境，真实临床有效性尚未验证。",
+    "technical_value": "中高。模拟器与基准具有复用价值；个体适应与分层控制（高频规则+低频智能体）是实用设计；但真实世界安全性与泛化仍需验证。",
+    "impact": "为智能体参与人体生理控制建立评测基础，可能推动医疗智能体从问答走向闭环干预研究，但短期落地受监管与安全约束。",
+    "keywords": [
+      "生理控制",
+      "1型糖尿病",
+      "智能体",
+      "模拟器",
+      "基准",
+      "闭环控制"
+    ]
+  },
+  {
+    "id": "57dc1fe77b7c95ff",
+    "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+    "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+    "published_at": "Wed, 14 Oct 2026 02:00:14 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6.8,
+    "facts": "Google DeepMind与新加坡GovTech合作，使用轻量级端侧Gemma模型在私聊中拦截对话式诈骗，零云端数据外泄。",
+    "analysis": "端侧小模型+政府场景是隐私敏感应用的典型范式，零数据外泄解决了聊天内容上云的合规障碍。效果指标未在输入中给出，拦截准确率与误报率是关键未知项。",
+    "technical_value": "中高。端侧部署、隐私保护与反诈场景结合具有明确工程价值，可复制到其他隐私敏感对话监测。",
+    "impact": "为端侧AI在公共安全与隐私合规场景提供示范，可能推动更多政府侧端侧模型部署。",
+    "keywords": [
+      "端侧AI",
+      "Gemma",
+      "反诈骗",
+      "隐私保护",
+      "政府合作"
+    ]
+  },
+  {
+    "id": "388ed99050423c40",
+    "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+    "summary": "",
+    "published_at": "Thu, 22 Oct 2026 22:24:34 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 6.5,
+    "facts": "微软发布博客，介绍ThinkingBox，将数据库评分转化为强化学习奖励，用于智能体后训练。",
+    "analysis": "把可验证的数据库执行结果作为RL奖励信号，属于“可验证奖励强化学习”在智能体后训练上的应用，能缓解人工标注奖励的瓶颈。具体效果数据未在输入中给出，需谨慎看待。",
+    "technical_value": "中。数据库评分作为程序化奖励具备可扩展性与客观性，适合工具使用类智能体的后训练。",
+    "impact": "可能推动智能体后训练更多采用可验证环境奖励，降低对人工反馈的依赖。",
+    "keywords": [
+      "强化学习",
+      "后训练",
+      "数据库",
+      "奖励建模",
+      "智能体"
+    ]
+  },
+  {
+    "id": "976840a24674d704",
+    "title": "Genie 4: A new generation of world simulation",
+    "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+    "published_at": "Tue, 27 Oct 2026 16:01:38 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6.2,
+    "facts": "Google DeepMind发布Genie 4，称其为新一代世界模型，在实时模拟中实现前所未有的真实感。",
+    "analysis": "世界模型用于实时交互式模拟，若真实感与实时性同时提升，对具身智能训练、游戏与仿真环境有潜在价值。输入未提供分辨率、延迟、可控性等指标，难以量化评估。",
+    "technical_value": "中。世界模型是具身智能与仿真数据生成的关键基础设施，但需具体指标验证。",
+    "impact": "可能降低交互式仿真环境构建成本，影响具身智能训练与内容生成。",
+    "keywords": [
+      "世界模型",
+      "实时模拟",
+      "Genie",
+      "具身智能"
+    ]
+  }
+]
