@@ -837,5 +837,17 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2611.03618v1"
     ]
+  },
+  {
+    "date": "2026-11-04",
+    "name_zh": "对抗投机推理",
+    "name_en": "Adversarial Speculative Reasoning",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "一种将投机解码从纯加速机制转为上下文精度分配机制的方法：训练草稿模型在长程智能体的关键推理决策点主动被拒绝，使目标模型在低噪声条件下重新采样关键思考token，从而提升推理准确率而不改变目标模型输出分布。",
+    "why_now": "长程智能体推理对中间步骤精度高度敏感，而投机解码的数值噪声会随步数累积并随机影响结果；同时草稿模型训练成本极低（仅0.06%-0.28%参数），使该方向具备即时工程可行性。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2611.05345v1"
+    ]
   }
 ]

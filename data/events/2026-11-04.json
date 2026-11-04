@@ -1,0 +1,131 @@
+[
+  {
+    "id": "38930b142fd8d018",
+    "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
+    "summary": "Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growing effort to train better draft models has been focused solely on acceptance rate. We argue that this view does not hold true for long-horizon agent reasoning. Measuring frontier open-weight models on complex agentic tasks with different speculative decoding approaches, we found that numerical noise grows within verification windows, and the draft acceptance results of the thinking process can change the output distribution of the model after 30 steps, thus noticeably influencing the reasoning accuracy of long-horizon agents in random directions. In this work, we improve the reasoning capability of target models by controlling such noise. While we cannot change the overall token distribution verified by the target model, we can encode critical reasoning with highest precision by training the draft model to be rejected. We identify these points in agent traces and train the draft model to favor adversarial preference. At inference the trained draft and the target part ways precisely at these decision points, verification restarts, so that critical thinking tokens are sampled from the target model and encoded under its least noisy conditions. This approach makes critical reasoning better indexed and more durable over a long horizon. On complex agentic coding benchmarks, our approach raises end-to-end success rate with no change to the target model or its output distribution. Our results recast the speculative decoding mechanism from a pure accelerator into an active allocator for context precision that improves the accuracy of long-horizon agents by training 0.06% to 0.28% of hosted parameters.",
+    "published_at": "2026-11-03T18:45:23Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.05345v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.3,
+    "ai_score": 8,
+    "facts": "论文提出：在长程智能体推理中，投机解码的数值噪声会在验证窗口内累积，草稿模型的接受结果可在约30步后改变目标模型的输出分布，从而随机影响推理准确率。方法为训练草稿模型在关键推理决策点被拒绝（对抗偏好），使验证重启、关键思考token由目标模型在最不易受噪声条件下采样。在复杂智能体编码基准上提升端到端成功率，不改变目标模型或其输出分布，仅训练托管参数的0.06%至0.28%。来源：arXiv 2611.05345v1。",
+    "analysis": "该工作把投机解码从纯系统加速器重新定位为上下文精度的主动分配器，思路新颖：利用拒绝而非接受来保护关键推理token。其价值在于无需改动目标模型即可提升长程智能体可靠性，训练成本极低。但结论基于特定基准与开放权重模型，泛化性与生产环境稳定性仍需验证。",
+    "technical_value": "高。提供了一种低成本、可插拔的推理期精度控制机制，对长程智能体部署有直接工程价值。",
+    "impact": "可能改变投机解码的优化目标（从接受率转向关键token精度），影响智能体推理框架与草稿模型训练范式。",
+    "keywords": [
+      "投机解码",
+      "长程智能体",
+      "对抗偏好",
+      "草稿模型",
+      "推理精度"
+    ]
+  },
+  {
+    "id": "388ed99050423c40",
+    "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+    "summary": "",
+    "published_at": "Thu, 22 Oct 2026 22:24:34 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 6,
+    "facts": "微软在Hugging Face博客发布ThinkingBox相关内容，标题为将数据库评分转化为强化学习奖励，用于后训练智能体。输入未提供摘要。来源：Hugging Face官方博客。",
+    "analysis": "将数据库执行/评分结果作为RL奖励信号，是智能体后训练中可验证奖励的典型方向，有助于提升工具调用与数据操作任务的可靠性。因缺少摘要，具体方法、基准与效果无法确认。",
+    "technical_value": "中高。可验证奖励是智能体RL后训练的关键环节，数据库评分提供了确定性信号。",
+    "impact": "若方法开源可复现，将推动数据密集型智能体后训练实践。",
+    "keywords": [
+      "强化学习",
+      "后训练",
+      "智能体",
+      "数据库评分",
+      "可验证奖励"
+    ]
+  },
+  {
+    "id": "970c715a03d6e002",
+    "title": "StateBench: Testing how language models track state changes over long documents",
+    "summary": "",
+    "published_at": "Tue, 03 Nov 2026 17:15:21 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/allenai/statebench",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6,
+    "facts": "AllenAI在Hugging Face博客发布StateBench，用于测试语言模型在长文档中跟踪状态变化的能力。输入未提供摘要。来源：Hugging Face官方博客。",
+    "analysis": "长文档状态跟踪是当前模型明显短板，该基准填补了针对状态更新而非静态问答的评测空白。具体任务设计与模型表现需查阅原文。",
+    "technical_value": "中高。为长上下文能力提供更细粒度的评测维度。",
+    "impact": "可能推动长上下文模型在状态维护与更新方面的改进与对比。",
+    "keywords": [
+      "长文档",
+      "状态跟踪",
+      "基准测试",
+      "长上下文"
+    ]
+  },
+  {
+    "id": "db6223d7af53a6c2",
+    "title": "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
+    "summary": "For a decade, progress in artificial intelligence has been measured by how much a machine can do on its own. Large foundation models now write code and run multistep tasks, and personal agents act on a person's behalf. Yet people still forget what they once knew, miss what they are not looking at, fail to find the right words, and face hard choices without the benefit of their own history, because the machine that could help stands outside the situation. As AI moves into the physical world, attention has settled on one kind of intelligent individual, the embodied robot; we argue that the era of Physical AI holds a second kind of equal importance, the person augmented by AI. Alongside artificial general intelligence, which asks how intelligent a machine can be, stands AI-augmented human intelligence (AHI), which asks how much intelligence a machine can enable in a particular person. Realizing it calls for a new kind of system, a cognitive symbiont: a lifelong, embedded, real-time, private, low-friction, and proactive companion that senses what the person senses through external devices, keeps their context across years, models their situation and their mind, takes part in their thinking at the right moment, carries out everyday tasks with their context, and keeps learning the person as both change. We give the paradigm a conceptual core, the cognitive gap between what a person could bring to a situation and what they can hold in working memory, and organize its design space as a symbiosis loop of sensing, keeping, understanding, living alongside, acting for and thinking with the person, and growing, enclosed by a personal runtime and by trust. Because a symbiont changes what a person can do in front of others, it also raises risks of a new kind, from covert assistance in",
+    "published_at": "2026-11-03T18:59:52Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.05376v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.3,
+    "ai_score": 6,
+    "facts": "论文提出从自主智能体走向认知共生体（cognitive symbiont），主张Physical AI时代除具身机器人外，还有被AI增强的人这一同等重要的方向。提出AI增强人类智能（AHI）概念，以“人所能带入情境与工作记忆所能承载之间的认知差距”为核心，将设计空间组织为感知、保存、理解、共处、代行、共思、成长的共生循环，由个人运行时与信任约束。来源：arXiv 2611.05376v1。",
+    "analysis": "属于愿景与概念框架类论文，提出AHI与认知共生体的研究议程，对个人AI助手长期记忆、情境建模与主动性设计有启发。但缺乏实证与系统实现，短期落地性弱。",
+    "technical_value": "中。概念框架对个人AI系统设计有参考价值，但工程指导有限。",
+    "impact": "可能影响个人助理与可穿戴AI的长期研究方向与伦理讨论。",
+    "keywords": [
+      "认知共生体",
+      "AI增强人类智能",
+      "个人运行时",
+      "长期记忆",
+      "Physical AI"
+    ]
+  },
+  {
+    "id": "25c17cdc9c9d14f8",
+    "title": "MedPhysBench: A Benchmark for Evaluating Language Models on Medical Physics Calculations and Error Detection",
+    "summary": "Medical physicists turn a prescription into a delivered dose and check one another's calculations, because one error in a beam calibration or a monitor-unit (MU) calculation can affect every patient treated with it. MedPhysBench has ten seeded generators of calculation items in radiation therapy, diagnostic imaging, nuclear medicine and radiation protection, up to clinical tasks such as a TG-51 calibration worksheet. Reference answers come from code implementing the governing protocols, and a grader converts units and applies tolerance bands. From the same inputs, separate checking items test error detection, showing a colleague's worksheet or only the colleague's result, half correct and half with one planted error. On a held-out test split of 1,200 items (half for two models), 12 models scored 33.3 to 100.0% on calculation. Of the nine answers graded incorrect for the four best (99.3-100.0%), five contained model errors and four followed NCRP Report 151 on points our items misstate or leave open. Below them, most models did worst on level-3 clinical tasks, and Claude Sonnet 5.5 omitted the inverse-square correction in 19 of 20 isocentric MU items. Five models detected at least 96.7% of mostly large planted errors with at most 4% false alarms; for four of the other seven, checking only the result raised false alarms significantly. In an exploratory targeted test with 20 public cases of an omitted inverse-square correction, the three best models tested caught it in every worksheet, and three weaker models accepted 16 to 18 of 20 planted worksheets, one of them while applying the correction in most of its own calculations. Claude Opus 5.5 accepted 6 of 20 wrong results, although it applied the correction in all 20 of its own. We report the effect of two problems in our s",
+    "published_at": "2026-11-03T18:40:35Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.05340v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.1,
+    "ai_score": 6,
+    "facts": "论文发布MedPhysBench，含十个种子生成器，覆盖放疗、诊断影像、核医学与辐射防护的计算题，含TG-51校准工作表等临床任务；参考答案由实现协议的代码生成，评分器做单位换算与容差判定；另设错误检测题。在1200项留出测试集上，12个模型计算得分33.3%至100.0%；四个最佳模型（99.3%-100.0%）的9个错误答案中5个为模型错误、4个符合NCRP Report 151。多数模型在level-3临床任务表现最差，Claude Sonnet 5.5在20个等中心MU题中19个遗漏平方反比修正。五个模型检出至少96.7%的植入错误且误报不超过4%。来源：arXiv 2611.05340v1。",
+    "analysis": "医学物理计算是高 stakes 场景，该基准同时评测计算与错误检测，设计较严谨，并诚实报告了题目本身可能存在的歧义。结果显示强模型在临床级任务上仍有系统性遗漏，错误检测能力分化明显。",
+    "technical_value": "高。为医疗AI提供可验证的计算与核查评测，具备临床安全意义。",
+    "impact": "对医疗AI落地前的验证与监管评估有直接参考价值。",
+    "keywords": [
+      "医学物理",
+      "基准测试",
+      "错误检测",
+      "放疗",
+      "临床安全"
+    ]
+  }
+]
