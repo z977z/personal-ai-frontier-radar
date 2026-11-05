@@ -1,0 +1,131 @@
+[
+  {
+    "id": "ea03893ed5bae2ff",
+    "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
+    "summary": "AI agents are playing an increasingly important role in physics research. However, existing physics benchmarks only evaluate fixed questions, isolated sub-tasks, or paper reproduction with given solutions, and rarely check research quality alongside correctness. We introduce FrontierPhysics, an end-to-end benchmark with 56 tasks made by 42 physicists based on their own research, covering nine domains across theoretical, computational, and experimental physics. Each task requires agents to review the literature, develop a research plan, conduct research and experiments, and produce structured outputs and scientific manuscripts. Combining deterministic verifiers with expert-authored rubrics, FrontierPhysics evaluates whether agents' research is correct and publishable. Across 22 models in 26 configurations, no configuration passes more than 46 of its 168 rollouts. Manual review of agent trajectories shows that frontier agents' main weaknesses are insufficiently rigorous reasoning and limited expert intuition, rather than gaps in physics knowledge or execution errors.",
+    "published_at": "2026-11-04T18:56:22Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.06910v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.6,
+    "ai_score": 8,
+    "facts": "论文提出FrontierPhysics，一个端到端物理研究基准，包含42位物理学家基于自身研究设计的56个任务，覆盖理论、计算与实验物理九个领域。任务要求智能体完成文献综述、研究计划制定、研究与实验执行，并产出结构化输出与科学手稿。评估结合确定性验证器与专家撰写的评分量表，判断研究是否正确且可发表。在22个模型、26种配置中，没有任何配置通过超过168次rollout中的46次。人工审查显示前沿智能体的主要弱点是推理不够严谨与专家直觉有限，而非物理知识不足或执行错误。",
+    "analysis": "该基准将智能体评估从固定问答/子任务推进到完整科研流程，并同时考察正确性与研究质量，填补了现有物理基准的空白。低通过率表明当前模型在开放式科研中的可靠性仍有限，且瓶颈在推理严谨性与领域直觉而非知识记忆，这为后续智能体训练与评估设计提供了明确方向。",
+    "technical_value": "高。提供了可复用的端到端科研智能体评估框架，结合确定性验证与专家评分量表，覆盖多物理子领域，可作为科研智能体能力诊断与迭代的基准。",
+    "impact": "对AI for Science智能体评估具有标杆意义，可能推动科研自动化从演示走向可验证产出，并影响模型训练中对严谨推理与专家直觉的重视。",
+    "keywords": [
+      "物理研究智能体",
+      "端到端基准",
+      "科研评估",
+      "专家评分量表",
+      "推理严谨性"
+    ]
+  },
+  {
+    "id": "855e60bac2960035",
+    "title": "BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories",
+    "summary": "Self-Driving Chemical Laboratories (SDCLs) are moving chemical experimentation toward embodied automation, where machines must perceive laboratory scenes, reason about experimental states, and act under physical, procedural, and safety constraints. Although Multimodal Large Language Models (MLLMs) are increasingly considered as embodied brains for such systems, existing laboratory benchmarks mainly focus on safety, anomaly detection, or general scientific understanding, leaving their execution-oriented embodied capabilities underexplored. To fill this gap, we introduce BEAKER, a Benchmark for evaluating Embodied Actionability, Knowledge, Experimentation, and Reasoning in SDCLs. BEAKER contains 1,000 expert-curated question-answer samples across 11 image and video task types, covering key judgments required for chemical laboratory execution, including affordance grounding, trajectory planning, equipment, state, and safety recognition, apparatus setup, operation and step reasoning, and temporal procedure reasoning. All questions and annotations are manually created and reviewed by chemistry and embodied Artificial Intelligence (AI) experts, without AI-assisted generation or annotation. We evaluate 28 general-purpose, science-oriented, chemistry-specialized, and embodied MLLMs in an offline, single-turn setting. Results show that current models can follow coarse experimental procedures in videos, but still struggle to ground actions into operable regions and feasible trajectories, to recognize fine-grained laboratory apparatus, states, and safety norms, and to order steps in mid-length procedures. BEAKER thus reveals a clear gap between coarse procedural understanding and the precise, action-grounded perception required for laboratory execution, providing a diagnostic benc",
+    "published_at": "2026-11-04T18:57:17Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.06911v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 7,
+    "facts": "论文提出BEAKER，一个面向自驱动化学实验室（SDCL）中具身大脑的专家策展基准，包含1000个专家策展问答样本，覆盖11种图像与视频任务类型，涉及可供性定位、轨迹规划、设备/状态/安全识别、装置搭建、操作与步骤推理、时序流程推理。所有问答与标注由化学与具身AI专家人工创建与审核，无AI辅助生成。评估28个通用、科学导向、化学专用与具身MLLM，采用离线单轮设置。结果显示模型能跟随视频中的粗粒度实验流程，但在动作可操作区域定位、可行轨迹、细粒度设备/状态/安全规范识别及中等长度流程排序上仍困难。",
+    "analysis": "BEAKER将评估焦点从安全与异常检测转向执行导向的具身能力，揭示粗粒度流程理解与精确动作落地感知之间的明显差距。专家纯人工标注保证质量，离线单轮设置便于复现，但可能低估交互式场景中的能力。该基准为化学实验室自动化中的MLLM选型与改进提供诊断工具。",
+    "technical_value": "高。填补自驱动化学实验室中执行导向具身能力评估的空白，任务类型覆盖全面，标注质量高，可作为具身MLLM在科学实验场景的能力诊断基准。",
+    "impact": "对化学实验室自动化与具身AI交叉领域有直接推动作用，明确当前模型在精细操作感知上的短板，指导后续数据与模型改进。",
+    "keywords": [
+      "自驱动化学实验室",
+      "具身大脑",
+      "多模态大模型",
+      "执行导向基准",
+      "专家策展"
+    ]
+  },
+  {
+    "id": "1006b525d1a8907b",
+    "title": "CounterFactual Retrieval for Evidence-Aware Individual Animal Identification",
+    "summary": "Automated identification of individual animals is moving from small curated studies toward shared benchmarks and reusable foundation models. This progress is useful, but current evaluation leaves the evidence behind a match unresolved, i.e., high retrieval accuracy does not show whether a model used animal features or identity-correlated shortcuts. We address this with Counterfactual Foreground Retrieval (CFR), an evidence-aware evaluation protocol. CFR evaluates the same query-gallery task under different views: full image, foreground-only, and shortcut-only. The full-image measures standard retrieval performance; the foreground-only measures foreground-supported retrieval; and shortcut-only view measure how much identity signal is recoverable from background, or silhouette. This turns a retrieval score into an evidence profile: how well the model performs on the original images, how much of that performance remains when only the animal is visible, and how much identity signal remains recoverable when the animal is removed. We release around 0.5M masks for 34 datasets and code for mask generation and CFR evaluation.",
+    "published_at": "2026-11-04T18:19:26Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.06864v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.8,
+    "ai_score": 6,
+    "facts": "论文提出反事实前景检索（CFR），一种证据感知的评估协议，用于个体动物识别。CFR在完整图像、仅前景、仅捷径三种视图下评估同一查询-图库任务，将检索分数转化为证据画像。作者发布约50万张掩码，覆盖34个数据集，以及掩码生成与CFR评估代码。",
+    "analysis": "该工作指出高检索准确率不能证明模型使用了动物特征而非身份相关捷径，提出通过视图分解量化前景支持与背景捷径信号。方法简洁且可复用，有助于提升动物识别评估的可解释性与可靠性，但主要贡献在评估协议与数据资源层面。",
+    "technical_value": "中高。提供可操作的证据感知评估协议与大规模掩码数据，可迁移到其他细粒度检索任务的捷径诊断。",
+    "impact": "对生态监测与动物个体识别领域的模型评估有实际价值，推动从单一准确率转向证据画像式评估。",
+    "keywords": [
+      "反事实检索",
+      "证据感知评估",
+      "动物个体识别",
+      "捷径学习",
+      "前景掩码"
+    ]
+  },
+  {
+    "id": "d66b9c2d229951fd",
+    "title": "Agentic cheminformatics with Google Antigravity",
+    "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+    "published_at": "Tue, 03 Nov 2026 17:01:49 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 6,
+    "facts": "Google DeepMind博客介绍Google Antigravity与Cheminformatics Skills如何加速药物发现工作流、搜索化合物并提出新型刚性化大环化合物。",
+    "analysis": "该动态展示智能体在化学信息学中的实际应用，将智能体工具链与领域技能结合用于化合物搜索与分子设计。由于仅有博客摘要，具体方法细节与可复现性有限，但方向明确：智能体正从通用对话走向领域工作流自动化。",
+    "technical_value": "中。体现智能体+领域技能在药物发现中的工程化路径，但缺乏技术细节与量化评估。",
+    "impact": "对AI辅助药物发现与化学信息学工具有示范效应，可能推动智能体在分子设计工作流中的落地。",
+    "keywords": [
+      "智能体化学信息学",
+      "药物发现",
+      "大环化合物",
+      "Google Antigravity"
+    ]
+  },
+  {
+    "id": "57dc1fe77b7c95ff",
+    "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+    "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+    "published_at": "Wed, 14 Oct 2026 02:00:14 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6,
+    "facts": "Google DeepMind与新加坡GovTech合作，使用轻量级端上Gemma模型在私人聊天中拦截对话式诈骗，实现零云端数据外泄。",
+    "analysis": "该合作展示端上小模型在隐私敏感场景中的实际部署路径，将诈骗检测从云端迁移到设备端，兼顾隐私与实时性。技术路线清晰，具有可复制的公共安全应用价值。",
+    "technical_value": "中高。端上轻量模型+零数据外泄的工程方案，对隐私保护型AI部署有参考价值。",
+    "impact": "对公共安全与隐私保护AI应用有示范意义，可能推动端上模型在反诈场景的推广。",
+    "keywords": [
+      "端上AI",
+      "诈骗检测",
+      "Gemma",
+      "隐私保护",
+      "GovTech"
+    ]
+  }
+]

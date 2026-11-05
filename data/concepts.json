@@ -849,5 +849,18 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2611.05345v1"
     ]
+  },
+  {
+    "date": "2026-11-05",
+    "name_zh": "科研智能体端到端评估",
+    "name_en": "End-to-End Research Agent Evaluation",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "以完整科研流程（文献综述、计划、实验、手稿产出）为评估对象，结合确定性验证与专家评分量表，同时考察正确性与研究质量，而非固定问答或子任务。",
+    "why_now": "FrontierPhysics与BEAKER等基准同期出现，显示社区正从能力演示转向可验证科研产出评估；同时前沿模型在开放式科研中通过率低，暴露推理严谨性与专家直觉短板，评估需求迫切。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2611.06910v1",
+      "https://arxiv.org/abs/2611.06911v1"
+    ]
   }
 ]

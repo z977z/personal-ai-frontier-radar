@@ -1,0 +1,322 @@
+[
+  {
+    "title": "Agentic cheminformatics with Google Antigravity",
+    "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 03 Nov 2026 17:01:49 +0000",
+    "retrieved_at": "2026-11-05T07:21:21.164249+00:00",
+    "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+    "content": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+    "source_type": "official"
+  },
+  {
+    "title": "Speeding up planning decisions with AI",
+    "url": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
+    "source": "Google DeepMind",
+    "published_at": "Fri, 30 Oct 2026 14:18:30 +0000",
+    "retrieved_at": "2026-11-05T07:21:21.164281+00:00",
+    "summary": "Google DeepMind and UK government work together to reduce planning assessment times",
+    "content": "Google DeepMind and UK government work together to reduce planning assessment times",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini 4 Carbon: Our next frontier model",
+    "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 28 Oct 2026 17:00:58 +0000",
+    "retrieved_at": "2026-11-05T07:21:21.164291+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Genie 4: A new generation of world simulation",
+    "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 27 Oct 2026 16:01:38 +0000",
+    "retrieved_at": "2026-11-05T07:21:21.164303+00:00",
+    "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+    "content": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+    "source_type": "official"
+  },
+  {
+    "title": "Beyond tree cover: mapping the world’s forest types",
+    "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+    "source": "Google DeepMind",
+    "published_at": "Thu, 22 Oct 2026 14:30:24 +0000",
+    "retrieved_at": "2026-11-05T07:21:21.164314+00:00",
+    "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+    "content": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+    "source_type": "official"
+  },
+  {
+    "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+    "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+    "source": "Google DeepMind",
+    "published_at": "Thu, 15 Oct 2026 16:08:03 +0000",
+    "retrieved_at": "2026-11-05T07:21:21.164323+00:00",
+    "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
+    "content": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
+    "source_type": "official"
+  },
+  {
+    "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+    "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 14 Oct 2026 02:00:14 +0000",
+    "retrieved_at": "2026-11-05T07:21:21.164336+00:00",
+    "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+    "content": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+    "source_type": "official"
+  },
+  {
+    "title": "Developing Gemini 4 Argon responsibly and safely",
+    "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 13 Oct 2026 19:43:07 +0000",
+    "retrieved_at": "2026-11-05T07:21:21.164342+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini 4 Argon for Robotics",
+    "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 13 Oct 2026 16:01:58 +0000",
+    "retrieved_at": "2026-11-05T07:21:21.164347+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini 4 Argon: Built to solve your hardest problems",
+    "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 13 Oct 2026 16:01:52 +0000",
+    "retrieved_at": "2026-11-05T07:21:21.164353+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+    "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 06 Oct 2026 19:57:04 +0000",
+    "retrieved_at": "2026-11-05T07:21:21.164359+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini 4 Argon: our next era of frontier intelligence",
+    "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 30 Sep 2026 20:01:45 +0000",
+    "retrieved_at": "2026-11-05T07:21:21.164364+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
+    "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+    "source": "Hugging Face",
+    "published_at": "Wed, 04 Nov 2026 17:50:10 GMT",
+    "retrieved_at": "2026-11-05T07:21:21.394249+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "StateBench: Testing how language models track state changes over long documents",
+    "url": "https://huggingface.co/blog/allenai/statebench",
+    "source": "Hugging Face",
+    "published_at": "Tue, 03 Nov 2026 17:15:21 GMT",
+    "retrieved_at": "2026-11-05T07:21:21.394271+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Palette: teaching a small model to build decks in your design language",
+    "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+    "source": "Hugging Face",
+    "published_at": "Tue, 03 Nov 2026 16:35:36 GMT",
+    "retrieved_at": "2026-11-05T07:21:21.394278+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "CWE-bench v2: More coverage, quality, and transparency",
+    "url": "https://huggingface.co/blog/cwe-bench",
+    "source": "Hugging Face",
+    "published_at": "Tue, 03 Nov 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-05T07:21:21.394284+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Transformers Model Integration Contracts",
+    "url": "https://huggingface.co/blog/transformers-mic",
+    "source": "Hugging Face",
+    "published_at": "Tue, 03 Nov 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-05T07:21:21.394289+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "nemotron-halloween",
+    "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+    "source": "Hugging Face",
+    "published_at": "Fri, 30 Oct 2026 17:57:24 GMT",
+    "retrieved_at": "2026-11-05T07:21:21.394294+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Granite Switch 4.1.1 — Update models like you update software",
+    "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+    "source": "Hugging Face",
+    "published_at": "Thu, 29 Oct 2026 13:37:07 GMT",
+    "retrieved_at": "2026-11-05T07:21:21.394299+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
+    "url": "https://huggingface.co/blog/announcing-project-protostar",
+    "source": "Hugging Face",
+    "published_at": "Thu, 29 Oct 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-05T07:21:21.394305+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
+    "url": "https://huggingface.co/blog/mistral-large4",
+    "source": "Hugging Face",
+    "published_at": "Thu, 29 Oct 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-05T07:21:21.394311+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
+    "url": "https://huggingface.co/blog/anydecisionmodel",
+    "source": "Hugging Face",
+    "published_at": "Thu, 29 Oct 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-05T07:21:21.394320+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Build specialized multimodal models with LFM3",
+    "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+    "source": "Hugging Face",
+    "published_at": "Tue, 27 Oct 2026 17:16:52 GMT",
+    "retrieved_at": "2026-11-05T07:21:21.394326+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Does Your Model Run on AWS Trainium? Look It Up",
+    "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+    "source": "Hugging Face",
+    "published_at": "Fri, 23 Oct 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-05T07:21:21.394331+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories",
+    "url": "https://arxiv.org/abs/2611.06911v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-04T18:57:17Z",
+    "retrieved_at": "2026-11-05T07:21:21.509674+00:00",
+    "summary": "Self-Driving Chemical Laboratories (SDCLs) are moving chemical experimentation toward embodied automation, where machines must perceive laboratory scenes, reason about experimental states, and act under physical, procedural, and safety constraints. Although Multimodal Large Language Models (MLLMs) are increasingly considered as embodied brains for such systems, existing laboratory benchmarks mainly focus on safety, anomaly detection, or general scientific understanding, leaving their execution-oriented embodied capabilities underexplored. To fill this gap, we introduce BEAKER, a Benchmark for evaluating Embodied Actionability, Knowledge, Experimentation, and Reasoning in SDCLs. BEAKER contains 1,000 expert-curated question-answer samples across 11 image and video task types, covering key judgments required for chemical laboratory execution, including affordance grounding, trajectory planning, equipment, state, and safety recognition, apparatus setup, operation and step reasoning, and temporal procedure reasoning. All questions and annotations are manually created and reviewed by chemistry and embodied Artificial Intelligence (AI) experts, without AI-assisted generation or annotation. We evaluate 28 general-purpose, science-oriented, chemistry-specialized, and embodied MLLMs in an offline, single-turn setting. Results show that current models can follow coarse experimental procedures in videos, but still struggle to ground actions into operable regions and feasible trajectories, to recognize fine-grained laboratory apparatus, states, and safety norms, and to order steps in mid-length procedures. BEAKER thus reveals a clear gap between coarse procedural understanding and the precise, action-grounded perception required for laboratory execution, providing a diagnostic benc",
+    "content": "Self-Driving Chemical Laboratories (SDCLs) are moving chemical experimentation toward embodied automation, where machines must perceive laboratory scenes, reason about experimental states, and act under physical, procedural, and safety constraints. Although Multimodal Large Language Models (MLLMs) are increasingly considered as embodied brains for such systems, existing laboratory benchmarks mainly focus on safety, anomaly detection, or general scientific understanding, leaving their execution-oriented embodied capabilities underexplored. To fill this gap, we introduce BEAKER, a Benchmark for evaluating Embodied Actionability, Knowledge, Experimentation, and Reasoning in SDCLs. BEAKER contains 1,000 expert-curated question-answer samples across 11 image and video task types, covering key judgments required for chemical laboratory execution, including affordance grounding, trajectory planning, equipment, state, and safety recognition, apparatus setup, operation and step reasoning, and temporal procedure reasoning. All questions and annotations are manually created and reviewed by chemistry and embodied Artificial Intelligence (AI) experts, without AI-assisted generation or annotation. We evaluate 28 general-purpose, science-oriented, chemistry-specialized, and embodied MLLMs in an offline, single-turn setting. Results show that current models can follow coarse experimental procedures in videos, but still struggle to ground actions into operable regions and feasible trajectories, to recognize fine-grained laboratory apparatus, states, and safety norms, and to order steps in mid-length procedures. BEAKER thus reveals a clear gap between coarse procedural understanding and the precise, action-grounded perception required for laboratory execution, providing a diagnostic benc",
+    "source_type": "research"
+  },
+  {
+    "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
+    "url": "https://arxiv.org/abs/2611.06910v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-04T18:56:22Z",
+    "retrieved_at": "2026-11-05T07:21:21.509786+00:00",
+    "summary": "AI agents are playing an increasingly important role in physics research. However, existing physics benchmarks only evaluate fixed questions, isolated sub-tasks, or paper reproduction with given solutions, and rarely check research quality alongside correctness. We introduce FrontierPhysics, an end-to-end benchmark with 56 tasks made by 42 physicists based on their own research, covering nine domains across theoretical, computational, and experimental physics. Each task requires agents to review the literature, develop a research plan, conduct research and experiments, and produce structured outputs and scientific manuscripts. Combining deterministic verifiers with expert-authored rubrics, FrontierPhysics evaluates whether agents' research is correct and publishable. Across 22 models in 26 configurations, no configuration passes more than 46 of its 168 rollouts. Manual review of agent trajectories shows that frontier agents' main weaknesses are insufficiently rigorous reasoning and limited expert intuition, rather than gaps in physics knowledge or execution errors.",
+    "content": "AI agents are playing an increasingly important role in physics research. However, existing physics benchmarks only evaluate fixed questions, isolated sub-tasks, or paper reproduction with given solutions, and rarely check research quality alongside correctness. We introduce FrontierPhysics, an end-to-end benchmark with 56 tasks made by 42 physicists based on their own research, covering nine domains across theoretical, computational, and experimental physics. Each task requires agents to review the literature, develop a research plan, conduct research and experiments, and produce structured outputs and scientific manuscripts. Combining deterministic verifiers with expert-authored rubrics, FrontierPhysics evaluates whether agents' research is correct and publishable. Across 22 models in 26 configurations, no configuration passes more than 46 of its 168 rollouts. Manual review of agent trajectories shows that frontier agents' main weaknesses are insufficiently rigorous reasoning and limited expert intuition, rather than gaps in physics knowledge or execution errors.",
+    "source_type": "research"
+  },
+  {
+    "title": "Perceptive Humanoid Motion from Simulation",
+    "url": "https://arxiv.org/abs/2611.06908v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-04T18:55:33Z",
+    "retrieved_at": "2026-11-05T07:21:21.509877+00:00",
+    "summary": "Humanoid robots have the potential to automate a wide range of physical tasks. Progress toward generalist humanoid autonomy, however, remains constrained by a data bottleneck: mapping pixels and free-form language to low-level joint commands requires paired supervision, and no corpus of such data exists at sufficiently large scale. Some approaches rely on human teleoperation and wearable capture devices, which require at least an hour of human time to produce an hour of data. We present HALO, a humanoid autonomy system powered by a pipeline that synthesizes vision-language-motion data across a thousand procedurally generated homes. The corpus scales with compute rather than human labor. HALO acquires a repertoire of physical skills, including sitting on chairs, navigating to named objects, stepping sideways through half-open doors, crouching and crawling beneath tables, and pushing boxes. It orchestrates these skills to solve composite, long-horizon tasks. Without ever seeing a real home during training, HALO transfers zero-shot to the physical world, achieving a 91% success rate across 360 trials in six unmapped real-world environments. See https://apple-aiml-research.github.io/ml-halo/ for code and videos.",
+    "content": "Humanoid robots have the potential to automate a wide range of physical tasks. Progress toward generalist humanoid autonomy, however, remains constrained by a data bottleneck: mapping pixels and free-form language to low-level joint commands requires paired supervision, and no corpus of such data exists at sufficiently large scale. Some approaches rely on human teleoperation and wearable capture devices, which require at least an hour of human time to produce an hour of data. We present HALO, a humanoid autonomy system powered by a pipeline that synthesizes vision-language-motion data across a thousand procedurally generated homes. The corpus scales with compute rather than human labor. HALO acquires a repertoire of physical skills, including sitting on chairs, navigating to named objects, stepping sideways through half-open doors, crouching and crawling beneath tables, and pushing boxes. It orchestrates these skills to solve composite, long-horizon tasks. Without ever seeing a real home during training, HALO transfers zero-shot to the physical world, achieving a 91% success rate across 360 trials in six unmapped real-world environments. See https://apple-aiml-research.github.io/ml-halo/ for code and videos.",
+    "source_type": "research"
+  },
+  {
+    "title": "Occlusion for Free: Detecting Occlusion from the Disagreement Between Two Monocular Distance Cues",
+    "url": "https://arxiv.org/abs/2611.06899v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-04T18:49:13Z",
+    "retrieved_at": "2026-11-05T07:21:21.509940+00:00",
+    "summary": "Knowing that a pedestrian is occluded is useful to a robot even when the detector cannot recover the hidden pixels, but occlusion estimators are normally trained on occlusion annotations that deployment settings rarely have. We show that occlusion can be read off two distance estimates a camera-only pipeline already computes. Apparent height is largely unchanged by occlusion, because the detected box still spans the whole person; monocular metric depth is pulled toward the occluder, because the nearest surface inside the box is what a depth map reports. Only their ordering matters, so no focal length, stature, or depth scale is needed, provided the depth model's error is close to a pure gain, a condition that can be checked without labels. The score detects heavy occlusion on KITTI with AUC 0.909 (0.888 over all annotated pedestrians, including those the detector misses), requires no training and no occlusion labels, and is not a proxy for range: within fixed distance bands it holds AUC 0.894-0.925 while true distance alone sits near chance. On synthetic CARLA scenes with measured visibility it reaches 0.819, against 0.644 for distance alone. We arrived here after measuring three standard architectural responses to occlusion, depth fusion, occlusion-simulating augmentation, and attention, none of which improved detection outside its training distribution in the configurations we tested, and after finding that a detector trained on German roads loses half its accuracy on self-annotated street scenes in Lagos, Nigeria. Signals that need no local annotation are worth more in settings that benchmarks do not represent.",
+    "content": "Knowing that a pedestrian is occluded is useful to a robot even when the detector cannot recover the hidden pixels, but occlusion estimators are normally trained on occlusion annotations that deployment settings rarely have. We show that occlusion can be read off two distance estimates a camera-only pipeline already computes. Apparent height is largely unchanged by occlusion, because the detected box still spans the whole person; monocular metric depth is pulled toward the occluder, because the nearest surface inside the box is what a depth map reports. Only their ordering matters, so no focal length, stature, or depth scale is needed, provided the depth model's error is close to a pure gain, a condition that can be checked without labels. The score detects heavy occlusion on KITTI with AUC 0.909 (0.888 over all annotated pedestrians, including those the detector misses), requires no training and no occlusion labels, and is not a proxy for range: within fixed distance bands it holds AUC 0.894-0.925 while true distance alone sits near chance. On synthetic CARLA scenes with measured visibility it reaches 0.819, against 0.644 for distance alone. We arrived here after measuring three standard architectural responses to occlusion, depth fusion, occlusion-simulating augmentation, and attention, none of which improved detection outside its training distribution in the configurations we tested, and after finding that a detector trained on German roads loses half its accuracy on self-annotated street scenes in Lagos, Nigeria. Signals that need no local annotation are worth more in settings that benchmarks do not represent.",
+    "source_type": "research"
+  },
+  {
+    "title": "Dull, Dirty, Dangerous? Working Conditions and the Limits of Occupational AI Exposure",
+    "url": "https://arxiv.org/abs/2611.06888v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-04T18:41:40Z",
+    "retrieved_at": "2026-11-05T07:21:21.509979+00:00",
+    "summary": "Automation is often justified as relief from dull, dirty, and dangerous work. I examine how these conditions relate to occupational AI exposure using 21 O*NET items across 754 US occupations. Higher exposure is associated with lower condition scores under a large language model (LLM) measure and AI Occupational Exposure (AIOE), with equal occupation weights and employment weights. Adjustment for physical demands, required education, training and experience, and wages reduces the composite association. The adjusted confidence intervals include zero for LLM exposure and remain below zero for AIOE. Separating repetition from restricted discretion also changes what the combined Dull score conveys. These comparisons show how item groupings and occupational characteristics shape the interpretation of exposure estimates. Occupational profiles offer a starting point for selecting contrasting research settings. Establishing desired automation or realized relief requires evidence about workers' preferences and specific interventions.",
+    "content": "Automation is often justified as relief from dull, dirty, and dangerous work. I examine how these conditions relate to occupational AI exposure using 21 O*NET items across 754 US occupations. Higher exposure is associated with lower condition scores under a large language model (LLM) measure and AI Occupational Exposure (AIOE), with equal occupation weights and employment weights. Adjustment for physical demands, required education, training and experience, and wages reduces the composite association. The adjusted confidence intervals include zero for LLM exposure and remain below zero for AIOE. Separating repetition from restricted discretion also changes what the combined Dull score conveys. These comparisons show how item groupings and occupational characteristics shape the interpretation of exposure estimates. Occupational profiles offer a starting point for selecting contrasting research settings. Establishing desired automation or realized relief requires evidence about workers' preferences and specific interventions.",
+    "source_type": "research"
+  },
+  {
+    "title": "Learning to Decode Linear Codes with Generalized Belief Propagation Network",
+    "url": "https://arxiv.org/abs/2611.06874v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-04T18:29:31Z",
+    "retrieved_at": "2026-11-05T07:21:21.510010+00:00",
+    "summary": "Error correcting codes are a fundamental component of communication systems, enabling reliable data transmission over noisy channels. Recently, neural decoders have demonstrated notable performance gains over classical iterative algorithms. In this paper, we propose a Generalized Belief Propagation Network (GBPNet) that preserves message-passing symmetry while enhancing the decoder's learning capability. The architecture uses cascaded variable-node updates and learned element-wise message scaling while retaining the Tanner graph structure. We also introduce two training strategies, progressive training and high-SNR training, that improve decoding accuracy. Experimental results on several linear codes show that GBPNet achieves lower bit error rates than conventional belief propagation and the evaluated state-of-the-art neural decoders.",
+    "content": "Error correcting codes are a fundamental component of communication systems, enabling reliable data transmission over noisy channels. Recently, neural decoders have demonstrated notable performance gains over classical iterative algorithms. In this paper, we propose a Generalized Belief Propagation Network (GBPNet) that preserves message-passing symmetry while enhancing the decoder's learning capability. The architecture uses cascaded variable-node updates and learned element-wise message scaling while retaining the Tanner graph structure. We also introduce two training strategies, progressive training and high-SNR training, that improve decoding accuracy. Experimental results on several linear codes show that GBPNet achieves lower bit error rates than conventional belief propagation and the evaluated state-of-the-art neural decoders.",
+    "source_type": "research"
+  },
+  {
+    "title": "On Turn-Level Best-of-N Sampling for Scaling LLM Agents",
+    "url": "https://arxiv.org/abs/2611.06868v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-04T18:23:14Z",
+    "retrieved_at": "2026-11-05T07:21:21.510050+00:00",
+    "summary": "In this work, we evaluate a simple inference-time scaling approach based on \\textit{turn-level best-of-N sampling} (\\method) for large language model (LLM) agents on complex, long-horizon tasks. We instantiate this using a \\textit{generator-selector} framework with two LLMs; at each turn, a \\emph{generator} model generates $N$ candidate actions and a \\emph{selector} model selects one of them, which is then executed in the environment. This paper is closely related to the work of \\cite{zainullina2025guided} who used critic models for guided search at inference time. Different from their work, we evaluate if off-the-shelf, open-weight LLMs can be effective at comparing different candidate actions directly. Experiments on long-horizon terminal tasks show that \\method can lead to significant performance improvements, both in terms of accuracy (5--10\\%) and consistency across repeated attempts. Analysis of agent trajectories reveal a shift in agent behaviour towards desirable patterns such as reduction in number of attempts to solve the task, improved task instruction following, debugging and testing.",
+    "content": "In this work, we evaluate a simple inference-time scaling approach based on \\textit{turn-level best-of-N sampling} (\\method) for large language model (LLM) agents on complex, long-horizon tasks. We instantiate this using a \\textit{generator-selector} framework with two LLMs; at each turn, a \\emph{generator} model generates $N$ candidate actions and a \\emph{selector} model selects one of them, which is then executed in the environment. This paper is closely related to the work of \\cite{zainullina2025guided} who used critic models for guided search at inference time. Different from their work, we evaluate if off-the-shelf, open-weight LLMs can be effective at comparing different candidate actions directly. Experiments on long-horizon terminal tasks show that \\method can lead to significant performance improvements, both in terms of accuracy (5--10\\%) and consistency across repeated attempts. Analysis of agent trajectories reveal a shift in agent behaviour towards desirable patterns such as reduction in number of attempts to solve the task, improved task instruction following, debugging and testing.",
+    "source_type": "research"
+  },
+  {
+    "title": "CounterFactual Retrieval for Evidence-Aware Individual Animal Identification",
+    "url": "https://arxiv.org/abs/2611.06864v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-04T18:19:26Z",
+    "retrieved_at": "2026-11-05T07:21:21.510123+00:00",
+    "summary": "Automated identification of individual animals is moving from small curated studies toward shared benchmarks and reusable foundation models. This progress is useful, but current evaluation leaves the evidence behind a match unresolved, i.e., high retrieval accuracy does not show whether a model used animal features or identity-correlated shortcuts. We address this with Counterfactual Foreground Retrieval (CFR), an evidence-aware evaluation protocol. CFR evaluates the same query-gallery task under different views: full image, foreground-only, and shortcut-only. The full-image measures standard retrieval performance; the foreground-only measures foreground-supported retrieval; and shortcut-only view measure how much identity signal is recoverable from background, or silhouette. This turns a retrieval score into an evidence profile: how well the model performs on the original images, how much of that performance remains when only the animal is visible, and how much identity signal remains recoverable when the animal is removed. We release around 0.5M masks for 34 datasets and code for mask generation and CFR evaluation.",
+    "content": "Automated identification of individual animals is moving from small curated studies toward shared benchmarks and reusable foundation models. This progress is useful, but current evaluation leaves the evidence behind a match unresolved, i.e., high retrieval accuracy does not show whether a model used animal features or identity-correlated shortcuts. We address this with Counterfactual Foreground Retrieval (CFR), an evidence-aware evaluation protocol. CFR evaluates the same query-gallery task under different views: full image, foreground-only, and shortcut-only. The full-image measures standard retrieval performance; the foreground-only measures foreground-supported retrieval; and shortcut-only view measure how much identity signal is recoverable from background, or silhouette. This turns a retrieval score into an evidence profile: how well the model performs on the original images, how much of that performance remains when only the animal is visible, and how much identity signal remains recoverable when the animal is removed. We release around 0.5M masks for 34 datasets and code for mask generation and CFR evaluation.",
+    "source_type": "research"
+  }
+]
