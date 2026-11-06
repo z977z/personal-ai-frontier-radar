@@ -862,5 +862,17 @@
       "https://arxiv.org/abs/2611.06910v1",
       "https://arxiv.org/abs/2611.06911v1"
     ]
+  },
+  {
+    "date": "2026-11-06",
+    "name_zh": "可复现科研工件",
+    "name_en": "Reproducible Research Artifacts",
+    "score": 7,
+    "maturity": "Emerging",
+    "explanation": "将论文复现所需的过程知识与决策显式固化为标准化工件（精炼代码、环境、启动器、复现指南），使智能体与研究者无需从散落信息中重建流程即可可靠复现实验。",
+    "why_now": "智能体开始承担科研复现任务，但原始代码与论文信息缺口导致成功率与成本高度依赖模型补全能力；ReproBridge等工作证明工件化可显著提升成功率并缩小模型差距。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2611.08452v1"
+    ]
   }
 ]

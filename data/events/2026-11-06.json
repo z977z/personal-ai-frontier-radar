@@ -1,0 +1,132 @@
+[
+  {
+    "id": "a15749e1bf4cc661",
+    "title": "ReproBridge: Building Reproducibility into ML Research Artifacts",
+    "summary": "Reproducing machine learning experiments requires reconstructing procedures from information scattered across papers, released code, and supporting artifacts. For coding agents, reproduction success can therefore depend on their ability to fill in missing details, rather than on the released artifacts alone. We ask whether preserving recovered procedures and decisions improves subsequent independent reproduction. We define a standardized artifact design comprising a refined codebase, environment setup, experiment launchers, and a reproduction guide, and introduce ReproBridge, an agent workflow for constructing these refined reproducible artifacts. ReproBridge-Bench provides 1,029 tasks from 387 experiments across 36 papers, anchored by five human-verified reference scores per task. Agents attempt tasks in fresh sessions with raw code or refined artifacts; a separate Auditor checks execution evidence. Across four evaluated models, refined artifacts raise mean reproduction success from 76.4% to 92.6% and reduce downstream API spending by 19.7% on average. The cross-model success-rate spread narrows from 21.6 to 3.9 percentage points, with all four models achieving mean success rates above 90%. Removing any component reduces success in the ablation study, with the largest losses from code and environment removal. These results suggest that preserving execution knowledge helps even models with lower raw-code success reproduce experiments more reliably and at lower API cost.",
+    "published_at": "2026-11-05T18:45:36Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.08452v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.3,
+    "ai_score": 7,
+    "facts": "论文提出标准化可复现工件设计（精炼代码库、环境配置、实验启动器、复现指南）与ReproBridge智能体工作流；ReproBridge-Bench含36篇论文387个实验共1029个任务，每任务5个人工验证参考分数；四个模型在精炼工件下平均复现成功率从76.4%升至92.6%，下游API支出平均降低19.7%，跨模型成功率差距从21.6个百分点收窄至3.9个百分点；消融显示移除代码或环境组件损失最大。",
+    "analysis": "核心洞察是复现失败常源于论文、代码与工件间散落的过程知识缺失，而非工件本身不可用；将执行知识显式保存为工件可降低对智能体补全能力的依赖，并使弱模型受益更大，说明工件质量可部分替代模型能力。",
+    "technical_value": "提供可复用的可复现工件规范与智能体构建流程，并给出带人工校准基准的量化评测方法，对ML研究工件工程化有直接参考价值。",
+    "impact": "有望推动论文附带工件标准化，降低复现成本与API开销，并缩小不同模型在科研复现任务上的能力差距。",
+    "keywords": [
+      "可复现性",
+      "智能体工作流",
+      "ML研究工件",
+      "基准评测",
+      "API成本"
+    ]
+  },
+  {
+    "id": "5171a58be8761bf2",
+    "title": "XStack: A Benchmark for ML Repo Migration",
+    "summary": "ML code should run where researchers choose, not where it was first written. Today, machine learning code mainly lives in two ecosystems, PyTorch on NVIDIA GPUs and JAX on Google TPUs. Migrating repositories between them means building and testing across frameworks and hardware. This migration is (1) a practical need, since it unlocks different hardware for researchers, and (2) a natural benchmark: it involves different frameworks and hardware, covers whole repositories, and is long-horizon and challenging. We introduce XStack, a benchmark that evaluates agents on migrating ML repositories between these two ecosystems. Each agent receives a PyTorch repository and a clean TPU machine and must deliver a JAX repository. Its output passes if it meets our grading criteria, based on the source repository's published result, authenticated and calibrated by us. Migration by agents remains unreliable: Claude Opus 5 passes 75%, GPT-5.6-sol 45%, and every other agent at most 40%. XStack is a step toward freeing ML code from its ecosystem. We release XStack to make progress toward reliable migration across frameworks and hardware measurable.",
+    "published_at": "2026-11-05T18:55:54Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.08472v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.2,
+    "ai_score": 6,
+    "facts": "XStack是评估智能体将PyTorch仓库迁移为JAX仓库（NVIDIA GPU到Google TPU）的基准；智能体获得PyTorch仓库与干净TPU机器，输出需满足基于源仓库已发表结果并经认证校准的评分标准；Claude Opus 5通过率75%，GPT-5.6-sol为45%，其余智能体至多40%。",
+    "analysis": "迁移任务跨框架与硬件、覆盖整仓库且长程，是检验智能体工程能力的自然压力测试；当前通过率显示可靠迁移仍不可靠，头部与其余模型差距明显。",
+    "technical_value": "提供端到端仓库级迁移基准与结果认证机制，可作为智能体长程工程能力的评测标准。",
+    "impact": "若迁移可靠性提升，可释放ML代码对特定框架与硬件的锁定，扩大研究者的硬件选择空间。",
+    "keywords": [
+      "仓库迁移",
+      "PyTorch",
+      "JAX",
+      "TPU",
+      "智能体基准"
+    ]
+  },
+  {
+    "id": "4649c96cb4c9db8b",
+    "title": "Scientist World: Grow a Research World for AI-Scientists",
+    "summary": "AI-Scientists arrived, but a world for them to grow in did not. Human scientists take theirs for granted $-$ centuries of open problems and shared ideas, waiting in the scientific literature. To AI-Scientists, that world is readable but not runnable, so we build Scientist World for them: every research paper becomes an executable environment. Our autonomous pipeline extracts each paper's open-ended research question and reproduces its proposed method as the baseline; an AI-Scientist entering the environment is evaluated against what the human authors achieved. We release the first 1,000 verified environments. With the world as an evaluation, we found that frontier AI-Scientists can already surpass the human researchers 74% of the time. As a record of how AI does science, it contains 6,400 hours of research traces, with every idea, experiment, failure, and success. As a training ground, we are able to raise (+158%) a small model to match frontier models in research ideation. At last, AI-Scientists' own world has arrived, grown from and growing with science itself.",
+    "published_at": "2026-11-05T18:58:17Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.08478v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 6,
+    "facts": "Scientist World将每篇论文转为可执行环境：自动提取开放研究问题并将论文方法复现为基线，AI-Scientist在环境中与人类作者成果对比评估；首批发布1000个已验证环境；前沿AI-Scientist在74%情况下超越人类研究者；记录6400小时研究轨迹；小模型经训练在研究构思上提升158%达到前沿水平。",
+    "analysis": "把文献从可读变为可运行，为AI科研智能体提供可评估、可训练的环境；74%超越率需结合任务选择与环境设计解读，但训练增益表明轨迹数据具实用价值。",
+    "technical_value": "构建论文到可执行环境的自动化流水线，并同时作为评测基准与训练场，形成数据飞轮。",
+    "impact": "可能改变AI科研智能体的评测与训练范式，推动科研自动化从演示走向可度量进步。",
+    "keywords": [
+      "AI-Scientist",
+      "可执行环境",
+      "研究轨迹",
+      "训练场",
+      "自动复现"
+    ]
+  },
+  {
+    "id": "5f593425b94f8744",
+    "title": "Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety",
+    "summary": "Neural networks are likely to be among the most consequential artefacts in human history. As these systems become more capable and autonomous, their potential to cause societal harm also grows, making AI safety one of the defining challenges of our time. Yet we continue to build increasingly powerful systems without fully understanding how they work, how they will behave in unfamiliar situations, or how to reliably control them. Mechanistic interpretability offers a path towards understanding these systems by studying their internal representations and computations, with the aim of evaluating, predicting, and controlling behaviour. We survey mechanistic interpretability for AI safety in order to answer the question: Does understanding how models work actually make them safer? We place mechanistic interpretability in the broader context of interpretability research and compare its mechanistic evidence with behavioural evaluation. We introduce the foundations of mechanistic interpretability, including features, polysemanticity, transformer computation, and circuits, and survey methods for feature extraction and analysis, circuit discovery and causal verification, explaining intermediate representations in natural language, learning dynamics, and training-data attribution. Beyond surveying existing methods, we propose a unified framework for evaluating mechanistic interpretability claims and characterise six research orientations by their goals, assumptions, and trade-offs. Finally, we examine how mechanistic understanding can support AI safety, including knowledge editing, steering, and monitoring, and assess its limitations, failure modes, open problems, and relationship to behavioural safety measures. We also release a repository of code notebooks with worked examples t",
+    "published_at": "2026-11-05T18:30:54Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.08438v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 6,
+    "facts": "该文综述面向AI安全的机制可解释性：涵盖特征、多义性、Transformer计算与电路，特征提取与分析、电路发现与因果验证、中间表示自然语言解释、学习动力学与训练数据归因等方法；提出评估机制可解释性主张的统一框架，按目标、假设与权衡划分六种研究取向；讨论知识编辑、引导与监控等安全应用及局限，并发布含示例的代码笔记本仓库。",
+    "analysis": "文章直面“理解模型是否真能使其更安全”这一关键问题，将机制证据与行为评估对比，并给出统一评估框架，有助于抑制可解释性主张的过度外推。",
+    "technical_value": "系统梳理方法谱系并提供统一评估框架与可运行示例，适合作为该领域入门与评审参考。",
+    "impact": "为AI安全研究提供方法论基础，推动可解释性结论的可验证性与与行为安全措施的衔接。",
+    "keywords": [
+      "机制可解释性",
+      "AI安全",
+      "电路",
+      "因果验证",
+      "评估框架"
+    ]
+  },
+  {
+    "id": "7e8a9f9e63bba082",
+    "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
+    "summary": "",
+    "published_at": "Thu, 05 Nov 2026 19:35:16 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6,
+    "facts": "NVIDIA在Hugging Face博客发布Cosmos 3开放模型，主题为交互式世界模拟；输入未提供摘要细节。",
+    "analysis": "开放世界模型面向交互式模拟，通常服务于机器人与具身智能的仿真训练；具体能力与许可需查阅原文，当前仅能确认发布事实。",
+    "technical_value": "开放权重世界模拟模型可降低具身智能仿真环境构建门槛，具体技术指标待原文核实。",
+    "impact": "若能力与开放性兼备，可能加速机器人与自动驾驶领域的仿真数据生成与策略评测。",
+    "keywords": [
+      "世界模型",
+      "Cosmos",
+      "NVIDIA",
+      "交互式模拟",
+      "开放模型"
+    ]
+  }
+]
