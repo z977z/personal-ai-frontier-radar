@@ -874,5 +874,19 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2611.08452v1"
     ]
+  },
+  {
+    "date": "2026-11-07",
+    "name_zh": "面向科研智能体的可复现执行环境",
+    "name_en": "Reproducible Execution Environments for AI Scientists",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "该概念指将论文及其代码、环境、实验流程转化为可被编码智能体直接运行、审计与对比的标准化工件或可执行环境，使复现成功不再依赖智能体从零补全缺失细节，并可作为科研智能体的评测与训练基础设施。ReproBridge的标准化工件与Scientist World的论文可执行环境是同一趋势的两个侧面。",
+    "why_now": "多篇同日论文（ReproBridge、Scientist World、XStack）同时聚焦智能体执行科研工件的能力，且均给出量化基准与显著提升证据，表明科研自动化正从“读论文”转向“跑论文”，基础设施窗口已打开。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2611.08452v1",
+      "https://arxiv.org/abs/2611.08478v1",
+      "https://arxiv.org/abs/2611.08472v1"
+    ]
   }
 ]
