@@ -888,5 +888,19 @@
       "https://arxiv.org/abs/2611.08478v1",
       "https://arxiv.org/abs/2611.08472v1"
     ]
+  },
+  {
+    "date": "2026-11-08",
+    "name_zh": "智能体驱动的科研可复现性",
+    "name_en": "Agent-Driven Research Reproducibility",
+    "score": 7.5,
+    "maturity": "Emerging",
+    "explanation": "以智能体自动重建实验流程、迁移代码生态、将论文转化为可执行环境，从而提升ML研究可复现性与科研自动化程度的一组工作。",
+    "why_now": "多篇同日论文分别从可复现工件、跨框架迁移和可执行论文环境三个角度切入，显示智能体正从辅助编码转向承担科研复现与迁移的长周期任务。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2611.08452v1",
+      "https://arxiv.org/abs/2611.08472v1",
+      "https://arxiv.org/abs/2611.08478v1"
+    ]
   }
 ]
