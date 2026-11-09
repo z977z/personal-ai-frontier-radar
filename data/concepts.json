@@ -902,5 +902,17 @@
       "https://arxiv.org/abs/2611.08472v1",
       "https://arxiv.org/abs/2611.08478v1"
     ]
+  },
+  {
+    "date": "2026-11-09",
+    "name_zh": "智能体推理缓存",
+    "name_en": "Agentic Reasoning Caching",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "将大模型的推理轨迹编译为可被 CPU 直接执行的缓存（ARC），使同类任务实例无需重复调用大模型即可高效求解，兼顾可解释性、可训练性与低成本。",
+    "why_now": "推理成本与重复计算成为智能体规模化部署的主要瓶颈，推理复用与“推理即程序”思路在近期研究中集中出现。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2611.09891v1"
+    ]
   }
 ]

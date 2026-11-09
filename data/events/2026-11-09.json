@@ -1,0 +1,131 @@
+[
+  {
+    "id": "f5c82b0b49a6fa34",
+    "title": "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
+    "summary": "Large language models reinvent the wheel all the time. They conflate task-solving with the execution of the solutions, which forces them to solve every problem from scratch. We show that once a task has been reasoned through, the application of its solution to a new problem instance can be done very efficiently and with little involvement from language models. We introduce agentic reasoning caching, a method for constructing robust CPU-executable agentic reasoning caches (ARCs) from LLM reasoning traces. ARCs show on-par performance with frontier LLMs across a range of difficult mathematical and scientific tasks, are fully explainable, continually trainable, robust to input perturbations, and 16-291x cheaper to invoke than the source model.",
+    "published_at": "2026-11-06T18:58:50Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.09891v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.9,
+    "ai_score": 8,
+    "facts": "论文提出 agentic reasoning caching（ARC）：从 LLM 推理轨迹中构建可被 CPU 执行的智能体推理缓存。摘要称 ARC 在多项困难数学与科学任务上与前沿 LLM 表现相当，完全可解释、可持续训练、对输入扰动鲁棒，调用成本比源模型低 16-291 倍。来源：arXiv 2611.09891v1。",
+    "analysis": "核心思路是把“解题推理”与“解的执行”解耦：一旦某类任务被推理清楚，后续同类实例可复用缓存而非重新调用大模型。这实质上是将推理轨迹编译为可执行程序/规则，属于推理复用与成本压缩方向。16-291 倍成本优势若可复现，对高频重复任务场景价值显著。但摘要未披露缓存构建成本、泛化边界与失败模式，需看全文验证。",
+    "technical_value": "高。提供了一条“LLM 推理→CPU 可执行缓存”的工程化路径，兼顾可解释性与持续训练，可能成为降低推理成本、提升确定性的实用范式。",
+    "impact": "若成立，将影响智能体部署成本结构与推理架构设计，尤其适合重复性强的数学、科学计算与流程化任务。",
+    "keywords": [
+      "推理缓存",
+      "agentic reasoning",
+      "CPU执行",
+      "成本优化",
+      "可解释性"
+    ]
+  },
+  {
+    "id": "516b4a0317f3912a",
+    "title": "On Agentic Manipulation Policies",
+    "summary": "Recent work on robot manipulation has focused on specialist policies trained on demonstrations. We show that generalist AI models can control manipulators more reliably than specialist policies such as vision-language-action models (VLAs) and world-action models (WAMs). We systematically analyze agentic manipulation policies (AMPs), in which a generalist AI model commands the manipulator directly, adapting its actions as the task unfolds. We present AMP1, a reference harness that runs unchanged across single-arm, bimanual, and mobile manipulation. AMP1 achieves state-of-the-art results on the RoboLab-120 and CaP-Gym benchmarks, with no demonstrations or task-specific training. On RoboLab-120, AMP1 reaches an 85.6\\% success rate zero-shot, compared to 49.2\\% and 42.9\\% for leading VLA and WAM policies. The agent succeeds zero-shot in 104 of 108 real-world trials spanning twelve tasks and three robot instances, reducing failure rates by 20x and 15x relative to strong VLA and WAM baselines. The basic harness supplies no grasping, pushing, or placing skills; the agent develops its own strategies, such as searching for hidden objects, using objects as tools, and calibrating its cameras. With the addition of a persistent memory store, the agent can also learn from experience: an augmented harness with a memory representation that is carried across episodes lowers the failure rate on RoboDojo bimanual manipulation tasks by 4.6x relative to zero-shot deployment. Our analysis suggests that AMPs are substantially more general and robust than specialist manipulation policies, providing a promising foundation for robot manipulation.",
+    "published_at": "2026-11-06T18:59:34Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.09892v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 8,
+    "facts": "论文提出 agentic manipulation policies（AMPs），由通用 AI 模型直接控制机械臂并随任务进展调整动作。参考实现 AMP1 在单臂、双臂、移动操作上无需改动即可运行；在 RoboLab-120 零样本成功率 85.6%，对比 VLA 49.2%、WAM 42.9%；108 次真实试验中 104 次零样本成功，覆盖 12 项任务、3 个机器人实例，失败率较 VLA/WAM 基线降低 20 倍和 15 倍。加入持久记忆后，RoboDojo 双臂任务失败率较零样本再降 4.6 倍。来源：arXiv 2611.09892v1。",
+    "analysis": "该工作挑战“专用策略优于通用模型”的主流假设，显示通用模型直接闭环控制可具备更强泛化与鲁棒性，且无需演示数据或任务特定训练。记忆机制带来经验学习增益，指向“通用模型+记忆+闭环”的机器人智能体路线。需关注真实试验规模、任务多样性与安全性。",
+    "technical_value": "高。零样本跨形态、跨任务的成功率数据具有说服力，为机器人操作提供了一条弱化专用策略训练的新基线。",
+    "impact": "可能重塑机器人操作策略研发范式，降低对大规模演示数据的依赖，推动通用智能体在具身场景落地。",
+    "keywords": [
+      "机器人操作",
+      "通用智能体",
+      "零样本",
+      "持久记忆",
+      "VLA对比"
+    ]
+  },
+  {
+    "id": "045d98fa7587d52a",
+    "title": "On the Reliability of Majority-Vote Pseudo-Labels in Test-Time Reinforcement Learning",
+    "summary": "Test-time reinforcement learning (TTRL) adapts pretrained language models to unlabeled target-domain data using self-generated pseudo-labels, whose reliability remains poorly understood. We analyze majority-vote supervision for TTRL with online Direct Preference Optimization (DPO) and decompose its error into population-majority bias and prompt-dependent finite-rollout variation. Because population-majority bias is generally unidentifiable without external supervision, we focus on mitigating the downstream effects of finite-rollout variation. We propose \\emph{Prompt-Conditional Distributionally Robust DPO (PC-Dr.DPO)}, which conditions within-prompt robust reweighting on observed vote reliability to make updates from sampling-sensitive prompts more conservative. We further introduce a cache-based mechanism to reduce self-supervised forgetting during online adaptation. Across six mathematical and knowledge-intensive reasoning benchmarks and five model backbones, PC-Dr.DPO matches or outperforms the strongest TTRL baseline in 24 of 30 settings.",
+    "published_at": "2026-11-06T18:49:02Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.09872v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 6,
+    "facts": "论文分析测试时强化学习（TTRL）中多数投票伪标签的可靠性，将误差分解为总体多数偏差与提示相关的有限采样波动，提出 Prompt-Conditional Distributionally Robust DPO（PC-Dr.DPO），按投票可靠性对提示内样本稳健重加权，并引入缓存机制减少在线适配中的自监督遗忘。在 6 个数学与知识密集型推理基准、5 个模型骨干上，30 个设置中 24 个持平或优于最强 TTRL 基线。来源：arXiv 2611.09872v1。",
+    "analysis": "该工作直面 TTRL 自生成伪标签不可靠这一关键痛点，理论分解清晰，方法针对有限采样波动做保守更新，工程上可落地。缓存机制缓解遗忘是实用补充。局限在于总体多数偏差不可识别，方法只能缓解部分误差。",
+    "technical_value": "中高。为无监督测试时适配提供了更稳健的训练目标与遗忘缓解手段，对 TTRL 实践有直接参考价值。",
+    "impact": "影响测试时自适应与在线偏好优化方向，提升无标签场景下模型适配的稳定性。",
+    "keywords": [
+      "TTRL",
+      "多数投票",
+      "DPO",
+      "分布鲁棒",
+      "伪标签可靠性"
+    ]
+  },
+  {
+    "id": "d66b9c2d229951fd",
+    "title": "Agentic cheminformatics with Google Antigravity",
+    "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+    "published_at": "Tue, 03 Nov 2026 17:01:49 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 6,
+    "facts": "Google DeepMind 博客介绍 Google Antigravity 与 Cheminformatics Skills 如何加速药物发现流程、搜索化合物并提出新型刚性化大环化合物。来源：Google DeepMind 官方博客。",
+    "analysis": "这是官方产品/能力展示，强调智能体在化学信息学工作流中的应用。摘要信息有限，未给出量化指标，属于方向性信号而非可验证研究结论。",
+    "technical_value": "中。体现智能体+领域技能库在药物发现中的工程化整合趋势。",
+    "impact": "对 AI 制药与科研智能体落地有示范意义，但需更多细节评估实际效能。",
+    "keywords": [
+      "化学信息学",
+      "智能体",
+      "药物发现",
+      "Google Antigravity"
+    ]
+  },
+  {
+    "id": "57dc1fe77b7c95ff",
+    "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+    "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+    "published_at": "Wed, 14 Oct 2026 02:00:14 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6,
+    "facts": "Google DeepMind 与新加坡 GovTech 合作，使用轻量级端侧 Gemma 模型在私聊中拦截对话式诈骗，数据不出云（zero cloud data egress）。来源：Google DeepMind 官方博客。",
+    "analysis": "端侧小模型+隐私保护的公共安全应用，具备明确落地场景与合规优势。摘要未披露检测准确率、误报率与部署规模。",
+    "technical_value": "中。展示轻量模型在端侧实时风险识别中的可行性。",
+    "impact": "对端侧 AI 安全应用与政府合作模式有示范作用。",
+    "keywords": [
+      "端侧AI",
+      "Gemma",
+      "诈骗检测",
+      "隐私保护",
+      "GovTech"
+    ]
+  }
+]
