@@ -1,0 +1,132 @@
+[
+  {
+    "id": "f1d6ecd6a5cc37f3",
+    "title": "WanderBench: Can World Models Explore Dynamic Worlds from Video?",
+    "summary": "Video world models conditioned on an input video make it possible to explore real, recorded dynamic scenes, enabling re-shooting of footage, free-viewpoint replay, and real-to-sim environments for embodied agents. Such uses require the generated rollout to stay faithful to the recorded world, yet existing benchmarks start from a single image or a text prompt, and video-conditioned generation is evaluated mainly on perceptual quality and camera following. These evaluations do not directly assess whether exploration preserves subject identity, event progression, and scene consistency upon revisiting a location. We introduce WanderBench, a benchmark for exploring dynamic worlds from video. It comprises 745 single-shot source videos of real and AI-generated content in three difficulty tiers (3-25 s), paired with camera routes given as keyboard actions, and evaluates six dimensions with 24 human-validated sub-metrics. Benchmarking eight models, we find that as clips grow longer, models keep the static scene and visual quality but lose camera control and the source dynamics, and that none keeps revisited places consistent. We further propose WanderLand, a training-free framework that conditions each frame of a frozen model on the same-instant source and, on revisits, on its own earlier static content. WanderLand improves five models on every dimension, by up to 8.3 points in source-dynamics fidelity.",
+    "published_at": "2026-11-09T15:23:53Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.12557v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 8,
+    "facts": "论文提出 WanderBench，一个从视频探索动态世界的基准，包含 745 段真实与 AI 生成内容的单镜头源视频，分三个难度层级（3-25 秒），配以键盘动作形式的相机路线，用 24 个人工验证的子指标评估六个维度。基准测试八个模型发现：片段变长时模型保持静态场景与视觉质量，但丢失相机控制与源动态，且无一能在重访地点保持一致性。作者进一步提出 WanderLand，一个免训练框架，将冻结模型每帧条件于同一时刻的源视频，重访时条件于其自身早先的静态内容，使五个模型在所有维度上提升，源动态保真度最高提升 8.3 分。",
+    "analysis": "该工作切中视频条件世界模型评估的关键空白：现有基准从单图或文本提示出发，主要评估感知质量与相机跟随，无法衡量探索过程中主体身份、事件推进与重访一致性。WanderBench 将评估从“像不像”推进到“世界是否守约”，对具身智能与真实到仿真场景有直接意义。WanderLand 的免训练条件化思路成本低、可迁移，但依赖冻结模型与源视频同刻条件，长时程与遮挡场景的鲁棒性仍需验证。",
+    "technical_value": "高。提供可复现的多维评估协议与人工验证子指标，揭示长片段下相机控制与动态保真退化这一系统性缺陷；免训练框架为现有视频世界模型提供即插即用的改进路径，具备较强工程复用价值。",
+    "impact": "影响视频生成、世界模型与具身智能仿真三条线。短期为视频世界模型提供更严格的评测标准，中期推动真实到仿真环境构建，长期关系到可交互动态世界作为训练环境的可信度。",
+    "keywords": [
+      "世界模型",
+      "视频条件生成",
+      "基准评测",
+      "重访一致性",
+      "免训练框架",
+      "具身智能"
+    ]
+  },
+  {
+    "id": "d66b9c2d229951fd",
+    "title": "Agentic cheminformatics with Google Antigravity",
+    "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+    "published_at": "Tue, 03 Nov 2026 17:01:49 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 7,
+    "facts": "Google DeepMind 博客介绍 Google Antigravity 与 Cheminformatics Skills 如何加速药物发现工作流、搜索化合物并提出新型刚性化大环化合物。",
+    "analysis": "这是智能体在垂直科学领域落地的官方示例，重点不在模型能力而在“技能封装+工作流编排”：将化学信息学工具与领域知识封装为可被智能体调用的技能，使大环化合物设计这类高约束任务可被自动化探索。摘要未给出量化指标，实际效果需看后续论文或产品数据。",
+    "technical_value": "中高。展示智能体框架与领域技能库结合的科学发现范式，刚性化大环设计涉及构象约束与合成可行性，若技能覆盖完整则具备较高实用价值。",
+    "impact": "对 AI 驱动药物发现与科学智能体产品化有示范效应，可能推动“技能市场”式科研工具生态。",
+    "keywords": [
+      "智能体",
+      "化学信息学",
+      "药物发现",
+      "大环化合物",
+      "Google Antigravity"
+    ]
+  },
+  {
+    "id": "976840a24674d704",
+    "title": "Genie 4: A new generation of world simulation",
+    "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+    "published_at": "Tue, 27 Oct 2026 16:01:38 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 7,
+    "facts": "Google DeepMind 发布 Genie 4，称其为新一代世界模型，在实时模拟中实现前所未有的真实感。",
+    "analysis": "与 WanderBench 关注的视频条件世界模型形成呼应：Genie 系列代表生成式交互世界模型的产品化路线，强调实时性与真实感。摘要未披露分辨率、帧率、可控性与一致性指标，难以与学术基准横向比较。",
+    "technical_value": "中高。实时世界模拟是具身智能与游戏/仿真内容生成的关键基础设施，但需具体技术报告验证一致性、可控性与算力成本。",
+    "impact": "可能加速交互式世界模型在游戏、机器人与仿真训练中的应用，并与 WanderBench 类评测形成“能力-评估”互动。",
+    "keywords": [
+      "世界模型",
+      "实时模拟",
+      "Genie",
+      "生成式环境"
+    ]
+  },
+  {
+    "id": "57dc1fe77b7c95ff",
+    "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+    "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+    "published_at": "Wed, 14 Oct 2026 02:00:14 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 7,
+    "facts": "Google DeepMind 与新加坡 GovTech 合作，使用轻量级端侧 Gemma 模型在私聊中拦截对话式诈骗，实现零云端数据外泄。",
+    "analysis": "该案例的技术要点是端侧小模型+隐私约束下的对话风险识别：诈骗检测需要理解多轮语境与诱导话术，而数据不出设备是硬约束。官方摘要未给出召回率、误报率与延迟数据，实际部署效果需看评测。",
+    "technical_value": "中高。端侧对话式诈骗检测涉及小模型能力压缩、多轮语境建模与低延迟推理，具备可复用的隐私保护 AI 范式。",
+    "impact": "对公共安全 AI 与端侧隐私计算有示范意义，可能推动政府-企业合作的反诈部署模式。",
+    "keywords": [
+      "端侧AI",
+      "Gemma",
+      "诈骗检测",
+      "隐私保护",
+      "对话理解"
+    ]
+  },
+  {
+    "id": "43e6a710c07bd1f8",
+    "title": "AuDiR: Diagnosing Audio Reasoning with Rule and Percept Interventions",
+    "summary": "Answer accuracy alone does not distinguish failures in acoustic perception, rule knowledge, and rule application. AuDiR (Audio Diagnostic Reasoning) examines these distinctions through controlled input interventions. Each item contains an audio clip, a multiple-choice question, a task-general rule, and a textual description of the acoustic observations needed to answer. Three conditions progressively supply the rule and observations; a fourth removes the audio while retaining the question and rule. The first correct diagnostic condition assigns an operational response label, without identifying a unique internal cause. The current benchmark contains 201 items in 18 families drawn from 9 sources, with answer references documented separately from percept extraction. In a preliminary evaluation of Gemini-3.8-flash, accuracy is 29.3% without supplied information, 31.3% with the rule, and 98.5% with the observations also supplied. No-audio accuracy is 23.9%, with a confidence interval containing the 25.0% chance rate. A family-level knowledge probe associates incomplete rule recall with larger gains from rule provision. These results show the benefit of supplying acoustic observations as text, while incomplete validation, possible recognition shortcuts, and non-monotonic responses limit stronger failure-attribution claims.",
+    "published_at": "2026-11-09T14:23:38Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.12478v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.2,
+    "ai_score": 7,
+    "facts": "论文提出 AuDiR（音频诊断推理），通过受控输入干预区分声学感知、规则知识与规则应用三类失败。每项含音频片段、多选题、任务通用规则与回答所需声学观察的文本描述；三种条件逐步提供规则与观察，第四种移除音频但保留问题与规则。首个正确诊断条件给出操作性响应标签，但不识别唯一内部原因。当前基准含 201 项、18 个家族、来自 9 个来源。初步评估 Gemini-3.8-flash：无供给信息准确率 29.3%，提供规则 31.3%，再提供观察 98.5%；无音频准确率 23.9%，置信区间包含 25.0% 随机水平。",
+    "analysis": "该工作的方法论价值大于分数本身：用干预式诊断把“答错”拆解为感知、知识与推理三类，揭示当前音频模型在声学观察缺失时接近随机，而文本化声学观察可带来巨大提升，说明瓶颈在感知到符号的转换而非规则推理。作者也承认验证不完整、可能存在识别捷径与非单调响应，限制了强归因结论。",
+    "technical_value": "高。提供可复用的诊断范式与细粒度基准，对音频推理模型的失败分析有方法论贡献。",
+    "impact": "影响音频大模型评测与改进方向，提示多模态感知-推理链路中感知瓶颈的优先级。",
+    "keywords": [
+      "音频推理",
+      "诊断基准",
+      "干预实验",
+      "多模态",
+      "失败归因"
+    ]
+  }
+]

@@ -914,5 +914,18 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2611.09891v1"
     ]
+  },
+  {
+    "date": "2026-11-10",
+    "name_zh": "视频条件世界模型",
+    "name_en": "Video-Conditioned World Models",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "以输入视频为条件生成可交互、可探索的动态世界 rollout，要求生成结果在主体身份、事件推进与重访一致性上忠实于被记录场景，用于重拍、自由视角回放与真实到仿真环境。",
+    "why_now": "WanderBench 揭示现有模型在长片段下丢失相机控制与源动态、重访不一致，同时 Genie 4 等产品化世界模型强调实时真实感，能力供给与评估需求同时到位。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2611.12557v1",
+      "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+    ]
   }
 ]
