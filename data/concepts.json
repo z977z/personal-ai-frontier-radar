@@ -927,5 +927,19 @@
       "https://arxiv.org/abs/2611.12557v1",
       "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
     ]
+  },
+  {
+    "date": "2026-11-11",
+    "name_zh": "端侧智能体",
+    "name_en": "On-Device Agentic AI",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "将具备工具调用与多步规划能力的智能体模型压缩到可在手机、PC 等终端本地运行，兼顾隐私、低延迟与离线可用性。",
+    "why_now": "BotPsy 展示十亿参数以下智能体助理，新加坡政府用端侧 Gemma 做反诈骗，Phonon TTS 主打端侧语音，多条信号同期出现，说明小模型智能体与端侧部署正在从演示走向实用。",
+    "evidence_urls": [
+      "https://huggingface.co/blog/qvac/botpsy",
+      "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "https://huggingface.co/blog/phonon-tts"
+    ]
   }
 ]
