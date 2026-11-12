@@ -941,5 +941,18 @@
       "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
       "https://huggingface.co/blog/phonon-tts"
     ]
+  },
+  {
+    "date": "2026-11-12",
+    "name_zh": "端侧智能体",
+    "name_en": "On-Device Agentic AI",
+    "score": 7,
+    "maturity": "Emerging",
+    "explanation": "在本地设备上运行小参数语言模型或智能体，完成个人助理、反诈、语音等任务，减少云端依赖并保护隐私。",
+    "why_now": "BotPsy 端侧智能体助理与新加坡端侧 Gemma 反诈案例同期出现，显示小模型智能体正从研究走向端侧落地。",
+    "evidence_urls": [
+      "https://huggingface.co/blog/qvac/botpsy",
+      "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
+    ]
   }
 ]
