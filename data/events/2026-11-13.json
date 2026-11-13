@@ -1,0 +1,133 @@
+[
+  {
+    "id": "6f3099abf69d3024",
+    "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+    "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+    "published_at": "Tue, 10 Nov 2026 12:02:28 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 9,
+    "facts": "Google DeepMind 发布 AlphaProof Code，称其为深度验证复杂软件的突破；其 agent 用 Lean 编写了三百万行证明，用于验证 Signal 的核心加密实现。",
+    "analysis": "将形式化证明 agent 应用于真实生产级加密代码，是从竞赛数学证明走向工业软件验证的关键一步；三百万行 Lean 证明的规模说明自动化程度较高。",
+    "technical_value": "结合 LLM agent 与 Lean 证明助手，实现大规模形式化验证的自动化，涉及证明搜索、代码语义建模与工程化流水线。",
+    "impact": "对安全关键软件（加密、协议、系统组件）的验证范式有潜在重塑作用，也强化了 AI 在软件正确性保障中的角色。",
+    "keywords": [
+      "formal verification",
+      "Lean",
+      "AlphaProof",
+      "Signal encryption",
+      "proof agents"
+    ]
+  },
+  {
+    "id": "3e9904e85c70405e",
+    "title": "Classical Energies Learn to Reason 1,000x Faster than Looped Models",
+    "summary": "Looped models have emerged as a prominent paradigm for reasoning, with successes on simple reasoning puzzles such as Sudoku-Extreme and Maze-Unique. However, these models can be unstable, slow to train, and use many parameters and FLOPs to solve simple puzzles. Descent on an energy not only mitigates these issues but also offers advantages: built-in early stopping, compute that adapts to problem difficulty, fast training without differentiating through a solver, and interpretable weights that learn the constraints of the puzzle. Here we demonstrate this with a learned version of Hopfield & Tank's energy from the 80s, which we term CRAM, solves 99.996% of Sudoku-Extreme and 100% of Maze-Unique test puzzles after 42 ms and 132 ms of training on one GPU, at least 1,000x faster than looped models on these tasks. CRAM also matches baseline looped models at their highest accuracy on Sudoku-Extreme using at least 282x fewer inference FLOPs. Our work suggests two things. First, that energies are an extremely promising direction for training reasoning from data. Second, a caution against using trivially solvable benchmarks like Sudoku and Maze to test the scalability of looped reasoning techniques.",
+    "published_at": "2026-11-12T18:56:56Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.17309v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 8,
+    "facts": "arXiv 论文提出 CRAM，基于 Hopfield & Tank 八十年代能量模型的学习版本，在 Sudoku-Extreme 上解出 99.996%、Maze-Unique 上 100%，单 GPU 训练耗时 42ms 与 132ms，比 looped models 快至少 1000 倍；在 Sudoku-Extreme 最高精度下推理 FLOPs 少至少 282 倍。论文同时提醒 Sudoku/Maze 这类易解基准不宜用于检验 looped 推理方法的可扩展性。",
+    "analysis": "该工作把'能量下降'作为推理范式，具备内建早停、算力随难度自适应、无需对求解器求导即可快速训练、权重可解释等优势；作者对基准有效性的自我批评同样值得关注。",
+    "technical_value": "为'从数据中学习推理'提供了非 looped 的替代路线，训练与推理效率提升显著，且可解释权重学习到谜题约束。",
+    "impact": "可能影响推理模型的研究方向选择，并促使社区重新审视以简单谜题衡量推理架构可扩展性的做法。",
+    "keywords": [
+      "energy-based model",
+      "CRAM",
+      "looped models",
+      "reasoning",
+      "Sudoku",
+      "benchmark validity"
+    ]
+  },
+  {
+    "id": "d5465c92fd9928be",
+    "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+    "summary": "",
+    "published_at": "Wed, 11 Nov 2026 05:01:16 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/qvac/botpsy",
+        "type": "official"
+      }
+    ],
+    "pre_score": 6.0,
+    "ai_score": 7,
+    "facts": "Hugging Face 官方博客介绍 BotPsy：一款端侧个人助理，基于参数规模低于十亿的 agentic 语言模型构建。",
+    "analysis": "把 agentic 能力压缩到 sub-billion 参数并部署在设备端，是端侧智能体路线的一次工程化尝试；官方博客形式说明已有可运行产品而非纯论文。",
+    "technical_value": "核心价值在于小参数模型承担工具调用/多步任务编排的可行性验证，涉及量化、端侧推理与 agent 循环的轻量化设计。",
+    "impact": "若效果可接受，将推动隐私敏感场景（个人助理、本地数据）的端侧 agent 落地，降低对云端大模型的依赖。",
+    "keywords": [
+      "on-device",
+      "agentic LLM",
+      "sub-billion parameters",
+      "personal assistant",
+      "edge AI"
+    ]
+  },
+  {
+    "id": "d64463d67f9b0f5b",
+    "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+    "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+    "published_at": "Mon, 09 Nov 2026 19:51:47 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 7,
+    "facts": "Google DeepMind 发布 Gemini Robotics 2.5，称其为最强视觉-语言-动作模型，提升机器人灵巧性、可靠性与安全性。",
+    "analysis": "VLA 模型迭代到 2.5 版本，说明该路线已进入持续工程优化阶段，重点从能力展示转向真实世界的可靠性与安全。",
+    "technical_value": "视觉-语言-动作统一建模，面向真实世界通用灵巧操作，涉及多模态感知与动作生成的联合训练。",
+    "impact": "对通用机器人操作能力的提升有直接推动，安全性的强调也回应了机器人落地的核心顾虑。",
+    "keywords": [
+      "VLA",
+      "robotics",
+      "dexterity",
+      "Gemini Robotics",
+      "safety"
+    ]
+  },
+  {
+    "id": "d67d8909c566f9fe",
+    "title": "CoReMem: Cost-Internalizing Memory for Successive Coding Tasks with Prospective Valuation",
+    "summary": "Coding agents tackle successive tasks on an evolving repository, carrying forward edits and writing memory before the next task is known. Selecting memory for unknown next tasks requires balancing future usefulness against the costs of writing and reading it. The actor must also decide when acting on available memory saves effort as the task unfolds. We introduce Coding-Repository Memory (CoReMem), a cost-internalizing framework that guides memory design and actor adaptation through measured memory value on the next task. Prospective segment valuation compares runs of the next task with and without individual trajectory segments from the same inherited repository state, guiding a compact memory built around anchors: repository locations and executable checks. Actor adaptation estimates on-policy memory value within rollout groups with and without memory, using a reward that prioritizes resolution and penalizes step count in successful runs. Provenance-gated value credit assigns the additional value term to steps identified as using memory-supplied anchors, while every step retains outcome credit. On ChainSWE, CoReMem raises the 27B actor's resolve rate from 21.0% to 25.7%, with 17% fewer steps and 11% fewer total cache-aware tokens, including memory-module calls, relative to the untrained actor model without memory.",
+    "published_at": "2026-11-12T18:58:22Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.17316v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.3,
+    "ai_score": 7,
+    "facts": "arXiv 论文提出 CoReMem，一个将成本内化的编码仓库记忆框架，通过前瞻性片段估值与 actor 适配指导记忆设计；在 ChainSWE 上把 27B actor 的解决率从 21.0% 提升到 25.7%，步数减少 17%，含记忆模块调用的总 cache-aware token 减少 11%。",
+    "analysis": "针对连续编码任务中'记忆写什么、读什么、何时用'的成本收益问题给出可度量框架，强调记忆价值需在下一任务上实测，而非启发式保留。",
+    "technical_value": "前瞻性片段估值、on-policy 记忆价值估计与 provenance-gated 信用分配的组合，为编码 agent 的长期记忆设计提供可复用方法。",
+    "impact": "对仓库级编码 agent 的持续任务处理效率有直接提升，也提示记忆机制应显式建模读写成本。",
+    "keywords": [
+      "coding agents",
+      "memory",
+      "ChainSWE",
+      "cost-internalizing",
+      "prospective valuation"
+    ]
+  }
+]

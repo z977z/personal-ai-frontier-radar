@@ -954,5 +954,17 @@
       "https://huggingface.co/blog/qvac/botpsy",
       "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
     ]
+  },
+  {
+    "date": "2026-11-13",
+    "name_zh": "能量基推理模型",
+    "name_en": "Energy-Based Reasoning Models",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "以能量函数下降替代循环迭代作为推理机制，模型通过最小化学习到的能量求解约束问题，具备内建早停与算力自适应特性。",
+    "why_now": "CRAM 在 Sudoku-Extreme 与 Maze-Unique 上以远低于 looped models 的训练与推理成本达到高准确率，重新引发对能量方法用于推理的关注。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2611.17309v1"
+    ]
   }
 ]
