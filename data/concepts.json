@@ -966,5 +966,18 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2611.17309v1"
     ]
+  },
+  {
+    "date": "2026-11-14",
+    "name_zh": "端侧智能体",
+    "name_en": "On-Device Agentic AI",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "将具备规划、工具调用与多步任务执行能力的智能体模型压缩到亚十亿参数并部署在本地设备，结合端侧语音合成等组件形成完整本地交互栈。",
+    "why_now": "BotPsy 展示亚十亿参数智能体助理，Phonon TTS 展示端侧语音合成达到基准领先，两者共同表明端侧已具备承载完整智能体交互的技术条件。",
+    "evidence_urls": [
+      "https://huggingface.co/blog/qvac/botpsy",
+      "https://huggingface.co/blog/phonon-tts"
+    ]
   }
 ]

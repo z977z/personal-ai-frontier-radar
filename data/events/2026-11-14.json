@@ -1,0 +1,134 @@
+[
+  {
+    "id": "6f3099abf69d3024",
+    "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+    "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+    "published_at": "Tue, 10 Nov 2026 12:02:28 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 9,
+    "facts": "Google DeepMind 发布 AlphaProof Code，其智能体在 Lean 中编写了三百万行证明，用于验证 Signal 的核心加密实现。",
+    "analysis": "这是形式化验证与 AI 智能体结合在真实生产级密码学软件上的大规模案例。三百万行 Lean 证明的规模说明智能体承担了大量机械性证明工程，人类聚焦于规格与关键引理。其价值在于把'AI 写代码'推进到'AI 证明代码正确'。",
+    "technical_value": "AI 智能体驱动的交互式定理证明工程化，涉及 Lean 证明搜索、证明维护与大规模代码库集成。",
+    "impact": "对安全关键软件（加密、协议、内核）的验证成本结构可能产生实质影响，并推动形式化验证进入主流工程流程。",
+    "keywords": [
+      "形式化验证",
+      "Lean",
+      "AlphaProof",
+      "密码学",
+      "智能体",
+      "DeepMind"
+    ]
+  },
+  {
+    "id": "3e9904e85c70405e",
+    "title": "Classical Energies Learn to Reason 1,000x Faster than Looped Models",
+    "summary": "Looped models have emerged as a prominent paradigm for reasoning, with successes on simple reasoning puzzles such as Sudoku-Extreme and Maze-Unique. However, these models can be unstable, slow to train, and use many parameters and FLOPs to solve simple puzzles. Descent on an energy not only mitigates these issues but also offers advantages: built-in early stopping, compute that adapts to problem difficulty, fast training without differentiating through a solver, and interpretable weights that learn the constraints of the puzzle. Here we demonstrate this with a learned version of Hopfield & Tank's energy from the 80s, which we term CRAM, solves 99.996% of Sudoku-Extreme and 100% of Maze-Unique test puzzles after 42 ms and 132 ms of training on one GPU, at least 1,000x faster than looped models on these tasks. CRAM also matches baseline looped models at their highest accuracy on Sudoku-Extreme using at least 282x fewer inference FLOPs. Our work suggests two things. First, that energies are an extremely promising direction for training reasoning from data. Second, a caution against using trivially solvable benchmarks like Sudoku and Maze to test the scalability of looped reasoning techniques.",
+    "published_at": "2026-11-12T18:56:56Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.17309v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 8,
+    "facts": "arXiv 论文提出 CRAM，基于 Hopfield & Tank 八十年代能量模型的学习版本，在单 GPU 上训练 42ms 后解出 99.996% 的 Sudoku-Extreme 测试题、132ms 后解出 100% 的 Maze-Unique 测试题，比 looped 模型快至少 1000 倍；在 Sudoku-Extreme 上达到 looped 基线最高准确率时推理 FLOPs 少至少 282 倍。论文同时提醒不要用 Sudoku、Maze 这类易解基准测试 looped 推理技术的可扩展性。",
+    "analysis": "该工作对'循环模型是推理主流范式'的叙事构成直接挑战，指出能量下降法自带早停、算力随难度自适应、无需对求解器求导即可快速训练、权重可解释等优势。作者对基准饱和问题的警示同样重要：在简单谜题上的成功不能外推为通用推理能力。",
+    "technical_value": "能量模型作为从数据中学习推理的替代路径，训练与推理效率显著优于循环模型，且具备可解释性。",
+    "impact": "可能引导推理研究重新审视能量方法，并促使社区采用更难、更不易饱和的推理基准。",
+    "keywords": [
+      "能量模型",
+      "推理",
+      "循环模型",
+      "基准饱和",
+      "CRAM",
+      "arXiv"
+    ]
+  },
+  {
+    "id": "d5465c92fd9928be",
+    "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+    "summary": "",
+    "published_at": "Wed, 11 Nov 2026 05:01:16 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/qvac/botpsy",
+        "type": "official"
+      }
+    ],
+    "pre_score": 6.0,
+    "ai_score": 7,
+    "facts": "Hugging Face 官方博客发布 BotPsy，一个基于亚十亿参数（sub-billion-parameter）智能体语言模型的端侧个人助理。",
+    "analysis": "将智能体能力压缩到亚十亿参数并部署在设备端，是端侧 AI 从'小模型对话'走向'小模型自主任务执行'的信号。参数规模限制意味着必须在工具调用、规划与上下文管理上做工程取舍，而非依赖模型规模。",
+    "technical_value": "端侧智能体模型的小型化与推理效率优化，涉及量化、工具调用协议与本地记忆管理。",
+    "impact": "若效果可用，将推动隐私敏感场景（个人助理、本地自动化）的端侧智能体落地，减少对云端的依赖。",
+    "keywords": [
+      "端侧AI",
+      "智能体",
+      "小语言模型",
+      "个人助理",
+      "Hugging Face"
+    ]
+  },
+  {
+    "id": "d66b9c2d229951fd",
+    "title": "Agentic cheminformatics with Google Antigravity",
+    "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+    "published_at": "Tue, 03 Nov 2026 17:01:49 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 7,
+    "facts": "Google DeepMind 博客介绍 Google Antigravity 与 Cheminformatics Skills 如何加速药物发现流程、搜索化合物并提出新型刚性化大环化合物。",
+    "analysis": "将智能体框架与领域技能包结合用于化学信息学，体现'通用智能体+领域工具/知识'的产品化路径。提出新分子结构而非仅检索，说明智能体在科学假设生成环节开始承担角色。",
+    "technical_value": "智能体编排化学信息学工具链，领域技能封装与分子生成/筛选工作流集成。",
+    "impact": "有望缩短早期药物发现的化合物探索周期，并推动科研智能体的领域化封装模式。",
+    "keywords": [
+      "智能体",
+      "化学信息学",
+      "药物发现",
+      "Antigravity",
+      "DeepMind"
+    ]
+  },
+  {
+    "id": "d64463d67f9b0f5b",
+    "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+    "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+    "published_at": "Mon, 09 Nov 2026 19:51:47 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 7,
+    "facts": "Google DeepMind 发布 Gemini Robotics 2.5，称其为最强的视觉-语言-动作模型，提升机器人灵巧性、可靠性与安全性。",
+    "analysis": "VLA 模型迭代到 2.5 版本，重点从'能操作'转向'可靠且安全地操作'，这是机器人从演示走向部署的核心门槛。灵巧性、可靠性与安全性三者并提，说明评测体系在向真实世界鲁棒性倾斜。",
+    "technical_value": "视觉-语言-动作模型在真实机器人上的泛化与安全约束集成。",
+    "impact": "加速通用机器人操作能力的工程化落地，并抬升 VLA 领域竞争基线。",
+    "keywords": [
+      "VLA",
+      "机器人",
+      "灵巧操作",
+      "安全性",
+      "Gemini Robotics"
+    ]
+  }
+]
