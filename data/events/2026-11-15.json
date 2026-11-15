@@ -1,0 +1,127 @@
+[
+  {
+    "id": "6f3099abf69d3024",
+    "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+    "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+    "published_at": "Tue, 10 Nov 2026 12:02:28 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 9,
+    "facts": "Google DeepMind 发布 AlphaProof Code，其智能体用 Lean 编写三百万行证明，验证 Signal 的核心加密。",
+    "analysis": "这是形式化验证与智能体结合的重大案例，将AI证明能力从数学扩展到真实软件安全；三百万行证明的规模说明工程化程度高，但需关注证明覆盖率与人工审核成本。",
+    "technical_value": "智能体驱动的 Lean 形式化证明生成，面向密码学协议等复杂软件。",
+    "impact": "可能改变安全关键软件的验证流程，提升加密实现的可信度。",
+    "keywords": [
+      "形式化验证",
+      "Lean",
+      "智能体",
+      "密码学",
+      "软件安全"
+    ]
+  },
+  {
+    "id": "3e9904e85c70405e",
+    "title": "Classical Energies Learn to Reason 1,000x Faster than Looped Models",
+    "summary": "Looped models have emerged as a prominent paradigm for reasoning, with successes on simple reasoning puzzles such as Sudoku-Extreme and Maze-Unique. However, these models can be unstable, slow to train, and use many parameters and FLOPs to solve simple puzzles. Descent on an energy not only mitigates these issues but also offers advantages: built-in early stopping, compute that adapts to problem difficulty, fast training without differentiating through a solver, and interpretable weights that learn the constraints of the puzzle. Here we demonstrate this with a learned version of Hopfield & Tank's energy from the 80s, which we term CRAM, solves 99.996% of Sudoku-Extreme and 100% of Maze-Unique test puzzles after 42 ms and 132 ms of training on one GPU, at least 1,000x faster than looped models on these tasks. CRAM also matches baseline looped models at their highest accuracy on Sudoku-Extreme using at least 282x fewer inference FLOPs. Our work suggests two things. First, that energies are an extremely promising direction for training reasoning from data. Second, a caution against using trivially solvable benchmarks like Sudoku and Maze to test the scalability of looped reasoning techniques.",
+    "published_at": "2026-11-12T18:56:56Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.17309v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 8,
+    "facts": "arXiv 论文提出 CRAM，基于 Hopfield & Tank 能量模型的学习版本，在单 GPU 上训练 42ms 和 132ms 后分别解决 99.996% 的 Sudoku-Extreme 和 100% 的 Maze-Unique 测试题，比循环模型快至少 1000 倍，推理 FLOPs 少至少 282 倍。",
+    "analysis": "该工作用能量下降替代循环推理，具备内置早停和计算自适应难度；作者同时警示 Sudoku/Maze 这类易解基准不足以检验循环推理的可扩展性，这一方法论提醒值得重视。",
+    "technical_value": "能量模型训练无需对求解器求导，权重可解释并学习约束，为推理训练提供新范式。",
+    "impact": "可能影响推理模型的研究方向，并促使社区重新审视基准选择。",
+    "keywords": [
+      "能量模型",
+      "推理",
+      "循环模型",
+      "基准评测"
+    ]
+  },
+  {
+    "id": "d64463d67f9b0f5b",
+    "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+    "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+    "published_at": "Mon, 09 Nov 2026 19:51:47 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 8,
+    "facts": "Google DeepMind 发布 Gemini Robotics 2.5，称其为最强视觉-语言-动作模型，提升机器人灵巧性、可靠性与安全性。",
+    "analysis": "VLA模型迭代到2.5版，重点在真实世界灵巧操作，说明具身智能从演示走向可靠性工程；安全性被单列，反映落地部署的关键约束。",
+    "technical_value": "视觉-语言-动作多模态模型，面向真实机器人控制与灵巧操作。",
+    "impact": "可能加速通用机器人商业化，影响制造、物流与服务机器人领域。",
+    "keywords": [
+      "具身智能",
+      "VLA",
+      "机器人",
+      "灵巧操作"
+    ]
+  },
+  {
+    "id": "fb25ba7862951994",
+    "title": "Gemini 4 Carbon: Our next frontier model",
+    "summary": "",
+    "published_at": "Wed, 28 Oct 2026 17:00:58 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 8,
+    "facts": "Google DeepMind 发布下一代前沿模型 Gemini 4 Carbon。",
+    "analysis": "标题信息有限，仅知为下一代前沿模型；命名中的 Carbon 可能暗示效率或可持续性方向，但无摘要佐证，不宜过度推断。",
+    "technical_value": "前沿基础模型能力升级，具体技术细节未在输入中披露。",
+    "impact": "可能影响前沿模型竞争格局，需等待更多公开信息评估。",
+    "keywords": [
+      "Gemini",
+      "前沿模型",
+      "基础模型"
+    ]
+  },
+  {
+    "id": "976840a24674d704",
+    "title": "Genie 4: A new generation of world simulation",
+    "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+    "published_at": "Tue, 27 Oct 2026 16:01:38 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 8,
+    "facts": "Google DeepMind 发布 Genie 4，称其为新一代世界模型，在实时仿真中实现前所未有的真实感。",
+    "analysis": "世界模型持续迭代，实时高真实感仿真对具身智能训练与内容生成都有价值；但输入未提供评测数据，真实感提升幅度需独立验证。",
+    "technical_value": "实时世界模拟与生成式环境建模。",
+    "impact": "可能推动机器人仿真训练、游戏与虚拟内容生产。",
+    "keywords": [
+      "世界模型",
+      "仿真",
+      "生成式AI",
+      "具身智能"
+    ]
+  }
+]

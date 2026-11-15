@@ -979,5 +979,18 @@
       "https://huggingface.co/blog/qvac/botpsy",
       "https://huggingface.co/blog/phonon-tts"
     ]
+  },
+  {
+    "date": "2026-11-15",
+    "name_zh": "端侧智能体",
+    "name_en": "On-Device Agentic AI",
+    "score": 7,
+    "maturity": "Emerging",
+    "explanation": "将具备规划与工具调用能力的语言模型压缩到亚十亿参数并部署在终端设备，实现低延迟、隐私优先的个人助理。",
+    "why_now": "BotPsy 展示亚十亿参数智能体模型，Phonon TTS 展示端侧语音质量提升，两者共同指向端侧多模态助理的可行性。",
+    "evidence_urls": [
+      "https://huggingface.co/blog/qvac/botpsy",
+      "https://huggingface.co/blog/phonon-tts"
+    ]
   }
 ]
