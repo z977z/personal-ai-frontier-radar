@@ -992,5 +992,18 @@
       "https://huggingface.co/blog/qvac/botpsy",
       "https://huggingface.co/blog/phonon-tts"
     ]
+  },
+  {
+    "date": "2026-11-16",
+    "name_zh": "权重空间编程",
+    "name_en": "Weight-Space Programming",
+    "score": 7,
+    "maturity": "Emerging",
+    "explanation": "让大语言模型直接读取、修复和编写其他神经网络的参数，无需梯度下降即可完成模型操作，是“模型操作模型”的新范式。",
+    "why_now": "WEIGHTBENCH 首次系统化评测该能力，显示前沿智能体已能读写小网络，但修补大模型与无数据压缩仍是瓶颈，标志该方向从演示走向可度量研究。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2611.18553v1",
+      "https://github.com/Aayush-Marasini/WeightBench"
+    ]
   }
 ]
