@@ -1005,5 +1005,17 @@
       "https://arxiv.org/abs/2611.18553v1",
       "https://github.com/Aayush-Marasini/WeightBench"
     ]
+  },
+  {
+    "date": "2026-11-17",
+    "name_zh": "对比集强化学习",
+    "name_en": "Contrast-Set Reinforcement Learning",
+    "score": 7,
+    "maturity": "Emerging",
+    "explanation": "用仅在关键证据区域不同、答案不同的图像组构成对比集，奖励求解整组而非单题答案，从而迫使模型读取证据而非依赖常识猜测。",
+    "why_now": "视觉智能体在超高分辨率图像上普遍存在“凭常识作答”的奖励漏洞，单题答案级RL无法纠正；ViRA的CrossRPO给出了可证明的集合级奖励方案并在21至120兆像素图像上验证。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2611.21605v1"
+    ]
   }
 ]

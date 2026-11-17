@@ -1,0 +1,131 @@
+[
+  {
+    "id": "2c547327de79513d",
+    "title": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
+    "summary": "Visual agents answer questions about ultra-high-resolution photos by zooming into the relevant regions. However, existing agents often answer from common sense instead of reading the evidence. Reinforcement learning (RL) on the final answer cannot correct this, because a guess earns the same reward as reading. We propose Cross-Input Relative Policy Optimization (CrossRPO), which trains agents on contrast sets. A contrast set asks one question about several versions of an image that differ only in a small region with the evidence and have different answers, so only reading the evidence solves the whole set. CrossRPO rewards solving the whole set, and we prove that it does not reinforce a set answered from common sense. We build contrast sets for training (ViRA-Train) and evaluation (ViRA-Bench) by editing one small object in images of 21 to 120 megapixels, and we photograph further sets with real changes (ViRA-Bench-Real) to exclude editing traces. We train two Visual Reasoning Agents, ViRA-9B and ViRA-27B, with CrossRPO on only about 3,500 items of ViRA-Train each. CrossRPO achieves 63.3% set accuracy on ViRA-Bench at the maximum resolution, against 59.3% for GRPO. ViRA-9B is the most accurate open model of its size on all benchmarks, and ViRA-27B outperforms Claude Haiku 5.5 and GPT-6-Luna, both at their highest thinking level, on most benchmarks.",
+    "published_at": "2026-11-16T18:59:04Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.21605v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.3,
+    "ai_score": 8,
+    "facts": "论文提出Cross-Input Relative Policy Optimization（CrossRPO），用对比集训练视觉智能体：同一问题对应多张仅小区域不同、答案不同的图像，只有真正读取证据才能解出整组。构建ViRA-Train与ViRA-Bench（图像21至120兆像素），并用真实拍摄的ViRA-Bench-Real排除编辑痕迹。以约3500条ViRA-Train数据训练ViRA-9B与ViRA-27B。最高分辨率下ViRA-Bench集合准确率63.3%，GRPO为59.3%；ViRA-9B在同规模开源模型中准确率最高，ViRA-27B在多数基准上超过Claude Haiku 5.5与GPT-6-Luna的最高思考级别。",
+    "analysis": "该工作针对视觉智能体“凭常识作答而非读图”的奖励漏洞，把奖励从单题答案改为整组对比集求解，理论上排除了常识作答被强化的可能，属于RL训练信号设计层面的改进。",
+    "technical_value": "对比集构造与集合级奖励可迁移到其他需要证据定位的智能体任务；超高清图像（最高120MP）下的缩放读取评测填补了现有基准空白。",
+    "impact": "若结论可复现，将推动高分辨率视觉智能体从“猜答案”转向“读证据”，并给开源模型在超高清视觉推理上对标闭源前沿模型提供路径。",
+    "keywords": [
+      "视觉智能体",
+      "强化学习",
+      "对比集",
+      "超高分辨率",
+      "CrossRPO",
+      "ViRA"
+    ]
+  },
+  {
+    "id": "6f3099abf69d3024",
+    "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+    "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+    "published_at": "Tue, 10 Nov 2026 12:02:28 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 8,
+    "facts": "Google DeepMind发布AlphaProof Code，称其为深度验证复杂软件的突破；其智能体用Lean编写了三百万行证明，用于验证Signal的核心加密。",
+    "analysis": "以智能体自动生成形式化证明验证真实生产级加密实现，是形式化方法与AI结合的重要案例；三百万行证明的规模说明工程化程度较高，但输入未给出证明覆盖率、人工介入比例与可复现细节。",
+    "technical_value": "展示了AI智能体在Lean形式化证明工程中的规模化能力，可迁移到密码学、协议与关键基础设施软件验证。",
+    "impact": "若结果经独立复核，将提升形式化验证在工业软件安全中的可行性认知，并加剧AI辅助形式化验证方向的竞争。",
+    "keywords": [
+      "形式化验证",
+      "Lean",
+      "AlphaProof",
+      "密码学",
+      "智能体"
+    ]
+  },
+  {
+    "id": "7afc021c121fbd9c",
+    "title": "When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents",
+    "summary": "Large language model (LLM) applications increasingly act as agents that select and invoke external tools. The Model Context Protocol (MCP) standardizes this interaction by allowing clients to compose tools advertised by multiple servers. However, tool metadata used for discovery and selection is not, by itself, necessarily bound to a verified provider identity. This paper studies this gap as tool-provider misbinding: a failure in which a request intended for a legitimate provider is instead resolved to an attacker-controlled tool. The attacker does not compromise the host, LLM, legitimate server, or network channel; it only operates another MCP server that advertises tools with chosen metadata. We formulate tool provider misbinding as an attacker-controlled tool-selection optimization problem and evaluate it in a controlled MCP environment across five LLM-based clients. The results show that interactions drive misbinding. The strongest failures occur when exact-name collision, task-aligned description, and compatible schema reinforce one another, but authority-enhanced descriptions with compatible schema can also cause wrong-provider execution or unresolved provider ambiguity without name collision. Different models expose the same provider-binding weakness differently, including attacker-controlled provider selection, clarification requests, and unstable or inconsistent provider resolution.",
+    "published_at": "2026-11-16T18:49:37Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.21577v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.0,
+    "ai_score": 7,
+    "facts": "论文研究MCP（Model Context Protocol）场景下的“工具-提供方错绑”：攻击者不攻破主机、LLM、合法服务器或网络通道，仅运行另一个MCP服务器并发布选定元数据的工具，即可让本应发给合法提供方的请求被解析到攻击者工具。作者将其形式化为攻击者控制的工具选择优化问题，在受控MCP环境中对五个基于LLM的客户端评测。结果显示精确同名冲突、任务对齐描述与兼容schema叠加时失败最强；仅靠权威化描述加兼容schema也能在无同名冲突时导致错误提供方执行或提供方歧义。不同模型表现不同，包括攻击者控制提供方选择、请求澄清、解析不稳定等。",
+    "analysis": "该研究揭示MCP生态中“工具名不等于身份”的结构性缺口，把供应链攻击面从代码扩展到工具元数据与发现机制，属于协议层安全设计问题而非模型能力问题。",
+    "technical_value": "提出可复现的受控评测方法与攻击优化框架，为MCP客户端增加提供方身份绑定、签名与解析确定性提供依据。",
+    "impact": "对采用MCP构建智能体平台的团队有直接安全警示，可能推动协议层增加提供方认证与工具元数据签名机制。",
+    "keywords": [
+      "MCP",
+      "智能体安全",
+      "工具调用",
+      "提供方错绑",
+      "供应链安全"
+    ]
+  },
+  {
+    "id": "d64463d67f9b0f5b",
+    "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+    "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+    "published_at": "Mon, 09 Nov 2026 19:51:47 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 7,
+    "facts": "Google DeepMind发布Gemini Robotics 2.5，称其为能力最强的视觉-语言-动作模型，提升机器人灵巧性、可靠性与安全性。",
+    "analysis": "VLA模型迭代到2.5版本，重点从泛化转向真实世界灵巧操作与安全可靠性，反映具身智能从演示走向部署的取向；输入未给出具体任务成功率与硬件适配范围。",
+    "technical_value": "视觉-语言-动作一体化模型在灵巧操作上的进展，对机器人基础模型路线有参考意义。",
+    "impact": "影响具身智能与机器人基础模型竞争格局，实际部署效果待独立评测。",
+    "keywords": [
+      "VLA",
+      "机器人",
+      "具身智能",
+      "灵巧操作",
+      "Gemini Robotics"
+    ]
+  },
+  {
+    "id": "fb25ba7862951994",
+    "title": "Gemini 4 Carbon: Our next frontier model",
+    "summary": "",
+    "published_at": "Wed, 28 Oct 2026 17:00:58 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 7,
+    "facts": "Google DeepMind博客宣布下一代前沿模型Gemini 4 Carbon。",
+    "analysis": "仅标题与一句话描述，缺少能力、评测与发布时间细节，无法评估具体进展；作为前沿模型发布信号具有关注价值。",
+    "technical_value": "输入信息不足以判断技术细节。",
+    "impact": "前沿模型迭代会影响开发者选型与竞品节奏，但需等待更多公开信息。",
+    "keywords": [
+      "Gemini",
+      "前沿模型",
+      "Google DeepMind"
+    ]
+  }
+]
