@@ -1,0 +1,129 @@
+[
+  {
+    "id": "0fec4bae2800961b",
+    "title": "Agent Trust Infrastructure (ATI): A Federated Identity, Trust, Attestation, and Accountability Architecture for Cross-Organization Autonomous AI Agents",
+    "summary": "AI agents increasingly collaborate across organizational boundaries, invoking tools and interacting with agents operated by independent entities. Although existing agent frameworks support planning and coordination, they lack a common mechanism for verifying cross-organizational agent identity, execution integrity, and authorization. We propose the Agent Trust Infrastructure (ATI), a framework-independent security architecture built on Public Key Infrastructure (PKI), Zero Trust Architecture (ZTA), and remote attestation. ATI establishes federated trust through peer organizational certificate authorities (AgentCAs), eliminating the need for a shared root authority. Before executing requests, ATI validates agent certificates, verifies approved model, tool, and system-prompt configurations, and enforces authorization through three policy checks. We implement ATI as an external security enforcement layer that integrates with existing agent frameworks without modifying their underlying models. We evaluate ATI in a simulated federation of eight organizations using six agent frameworks, each deploying a five-agent team. Security experiments involve two organizations and assess 14 attack scenarios and six benign tasks across five agent models, using five attack variations and three repetitions per variation. A panel of judge models evaluates the experimental outcomes. With all enforcement mechanisms enabled, attack containment increases from 43% to 84% (40% to 80% for the 11 attack scenarios evaluated consistently across all configurations), while enforcement introduces approximately 174 microseconds of overhead per request. ATI is released as an open-source, framework-independent package that uses IETF WIMSE workload token formats for identity and request verification and Ent",
+    "published_at": "2026-11-17T18:44:25Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.23202v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.0,
+    "ai_score": 8,
+    "facts": "arXiv 论文提出 Agent Trust Infrastructure（ATI），基于 PKI、零信任架构与远程证明构建跨组织智能体联邦信任；在8组织6框架模拟环境中评估14种攻击场景，全机制开启后攻击遏制率从43%升至84%，每请求开销约174微秒；以开源框架无关包发布，采用 IETF WIMSE 工作负载令牌格式。",
+    "analysis": "跨组织智能体协作缺乏身份与授权标准是当前落地瓶颈，ATI 用联邦 CA 避免共享根权威，思路务实；遏制率提升显著但仍有16%攻击未被拦截，且模拟环境与真实部署存在差距。",
+    "technical_value": "将企业安全基础设施（PKI/ZTA/远程证明）适配到智能体运行时，提供可插拔的外部执行层。",
+    "impact": "为智能体互操作与合规审计提供基础设施参考，可能影响企业级智能体平台的信任层设计。",
+    "keywords": [
+      "智能体安全",
+      "联邦身份",
+      "零信任",
+      "远程证明",
+      "跨组织协作"
+    ]
+  },
+  {
+    "id": "6f3099abf69d3024",
+    "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+    "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+    "published_at": "Tue, 10 Nov 2026 12:02:28 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 8,
+    "facts": "Google DeepMind 发布 AlphaProof Code，其智能体用 Lean 编写三百万行证明，验证 Signal 核心加密实现。",
+    "analysis": "形式化验证长期受限于人力成本，智能体生成大规模证明是重要里程碑；但需关注证明覆盖范围与人工审计比例。",
+    "technical_value": "LLM+形式化证明的深度软件验证流水线，可复用于密码学与安全关键系统。",
+    "impact": "可能推动形式化验证进入工业软件供应链，提升安全关键代码的可信度。",
+    "keywords": [
+      "形式化验证",
+      "Lean",
+      "智能体",
+      "密码学",
+      "软件安全"
+    ]
+  },
+  {
+    "id": "d5465c92fd9928be",
+    "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+    "summary": "",
+    "published_at": "Wed, 11 Nov 2026 05:01:16 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/qvac/botpsy",
+        "type": "official"
+      }
+    ],
+    "pre_score": 6.0,
+    "ai_score": 7,
+    "facts": "Hugging Face 博客介绍 BotPsy：一款端侧个人助理，搭载参数规模低于十亿的智能体语言模型。",
+    "analysis": "端侧智能体模型是隐私与延迟敏感场景的关键方向；亚十亿参数意味着可在消费级设备本地运行，但摘要缺失，能力边界与评测数据未知。",
+    "technical_value": "端侧小模型+智能体编排，涉及量化、工具调用与本地推理优化。",
+    "impact": "若效果可用，将推动个人助理从云端向本地迁移，降低隐私风险与推理成本。",
+    "keywords": [
+      "端侧AI",
+      "小语言模型",
+      "智能体",
+      "个人助理"
+    ]
+  },
+  {
+    "id": "1cfb54df3193a3fa",
+    "title": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
+    "summary": "LLM agents increasingly drive their own learning. Self-improvement methods delegate various components of model optimization to the models themselves. As models become more capable, this motivates a basic question: do these increasingly capable models still need us to specify how they should self-improve? In this paper we study an autonomous paradigm in which, given basic primitives, resources, and a general goal for self-improvement, agents construct their own self-learning algorithm for context-based optimization. Using the setting of gameplay as a testbed, a frozen LLM agent is given a compute budget and tools for collecting experience and updating text documents, and allowed to freely experiment without an externally imposed loop or access to real-world data. We find that sufficiently capable models do self-improve under these conditions, demonstrating strategies that align with classic cognitive frameworks for self-regulated learning and constructs from machine learning literature on self-generated curricula. Furthermore, we study the extent to which the learned text artifacts transfer to external benchmarks, observing improvement across different game horizons, mechanics, and 3D navigation.",
+    "published_at": "2026-11-17T18:57:10Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.23219v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 7,
+    "facts": "arXiv 论文研究自主自我改进范式：给定基础原语、资源与总体目标，冻结的 LLM 智能体在游戏环境中自主构建基于上下文的自我学习算法，无需外部循环或真实世界数据；发现能力足够的模型可自我改进，策略与自我调节学习框架一致，学到的文本产物可迁移到不同游戏机制与3D导航基准。",
+    "analysis": "该研究把“如何自我改进”的元决策交给模型，减少人工设计训练循环；但实验限于游戏测试台，迁移到开放任务的泛化性待验证。",
+    "technical_value": "自主课程生成与文本经验积累机制，为智能体持续学习提供新范式。",
+    "impact": "若可扩展，将改变智能体训练流程，从人工设计转向模型自主探索。",
+    "keywords": [
+      "自我改进",
+      "LLM智能体",
+      "自主课程",
+      "经验迁移"
+    ]
+  },
+  {
+    "id": "d64463d67f9b0f5b",
+    "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+    "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+    "published_at": "Mon, 09 Nov 2026 19:51:47 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 7,
+    "facts": "Google DeepMind 发布 Gemini Robotics 2.5，称其为最强视觉-语言-动作模型，提升机器人灵巧性、可靠性与安全性。",
+    "analysis": "VLA 模型持续迭代是具身智能主线；官方称“最强”但缺少第三方基准与实机成功率数据。",
+    "technical_value": "视觉-语言-动作统一模型，面向真实世界通用灵巧操作。",
+    "impact": "推动机器人从演示走向可靠部署，安全性的强调值得关注。",
+    "keywords": [
+      "VLA",
+      "机器人",
+      "具身智能",
+      "灵巧操作"
+    ]
+  }
+]

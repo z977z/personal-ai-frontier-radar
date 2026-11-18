@@ -1017,5 +1017,17 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2611.21605v1"
     ]
+  },
+  {
+    "date": "2026-11-18",
+    "name_zh": "智能体信任基础设施",
+    "name_en": "Agent Trust Infrastructure",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "面向跨组织自主智能体的联邦身份、信任、证明与问责架构，用PKI、零信任与远程证明验证智能体身份、模型/工具配置与授权，作为框架无关的外部执行层。",
+    "why_now": "智能体开始跨组织调用工具与互相协作，现有框架缺少统一身份与执行完整性验证机制，安全与合规成为落地前提。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2611.23202v1"
+    ]
   }
 ]

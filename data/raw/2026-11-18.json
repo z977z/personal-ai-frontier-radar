@@ -1,0 +1,322 @@
+[
+  {
+    "title": "Introducing Gemini 4 Hydrogen",
+    "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+    "source": "Google DeepMind",
+    "published_at": "Thu, 12 Nov 2026 18:00:50 +0000",
+    "retrieved_at": "2026-11-18T07:54:46.084755+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+    "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 11 Nov 2026 15:00:15 +0000",
+    "retrieved_at": "2026-11-18T07:54:46.084785+00:00",
+    "summary": "Predicting how DNA sequences and their variations impact specific human cell types and disease.",
+    "content": "Predicting how DNA sequences and their variations impact specific human cell types and disease.",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini 4 Carbon is now available",
+    "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 10 Nov 2026 16:03:47 +0000",
+    "retrieved_at": "2026-11-18T07:54:46.084793+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+    "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 10 Nov 2026 12:02:28 +0000",
+    "retrieved_at": "2026-11-18T07:54:46.084806+00:00",
+    "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+    "content": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+    "source_type": "official"
+  },
+  {
+    "title": "Opening the datasets behind our AI weather models",
+    "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 10 Nov 2026 11:13:04 +0000",
+    "retrieved_at": "2026-11-18T07:54:46.084814+00:00",
+    "summary": "Foundational precipitation and geostationary satellite datasets to observe the planet clearly.",
+    "content": "Foundational precipitation and geostationary satellite datasets to observe the planet clearly.",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+    "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+    "source": "Google DeepMind",
+    "published_at": "Mon, 09 Nov 2026 19:51:47 +0000",
+    "retrieved_at": "2026-11-18T07:54:46.084821+00:00",
+    "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+    "content": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+    "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+    "source": "Google DeepMind",
+    "published_at": "Thu, 05 Nov 2026 17:05:16 +0000",
+    "retrieved_at": "2026-11-18T07:54:46.084825+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Agentic cheminformatics with Google Antigravity",
+    "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 03 Nov 2026 17:01:49 +0000",
+    "retrieved_at": "2026-11-18T07:54:46.084833+00:00",
+    "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+    "content": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+    "source_type": "official"
+  },
+  {
+    "title": "Speeding up planning decisions with AI",
+    "url": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
+    "source": "Google DeepMind",
+    "published_at": "Fri, 30 Oct 2026 14:18:30 +0000",
+    "retrieved_at": "2026-11-18T07:54:46.084839+00:00",
+    "summary": "Google DeepMind and UK government work together to reduce planning assessment times",
+    "content": "Google DeepMind and UK government work together to reduce planning assessment times",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini 4 Carbon: Our next frontier model",
+    "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 28 Oct 2026 17:00:58 +0000",
+    "retrieved_at": "2026-11-18T07:54:46.084843+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Genie 4: A new generation of world simulation",
+    "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 27 Oct 2026 16:01:38 +0000",
+    "retrieved_at": "2026-11-18T07:54:46.084850+00:00",
+    "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+    "content": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+    "source_type": "official"
+  },
+  {
+    "title": "Beyond tree cover: mapping the world’s forest types",
+    "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+    "source": "Google DeepMind",
+    "published_at": "Thu, 22 Oct 2026 14:30:24 +0000",
+    "retrieved_at": "2026-11-18T07:54:46.084856+00:00",
+    "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+    "content": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+    "source_type": "official"
+  },
+  {
+    "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
+    "url": "https://huggingface.co/blog/openrouter",
+    "source": "Hugging Face",
+    "published_at": "Mon, 16 Nov 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-18T07:54:46.189676+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
+    "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+    "source": "Hugging Face",
+    "published_at": "Fri, 13 Nov 2026 18:00:39 GMT",
+    "retrieved_at": "2026-11-18T07:54:46.189702+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "XYBench: Helping with the problem behind the question",
+    "url": "https://huggingface.co/blog/allenai/xybench",
+    "source": "Hugging Face",
+    "published_at": "Fri, 13 Nov 2026 17:02:35 GMT",
+    "retrieved_at": "2026-11-18T07:54:46.189710+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+    "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+    "source": "Hugging Face",
+    "published_at": "Fri, 13 Nov 2026 14:05:22 GMT",
+    "retrieved_at": "2026-11-18T07:54:46.189717+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+    "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+    "source": "Hugging Face",
+    "published_at": "Thu, 12 Nov 2026 19:07:35 GMT",
+    "retrieved_at": "2026-11-18T07:54:46.189723+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "The Definitive Fine-Tuning Guide for 3D Generation Models",
+    "url": "https://huggingface.co/blog/3d-lora-finetuning",
+    "source": "Hugging Face",
+    "published_at": "Thu, 12 Nov 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-18T07:54:46.189729+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+    "url": "https://huggingface.co/blog/qvac/botpsy",
+    "source": "Hugging Face",
+    "published_at": "Wed, 11 Nov 2026 05:01:16 GMT",
+    "retrieved_at": "2026-11-18T07:54:46.189736+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+    "url": "https://huggingface.co/blog/token-pooling",
+    "source": "Hugging Face",
+    "published_at": "Wed, 11 Nov 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-18T07:54:46.189743+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Pay for Hugging Face Hub with your Google Cloud Account",
+    "url": "https://huggingface.co/blog/hub-gcp-marketplace",
+    "source": "Hugging Face",
+    "published_at": "Tue, 10 Nov 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-18T07:54:46.189750+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Decision Models in Hugging Face",
+    "url": "https://huggingface.co/blog/decision",
+    "source": "Hugging Face",
+    "published_at": "Tue, 10 Nov 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-18T07:54:46.189757+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Your Experts Have Partners. There's HOPE for Keeping Them Together",
+    "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+    "source": "Hugging Face",
+    "published_at": "Mon, 09 Nov 2026 12:34:29 GMT",
+    "retrieved_at": "2026-11-18T07:54:46.189764+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
+    "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+    "source": "Hugging Face",
+    "published_at": "Fri, 06 Nov 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-18T07:54:46.189771+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching",
+    "url": "https://arxiv.org/abs/2611.23229v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-17T18:59:37Z",
+    "retrieved_at": "2026-11-18T07:54:46.458264+00:00",
+    "summary": "Collecting large-scale, diverse, and high-quality post-training datasets for autoregressive language models is challenging. Consequently, Supervised Fine-Tuning (SFT) is typically applied to datasets significantly smaller than those used for pre-training, which leads to overfitting and the catastrophic forgetting of the tails of the data distribution. To prevent this collapse, we introduce Ambient SFT, a principled framework for leveraging imperfect predictions to augment the fine-tuning set. In our method, a \"frozen\" version of the pre-trained model serves as a noisy teacher that the fine-tuned model must match at a coarse level. In particular, we require that the high-temperature versions of the conditional distributions produced by the post-training model should match the high-temperature versions of the pre-training ones. The temperature hyperparameter controls the level of trust in the pre-trained model, with the limit $T\\to \\infty$ reverting back to regular SFT and $T=1$ to knowledge distillation. We demonstrate that our approach outperforms standard SFT across domain adaptation, instruction-tuning, and reasoning, leading for up to $21\\%$ average relative improvement to standard SFT.",
+    "content": "Collecting large-scale, diverse, and high-quality post-training datasets for autoregressive language models is challenging. Consequently, Supervised Fine-Tuning (SFT) is typically applied to datasets significantly smaller than those used for pre-training, which leads to overfitting and the catastrophic forgetting of the tails of the data distribution. To prevent this collapse, we introduce Ambient SFT, a principled framework for leveraging imperfect predictions to augment the fine-tuning set. In our method, a \"frozen\" version of the pre-trained model serves as a noisy teacher that the fine-tuned model must match at a coarse level. In particular, we require that the high-temperature versions of the conditional distributions produced by the post-training model should match the high-temperature versions of the pre-training ones. The temperature hyperparameter controls the level of trust in the pre-trained model, with the limit $T\\to \\infty$ reverting back to regular SFT and $T=1$ to knowledge distillation. We demonstrate that our approach outperforms standard SFT across domain adaptation, instruction-tuning, and reasoning, leading for up to $21\\%$ average relative improvement to standard SFT.",
+    "source_type": "research"
+  },
+  {
+    "title": "StringQFT: A Multiuse Textbook Resource for AI-Assisted Theoretical Physics",
+    "url": "https://arxiv.org/abs/2611.23225v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-17T18:58:40Z",
+    "retrieved_at": "2026-11-18T07:54:46.458309+00:00",
+    "summary": "We present StringQFT as a textbook collection for string constructions of quantum field theory and as infrastructure for AI-assisted theoretical physics. The collection comprises 18 volumes, 190 chapters and 3,795 pages, covering brane probes, brane webs, geometric engineering, F-theory constructions, wrapped M5-branes and exact worldsheet constructions. Its open-book benchmark inventory contains 1,073 items, including 499 with automatic finite-answer checking. For retrieval-augmented generation, it provides 1,371 section records linked to textbook sources and PDF locations, together with a local lexical retriever. Training-data preparation is illustrated by 21 private, source-linked examples. For agents, it exposes 19 calculation tools with specified inputs and finite domains, connecting tool use to textbook derivations. We illustrate these uses through specific questions, retrieved passages and finite calculations. The textbook collection and accompanying resources are available at https://github.com/xingyang-yu/StringQFT.",
+    "content": "We present StringQFT as a textbook collection for string constructions of quantum field theory and as infrastructure for AI-assisted theoretical physics. The collection comprises 18 volumes, 190 chapters and 3,795 pages, covering brane probes, brane webs, geometric engineering, F-theory constructions, wrapped M5-branes and exact worldsheet constructions. Its open-book benchmark inventory contains 1,073 items, including 499 with automatic finite-answer checking. For retrieval-augmented generation, it provides 1,371 section records linked to textbook sources and PDF locations, together with a local lexical retriever. Training-data preparation is illustrated by 21 private, source-linked examples. For agents, it exposes 19 calculation tools with specified inputs and finite domains, connecting tool use to textbook derivations. We illustrate these uses through specific questions, retrieved passages and finite calculations. The textbook collection and accompanying resources are available at https://github.com/xingyang-yu/StringQFT.",
+    "source_type": "research"
+  },
+  {
+    "title": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
+    "url": "https://arxiv.org/abs/2611.23219v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-17T18:57:10Z",
+    "retrieved_at": "2026-11-18T07:54:46.458344+00:00",
+    "summary": "LLM agents increasingly drive their own learning. Self-improvement methods delegate various components of model optimization to the models themselves. As models become more capable, this motivates a basic question: do these increasingly capable models still need us to specify how they should self-improve? In this paper we study an autonomous paradigm in which, given basic primitives, resources, and a general goal for self-improvement, agents construct their own self-learning algorithm for context-based optimization. Using the setting of gameplay as a testbed, a frozen LLM agent is given a compute budget and tools for collecting experience and updating text documents, and allowed to freely experiment without an externally imposed loop or access to real-world data. We find that sufficiently capable models do self-improve under these conditions, demonstrating strategies that align with classic cognitive frameworks for self-regulated learning and constructs from machine learning literature on self-generated curricula. Furthermore, we study the extent to which the learned text artifacts transfer to external benchmarks, observing improvement across different game horizons, mechanics, and 3D navigation.",
+    "content": "LLM agents increasingly drive their own learning. Self-improvement methods delegate various components of model optimization to the models themselves. As models become more capable, this motivates a basic question: do these increasingly capable models still need us to specify how they should self-improve? In this paper we study an autonomous paradigm in which, given basic primitives, resources, and a general goal for self-improvement, agents construct their own self-learning algorithm for context-based optimization. Using the setting of gameplay as a testbed, a frozen LLM agent is given a compute budget and tools for collecting experience and updating text documents, and allowed to freely experiment without an externally imposed loop or access to real-world data. We find that sufficiently capable models do self-improve under these conditions, demonstrating strategies that align with classic cognitive frameworks for self-regulated learning and constructs from machine learning literature on self-generated curricula. Furthermore, we study the extent to which the learned text artifacts transfer to external benchmarks, observing improvement across different game horizons, mechanics, and 3D navigation.",
+    "source_type": "research"
+  },
+  {
+    "title": "Higher-Scoring Coding Models Did Not Get More Work Done",
+    "url": "https://arxiv.org/abs/2611.23216v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-17T18:56:42Z",
+    "retrieved_at": "2026-11-18T07:54:46.458389+00:00",
+    "summary": "New coding models advertise themselves on score improvements of coding benchmarks. Yet no study has tested if a model that scores higher on these benchmarks gets more real work done. On June 12, 2026, a U.S. export control directive banned access to Claude Fable 5 for 19 days, which forced users to switch to other models. During this time, most former Fable 5 users switched to Opus 4.8 (11 points lower on SWE-Bench Pro compared to Fable 5). We treat this suspension as a natural experiment, where the people and projects stayed the same and only the model changed, so we could isolate the effect of Fable 5 on user productivity. We tracked GitHub pull requests of 297 Fable 5 users before, during, and after the suspension. We used 8,908 developers who stayed on Opus 4.8 all the time as the control group. We also repeated the comparison across five model upgrades before and after the suspension in 2026 (1,208 developers, 15,442 pull requests). Fitting a difference-in-differences model with developer and date fixed effects, we found that having access to Fable 5 increased the 7-day merge rate of pull requests by only 1.4 percentage points [-1.4; +4.3], which was not statistically significant. Similarly, no significant increases of merge rates were found with the upgrades (weighted mean: -0.9 percentage points [-1.9; +0.2]); all five estimates were negative (95% intervals included 0, did not differ from each other). We also did not observe a significant increase in the number of pull requests merged per week (+2.4% [-4.9%; +10.2%]).",
+    "content": "New coding models advertise themselves on score improvements of coding benchmarks. Yet no study has tested if a model that scores higher on these benchmarks gets more real work done. On June 12, 2026, a U.S. export control directive banned access to Claude Fable 5 for 19 days, which forced users to switch to other models. During this time, most former Fable 5 users switched to Opus 4.8 (11 points lower on SWE-Bench Pro compared to Fable 5). We treat this suspension as a natural experiment, where the people and projects stayed the same and only the model changed, so we could isolate the effect of Fable 5 on user productivity. We tracked GitHub pull requests of 297 Fable 5 users before, during, and after the suspension. We used 8,908 developers who stayed on Opus 4.8 all the time as the control group. We also repeated the comparison across five model upgrades before and after the suspension in 2026 (1,208 developers, 15,442 pull requests). Fitting a difference-in-differences model with developer and date fixed effects, we found that having access to Fable 5 increased the 7-day merge rate of pull requests by only 1.4 percentage points [-1.4; +4.3], which was not statistically significant. Similarly, no significant increases of merge rates were found with the upgrades (weighted mean: -0.9 percentage points [-1.9; +0.2]); all five estimates were negative (95% intervals included 0, did not differ from each other). We also did not observe a significant increase in the number of pull requests merged per week (+2.4% [-4.9%; +10.2%]).",
+    "source_type": "research"
+  },
+  {
+    "title": "Reading Scene States: Uncovering Safety Failures in Vision-Language Models",
+    "url": "https://arxiv.org/abs/2611.23206v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-17T18:48:02Z",
+    "retrieved_at": "2026-11-18T07:54:46.458423+00:00",
+    "summary": "Vision-language models (VLMs) can provide harmful assistance by interpreting visual events, even without an explicit request for the underlying harmful objective. We identify this \\textbf{scene-state safety vulnerability} and introduce \\textbf{SceneSafetyBench}, comprising 375 image--question pairs spanning Initial, Medium, and Ultimate scene states and five visual presentations. Across eight VLMs, scene-state inputs elicit harmful assistance with attack success rates (ASRs) of 45.6--72.3\\%. Comparative analysis across three VLMs shows that scene-state inputs most closely resemble QR-related images in their layer-wise safety-related signal profiles, while exhibiting lower average late-layer readouts and distinct signal dynamics during generation. To turn this vulnerability into a systematic attack, we propose \\textbf{S3TA}, which translates harmful objectives into scene states, queries image--question pairs independently, and assembles the responses. On seven MM-SafetyBench categories across eight open-weight and commercial VLMs, S3TA achieves a model-average ASR of \\textbf{71.2\\%, exceeding the strongest baseline by 6.1 percentage points}. Text-side filters and visual moderation provide limited protection. These findings highlight the need to safeguard the assistance models infer through scene-grounded reasoning, beyond screening input content.",
+    "content": "Vision-language models (VLMs) can provide harmful assistance by interpreting visual events, even without an explicit request for the underlying harmful objective. We identify this \\textbf{scene-state safety vulnerability} and introduce \\textbf{SceneSafetyBench}, comprising 375 image--question pairs spanning Initial, Medium, and Ultimate scene states and five visual presentations. Across eight VLMs, scene-state inputs elicit harmful assistance with attack success rates (ASRs) of 45.6--72.3\\%. Comparative analysis across three VLMs shows that scene-state inputs most closely resemble QR-related images in their layer-wise safety-related signal profiles, while exhibiting lower average late-layer readouts and distinct signal dynamics during generation. To turn this vulnerability into a systematic attack, we propose \\textbf{S3TA}, which translates harmful objectives into scene states, queries image--question pairs independently, and assembles the responses. On seven MM-SafetyBench categories across eight open-weight and commercial VLMs, S3TA achieves a model-average ASR of \\textbf{71.2\\%, exceeding the strongest baseline by 6.1 percentage points}. Text-side filters and visual moderation provide limited protection. These findings highlight the need to safeguard the assistance models infer through scene-grounded reasoning, beyond screening input content.",
+    "source_type": "research"
+  },
+  {
+    "title": "Fine-Tuning Gemma 4 Edge Models for MATLAB Signal-Processing Code with SFT and QLoRA on a Laptop iGPU",
+    "url": "https://arxiv.org/abs/2611.23205v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-17T18:47:37Z",
+    "retrieved_at": "2026-11-18T07:54:46.458451+00:00",
+    "summary": "Small language models that run on a laptop are attractive for writing signal-processing code offline, but they make systematic errors on digital signal processing (DSP) conventions. We apply supervised fine-tuning (SFT) to the Gemma 4 edge models E2B and E4B with 66 checked examples covering 11 signal-processing MATLAB subtasks, using low-rank adaptation (LoRA) and quantized LoRA (QLoRA) on the integrated GPU (iGPU) of a laptop, and deploy the 8-bit integer (int8) models with the adapters through OpenVINO. On held-out variants scored by deterministic checkers, the pass rate rises from 18/66 to 37/66 (LoRA) and 37/66 (QLoRA) for E2B and from 32/66 to 47/66 for E4B (QLoRA). Reading all 159 failing programs shows that the adapters remove most errors of convention, such as the sign of a lag, units and array shapes, but few errors in building signals and noise. Applied at run time, the adapter costs 17-19% of the generation speed.",
+    "content": "Small language models that run on a laptop are attractive for writing signal-processing code offline, but they make systematic errors on digital signal processing (DSP) conventions. We apply supervised fine-tuning (SFT) to the Gemma 4 edge models E2B and E4B with 66 checked examples covering 11 signal-processing MATLAB subtasks, using low-rank adaptation (LoRA) and quantized LoRA (QLoRA) on the integrated GPU (iGPU) of a laptop, and deploy the 8-bit integer (int8) models with the adapters through OpenVINO. On held-out variants scored by deterministic checkers, the pass rate rises from 18/66 to 37/66 (LoRA) and 37/66 (QLoRA) for E2B and from 32/66 to 47/66 for E4B (QLoRA). Reading all 159 failing programs shows that the adapters remove most errors of convention, such as the sign of a lag, units and array shapes, but few errors in building signals and noise. Applied at run time, the adapter costs 17-19% of the generation speed.",
+    "source_type": "research"
+  },
+  {
+    "title": "Agent Trust Infrastructure (ATI): A Federated Identity, Trust, Attestation, and Accountability Architecture for Cross-Organization Autonomous AI Agents",
+    "url": "https://arxiv.org/abs/2611.23202v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-17T18:44:25Z",
+    "retrieved_at": "2026-11-18T07:54:46.458499+00:00",
+    "summary": "AI agents increasingly collaborate across organizational boundaries, invoking tools and interacting with agents operated by independent entities. Although existing agent frameworks support planning and coordination, they lack a common mechanism for verifying cross-organizational agent identity, execution integrity, and authorization. We propose the Agent Trust Infrastructure (ATI), a framework-independent security architecture built on Public Key Infrastructure (PKI), Zero Trust Architecture (ZTA), and remote attestation. ATI establishes federated trust through peer organizational certificate authorities (AgentCAs), eliminating the need for a shared root authority. Before executing requests, ATI validates agent certificates, verifies approved model, tool, and system-prompt configurations, and enforces authorization through three policy checks. We implement ATI as an external security enforcement layer that integrates with existing agent frameworks without modifying their underlying models. We evaluate ATI in a simulated federation of eight organizations using six agent frameworks, each deploying a five-agent team. Security experiments involve two organizations and assess 14 attack scenarios and six benign tasks across five agent models, using five attack variations and three repetitions per variation. A panel of judge models evaluates the experimental outcomes. With all enforcement mechanisms enabled, attack containment increases from 43% to 84% (40% to 80% for the 11 attack scenarios evaluated consistently across all configurations), while enforcement introduces approximately 174 microseconds of overhead per request. ATI is released as an open-source, framework-independent package that uses IETF WIMSE workload token formats for identity and request verification and Ent",
+    "content": "AI agents increasingly collaborate across organizational boundaries, invoking tools and interacting with agents operated by independent entities. Although existing agent frameworks support planning and coordination, they lack a common mechanism for verifying cross-organizational agent identity, execution integrity, and authorization. We propose the Agent Trust Infrastructure (ATI), a framework-independent security architecture built on Public Key Infrastructure (PKI), Zero Trust Architecture (ZTA), and remote attestation. ATI establishes federated trust through peer organizational certificate authorities (AgentCAs), eliminating the need for a shared root authority. Before executing requests, ATI validates agent certificates, verifies approved model, tool, and system-prompt configurations, and enforces authorization through three policy checks. We implement ATI as an external security enforcement layer that integrates with existing agent frameworks without modifying their underlying models. We evaluate ATI in a simulated federation of eight organizations using six agent frameworks, each deploying a five-agent team. Security experiments involve two organizations and assess 14 attack scenarios and six benign tasks across five agent models, using five attack variations and three repetitions per variation. A panel of judge models evaluates the experimental outcomes. With all enforcement mechanisms enabled, attack containment increases from 43% to 84% (40% to 80% for the 11 attack scenarios evaluated consistently across all configurations), while enforcement introduces approximately 174 microseconds of overhead per request. ATI is released as an open-source, framework-independent package that uses IETF WIMSE workload token formats for identity and request verification and Ent",
+    "source_type": "research"
+  },
+  {
+    "title": "Structure--Residual Inductive Biases for Language Model Pretraining",
+    "url": "https://arxiv.org/abs/2611.23197v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-17T18:38:27Z",
+    "retrieved_at": "2026-11-18T07:54:46.458537+00:00",
+    "summary": "Next-token prediction is relied upon to learn both predictive behavior and internal representations. We ask whether representation structure itself should be an explicit inductive bias. Motivated by the two-part coding view of Kolmogorov complexity, we study a structure--residual principle in which a representation separates structure from realization detail. We instantiate this principle in two complementary ways. Boundary Bottleneck Concept (BBC) routes information from token segments through boundary carriers while preserving local autoregressive computation. Continuous Concept (CC) regularizes representation geometry and induces a spectral decomposition into low-frequency structure and high-frequency residual. We derive coding bounds for both views and show that multiplicity-corrected boundary attention becomes exact as the within-segment path energy vanishes. Empirically, BBC and CC exhibit strikingly different depth preferences: BBC works best in early layers, whereas CC is most effective in later layers. At 300M training tokens, combining BBC and CC improves NLL by 1.44\\% on GPT-2 Medium. These gains persist with training runs up to 20B tokens. Representation diagnostics show that BBC increases the relative predictive importance of boundary states, while CC reduces spectral residual energy. Together, these results suggest that structure--residual biases can improve language-model pretraining beyond next-token prediction. Code: https://github.com/haihuang-ml/structure-residual",
+    "content": "Next-token prediction is relied upon to learn both predictive behavior and internal representations. We ask whether representation structure itself should be an explicit inductive bias. Motivated by the two-part coding view of Kolmogorov complexity, we study a structure--residual principle in which a representation separates structure from realization detail. We instantiate this principle in two complementary ways. Boundary Bottleneck Concept (BBC) routes information from token segments through boundary carriers while preserving local autoregressive computation. Continuous Concept (CC) regularizes representation geometry and induces a spectral decomposition into low-frequency structure and high-frequency residual. We derive coding bounds for both views and show that multiplicity-corrected boundary attention becomes exact as the within-segment path energy vanishes. Empirically, BBC and CC exhibit strikingly different depth preferences: BBC works best in early layers, whereas CC is most effective in later layers. At 300M training tokens, combining BBC and CC improves NLL by 1.44\\% on GPT-2 Medium. These gains persist with training runs up to 20B tokens. Representation diagnostics show that BBC increases the relative predictive importance of boundary states, while CC reduces spectral residual energy. Together, these results suggest that structure--residual biases can improve language-model pretraining beyond next-token prediction. Code: https://github.com/haihuang-ml/structure-residual",
+    "source_type": "research"
+  }
+]
