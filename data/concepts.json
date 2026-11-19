@@ -1029,5 +1029,17 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2611.23202v1"
     ]
+  },
+  {
+    "date": "2026-11-19",
+    "name_zh": "智能体化形式化验证",
+    "name_en": "Agentic Formal Verification",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "由 LLM/agent 驱动交互式定理证明器（如 Lean）自动生成并检查大规模形式化证明，用于验证安全关键软件的正确性。",
+    "why_now": "AlphaProof Code 以 300 万行 Lean 证明验证 Signal 加密核心，显示 agent 已能承担工业级规模的证明工程，形式化验证从学术走向工程实践。",
+    "evidence_urls": [
+      "https://deepmind.google/blog/introducing-alphaproof-code/"
+    ]
   }
 ]
