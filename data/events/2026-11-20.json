@@ -1,0 +1,131 @@
+[
+  {
+    "id": "b93333b1393e2928",
+    "title": "SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research",
+    "summary": "LLM-based agents are becoming increasingly capable at discovering, validating and patching vulnerabilities in real software, and vendors and researchers report that this is already changing how vulnerabilities are found and fixed. These claims, however, are scattered across papers, vendor reports and disclosures and are rarely comparable. We introduce a framework that rates these capabilities on an autonomy scale modeled on the levels of driving automation, and qualifies each claim by its correctness, its availability and the strength of its evidence. We use this framework to systematize the published evidence on LLM capability in vulnerability research. We find that agents discovered, validated, and patched vulnerabilities in real-world software without human intervention before the restricted frontier models of 2026, and that open-weight models subsequently attained comparable autonomy for discovery and validation. We then measure the consequences of evolving LLM security capabilities in a decade of public vulnerability records, advisories and exploitation data. In 2026 the number of disclosed vulnerabilities more than doubled, with an increasing share rated critical or high, and severe bugs that had survived a decade or more in widely used code were reported several times more often than before. Yet the time between the stages of a vulnerability's life, from report to fix and from disclosure to attack, has not shifted noticeably so far. We grade the mitigations proposed in the literature with an explicit rubric and draw guidance for each group of stakeholders from the best-supported ones.",
+    "published_at": "2026-11-19T18:54:19Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.26601v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.6,
+    "ai_score": 8,
+    "facts": "arXiv 论文提出基于自动驾驶分级思路的自主性评级框架，系统化梳理 LLM 在漏洞发现、验证与修补方面的公开证据；称 2026 年披露漏洞数量翻倍以上，高危占比上升，但漏洞生命周期各阶段的时间间隔尚未明显变化。",
+    "analysis": "这是对“LLM 安全能力”主张的元评估，价值在于把分散的厂商报告与论文放到统一标尺上比较。其结论若成立，意味着 AI 已实质改变漏洞发现端，但修复与利用端节奏未同步，安全生态可能出现“发现快、修复慢”的失衡。",
+    "technical_value": "提供自主性分级、证据强度与正确性三维评估方法，可作为安全 AI 能力评测的参考框架；数据来自公开漏洞记录，存在披露偏差。",
+    "impact": "对漏洞管理、厂商响应流程与 AI 安全治理有直接参考意义，也提示监管需关注披露激增带来的修复压力。",
+    "keywords": [
+      "LLM security",
+      "vulnerability research",
+      "autonomy scale",
+      "SoK",
+      "disclosure"
+    ]
+  },
+  {
+    "id": "d5465c92fd9928be",
+    "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+    "summary": "",
+    "published_at": "Wed, 11 Nov 2026 05:01:16 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/qvac/botpsy",
+        "type": "official"
+      }
+    ],
+    "pre_score": 6.0,
+    "ai_score": 7,
+    "facts": "Hugging Face 官方博客发布 BotPsy，一款端侧个人助理，采用参数量低于十亿（sub-billion）的 agentic 语言模型。",
+    "analysis": "将 agentic 能力压缩到亚十亿参数并部署在设备端，指向隐私优先、低延迟、离线可用的个人助理路线。若属实，说明小模型在工具调用与多步任务上已具备可用性，可能削弱云端助理的默认地位。",
+    "technical_value": "核心价值在于小参数下的 agent 规划与工具调用能力，以及端侧内存/算力约束下的推理优化；具体量化指标未在输入中给出，需谨慎对待。",
+    "impact": "对端侧 AI 助手、隐私敏感场景与低带宽市场有直接影响，也可能推动手机/PC 厂商的本地 agent 集成。",
+    "keywords": [
+      "on-device",
+      "agentic LLM",
+      "sub-billion",
+      "personal assistant",
+      "edge AI"
+    ]
+  },
+  {
+    "id": "81aba129bca4a697",
+    "title": "Realized versus Population Reliability: Anytime-Valid Self-Consistency Certification under Correlated Reasoning",
+    "summary": "Self-consistency certification treats repeated sampling from a language model as sequential evidence accumulation and stops when an anytime-valid e-process crosses a threshold, guaranteeing finite-sample Type I error control by Ville's inequality. Prior constructions assume sampled rollouts are conditionally independent. We show this assumption fails in practice: reasoning streams are positively correlated through shared reasoning prefixes or across-prompt heterogeneity, changing not merely certificate efficiency but the hypothesis certified. Modeling dependence via a per-unit latent state (the random-effects / intraclass-correlation structure) induces exchangeable, equi-correlated increments with correlation $ρ$. Correlation splits the single null into a realized null about the drawn belief and a population null about average model behavior, which coincide only when $ρ=0$. We show: (i) the standard betting e-process remains anytime-valid for the realized null, not the population null; (ii) read as a population-null test, a suitable mixture has asymptotic crossing probability at least $π=P(μ(Z)>0)$, potentially exceeding nominal $ε$; (iii) the within-unit mean's effective sample size saturates at $1/ρ$, so extra within-unit rollouts cannot restore population validity; and (iv) a prompt-level e-process restores population validity, with optimal allocation at one rollout per prompt under a pure rollout budget. Simulations and Claude Haiku 4.5 rollouts confirm this regime dependence: on GSM8K ($\\hatρ=0.435$, $\\hatθ=+0.96$) the gap is dormant, whereas on AIME ($\\hatρ=0.480$, $\\hatθ=-0.15$) the single-unit rule crosses on 24% of prompts at nominal $ε=0.05$, while the prompt-level procedure declines (0.00). This correctness result identifies which reliability claim an anytime",
+    "published_at": "2026-11-19T18:47:51Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.26592v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.3,
+    "ai_score": 7,
+    "facts": "arXiv 论文指出自一致性认证中采样 rollout 条件独立假设在实践中失效，推理流存在正相关；提出按单元潜变量建模，区分 realized null 与 population null，并给出 prompt 级 e-process 恢复总体有效性。GSM8K 上差距休眠，AIME 上单单元规则在名义 ε=0.05 下 24% 提示越界，prompt 级程序为 0.00。",
+    "analysis": "这是对 LLM 可靠性统计方法的严谨修正，揭示相关性会改变被检验的假设本身，而非仅影响效率。对依赖自一致性做停止决策的系统有直接警示。",
+    "technical_value": "提供 anytime-valid 检验在相关推理下的正确性分析与最优 rollout 分配建议，方法论价值高。",
+    "impact": "影响 LLM 评测、推理预算分配与可靠性认证实践，尤其在高难度基准上。",
+    "keywords": [
+      "self-consistency",
+      "anytime-valid",
+      "e-process",
+      "correlated reasoning",
+      "reliability"
+    ]
+  },
+  {
+    "id": "f4a09f8d88522385",
+    "title": "PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation",
+    "summary": "Robotic vision-language-action (VLA) models can execute diverse individual manipulation skills, yet they still struggle with long-horizon loco-manipulation tasks, where temporal structure, skills, and precision are tightly coupled within a monolithic model. We propose Physically Grounded Execution (PGX), a framework that offloads temporal and precision control to two classical training-free components, allowing the VLA to focus on stage-specific skill dynamics. PGX decomposes long-horizon loco-manipulation into three layers: (i) a predicate-based state machine governs task progression, using physical predicates to gate phase transitions, trigger recovery, and coordinate navigation and waiting. Shared predicate semantics connect offline demonstration segmentation, online execution, and stage-wise evaluation; (ii) VLA skills operate within active manipulation phases, with flat or stage-trained models concentrating on task-relevant actions; and (iii) world-coordinate locking (WCL) maintains spatial consistency through base station keeping, object-relative positioning, and world-anchored contact targets. We demonstrate the effectiveness of PGX with extensive experiments conducted on three simulated tasks and one real-world task using a Unitree G1 humanoid robot for long-horizon loco-manipulation, showing improvements in stage progression and task success rates. Project page is available at: https://kl-research.github.io/pgx",
+    "published_at": "2026-11-19T18:52:18Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.26596v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.0,
+    "ai_score": 7,
+    "facts": "arXiv 论文提出 PGX 框架，将长程人形机器人 loco-manipulation 分解为谓词状态机、VLA 技能层与世界坐标锁定三层，在三个仿真任务与 Unitree G1 真机任务上验证，阶段推进与成功率提升。",
+    "analysis": "把时序与精度控制卸载给免训练经典组件，让 VLA 专注技能动态，是务实的分层工程路线，缓解单体模型在长程任务中的耦合难题。真机验证增强可信度。",
+    "technical_value": "谓词门控、恢复机制与世界锚定接触目标的设计可复用，属于系统集成层面的高价值工作。",
+    "impact": "对人形机器人长程操作与具身智能落地有直接推动。",
+    "keywords": [
+      "humanoid",
+      "loco-manipulation",
+      "VLA",
+      "state machine",
+      "embodied AI"
+    ]
+  },
+  {
+    "id": "8dd91510c4c3d246",
+    "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
+    "summary": "",
+    "published_at": "Wed, 18 Nov 2026 00:00:00 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/moe-expert-streaming",
+        "type": "official"
+      }
+    ],
+    "pre_score": 4.9,
+    "ai_score": 7,
+    "facts": "Hugging Face 博客介绍用 Transformers 实现 MoE 专家流式加载，在 32GB 内存下运行 180B 参数模型推理。",
+    "analysis": "专家流式加载把内存约束从参数量解耦，使大 MoE 模型可在消费级/单机环境运行，显著降低部署门槛，但会引入 I/O 延迟与吞吐折损。",
+    "technical_value": "涉及专家缓存策略、预取与带宽瓶颈权衡，是端侧/单机大模型推理的实用技术。",
+    "impact": "对本地部署、隐私敏感推理与低成本服务有较强推动。",
+    "keywords": [
+      "MoE",
+      "expert streaming",
+      "inference",
+      "memory efficiency"
+    ]
+  }
+]

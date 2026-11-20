@@ -1041,5 +1041,18 @@
     "evidence_urls": [
       "https://deepmind.google/blog/introducing-alphaproof-code/"
     ]
+  },
+  {
+    "date": "2026-11-20",
+    "name_zh": "端侧智能体小模型",
+    "name_en": "On-Device Agentic Small Language Models",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "指参数量在十亿以下、具备工具调用与多步规划能力的语言模型，部署在手机、PC 等终端本地运行，强调隐私、低延迟与离线可用。BotPsy 是这一方向的代表性发布。",
+    "why_now": "小模型能力提升与端侧算力增强叠加，使 agentic 任务首次可在本地完成；同时隐私监管与云推理成本推动本地化需求。",
+    "evidence_urls": [
+      "https://huggingface.co/blog/qvac/botpsy",
+      "https://huggingface.co/blog/moe-expert-streaming"
+    ]
   }
 ]
