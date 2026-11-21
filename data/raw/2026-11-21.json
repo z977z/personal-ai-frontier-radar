@@ -1,0 +1,322 @@
+[
+  {
+    "title": "Introducing Gemini 4 Neon",
+    "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 18 Nov 2026 21:35:43 +0000",
+    "retrieved_at": "2026-11-21T07:39:58.174571+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Genie 4 is now available",
+    "url": "https://deepmind.google/blog/genie-4-is-now-available/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 18 Nov 2026 18:13:42 +0000",
+    "retrieved_at": "2026-11-21T07:39:58.174602+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Introducing Gemini 4 Hydrogen",
+    "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+    "source": "Google DeepMind",
+    "published_at": "Thu, 12 Nov 2026 18:00:50 +0000",
+    "retrieved_at": "2026-11-21T07:39:58.174611+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+    "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 11 Nov 2026 15:00:15 +0000",
+    "retrieved_at": "2026-11-21T07:39:58.174622+00:00",
+    "summary": "Predicting how DNA sequences and their variations impact specific human cell types and disease.",
+    "content": "Predicting how DNA sequences and their variations impact specific human cell types and disease.",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini 4 Carbon is now available",
+    "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 10 Nov 2026 16:03:47 +0000",
+    "retrieved_at": "2026-11-21T07:39:58.174629+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+    "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 10 Nov 2026 12:02:28 +0000",
+    "retrieved_at": "2026-11-21T07:39:58.174644+00:00",
+    "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+    "content": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+    "source_type": "official"
+  },
+  {
+    "title": "Opening the datasets behind our AI weather models",
+    "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 10 Nov 2026 11:13:04 +0000",
+    "retrieved_at": "2026-11-21T07:39:58.174653+00:00",
+    "summary": "Foundational precipitation and geostationary satellite datasets to observe the planet clearly.",
+    "content": "Foundational precipitation and geostationary satellite datasets to observe the planet clearly.",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+    "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+    "source": "Google DeepMind",
+    "published_at": "Mon, 09 Nov 2026 19:51:47 +0000",
+    "retrieved_at": "2026-11-21T07:39:58.174661+00:00",
+    "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+    "content": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+    "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+    "source": "Google DeepMind",
+    "published_at": "Thu, 05 Nov 2026 17:05:16 +0000",
+    "retrieved_at": "2026-11-21T07:39:58.174667+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Agentic cheminformatics with Google Antigravity",
+    "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 03 Nov 2026 17:01:49 +0000",
+    "retrieved_at": "2026-11-21T07:39:58.174677+00:00",
+    "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+    "content": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+    "source_type": "official"
+  },
+  {
+    "title": "Speeding up planning decisions with AI",
+    "url": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
+    "source": "Google DeepMind",
+    "published_at": "Fri, 30 Oct 2026 14:18:30 +0000",
+    "retrieved_at": "2026-11-21T07:39:58.174685+00:00",
+    "summary": "Google DeepMind and UK government work together to reduce planning assessment times",
+    "content": "Google DeepMind and UK government work together to reduce planning assessment times",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini 4 Carbon: Our next frontier model",
+    "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 28 Oct 2026 17:00:58 +0000",
+    "retrieved_at": "2026-11-21T07:39:58.174691+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+    "url": "https://huggingface.co/blog/inkling2mini",
+    "source": "Hugging Face",
+    "published_at": "Fri, 20 Nov 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-21T07:39:58.247710+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+    "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+    "source": "Hugging Face",
+    "published_at": "Fri, 20 Nov 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-21T07:39:58.247737+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
+    "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
+    "source": "Hugging Face",
+    "published_at": "Wed, 18 Nov 2026 19:54:56 GMT",
+    "retrieved_at": "2026-11-21T07:39:58.247744+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Why your fine-tuning job takes longer than the FLOPs say",
+    "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+    "source": "Hugging Face",
+    "published_at": "Wed, 18 Nov 2026 18:53:43 GMT",
+    "retrieved_at": "2026-11-21T07:39:58.247749+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Time-Series Models in the Streamhouse: A New Frontier and Use Cases",
+    "url": "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse",
+    "source": "Hugging Face",
+    "published_at": "Wed, 18 Nov 2026 15:00:23 GMT",
+    "retrieved_at": "2026-11-21T07:39:58.247755+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
+    "url": "https://huggingface.co/blog/moe-expert-streaming",
+    "source": "Hugging Face",
+    "published_at": "Wed, 18 Nov 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-21T07:39:58.247760+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Rumble-2-Flash: an open 0.5B speech model for 40+ languages",
+    "url": "https://huggingface.co/blog/rumble-2-flash",
+    "source": "Hugging Face",
+    "published_at": "Wed, 18 Nov 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-21T07:39:58.247764+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
+    "url": "https://huggingface.co/blog/openrouter",
+    "source": "Hugging Face",
+    "published_at": "Mon, 16 Nov 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-21T07:39:58.247770+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
+    "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+    "source": "Hugging Face",
+    "published_at": "Fri, 13 Nov 2026 18:00:39 GMT",
+    "retrieved_at": "2026-11-21T07:39:58.247775+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "XYBench: Helping with the problem behind the question",
+    "url": "https://huggingface.co/blog/allenai/xybench",
+    "source": "Hugging Face",
+    "published_at": "Fri, 13 Nov 2026 17:02:35 GMT",
+    "retrieved_at": "2026-11-21T07:39:58.247780+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+    "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+    "source": "Hugging Face",
+    "published_at": "Fri, 13 Nov 2026 14:05:22 GMT",
+    "retrieved_at": "2026-11-21T07:39:58.247785+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+    "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+    "source": "Hugging Face",
+    "published_at": "Thu, 12 Nov 2026 19:07:35 GMT",
+    "retrieved_at": "2026-11-21T07:39:58.247790+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "PlayCraft: Designing Engaging Games from Agent Play Experience",
+    "url": "https://arxiv.org/abs/2611.26624v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-19T18:59:34Z",
+    "retrieved_at": "2026-11-21T07:39:58.353997+00:00",
+    "summary": "Recent AI agents can generate playable games, but these games are not necessarily engaging. Mastery is a key source of engagement, yet designing for it requires extensive human play and tuning. We propose PlayCraft, an automated framework that uses a vision-based agent to play games and draws on its detailed play experience to revise them for mastery. Starting from an initial game, PlayCraft alternates between playing and crafting. In the playing stage, a player agent watches the game screen, uses the controls, and pursues the game objective over repeated episodes while retaining memory. After each episode, it reports its progress, outcomes, decisions, and reflections. In the crafting stage, a crafter agent uses these reports to revise the game. It estimates player abilities, predicts performance at different proficiency levels, and compares those predictions with a target learning progression. It diagnoses the game and addresses the gaps by giving players meaningful opportunities to improve through better decisions and execution. We evaluate games in fresh runs with player agents across three intelligence settings, measuring learning gain and learning slope. Compared with the initial games, PlayCraft yields larger learning gains and steeper learning slopes in most games. It also outperforms the baselines on the macro-average of each metric at every intelligence setting.",
+    "content": "Recent AI agents can generate playable games, but these games are not necessarily engaging. Mastery is a key source of engagement, yet designing for it requires extensive human play and tuning. We propose PlayCraft, an automated framework that uses a vision-based agent to play games and draws on its detailed play experience to revise them for mastery. Starting from an initial game, PlayCraft alternates between playing and crafting. In the playing stage, a player agent watches the game screen, uses the controls, and pursues the game objective over repeated episodes while retaining memory. After each episode, it reports its progress, outcomes, decisions, and reflections. In the crafting stage, a crafter agent uses these reports to revise the game. It estimates player abilities, predicts performance at different proficiency levels, and compares those predictions with a target learning progression. It diagnoses the game and addresses the gaps by giving players meaningful opportunities to improve through better decisions and execution. We evaluate games in fresh runs with player agents across three intelligence settings, measuring learning gain and learning slope. Compared with the initial games, PlayCraft yields larger learning gains and steeper learning slopes in most games. It also outperforms the baselines on the macro-average of each metric at every intelligence setting.",
+    "source_type": "research"
+  },
+  {
+    "title": "One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning",
+    "url": "https://arxiv.org/abs/2611.26617v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-19T18:58:14Z",
+    "retrieved_at": "2026-11-21T07:39:58.354073+00:00",
+    "summary": "Videos reveal how the world changes, but rarely the actions that cause those changes. Latent action learning recovers such supervision from visual transitions, yet often learns the underlying dynamics largely from scratch. We ask whether a pretrained video generator can instead provide the prior for both inverse and forward dynamics. We introduce O$^{2}$LaF, built on a simple principle: one prior, two dynamics. We initialize both models from the same pretrained video DiT and adapt them to their distinct roles: a feed-forward transition encoder with learnable action queries for inverse dynamics, and a causal, action-conditioned video generator for forward dynamics. By controlling information access and optimizing both dynamics end-to-end through a compact bottleneck, O$^{2}$LaF learns transferable actions from unlabeled videos. Across navigation and robotic manipulation, O$^{2}$LaF sets a new state of the art in few-shot action probing and enables stronger zero-shot action transfer across visual contexts and embodiments. Beyond generative video priors, we further extend our framework to predictive representation priors such as V-JEPA2, achieving competitive performance. Our findings suggest a broader paradigm for latent-action learning: repurposing pretrained video models to discover transferable actions and predict their consequences.",
+    "content": "Videos reveal how the world changes, but rarely the actions that cause those changes. Latent action learning recovers such supervision from visual transitions, yet often learns the underlying dynamics largely from scratch. We ask whether a pretrained video generator can instead provide the prior for both inverse and forward dynamics. We introduce O$^{2}$LaF, built on a simple principle: one prior, two dynamics. We initialize both models from the same pretrained video DiT and adapt them to their distinct roles: a feed-forward transition encoder with learnable action queries for inverse dynamics, and a causal, action-conditioned video generator for forward dynamics. By controlling information access and optimizing both dynamics end-to-end through a compact bottleneck, O$^{2}$LaF learns transferable actions from unlabeled videos. Across navigation and robotic manipulation, O$^{2}$LaF sets a new state of the art in few-shot action probing and enables stronger zero-shot action transfer across visual contexts and embodiments. Beyond generative video priors, we further extend our framework to predictive representation priors such as V-JEPA2, achieving competitive performance. Our findings suggest a broader paradigm for latent-action learning: repurposing pretrained video models to discover transferable actions and predict their consequences.",
+    "source_type": "research"
+  },
+  {
+    "title": "SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research",
+    "url": "https://arxiv.org/abs/2611.26601v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-19T18:54:19Z",
+    "retrieved_at": "2026-11-21T07:39:58.354144+00:00",
+    "summary": "LLM-based agents are becoming increasingly capable at discovering, validating and patching vulnerabilities in real software, and vendors and researchers report that this is already changing how vulnerabilities are found and fixed. These claims, however, are scattered across papers, vendor reports and disclosures and are rarely comparable. We introduce a framework that rates these capabilities on an autonomy scale modeled on the levels of driving automation, and qualifies each claim by its correctness, its availability and the strength of its evidence. We use this framework to systematize the published evidence on LLM capability in vulnerability research. We find that agents discovered, validated, and patched vulnerabilities in real-world software without human intervention before the restricted frontier models of 2026, and that open-weight models subsequently attained comparable autonomy for discovery and validation. We then measure the consequences of evolving LLM security capabilities in a decade of public vulnerability records, advisories and exploitation data. In 2026 the number of disclosed vulnerabilities more than doubled, with an increasing share rated critical or high, and severe bugs that had survived a decade or more in widely used code were reported several times more often than before. Yet the time between the stages of a vulnerability's life, from report to fix and from disclosure to attack, has not shifted noticeably so far. We grade the mitigations proposed in the literature with an explicit rubric and draw guidance for each group of stakeholders from the best-supported ones.",
+    "content": "LLM-based agents are becoming increasingly capable at discovering, validating and patching vulnerabilities in real software, and vendors and researchers report that this is already changing how vulnerabilities are found and fixed. These claims, however, are scattered across papers, vendor reports and disclosures and are rarely comparable. We introduce a framework that rates these capabilities on an autonomy scale modeled on the levels of driving automation, and qualifies each claim by its correctness, its availability and the strength of its evidence. We use this framework to systematize the published evidence on LLM capability in vulnerability research. We find that agents discovered, validated, and patched vulnerabilities in real-world software without human intervention before the restricted frontier models of 2026, and that open-weight models subsequently attained comparable autonomy for discovery and validation. We then measure the consequences of evolving LLM security capabilities in a decade of public vulnerability records, advisories and exploitation data. In 2026 the number of disclosed vulnerabilities more than doubled, with an increasing share rated critical or high, and severe bugs that had survived a decade or more in widely used code were reported several times more often than before. Yet the time between the stages of a vulnerability's life, from report to fix and from disclosure to attack, has not shifted noticeably so far. We grade the mitigations proposed in the literature with an explicit rubric and draw guidance for each group of stakeholders from the best-supported ones.",
+    "source_type": "research"
+  },
+  {
+    "title": "Active Feature Acquisition by Distilling an Oracle Teacher",
+    "url": "https://arxiv.org/abs/2611.26598v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-19T18:52:57Z",
+    "retrieved_at": "2026-11-21T07:39:58.354199+00:00",
+    "summary": "Acquiring every feature of an instance is often costly: a measurement can carry a monetary price, a time delay, or a privacy cost. Active Feature Acquisition (AFA) addresses this by learning a policy that decides, per instance, which features to acquire under a budget. Existing AFA methods train this policy by optimizing a self-constructed utility target rather than distilling an explicit teacher. We construct this teacher explicitly. At training time the label and the unobserved feature values are available, and together they determine the teacher in closed form: an oracle that ranks every candidate by its effect on the downstream predictor's error. OracleImitator distills this ranking into a deployable policy by soft-target imitation. Across multimodal medical diagnosis and the AFABench benchmark, OracleImitator matches or outperforms existing AFA methods across the budget range, recovering 90% of the attainable accuracy gain at under a quarter of the acquisition cost. Because the teacher is an explicit algorithmic object rather than an implicit optimization target, we can also measure directly how much of its ranking is recoverable by a policy restricted to what is visible at deployment.",
+    "content": "Acquiring every feature of an instance is often costly: a measurement can carry a monetary price, a time delay, or a privacy cost. Active Feature Acquisition (AFA) addresses this by learning a policy that decides, per instance, which features to acquire under a budget. Existing AFA methods train this policy by optimizing a self-constructed utility target rather than distilling an explicit teacher. We construct this teacher explicitly. At training time the label and the unobserved feature values are available, and together they determine the teacher in closed form: an oracle that ranks every candidate by its effect on the downstream predictor's error. OracleImitator distills this ranking into a deployable policy by soft-target imitation. Across multimodal medical diagnosis and the AFABench benchmark, OracleImitator matches or outperforms existing AFA methods across the budget range, recovering 90% of the attainable accuracy gain at under a quarter of the acquisition cost. Because the teacher is an explicit algorithmic object rather than an implicit optimization target, we can also measure directly how much of its ranking is recoverable by a policy restricted to what is visible at deployment.",
+    "source_type": "research"
+  },
+  {
+    "title": "PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation",
+    "url": "https://arxiv.org/abs/2611.26596v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-19T18:52:18Z",
+    "retrieved_at": "2026-11-21T07:39:58.354256+00:00",
+    "summary": "Robotic vision-language-action (VLA) models can execute diverse individual manipulation skills, yet they still struggle with long-horizon loco-manipulation tasks, where temporal structure, skills, and precision are tightly coupled within a monolithic model. We propose Physically Grounded Execution (PGX), a framework that offloads temporal and precision control to two classical training-free components, allowing the VLA to focus on stage-specific skill dynamics. PGX decomposes long-horizon loco-manipulation into three layers: (i) a predicate-based state machine governs task progression, using physical predicates to gate phase transitions, trigger recovery, and coordinate navigation and waiting. Shared predicate semantics connect offline demonstration segmentation, online execution, and stage-wise evaluation; (ii) VLA skills operate within active manipulation phases, with flat or stage-trained models concentrating on task-relevant actions; and (iii) world-coordinate locking (WCL) maintains spatial consistency through base station keeping, object-relative positioning, and world-anchored contact targets. We demonstrate the effectiveness of PGX with extensive experiments conducted on three simulated tasks and one real-world task using a Unitree G1 humanoid robot for long-horizon loco-manipulation, showing improvements in stage progression and task success rates. Project page is available at: https://kl-research.github.io/pgx",
+    "content": "Robotic vision-language-action (VLA) models can execute diverse individual manipulation skills, yet they still struggle with long-horizon loco-manipulation tasks, where temporal structure, skills, and precision are tightly coupled within a monolithic model. We propose Physically Grounded Execution (PGX), a framework that offloads temporal and precision control to two classical training-free components, allowing the VLA to focus on stage-specific skill dynamics. PGX decomposes long-horizon loco-manipulation into three layers: (i) a predicate-based state machine governs task progression, using physical predicates to gate phase transitions, trigger recovery, and coordinate navigation and waiting. Shared predicate semantics connect offline demonstration segmentation, online execution, and stage-wise evaluation; (ii) VLA skills operate within active manipulation phases, with flat or stage-trained models concentrating on task-relevant actions; and (iii) world-coordinate locking (WCL) maintains spatial consistency through base station keeping, object-relative positioning, and world-anchored contact targets. We demonstrate the effectiveness of PGX with extensive experiments conducted on three simulated tasks and one real-world task using a Unitree G1 humanoid robot for long-horizon loco-manipulation, showing improvements in stage progression and task success rates. Project page is available at: https://kl-research.github.io/pgx",
+    "source_type": "research"
+  },
+  {
+    "title": "Realized versus Population Reliability: Anytime-Valid Self-Consistency Certification under Correlated Reasoning",
+    "url": "https://arxiv.org/abs/2611.26592v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-19T18:47:51Z",
+    "retrieved_at": "2026-11-21T07:39:58.354385+00:00",
+    "summary": "Self-consistency certification treats repeated sampling from a language model as sequential evidence accumulation and stops when an anytime-valid e-process crosses a threshold, guaranteeing finite-sample Type I error control by Ville's inequality. Prior constructions assume sampled rollouts are conditionally independent. We show this assumption fails in practice: reasoning streams are positively correlated through shared reasoning prefixes or across-prompt heterogeneity, changing not merely certificate efficiency but the hypothesis certified. Modeling dependence via a per-unit latent state (the random-effects / intraclass-correlation structure) induces exchangeable, equi-correlated increments with correlation $ρ$. Correlation splits the single null into a realized null about the drawn belief and a population null about average model behavior, which coincide only when $ρ=0$. We show: (i) the standard betting e-process remains anytime-valid for the realized null, not the population null; (ii) read as a population-null test, a suitable mixture has asymptotic crossing probability at least $π=P(μ(Z)>0)$, potentially exceeding nominal $ε$; (iii) the within-unit mean's effective sample size saturates at $1/ρ$, so extra within-unit rollouts cannot restore population validity; and (iv) a prompt-level e-process restores population validity, with optimal allocation at one rollout per prompt under a pure rollout budget. Simulations and Claude Haiku 4.5 rollouts confirm this regime dependence: on GSM8K ($\\hatρ=0.435$, $\\hatθ=+0.96$) the gap is dormant, whereas on AIME ($\\hatρ=0.480$, $\\hatθ=-0.15$) the single-unit rule crosses on 24% of prompts at nominal $ε=0.05$, while the prompt-level procedure declines (0.00). This correctness result identifies which reliability claim an anytime",
+    "content": "Self-consistency certification treats repeated sampling from a language model as sequential evidence accumulation and stops when an anytime-valid e-process crosses a threshold, guaranteeing finite-sample Type I error control by Ville's inequality. Prior constructions assume sampled rollouts are conditionally independent. We show this assumption fails in practice: reasoning streams are positively correlated through shared reasoning prefixes or across-prompt heterogeneity, changing not merely certificate efficiency but the hypothesis certified. Modeling dependence via a per-unit latent state (the random-effects / intraclass-correlation structure) induces exchangeable, equi-correlated increments with correlation $ρ$. Correlation splits the single null into a realized null about the drawn belief and a population null about average model behavior, which coincide only when $ρ=0$. We show: (i) the standard betting e-process remains anytime-valid for the realized null, not the population null; (ii) read as a population-null test, a suitable mixture has asymptotic crossing probability at least $π=P(μ(Z)>0)$, potentially exceeding nominal $ε$; (iii) the within-unit mean's effective sample size saturates at $1/ρ$, so extra within-unit rollouts cannot restore population validity; and (iv) a prompt-level e-process restores population validity, with optimal allocation at one rollout per prompt under a pure rollout budget. Simulations and Claude Haiku 4.5 rollouts confirm this regime dependence: on GSM8K ($\\hatρ=0.435$, $\\hatθ=+0.96$) the gap is dormant, whereas on AIME ($\\hatρ=0.480$, $\\hatθ=-0.15$) the single-unit rule crosses on 24% of prompts at nominal $ε=0.05$, while the prompt-level procedure declines (0.00). This correctness result identifies which reliability claim an anytime",
+    "source_type": "research"
+  },
+  {
+    "title": "Probing the \"Conscious\" Mind: Selective Access and Global Workspace in Vision-Language Models",
+    "url": "https://arxiv.org/abs/2611.26590v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-19T18:46:50Z",
+    "retrieved_at": "2026-11-21T07:39:58.354467+00:00",
+    "summary": "Vision-language models (VLMs) integrate visual and textual information, but their outputs do not reveal internal concept representations. Global workspace theory (GWT) proposes that information is selected from parallel brain processes, integrated in a shared workspace, and made available to specialised processes. We introduce the Multimodal Concept Lens (MC-Lens), a multimodal Jacobian lens, to study these functions in VLM concept processing. Its vision encoder and language decoder lenses map intermediate states to a shared semantic space defined by the decoder's output vocabulary to compare concept accessibility across modalities. MC-Lens supports internal concept interventions to examine the role of accessed concepts in downstream computation. (i) Accessibility and selective access. Multimodal concept information is readable in intermediate states and selectively accessible as tasks require. We extend \"readout carriers\" from one name token to a token set to better capture and express concept information and support counterfactual experiments. (ii) Concepts in downstream computation. Counterfactual experiments show that accessed concept information participates in downstream computation and reasoning. (iii) Development of cross-modal alignment and selective access. We develop two J-space metrics tracking the development of cross-modal concept alignment more clearly than hidden state cosine in controlled VLM training. The experiment also shows that reliable selective access develops later than concept accessibility. (iv) Shared functions across models. Across VLM families and sizes, we find shared patterns of concept accessibility, query-dependent selectivity and cross-task intervention effects despite differences in internal organisation. These findings offer an exper",
+    "content": "Vision-language models (VLMs) integrate visual and textual information, but their outputs do not reveal internal concept representations. Global workspace theory (GWT) proposes that information is selected from parallel brain processes, integrated in a shared workspace, and made available to specialised processes. We introduce the Multimodal Concept Lens (MC-Lens), a multimodal Jacobian lens, to study these functions in VLM concept processing. Its vision encoder and language decoder lenses map intermediate states to a shared semantic space defined by the decoder's output vocabulary to compare concept accessibility across modalities. MC-Lens supports internal concept interventions to examine the role of accessed concepts in downstream computation. (i) Accessibility and selective access. Multimodal concept information is readable in intermediate states and selectively accessible as tasks require. We extend \"readout carriers\" from one name token to a token set to better capture and express concept information and support counterfactual experiments. (ii) Concepts in downstream computation. Counterfactual experiments show that accessed concept information participates in downstream computation and reasoning. (iii) Development of cross-modal alignment and selective access. We develop two J-space metrics tracking the development of cross-modal concept alignment more clearly than hidden state cosine in controlled VLM training. The experiment also shows that reliable selective access develops later than concept accessibility. (iv) Shared functions across models. Across VLM families and sizes, we find shared patterns of concept accessibility, query-dependent selectivity and cross-task intervention effects despite differences in internal organisation. These findings offer an exper",
+    "source_type": "research"
+  },
+  {
+    "title": "Verify the Verifier: Specification-Grounded LLM Cross-Checking for Bugs That Escape UVM Scoreboards",
+    "url": "https://arxiv.org/abs/2611.26588v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-19T18:45:54Z",
+    "retrieved_at": "2026-11-21T07:39:58.354502+00:00",
+    "summary": "A passing UVM regression shows the design agrees with the reference model on what the scoreboard checks, not that it meets the specification. Bugs that pass every test yet violate the specification, termed scoreboard escapes, survive mature testbenches. We present Verify the Verifier, to our knowledge the first framework whose LLM-based Anomaly Cross-Checker examines a passing regression's traces against the specification. Of 564 bugs inserted into four OpenTitan IPs, 68 are candidate scoreboard escapes: non-equivalent, exercised by the tests, yet passing. The framework confirmed 41 as scoreboard escapes with assertions failing on the buggy design and proven on the original.",
+    "content": "A passing UVM regression shows the design agrees with the reference model on what the scoreboard checks, not that it meets the specification. Bugs that pass every test yet violate the specification, termed scoreboard escapes, survive mature testbenches. We present Verify the Verifier, to our knowledge the first framework whose LLM-based Anomaly Cross-Checker examines a passing regression's traces against the specification. Of 564 bugs inserted into four OpenTitan IPs, 68 are candidate scoreboard escapes: non-equivalent, exercised by the tests, yet passing. The framework confirmed 41 as scoreboard escapes with assertions failing on the buggy design and proven on the original.",
+    "source_type": "research"
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "id": "b93333b1393e2928",
+    "title": "SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research",
+    "summary": "LLM-based agents are becoming increasingly capable at discovering, validating and patching vulnerabilities in real software, and vendors and researchers report that this is already changing how vulnerabilities are found and fixed. These claims, however, are scattered across papers, vendor reports and disclosures and are rarely comparable. We introduce a framework that rates these capabilities on an autonomy scale modeled on the levels of driving automation, and qualifies each claim by its correctness, its availability and the strength of its evidence. We use this framework to systematize the published evidence on LLM capability in vulnerability research. We find that agents discovered, validated, and patched vulnerabilities in real-world software without human intervention before the restricted frontier models of 2026, and that open-weight models subsequently attained comparable autonomy for discovery and validation. We then measure the consequences of evolving LLM security capabilities in a decade of public vulnerability records, advisories and exploitation data. In 2026 the number of disclosed vulnerabilities more than doubled, with an increasing share rated critical or high, and severe bugs that had survived a decade or more in widely used code were reported several times more often than before. Yet the time between the stages of a vulnerability's life, from report to fix and from disclosure to attack, has not shifted noticeably so far. We grade the mitigations proposed in the literature with an explicit rubric and draw guidance for each group of stakeholders from the best-supported ones.",
+    "published_at": "2026-11-19T18:54:19Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.26601v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.6,
+    "ai_score": 8,
+    "facts": "该论文提出一个按自动驾驶分级思路构建的自主性量表，用于评估LLM在漏洞发现、验证与修补方面的能力，并按正确性、可用性与证据强度对每项主张进行限定。作者系统梳理已发表证据后称：在2026年受限前沿模型出现之前，已有智能体在无人工干预下于真实软件中发现、验证并修补漏洞；随后开放权重模型在发现与验证上达到相近自主性。基于十年公开漏洞记录、公告与利用数据的测量显示，2026年披露漏洞数量增长一倍以上，被评为严重或高危的比例上升，在广泛使用代码中存活十年以上的严重缺陷被报告频率提高数倍；但从报告到修复、从披露到攻击的时间间隔迄今未见明显变化。论文还用明确评分标准对文献提出的缓解措施分级，并据此给出面向各利益相关方的建议。",
+    "analysis": "该工作价值在于把分散于论文、厂商报告与披露中的能力主张统一到可比较的评估框架，属于方法论与证据系统化层面的贡献，而非新模型发布。其关键论断依赖对2026年漏洞统计的解读，但摘要未给出具体样本量、统计口径与因果识别设计，因此“漏洞披露翻倍”与“LLM能力提升”之间的因果归因需谨慎对待；时间间隔未变这一观察反而提示修复与利用环节的瓶颈可能不在发现侧。",
+    "technical_value": "提供可复用的自主性分级与证据强度评分体系，可用于横向比较不同智能体的漏洞研究能力；对缓解措施的评分标准有助于筛选高证据支撑的防御实践。",
+    "impact": "若结论成立，将推动漏洞管理流程、披露政策与厂商修复节奏的调整，并影响对开放权重模型安全能力的监管讨论；短期内更可能改变安全研究的工作方式而非攻击面时间线。",
+    "keywords": [
+      "LLM智能体",
+      "漏洞发现",
+      "自主性分级",
+      "漏洞披露",
+      "安全缓解措施",
+      "开放权重模型"
+    ]
+  },
+  {
+    "id": "6f3099abf69d3024",
+    "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+    "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+    "published_at": "Tue, 10 Nov 2026 12:02:28 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 8,
+    "facts": "Google DeepMind发布AlphaProof Code，称其智能体用Lean编写了三百万行证明，用于验证Signal核心加密实现。",
+    "analysis": "这是形式化验证与智能体结合的重要案例：将证明工程从人工密集型转向智能体生成，若证明可机器检查且覆盖核心加密逻辑，则显著降低高保障软件的验证成本。但摘要未说明证明覆盖率、是否覆盖完整协议栈、以及三百万行证明中自动生成部分的一次通过率与人工复核比例，因此不宜直接等同于“Signal整体已被形式化验证”。",
+    "technical_value": "展示LLM/智能体在交互式定理证明中的规模化生产能力，为密码学实现与安全关键代码的形式化验证提供可复用路径。",
+    "impact": "可能推动形式化验证在加密通信、系统软件等高保障领域的采用，并改变验证工程的人力结构；对AI生成证明的可信度评估方法提出新需求。",
+    "keywords": [
+      "形式化验证",
+      "Lean",
+      "AlphaProof",
+      "智能体",
+      "密码学实现",
+      "Signal"
+    ]
+  },
+  {
+    "id": "d64463d67f9b0f5b",
+    "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+    "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+    "published_at": "Mon, 09 Nov 2026 19:51:47 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 7,
+    "facts": "Google DeepMind发布Gemini Robotics 2.5，称其为能力最强的视觉-语言-动作模型，提升机器人灵巧性、可靠性与安全性。",
+    "analysis": "视觉-语言-动作模型是具身智能的核心路线，版本迭代强调真实世界灵巧操作，说明从演示走向可用性的推进。摘要未给出任务成功率、泛化测试与安全评估细节，能力主张需以第三方评测验证。",
+    "technical_value": "VLA模型在灵巧操作与可靠性上的迭代，涉及多模态感知到动作生成的端到端控制与安全约束设计。",
+    "impact": "对机器人操作、仓储与制造自动化有中期影响；安全性与可靠性提升是进入真实场景的前提。",
+    "keywords": [
+      "视觉-语言-动作模型",
+      "具身智能",
+      "机器人灵巧操作",
+      "Gemini Robotics",
+      "安全性"
+    ]
+  },
+  {
+    "id": "d66b9c2d229951fd",
+    "title": "Agentic cheminformatics with Google Antigravity",
+    "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+    "published_at": "Tue, 03 Nov 2026 17:01:49 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 6,
+    "facts": "Google DeepMind介绍Google Antigravity与Cheminformatics Skills在药物发现工作流中的应用，称可加速化合物检索并提出新型刚性化大环化合物。",
+    "analysis": "属于智能体在垂直科学工作流中的产品化落地，强调工具调用与领域技能封装。摘要未提供命中率、合成可行性或实验验证数据，因此“提出新化合物”的实际价值需以后续湿实验或基准评测确认。",
+    "technical_value": "展示将化学信息学工具链封装为智能体技能的模式，可复用于分子检索、性质预测与结构生成流程编排。",
+    "impact": "对早期药物发现的计算环节有提效潜力，但短期影响取决于生成分子的可合成性与实验验证闭环。",
+    "keywords": [
+      "智能体",
+      "化学信息学",
+      "药物发现",
+      "大环化合物",
+      "Google Antigravity"
+    ]
+  },
+  {
+    "id": "fb25ba7862951994",
+    "title": "Gemini 4 Carbon: Our next frontier model",
+    "summary": "",
+    "published_at": "Wed, 28 Oct 2026 17:00:58 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6,
+    "facts": "Google DeepMind发布博客，标题为Gemini 4 Carbon，称其为下一个前沿模型，摘要为空。",
+    "analysis": "仅有标题与发布事实，缺少能力、评测与可用性信息，无法评估具体进展；前沿模型发布通常伴随能力跃迁与安全评估，需等待正文与第三方评测。",
+    "technical_value": "信息不足，暂无法判断技术细节。",
+    "impact": "作为前沿模型发布节点，可能影响开发者生态与竞争格局，但当前证据不足以支撑具体判断。",
+    "keywords": [
+      "Gemini 4",
+      "前沿模型",
+      "Google DeepMind"
+    ]
+  }
+]

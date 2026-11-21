@@ -1054,5 +1054,18 @@
       "https://huggingface.co/blog/qvac/botpsy",
       "https://huggingface.co/blog/moe-expert-streaming"
     ]
+  },
+  {
+    "date": "2026-11-21",
+    "name_zh": "智能体化漏洞研究",
+    "name_en": "Agentic Vulnerability Research",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "指由LLM智能体自主完成软件漏洞的发现、验证与修补，并以自主性分级和证据强度标准对其能力进行系统评估的研究与实践方向。",
+    "why_now": "SoK论文系统化了过去分散的能力主张，并给出2026年漏洞披露数量翻倍等测量结果，使该方向从零散案例进入可比较评估阶段；同时形式化验证智能体（AlphaProof Code）显示智能体在高保障软件验证上的规模化潜力。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2611.26601v1",
+      "https://deepmind.google/blog/introducing-alphaproof-code/"
+    ]
   }
 ]
