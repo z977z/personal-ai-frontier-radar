@@ -1,0 +1,133 @@
+[
+  {
+    "id": "b93333b1393e2928",
+    "title": "SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research",
+    "summary": "LLM-based agents are becoming increasingly capable at discovering, validating and patching vulnerabilities in real software, and vendors and researchers report that this is already changing how vulnerabilities are found and fixed. These claims, however, are scattered across papers, vendor reports and disclosures and are rarely comparable. We introduce a framework that rates these capabilities on an autonomy scale modeled on the levels of driving automation, and qualifies each claim by its correctness, its availability and the strength of its evidence. We use this framework to systematize the published evidence on LLM capability in vulnerability research. We find that agents discovered, validated, and patched vulnerabilities in real-world software without human intervention before the restricted frontier models of 2026, and that open-weight models subsequently attained comparable autonomy for discovery and validation. We then measure the consequences of evolving LLM security capabilities in a decade of public vulnerability records, advisories and exploitation data. In 2026 the number of disclosed vulnerabilities more than doubled, with an increasing share rated critical or high, and severe bugs that had survived a decade or more in widely used code were reported several times more often than before. Yet the time between the stages of a vulnerability's life, from report to fix and from disclosure to attack, has not shifted noticeably so far. We grade the mitigations proposed in the literature with an explicit rubric and draw guidance for each group of stakeholders from the best-supported ones.",
+    "published_at": "2026-11-19T18:54:19Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.26601v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.6,
+    "ai_score": 9,
+    "facts": "论文提出一个按自动驾驶分级思路构建的自主性量表框架，用于评估LLM在漏洞研究中的能力，并按正确性、可用性和证据强度对每项声明进行限定。作者系统梳理已发表证据后称：在2026年受限前沿模型之前，智能体已在无人工干预下于真实软件中发现、验证并修补漏洞；开放权重模型随后在发现与验证上达到相近自主性。基于十年公开漏洞记录、公告与利用数据分析，2026年披露漏洞数量翻倍以上，被评为严重或高危的比例上升，在广泛使用代码中存活十年以上的严重缺陷被报告频率提高数倍；但从报告到修复、从披露到攻击的间隔时间尚未明显变化。论文还用明确评分标准对文献提出的缓解措施分级。",
+    "analysis": "该工作价值在于把分散的厂商声明、论文与披露统一到可比较的自主性分级与证据强度框架，属于评估方法论而非新攻击能力。其结论若成立，意味着漏洞发现供给侧已发生结构性变化，但修复与利用环节的时滞未同步缩短，说明瓶颈正从发现转向修复与响应。需注意数据来自作者自建统计口径，翻倍等结论应视为该论文的测量结果而非独立核实事实。",
+    "technical_value": "提供可复用的自主性分级量表与证据分级标准，可用于横向比较不同智能体在漏洞发现、验证、修补上的能力声明；对安全评测基准设计、披露流程与缓解措施评估具有方法学参考价值。",
+    "impact": "对安全厂商、开源维护者与漏洞披露机构影响直接：发现成本下降将推高披露量，修复与分诊压力上升；监管与保险方可能要求按自主性等级标注工具能力。",
+    "keywords": [
+      "LLM安全智能体",
+      "漏洞发现",
+      "自主性分级",
+      "漏洞披露",
+      "补丁自动化",
+      "证据分级"
+    ]
+  },
+  {
+    "id": "81aba129bca4a697",
+    "title": "Realized versus Population Reliability: Anytime-Valid Self-Consistency Certification under Correlated Reasoning",
+    "summary": "Self-consistency certification treats repeated sampling from a language model as sequential evidence accumulation and stops when an anytime-valid e-process crosses a threshold, guaranteeing finite-sample Type I error control by Ville's inequality. Prior constructions assume sampled rollouts are conditionally independent. We show this assumption fails in practice: reasoning streams are positively correlated through shared reasoning prefixes or across-prompt heterogeneity, changing not merely certificate efficiency but the hypothesis certified. Modeling dependence via a per-unit latent state (the random-effects / intraclass-correlation structure) induces exchangeable, equi-correlated increments with correlation $ρ$. Correlation splits the single null into a realized null about the drawn belief and a population null about average model behavior, which coincide only when $ρ=0$. We show: (i) the standard betting e-process remains anytime-valid for the realized null, not the population null; (ii) read as a population-null test, a suitable mixture has asymptotic crossing probability at least $π=P(μ(Z)>0)$, potentially exceeding nominal $ε$; (iii) the within-unit mean's effective sample size saturates at $1/ρ$, so extra within-unit rollouts cannot restore population validity; and (iv) a prompt-level e-process restores population validity, with optimal allocation at one rollout per prompt under a pure rollout budget. Simulations and Claude Haiku 4.5 rollouts confirm this regime dependence: on GSM8K ($\\hatρ=0.435$, $\\hatθ=+0.96$) the gap is dormant, whereas on AIME ($\\hatρ=0.480$, $\\hatθ=-0.15$) the single-unit rule crosses on 24% of prompts at nominal $ε=0.05$, while the prompt-level procedure declines (0.00). This correctness result identifies which reliability claim an anytime",
+    "published_at": "2026-11-19T18:47:51Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.26592v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.3,
+    "ai_score": 8,
+    "facts": "论文指出自一致性认证把重复采样视为序贯证据累积，并以e-process在阈值处停止，但既有构造假设采样轨迹条件独立。作者用每单元潜状态建模相关性，证明：标准betting e-process对“实现零假设”仍 anytime-valid，但对“总体零假设”不成立；作为总体检验时混合方法的渐近越界概率至少为π=P(μ(Z)>0)，可能超过名义ε；单元内均值的有效样本量饱和于1/ρ，增加单元内采样无法恢复总体有效性；提示级e-process可恢复总体有效性，在纯采样预算下最优分配为每提示一次采样。模拟与Claude Haiku 4.5采样显示：GSM8K上ρ≈0.435、θ≈+0.96时差距休眠；AIME上ρ≈0.480、θ≈-0.15时，单单元规则在名义ε=0.05下于24%提示上越界，提示级程序为0.00。",
+    "analysis": "该工作揭示LLM自一致性可靠性认证中一个易被忽视的统计陷阱：相关性使被检验的假设发生改变，单提示多次采样会系统性高估可靠性。结论对依赖自一致性做停止决策的推理系统有直接纠偏意义，且给出了可操作的提示级替代方案。",
+    "technical_value": "明确区分实现零假设与总体零假设，给出有效样本量饱和上界与提示级e-process构造，可直接用于推理时采样预算分配与可靠性认证。",
+    "impact": "影响以自一致性提升准确率的推理系统设计，尤其是高难度基准上可靠性声明的可信度；对评测与安全认证流程有方法学影响。",
+    "keywords": [
+      "自一致性",
+      "e-process",
+      "anytime-valid",
+      "相关性",
+      "可靠性认证",
+      "采样预算"
+    ]
+  },
+  {
+    "id": "050759077a3bea40",
+    "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+    "summary": "",
+    "published_at": "Fri, 20 Nov 2026 00:00:00 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 7,
+    "facts": "Hugging Face发布博文，介绍harness adapters，称可将所选模型适配到所用harness以提升性能并降低成本。",
+    "analysis": "标题指向模型与评测/运行框架之间的适配层，属于工程侧优化，可能降低模型在特定harness下的接入与调优成本。输入未提供具体方法、数据或基准结果，性能与成本改善幅度无法核实，应视为方向性发布。",
+    "technical_value": "若适配层可复用，能减少为不同harness重复微调或提示工程的工作量，对模型部署与评测流水线有工程价值。",
+    "impact": "影响模型提供方与评测框架生态的集成方式，可能推动harness侧标准化。",
+    "keywords": [
+      "harness适配",
+      "模型适配层",
+      "推理成本",
+      "评测框架"
+    ]
+  },
+  {
+    "id": "6a231c55c3f0aad6",
+    "title": "Probing the \"Conscious\" Mind: Selective Access and Global Workspace in Vision-Language Models",
+    "summary": "Vision-language models (VLMs) integrate visual and textual information, but their outputs do not reveal internal concept representations. Global workspace theory (GWT) proposes that information is selected from parallel brain processes, integrated in a shared workspace, and made available to specialised processes. We introduce the Multimodal Concept Lens (MC-Lens), a multimodal Jacobian lens, to study these functions in VLM concept processing. Its vision encoder and language decoder lenses map intermediate states to a shared semantic space defined by the decoder's output vocabulary to compare concept accessibility across modalities. MC-Lens supports internal concept interventions to examine the role of accessed concepts in downstream computation. (i) Accessibility and selective access. Multimodal concept information is readable in intermediate states and selectively accessible as tasks require. We extend \"readout carriers\" from one name token to a token set to better capture and express concept information and support counterfactual experiments. (ii) Concepts in downstream computation. Counterfactual experiments show that accessed concept information participates in downstream computation and reasoning. (iii) Development of cross-modal alignment and selective access. We develop two J-space metrics tracking the development of cross-modal concept alignment more clearly than hidden state cosine in controlled VLM training. The experiment also shows that reliable selective access develops later than concept accessibility. (iv) Shared functions across models. Across VLM families and sizes, we find shared patterns of concept accessibility, query-dependent selectivity and cross-task intervention effects despite differences in internal organisation. These findings offer an exper",
+    "published_at": "2026-11-19T18:46:50Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.26590v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.3,
+    "ai_score": 7,
+    "facts": "论文提出多模态概念透镜MC-Lens，一种多模态雅可比透镜，将视觉编码器与语言解码器的中间状态映射到由解码器输出词表定义的共享语义空间，以比较跨模态概念可及性，并支持内部概念干预。研究发现：多模态概念信息可在中间状态读出并按任务需要选择性访问；反事实实验显示被访问的概念信息参与下游计算与推理；提出两个J空间指标，比隐藏状态余弦更清晰地追踪跨模态概念对齐的发展，且可靠的选择性访问晚于概念可及性出现；在不同VLM家族与规模上发现概念可及性、查询相关选择性与跨任务干预效应的共享模式。",
+    "analysis": "该研究为VLM内部概念表示提供可解释性工具与因果干预手段，属于机制分析而非能力提升。选择性访问晚于可及性的发现对理解模型何时“用上”已编码信息有启发，但“意识”相关表述应视为类比框架而非结论。",
+    "technical_value": "MC-Lens与J空间指标可复用于跨模态表示对齐与干预研究，为VLM可解释性提供可操作工具。",
+    "impact": "推动VLM可解释性与安全审计方法发展，对模型内部概念干预与对齐评估有潜在应用。",
+    "keywords": [
+      "视觉语言模型",
+      "可解释性",
+      "全局工作空间",
+      "概念干预",
+      "跨模态对齐"
+    ]
+  },
+  {
+    "id": "f4a09f8d88522385",
+    "title": "PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation",
+    "summary": "Robotic vision-language-action (VLA) models can execute diverse individual manipulation skills, yet they still struggle with long-horizon loco-manipulation tasks, where temporal structure, skills, and precision are tightly coupled within a monolithic model. We propose Physically Grounded Execution (PGX), a framework that offloads temporal and precision control to two classical training-free components, allowing the VLA to focus on stage-specific skill dynamics. PGX decomposes long-horizon loco-manipulation into three layers: (i) a predicate-based state machine governs task progression, using physical predicates to gate phase transitions, trigger recovery, and coordinate navigation and waiting. Shared predicate semantics connect offline demonstration segmentation, online execution, and stage-wise evaluation; (ii) VLA skills operate within active manipulation phases, with flat or stage-trained models concentrating on task-relevant actions; and (iii) world-coordinate locking (WCL) maintains spatial consistency through base station keeping, object-relative positioning, and world-anchored contact targets. We demonstrate the effectiveness of PGX with extensive experiments conducted on three simulated tasks and one real-world task using a Unitree G1 humanoid robot for long-horizon loco-manipulation, showing improvements in stage progression and task success rates. Project page is available at: https://kl-research.github.io/pgx",
+    "published_at": "2026-11-19T18:52:18Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.26596v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.0,
+    "ai_score": 7,
+    "facts": "论文提出PGX框架，将长时程人形机器人移动操作分解为三层：基于谓词的状态机负责任务推进，用物理谓词门控阶段转换、触发恢复并协调导航与等待；VLA技能在主动操作阶段内运行；世界坐标锁定WCL通过基站保持、物体相对定位与世界锚定接触目标维持空间一致性。在三个仿真任务与一个Unitree G1真实任务上验证，阶段推进与任务成功率均有提升。",
+    "analysis": "该工作把时序与精度控制卸载给免训练经典组件，让VLA专注阶段技能，属于系统分层思路，对长时程任务的可控性与可恢复性有实际意义。真实机器人验证增强了说服力，但具体提升幅度需看原文数据。",
+    "technical_value": "谓词状态机与WCL是可复用的工程模式，可降低VLA在长时程任务中的误差累积与阶段漂移。",
+    "impact": "对人形机器人长时程操作的系统架构设计有参考价值，利好具身智能工程落地。",
+    "keywords": [
+      "人形机器人",
+      "VLA",
+      "长时程任务",
+      "状态机",
+      "世界坐标锁定"
+    ]
+  }
+]

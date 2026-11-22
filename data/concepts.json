@@ -1067,5 +1067,17 @@
       "https://arxiv.org/abs/2611.26601v1",
       "https://deepmind.google/blog/introducing-alphaproof-code/"
     ]
+  },
+  {
+    "date": "2026-11-22",
+    "name_zh": "LLM漏洞研究自主性分级",
+    "name_en": "LLM Vulnerability Research Autonomy Scale",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "借鉴自动驾驶分级思路，对LLM智能体在漏洞发现、验证与修补上的自主程度进行分级，并用正确性、可用性与证据强度限定每项能力声明，使分散的论文、厂商报告与披露数据可比较。",
+    "why_now": "2026年披露漏洞数量翻倍以上、高危占比上升，而修复与利用时滞未同步缩短，说明发现侧能力已发生结构性变化，行业需要统一标尺来评估与治理这类能力。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2611.26601v1"
+    ]
   }
 ]
