@@ -1,0 +1,136 @@
+[
+  {
+    "id": "6f3099abf69d3024",
+    "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+    "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+    "published_at": "Tue, 10 Nov 2026 12:02:28 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 9,
+    "facts": "Google DeepMind发布AlphaProof Code，其智能体用Lean编写了三百万行证明，用于验证Signal核心加密实现。",
+    "analysis": "这是AI形式化验证从玩具定理走向工业级密码学代码的标志性事件。三百万行Lean证明的规模说明智能体具备长程、可组合的证明工程能力，而非单点定理证明。选择Signal加密作为目标具有高可信度背书效应，但需注意'验证实现'与'验证协议设计'的边界，以及证明规模与人工审计成本之间的权衡。",
+    "technical_value": "极高。展示LLM+形式化方法在真实安全关键软件上的端到端可行性，为可验证软件供应链提供新范式。",
+    "impact": "对密码学、安全关键系统、编译器与操作系统验证产生深远影响；可能重塑软件审计与合规验证的产业流程。",
+    "keywords": [
+      "形式化验证",
+      "Lean",
+      "AlphaProof",
+      "密码学",
+      "智能体",
+      "软件安全"
+    ]
+  },
+  {
+    "id": "4dacd5ca33ba6758",
+    "title": "Non-penetrating World Models",
+    "summary": "We study a new problem of preventing object penetration in interactive video world models. To understand how existing models handle this, we introduce NoPeBench, a benchmark that evaluates how world models respond to physical obstacles. Our evaluation reveals that none of the open-source models can reliably prevent such failures. Surprisingly, however, these models already encode the information needed to predict such violations. We find that the hidden states of diffusion transformers (DiTs) can predict whether a candidate action will penetrate an obstacle. Building on this, we introduce NoPeWorld, a lightweight framework that detects and prevents penetration. Specifically, we train a small prediction head on top of a frozen DiT's hidden states to read out if a candidate action is safe or not. Unsafe actions are then replaced with safe ones that best preserve the original intent. Despite its simplicity, NoPeWorld substantially reduces the physical violation rate, averaged over six video world models, from 74% to 16%. Remarkably, our method shows zero-shot generalization to open-domain imagery, third-person viewpoints, and moving obstacles. We publicly release our code, the NoPeBench benchmark, and model weights. Project Page: https://nopeworld.github.io .",
+    "published_at": "2026-11-20T18:44:57Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.27963v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.8,
+    "ai_score": 8,
+    "facts": "论文提出交互式视频世界模型中的物体穿透问题，发布NoPeBench基准评估世界模型对物理障碍的响应；评估显示所有开源模型均无法可靠防止穿透失败；发现扩散Transformer（DiT）隐藏状态可预测候选动作是否会穿透障碍；提出NoPeWorld框架，在冻结DiT隐藏状态上训练小型预测头判断动作安全性，并将不安全动作替换为最保留原意图的安全动作；在六个视频世界模型上平均将物理违规率从74%降至16%；对开放域图像、第三人称视角和移动障碍物展现零样本泛化；公开代码、NoPeBench基准和模型权重。",
+    "analysis": "该工作把'物理合理性'从生成质量的外围问题提升为可检测、可干预的独立模块，关键洞察是DiT隐藏状态已隐含穿透预测信息，只需轻量读出即可利用，避免了重训练世界模型的高成本。零样本泛化到第三人称和移动障碍物说明该信号具有一定几何/物理通用性，而非过拟合特定数据集。",
+    "technical_value": "高。提供可复用的穿透检测基准与轻量安全头方案，方法简单、可插拔，对现有视频世界模型改造成本低，且验证了隐藏状态探针（probing）在物理推理上的有效性。",
+    "impact": "对交互式视频生成、具身智能仿真、游戏与VR内容生成有直接影响，可提升世界模型作为规划器的可靠性；同时为'生成模型内部表征已编码物理知识'提供实证支持。",
+    "keywords": [
+      "世界模型",
+      "物理穿透",
+      "DiT隐藏状态",
+      "NoPeBench",
+      "安全动作替换",
+      "零样本泛化"
+    ]
+  },
+  {
+    "id": "0b5a6c1234ece61f",
+    "title": "StereoVLM: Binocular Vision-Language Models for Metric 3D Spatial Reasoning",
+    "summary": "Vision-language models (VLMs) exhibit strong semantic understanding but remain limited in their ability to reason about metric 3D space in the physical world. Existing VLMs typically infer 3D scene structure from one or more images without known camera calibration or cross-view geometric constraints. This makes metric 3D inference inherently ambiguous and leaves it unclear whether their spatial predictions are grounded in visual evidence or driven primarily by semantic priors. In contrast, calibrated stereo provides explicit cross-view geometry that resolves this ambiguity and offers a more reliable foundation for metric 3D perception and geometric generalization. We investigate how VLMs can learn transferable 3D representations directly from calibrated binocular observations. To this end, we introduce StereoVLM, the first geometry-aware binocular VLM for metric 3D spatial reasoning. StereoVLM follows a hierarchical learning paradigm spanning from cross-view correspondence and disparity estimation to calibration-conditioned metric depth perception and semantic spatial reasoning. We further find that disparity supervision generalizes substantially better than direct binocular depth supervision on unseen environments. To evaluate these capabilities, we introduce Stereo3D-Bench, a comprehensive benchmark across three levels, from point-level geometry to object-level spatial reasoning. StereoVLM-8B achieves 95.17% depth accuracy ($δ_1$) and a 66.98 average object-level score on Stereo3D-Bench. Intervention results further indicate that the model's performance on Stereo3D-Bench benefits from valid cross-view geometry and cannot be explained solely by additional visual tokens or semantic priors. Hierarchical geometric supervision also yields average gains of 3.54 points acros",
+    "published_at": "2026-11-20T17:52:02Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.27915v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 8,
+    "facts": "论文指出现有视觉语言模型（VLM）缺乏度量3D空间推理能力，通常在没有相机标定或跨视角几何约束下从图像推断3D结构，导致度量3D推断存在歧义；提出StereoVLM，首个几何感知的双目VLM，采用从跨视角对应、视差估计到标定条件度量深度感知与语义空间推理的分层学习范式；发现视差监督在未见环境上的泛化显著优于直接双目深度监督；发布Stereo3D-Bench三级基准；StereoVLM-8B达到95.17%深度准确率（δ1）和66.98物体级平均分；干预实验表明性能受益于有效跨视角几何，不能仅由额外视觉token或语义先验解释；分层几何监督平均带来3.54分提升。",
+    "analysis": "该工作针对VLM'语义强、几何弱'的核心短板，用标定双目几何作为显式监督信号，把度量3D能力从语义先验中解耦出来。视差监督优于深度监督的发现具有方法论价值，说明中间几何表征比端到端深度回归更利于泛化。干预实验设计严谨，能排除token数量与语义先验的混淆解释。",
+    "technical_value": "高。给出可复现的分层训练范式与基准，验证跨视角几何约束对VLM空间推理的必要性，为具身智能与机器人提供度量级空间理解基础。",
+    "impact": "推动VLM从'看图说话'走向'度量理解'，对机器人操作、自动驾驶、AR/VR空间交互有直接价值；Stereo3D-Bench有望成为3D空间推理评测的参考基准。",
+    "keywords": [
+      "双目视觉语言模型",
+      "度量3D推理",
+      "视差监督",
+      "Stereo3D-Bench",
+      "跨视角几何",
+      "空间智能"
+    ]
+  },
+  {
+    "id": "d64463d67f9b0f5b",
+    "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+    "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+    "published_at": "Mon, 09 Nov 2026 19:51:47 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 8,
+    "facts": "Google DeepMind发布Gemini Robotics 2.5，称其为最强视觉-语言-动作模型，提升机器人灵巧性、可靠性与安全性。",
+    "analysis": "VLA模型迭代到2.5版本，重点从'能执行'转向'可靠且安全地执行'，反映具身智能落地瓶颈已从感知理解转向长程操作稳定性与安全约束。摘要未给出具体基准数字，实际提升幅度需以技术报告为准。",
+    "technical_value": "高。VLA是通用机器人操作的核心范式，灵巧性与安全性同步提升对真实部署至关重要。",
+    "impact": "加速通用机器人在仓储、制造与服务场景的部署；与StereoVLM等空间推理工作形成互补的技术栈。",
+    "keywords": [
+      "VLA模型",
+      "机器人灵巧操作",
+      "具身智能",
+      "安全性",
+      "Gemini Robotics"
+    ]
+  },
+  {
+    "id": "d66b9c2d229951fd",
+    "title": "Agentic cheminformatics with Google Antigravity",
+    "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+    "published_at": "Tue, 03 Nov 2026 17:01:49 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 7,
+    "facts": "Google DeepMind介绍Google Antigravity与Cheminformatics Skills如何加速药物发现工作流、搜索化合物并提出新型刚性化大环化合物。",
+    "analysis": "该动态体现'智能体+领域技能库'在化学研发中的落地路径：把检索、性质预测、分子生成封装为可调用技能，由智能体编排。提出刚性化大环属于结构设计类任务，说明系统不止于检索，已触及生成式分子设计。但摘要未给出实验验证数据，实际成药性仍需湿实验确认。",
+    "technical_value": "中高。技能化封装降低化学工作流自动化门槛，智能体编排多工具的模式可迁移到材料、生物等研发场景。",
+    "impact": "加速早期药物发现迭代，推动AI从'预测工具'变为'研发流程执行者'；对CRO与制药研发组织形态有潜在影响。",
+    "keywords": [
+      "智能体",
+      "化学信息学",
+      "药物发现",
+      "大环化合物",
+      "Google Antigravity",
+      "工作流自动化"
+    ]
+  }
+]

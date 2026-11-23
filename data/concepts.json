@@ -1079,5 +1079,18 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2611.26601v1"
     ]
+  },
+  {
+    "date": "2026-11-23",
+    "name_zh": "物理一致性世界模型",
+    "name_en": "Physically Consistent World Models",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "指在生成或预测未来视频/交互场景时，能够遵守物体不可穿透、接触约束、重力等物理规律的世界模型。当前主流视频世界模型在视觉逼真度上进展显著，但物理违规（如穿模）普遍存在，因此出现以基准评测、隐藏状态探针检测与动作替换为代表的物理一致性增强路线。",
+    "why_now": "交互式视频世界模型正被用作具身智能的规划与仿真环境，物理违规会直接导致规划失败；同时研究发现DiT隐藏状态已隐含物理预测信息，使低成本干预成为可能，推动该方向从'提升生成质量'转向'可检测可纠正的物理安全'。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2611.27963v1",
+      "https://nopeworld.github.io"
+    ]
   }
 ]
