@@ -1,0 +1,134 @@
+[
+  {
+    "id": "54f111f95af78114",
+    "title": "Language Models Steer on Injected Uncertainty Tokens, but Fail to Self-Monitor In Situ",
+    "summary": "Prompting language models to verbalize stepwise numerical confidence during generation is an increasingly popular approach for triggering backtracking and error correction in agentic reasoning. This strategy presupposes two capabilities: (1) in-situ monitoring fidelity (does confidence drop when an error occurs?) and (2) downstream steering control (does an uncertainty token causally steer the model to repair its error?). We evaluated four open-weights models (Qwen2.5-7B, Llama-3.1-8B, Mistral-7B, and Phi-4, 14.7B) across 15,200 math benchmark attempts, isolating 2,017 reasoning errors within each model's capability frontier. Applying 27,568 counterfactual continuations across these failure points, we demonstrate a consistent decoupling between monitoring and control. On monitoring, all four models fail to detect their own errors. Verbalized confidence does not distinguish mistake steps from sound reasoning, yielding near-chance within-position AUROCs between 0.500 and 0.561. Even at a model's first reasoning error, trajectory confidence remains saturated at 95.1% to 99.9%, with noticeable drops ($\\ge 10$ points) appearing on fewer than 9% of errors in Llama and under 1.6% in the other three models. In contrast, models respond readily to external uncertainty: injecting a low-confidence tag (10%) at the error step significantly increases downstream correction across all models (+3.7 to +22.5 points over format-matched 95% certainty; all $p \\le 0.0022$), reaching up to 38.5% under active rethinking instructions. However, injecting doubt onto already-correct steps causes models to discard valid reasoning, reducing solve rates by up to 22.8 points. Inference-time self-correction is thus bottlenecked by in-situ error detection rather than downstream repair capacity: models r",
+    "published_at": "2026-11-23T18:58:52Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.31228v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 6.3,
+    "ai_score": 8.5,
+    "facts": "论文评估了四个开放权重模型（Qwen2.5-7B、Llama-3.1-8B、Mistral-7B、Phi-4 14.7B），在15,200次数学基准尝试中隔离出2,017个推理错误，并施加27,568次反事实续写。结果显示：口头置信度无法区分错误步骤与正确推理，位置内AUROC仅0.500–0.561；首次推理错误处轨迹置信度仍饱和在95.1%–99.9%，Llama中置信度下降≥10点的错误不足9%，其余三个模型不足1.6%。相反，在错误步骤注入低置信标签（10%）可显著提升下游纠正（+3.7至+22.5点，p≤0.0022），主动重思考指令下达38.5%；但在已正确步骤注入怀疑会使解题率下降最多22.8点。",
+    "analysis": "该研究清晰地将推理时自我纠正拆解为两个可分离能力：原位监控保真度与下游引导控制，并用大规模反事实实验证明二者解耦。结论指向当前LLM自我纠错瓶颈在错误检测而非修复能力，这对agentic reasoning中流行的“让模型说出置信度以触发回溯”范式构成直接反证。",
+    "technical_value": "提供了可复用的评估方法论（错误隔离+反事实续写+格式匹配对照），量化了口头置信度作为监控信号的失效边界，并证明外部注入不确定性token可作为有效的因果干预手段，为推理时控制研究提供基线。",
+    "impact": "对依赖模型自报置信度做错误纠正的agent框架提出警示；短期更可行的路径是外部监控器或结构化不确定性注入，而非依赖模型内省。可能推动不确定性感知解码与外部验证器方向的研究。",
+    "keywords": [
+      "不确定性token",
+      "自我纠正",
+      "推理时监控",
+      "反事实续写",
+      "agentic reasoning",
+      "置信度校准"
+    ]
+  },
+  {
+    "id": "c26c6f4cd60245c5",
+    "title": "CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role-Level Policy Grafting",
+    "summary": "Reinforcement learning (RL) improves large language model search agents by up to 32 exact-match (EM) points over their pre-RL initializations, yet overall accuracy gains do not identify which underlying functional capabilities improve or interact during training. We introduce CO-GRAFT, a reward-agnostic interventional attribution framework in which an RL-trained agent and its pre-RL initialization jointly generate a single trajectory under closed-loop execution with live retrieval. Each policy controls a mutually exclusive subset of four functional roles: intermediate reasoning, search-or-answer decision, search query generation, and final answer extraction. Evaluating all 2^4=16 role assignments without modifying weights or retraining defines a cooperative game whose Shapley values decompose the total RL gain across roles, while M\"obius interaction terms distinguish standalone role improvements from multi-role coupling. Applying CO-GRAFT to Search-R1 agents across Qwen2.5 and Llama-3.2 models (spanning two sizes, base and instruction-tuned initializations, GRPO and PPO optimizers, and NQ and HotpotQA datasets), we show that query generation never exceeds 15% of the total gain; instead, gains are governed by pre-RL answer validity, search retention, model scale, and fixed task-level search budgets, shifting credit from reasoning toward answer extraction in larger or well-formatted answer response checkpoints while smaller base models rely on reasoning--decision coupling.",
+    "published_at": "2026-11-23T18:38:53Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.31185v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.9,
+    "ai_score": 7.8,
+    "facts": "提出CO-GRAFT，一种与奖励无关的干预式归因框架：RL训练后的搜索agent与其RL前初始化在闭环执行与实时检索下共同生成单条轨迹，各自控制四个功能角色（中间推理、搜索或回答决策、搜索查询生成、最终答案抽取）的互斥子集。评估全部2^4=16种角色分配，用Shapley值分解总RL增益，用Möbius交互项区分独立改进与多角色耦合。在Search-R1 agent上跨Qwen2.5与Llama-3.2（两种规模、base与指令微调初始化、GRPO与PPO、NQ与HotpotQA）实验显示：查询生成贡献从不超过总增益15%；增益主要由RL前答案有效性、搜索保留、模型规模与固定任务级搜索预算决定，较大或格式良好的答案检查点中信用从推理转向答案抽取，较小base模型依赖推理—决策耦合。",
+    "analysis": "该工作把RL增益归因从整体准确率推进到功能角色粒度，方法上无需改权重或重训练即可做因果分解，具有较强可解释性价值。发现“查询生成不是主要增益来源”与直觉相悖，提示搜索agent的RL优化重心可能被误置。",
+    "technical_value": "Shapley+Möbius交互的干预式归因框架可迁移到其他多角色agent系统；16种角色分配的全枚举设计在闭环检索下保持因果有效性，是agent能力归因的严谨范式。",
+    "impact": "为搜索agent的RL训练诊断与资源分配提供工具，可能改变后续工作对查询生成模块的投入判断；对理解RL究竟提升了哪些能力有直接指导意义。",
+    "keywords": [
+      "RL归因",
+      "Shapley值",
+      "搜索agent",
+      "角色级策略嫁接",
+      "GRPO",
+      "能力分解"
+    ]
+  },
+  {
+    "id": "2d59827c18fbc34a",
+    "title": "Seeking in Space: Benchmarking Purposeful Active Exploration of Vision-Language Models for Spatial Reasoning",
+    "summary": "Humans explore unfamiliar spaces with purpose, deciding where to look until they have gathered the evidence a spatial question requires. However, can vision-language models (VLMs), which reason increasingly well over curated images and videos, also seek in space when the evidence is not handed to them? We present ActSpace-Bench, a benchmark of 994 questions across 234 exploration episodes in 72 real-scanned indoor scenes, where a model starts from a single view, navigates real captured frames, and must gather evidence before answering. To assess whether such exploration is purposeful, we introduce a controlled evaluation protocol that fixes each model as the reasoner and compares its own exploration against a same-budget random walk and an oracle route, separating evidence seeking from spatial reasoning. Every question is verified to require exploration and answered from 3D annotations, masked-evidence questions test whether models know when to abstain, and over 95% of sampled questions are confirmed correct by human verification. Evaluations of 23 proprietary, open-weight, and spatially specialized VLMs reveal that the strongest models do seek evidence with purpose but lose much of it to limited memory, whereas weaker and specialized models explore no better than a random walk or fail to reason over the evidence they are given, pointing to memory and evidence-grounded reasoning as the next targets for active spatial intelligence.",
+    "published_at": "2026-11-23T18:55:44Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.31215v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 7.5,
+    "facts": "提出ActSpace-Bench，包含72个真实扫描室内场景、234个探索回合、994个问题；模型从单视图出发，在真实采集帧中导航，须先收集证据再作答。引入受控评估协议：固定同一模型为推理器，将其自身探索与同预算随机游走及oracle路线对比，分离证据寻找与空间推理。每题经3D标注验证确需探索，掩蔽证据题测试模型是否知道何时弃答，抽样题超95%经人工确认正确。评估23个专有、开放权重与空间专用VLM：最强模型确有目的性寻找证据，但受限于记忆丢失大量信息；较弱与专用模型探索不优于随机游走，或无法对给定证据推理。",
+    "analysis": "该基准把“主动空间探索”从被动图像推理中剥离出来，控制协议设计严谨（随机游走与oracle双基线、掩蔽证据、人工验证）。核心发现是记忆与证据接地推理是当前VLM主动空间智能的两大短板，而非探索策略本身。",
+    "technical_value": "提供了可分离探索与推理的基准与协议，掩蔽证据题引入弃答能力评估，对空间智能评测有方法学贡献；23模型横评给出清晰的失败模式分类。",
+    "impact": "为具身与空间agent研究设定新评测标准，指引后续工作聚焦长程记忆与证据接地推理；对机器人导航、AR等应用的能力预期有校准作用。",
+    "keywords": [
+      "主动探索",
+      "空间推理",
+      "VLM基准",
+      "证据接地",
+      "记忆",
+      "弃答"
+    ]
+  },
+  {
+    "id": "4866adbc5a6a0520",
+    "title": "ToolSmith: An Automatic Tool-Generation Framework for Multimodal Search Agents",
+    "summary": "Recent multimodal search agents use reasoning, vision, and live web search across many turns to answer questions beyond parametric knowledge by orchestrating a small library of hand-crafted search and visual tools. However, the library is laborious to create and maintain, and frozen when new query types, evidence formats, and failure modes are encountered in the wild. Human practitioners, by contrast, cope with insufficient tools by fashioning new ones from familiar parts and reusing them across tasks. Inspired by this, we propose ToolSmith, an automatic tool-generation framework that grows and reuses modules on top of a lean base tool library. We evaluate ToolSmith on three in-domain multimodal search benchmarks and ten out-of-domain benchmarks under a VLM-as-a-Judge protocol. ToolSmith consistently improves over the base library across deployed agents of varying scales, with larger backbones reaping greater gains, demonstrating the scalability of the approach. Our code and data are available at https://threesr.github.io/toolsmith/.",
+    "published_at": "2026-11-23T18:48:02Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.31198v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.8,
+    "ai_score": 7.2,
+    "facts": "提出ToolSmith，一个自动工具生成框架，在精简基础工具库之上生长并复用模块，灵感来自人类从业者用熟悉部件临时制造新工具并跨任务复用。在三个域内多模态搜索基准与十个域外基准上以VLM-as-a-Judge协议评估。ToolSmith在部署的不同规模agent上一致优于基础工具库，更大骨干模型获益更多，显示方法可扩展性。代码与数据见https://threesr.github.io/toolsmith/。",
+    "analysis": "针对多模态搜索agent工具库手工构建、遇新查询类型即冻结的痛点，ToolSmith将工具创建本身自动化并强调复用，方向务实。更大骨干获益更多暗示工具生成质量依赖模型能力，小模型上收益可能有限。",
+    "technical_value": "自动工具生长+复用机制可降低多模态搜索agent的维护成本并提升域外泛化；VLM-as-a-Judge评估协议为工具类系统提供可扩展的评测路径。",
+    "impact": "若工具自动生成可靠，将减少人工工具工程负担，推动多模态搜索agent在开放环境中的自适应部署；但域外增益幅度与工具质量下限仍需更多证据。",
+    "keywords": [
+      "工具生成",
+      "多模态搜索agent",
+      "工具复用",
+      "域外泛化",
+      "VLM-as-a-Judge"
+    ]
+  },
+  {
+    "id": "ee6e293b4d2d70a3",
+    "title": "RoboTrack: Point tracking for real-world robotic manipulation",
+    "summary": "",
+    "published_at": "Mon, 23 Nov 2026 17:20:37 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/allenai/robotrack",
+        "type": "official"
+      }
+    ],
+    "pre_score": 4.9,
+    "ai_score": 6.3,
+    "facts": "Hugging Face发布Allen AI博客《RoboTrack: Point tracking for real-world robotic manipulation》，URL为https://huggingface.co/blog/allenai/robotrack，发布日期2026-11-23。输入未提供正文内容。",
+    "analysis": "点跟踪用于真实机器人操作，属于机器人感知与操作交叉方向。点跟踪可提供细粒度运动与接触状态线索，对操作策略学习有潜在价值，但无正文无法评估精度与实时性。",
+    "technical_value": "点跟踪作为操作任务的感知表征，可能改善物体状态估计与操作反馈，具体方法需原文确认。",
+    "impact": "对机器人操作感知研究有参考意义，影响偏具身智能方向。",
+    "keywords": [
+      "点跟踪",
+      "机器人操作",
+      "具身智能",
+      "Allen AI"
+    ]
+  }
+]

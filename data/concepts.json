@@ -1092,5 +1092,17 @@
       "https://arxiv.org/abs/2611.27963v1",
       "https://nopeworld.github.io"
     ]
+  },
+  {
+    "date": "2026-11-24",
+    "name_zh": "推理时自我纠正",
+    "name_en": "Inference-Time Self-Correction",
+    "score": 8.2,
+    "maturity": "Emerging",
+    "explanation": "指语言模型在生成过程中或生成后检测自身推理错误并加以修复的能力。最新证据表明该能力可分解为原位监控（检测错误）与下游引导控制（修复错误）两个环节，且二者在现有开放权重模型中显著解耦：模型难以自发察觉错误，但对外部注入的不确定性信号响应良好。",
+    "why_now": "agentic reasoning广泛采用“让模型说出置信度以触发回溯”的范式，但大规模反事实实验证明该范式的前提（原位监控保真）不成立，瓶颈在错误检测而非修复能力，亟需重新设计监控与干预机制。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2611.31228v1"
+    ]
   }
 ]
