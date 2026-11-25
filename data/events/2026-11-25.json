@@ -1,0 +1,132 @@
+[
+  {
+    "id": "45f265c56f770ebe",
+    "title": "AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design",
+    "summary": "A language-model decoder carries state between decoding steps, and in hardware a wrong state update can leave the current token correct and corrupt the output several tokens later, so a design can pass output tests and still be wrong. AIChipBench asks what LLM coding agents need to build such hardware correctly. Agents implement quantized Qwen3.5, Gemma 3, Gemma 4, and Llama 3.2 decoders in synthesizable register-transfer-level (RTL) code against an executable integer reference that specifies the outputs and the stored state at every decoding step. They debug against public tests under fixed budgets; their frozen designs are graded on held-out token sequences, resets, memory stalls, and synthesis, and a second track asks them to speed up a correct design at nearly fixed area. Across 9,136 attempts by four coding agents, the difficulty lies in stored state. Feedback that points to the first state mismatch raises acceptance over output-only feedback in all 12 agent--task cells of a matched study, by 25.0 to 46.9 percentage points, and halves the agent-hours per accepted design. Regraded on new sequences and conditions, 45 of 69 accepted designs fail within the 32 steps their tests required. More than a third of attempts to speed up a correct design end without one. An overall score ranks Sol 5.6 and Fable 5.1 above Astra 6 and Opus 5.5, and both halves of the instances give this order in all 200 random splits. Hardware agents therefore need debugging feedback that exposes stored state, and their benchmarks need final tests well beyond the development cases.",
+    "published_at": "2026-11-24T18:28:41Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.33093v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 8.5,
+    "facts": "论文提出AIChipBench基准，用于评估LLM编码智能体自动设计AI加速器的能力。智能体需用可综合的RTL代码实现量化Qwen3.5、Gemma 3、Gemma 4和Llama 3.2解码器，对照可执行的整数参考模型（规定每步解码的输出与存储状态）。在固定预算下用公开测试调试，冻结设计后在留出token序列、复位、内存停顿和综合上评分；第二赛道要求在面积近乎不变下加速正确设计。共4个编码智能体、9136次尝试。匹配研究中，指向首个状态不匹配的反馈在全部12个智能体-任务单元中比仅输出反馈提升接受率25.0至46.9个百分点，并将每个被接受设计的智能体工时减半。69个被接受设计中有45个在新序列和条件下、于测试所需32步内失败。超过三分之一的加速尝试未产出正确设计。总分排名Sol 5.6、Fable 5.1高于Astra 6和Opus 5.5，200次随机划分中两半实例均给出该顺序。",
+    "analysis": "该工作把LLM编码智能体的评测从软件正确性推进到硬件状态机正确性，揭示了一个关键盲区：输出测试通过不等于状态更新正确，错误会延迟若干token才显现。状态感知调试反馈带来显著增益，说明当前智能体的瓶颈在可观测性与调试信号设计，而非单纯代码生成能力。留出测试下大量设计失败，表明现有基准若只用开发用例会严重高估能力。",
+    "technical_value": "提供了可执行的整数参考模型作为逐周期状态真值，使RTL设计可被细粒度验证；构建了含综合、复位、内存停顿等硬件真实约束的评测流程；量化了反馈类型对接受率和工时的影响，为硬件智能体调试接口设计提供实证依据。",
+    "impact": "对AI芯片设计自动化与LLM智能体评测均有直接影响：推动硬件智能体基准从输出级测试转向状态级验证，提示EDA与智能体工具链需暴露内部存储状态；同时为企业评估编码智能体在RTL任务上的真实能力提供参考。",
+    "keywords": [
+      "AIChipBench",
+      "LLM智能体",
+      "RTL设计",
+      "AI加速器",
+      "状态调试",
+      "基准评测",
+      "量化解码器"
+    ]
+  },
+  {
+    "id": "e89920e446765029",
+    "title": "Delegent: A Multi-Agent Harness That Reduces Cost without Sacrificing Performance",
+    "summary": "Agents built on frontier language models are expensive. At every step, the frontier model re-reads its entire context and executes every subtask regardless of its difficulty. This paper explores the simple thesis that much of this cost can be removed by delegating easy subtasks to a small language model, or SLM, that runs on hardware one already owns. To test it, we build Delegent, a simple and effective agent harness built on Claude Code, in which the frontier model stays in charge of every task but hands focused subtasks, such as investigating code, running tests, and searching a corpus, to SLM subagents. Existing approaches such as cascades and model routers usually choose which model executes the entire task, whereas in Delegent, the frontier model always leads the execution and delegates easy subtasks to the SLM. No router or model is trained, so either model can be swapped freely. With the help of a 27B FP8 SLM, Delegent reduces the frontier cost of long-horizon coding by 67% and of agentic search by 59%, with no loss in task performance, and even a 2B SLM that fits on a laptop reduces the coding cost by 66%. The savings grow with the legwork that the frontier model would otherwise do itself, and a short instruction, which leaves the main coding tasks to the frontier model, accounts for most of the saving and keeps the 2B SLM from losing tasks. Code: https://github.com/castorini/delegent",
+    "published_at": "2026-11-24T18:34:40Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.33098v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.3,
+    "ai_score": 7.5,
+    "facts": "论文提出Delegent，一个基于Claude Code的多智能体harness：前沿模型始终主导任务执行，将调查代码、运行测试、检索语料等聚焦子任务委派给小型语言模型（SLM）子智能体。不训练路由器或模型，模型可自由替换。使用27B FP8 SLM时，长程编码的前沿成本降低67%，智能体搜索降低59%，任务性能无损失；可运行于笔记本的2B SLM使编码成本降低66%。节省随前沿模型原本承担的杂务量增长；一条将主要编码任务留给前沿模型的简短指令贡献了大部分节省，并防止2B SLM丢任务。代码已开源。",
+    "analysis": "与级联和模型路由按整任务选模型不同，Delegent保持前沿模型全程主导、仅下放简单子任务，避免了路由错误带来的质量损失，同时无需训练即可换模型。成本节省主要来自减少前沿模型重复读取上下文与执行低难度子任务，说明长程智能体的成本结构中有大量可下放的杂务。2B模型即可获得接近的编码成本节省，表明端侧SLM在智能体工作流中已具备实用价值。",
+    "technical_value": "提出前沿主导加SLM子智能体委派的无训练harness架构；给出可复现的成本与性能数据；强调指令设计对防止小模型丢任务的关键作用。",
+    "impact": "为降低长程编码与智能体搜索成本提供可直接落地的方案，可能推动智能体框架普遍采用分层委派模式，并提升本地小模型在智能体栈中的地位。",
+    "keywords": [
+      "Delegent",
+      "多智能体",
+      "成本优化",
+      "SLM",
+      "Claude Code",
+      "任务委派",
+      "长程编码"
+    ]
+  },
+  {
+    "id": "02de2262018e8820",
+    "title": "How to build and maintain an agentic evaluation",
+    "summary": "",
+    "published_at": "Mon, 23 Nov 2026 00:00:00 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/agentic-evals",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 6.0,
+    "facts": "Hugging Face发布博客《How to build and maintain an agentic evaluation》，主题为构建与维护智能体评测。",
+    "analysis": "官方博客通常给出工程化方法论，可能涉及评测集设计、持续回归、指标维护等实践。由于缺少摘要，具体方法无法确认，仅能判断其定位为智能体评测的运维指南，对落地团队有参考价值。",
+    "technical_value": "预计提供智能体评测的构建与维护流程经验，具体技术细节需查阅原文。",
+    "impact": "有助于团队建立可持续的智能体评测体系，减少评测漂移。",
+    "keywords": [
+      "智能体评测",
+      "Hugging Face",
+      "评测维护"
+    ]
+  },
+  {
+    "id": "050759077a3bea40",
+    "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+    "summary": "",
+    "published_at": "Fri, 20 Nov 2026 00:00:00 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 6.0,
+    "facts": "Hugging Face发布博客《Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost》，介绍harness适配器，用于将模型适配到评测/运行框架以提升性能与成本表现。",
+    "analysis": "适配器思路把模型与harness解耦，可能降低切换成本并针对特定harness优化提示与调用方式。缺少摘要，无法确认具体机制与量化收益。",
+    "technical_value": "模型与harness之间的适配层设计，可能涉及提示模板、工具调用格式与成本优化。",
+    "impact": "若被广泛采用，可简化模型在各类智能体框架间的迁移与调优。",
+    "keywords": [
+      "harness适配器",
+      "模型适配",
+      "成本优化",
+      "Hugging Face"
+    ]
+  },
+  {
+    "id": "4ce563aa06a17a34",
+    "title": "Time-Series Models in the Streamhouse: A New Frontier and Use Cases",
+    "summary": "",
+    "published_at": "Wed, 18 Nov 2026 15:00:23 GMT",
+    "sources": [
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.4,
+    "ai_score": 5.5,
+    "facts": "Hugging Face发布IBM Research博客《Time-Series Models in the Streamhouse: A New Frontier and Use Cases》，讨论时间序列模型在Streamhouse中的应用与新用例。",
+    "analysis": "将时间序列模型嵌入流式数据架构，指向实时预测与持续学习场景。缺少摘要，具体模型与架构细节未知。",
+    "technical_value": "时间序列模型与流式数据平台结合的工程路径。",
+    "impact": "对实时分析、异常检测等流式场景有潜在应用价值。",
+    "keywords": [
+      "时间序列",
+      "Streamhouse",
+      "流式数据",
+      "IBM Research"
+    ]
+  }
+]

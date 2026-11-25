@@ -1104,5 +1104,17 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2611.31228v1"
     ]
+  },
+  {
+    "date": "2026-11-25",
+    "name_zh": "硬件智能体状态感知调试",
+    "name_en": "State-Aware Debugging for Hardware Coding Agents",
+    "score": 8.0,
+    "maturity": "Emerging",
+    "explanation": "指LLM编码智能体在设计RTL等有状态硬件时，需要能暴露内部存储状态与首个状态不匹配位置的调试反馈，而非仅比对输出。AIChipBench的匹配研究显示，状态级反馈可将设计接受率提升25.0至46.9个百分点，并将每个被接受设计的智能体工时减半。",
+    "why_now": "AIChipBench实证表明输出测试通过的设计在留出序列上大量失败（69个中45个），说明仅靠输出级评测会高估智能体能力，硬件智能体基准与工具链需要转向状态级验证。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2611.33093v1"
+    ]
   }
 ]
