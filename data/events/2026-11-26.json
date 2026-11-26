@@ -1,0 +1,137 @@
+[
+  {
+    "id": "8031d31e77e15ebf",
+    "title": "Enhancing Maritime Domain Awareness using Latent Space Representations",
+    "summary": "This work presents a novel application of Earth Observation (EO) embeddings for Maritime Domain Awareness (MDA) from the perspective of the geospatial foundation model TerraMind. By operating directly on compressed latent-space representations rather than on the original Sentinel-1 imagery, this approach directly addresses the data gravity bottleneck that increasingly constrains operational EO processing, in line with the objectives of the Embed2Scale project. In particular, linear and non-linear probing of compressed embeddings, latent space representations of synthetic aperture radar (SAR) imagery, is used to detect, localise, and characterise vessels from Sentinel-1 GRD images. Vessel detection achieves a ROC-AUC of 0.95, while vessel localisation has a median error of around 300 m for vessels longer than 100 m, and vessel AIS type-code classification achieves 62% accuracy for the majority classes. The latter, however, is highly correlated with vessel length. These results reveal both the potential and current limitations of Geospatial Foundation Models (GeoFMs) when applied to fine-grained MDA understanding in real-world scenarios. Additionally, a new maritime remote sensing dataset is released, pairing about 2,000 Sentinel-1 images with temporally aligned AIS signals from commercial vessels. Through manual inspection, each candidate sample was verified for bounding-box quality and for consistency between the AIS-reported vessel length and the observed vessel extent, cross-checking vessel identity and location against publicly available vessel records and, where available, photographs. The dataset was made ready for use with the NeuCo-Bench neural compression benchmark framework, publicly available on HuggingFace through https://huggingface.co/datasets/embed2scale/S",
+    "published_at": "2026-11-25T18:51:36Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.34899v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.8,
+    "ai_score": 7,
+    "facts": "该研究基于TerraMind地理空间基础模型，直接在Sentinel-1 SAR影像的压缩潜空间表示上做线性与非线性探测，用于船舶检测、定位与AIS类型分类；检测ROC-AUC为0.95，长度超100米船舶定位中位误差约300米，主要类别AIS类型分类准确率62%且与船长高度相关；同时发布约2000幅Sentinel-1影像与时间对齐AIS信号配对的新数据集，并接入NeuCo-Bench神经压缩基准框架，托管于HuggingFace。",
+    "analysis": "核心思路是绕开原始影像、在潜空间上做下游任务，以缓解对地观测中的'数据引力'瓶颈，这与Embed2Scale项目目标一致。检测指标较高说明压缩表示保留了目标存在性信息，但定位误差与细粒度分类准确率暴露出GeoFM在精细语义理解上的局限，作者也明确将其定位为潜力与局限并存的实证。",
+    "technical_value": "验证了地理空间基础模型潜空间表示对SAR船舶检测的可用性，提供了可复用的探测方法（线性/非线性probe）与配套数据集，对压缩感知下游任务与神经压缩基准建设有直接参考价值。",
+    "impact": "对海上态势感知、遥感数据压缩传输与边缘部署场景有实际意义；数据集公开有助于该方向的可复现研究，但分类精度尚不足以支撑高置信度的自动类型判定。",
+    "keywords": [
+      "地理空间基础模型",
+      "潜空间表示",
+      "SAR船舶检测",
+      "海上态势感知",
+      "神经压缩",
+      "Sentinel-1"
+    ]
+  },
+  {
+    "id": "17d68e634b453536",
+    "title": "How Much Do Coding Agents Over-Edit, and Why? An Empirical Study of Unneeded Edits in Repository-Level Agent Patches",
+    "summary": "Agent patches are larger than developers', which is widely read as over-editing. But patch size does not say whether the extra edits are needed, what they are, or where they come from. We introduce Delta Residue Attribution (DRA), which replays agent trajectories, traces every block (unit) of the final patch to the step that wrote it, reverts each unit, and reruns the task tests to decide whether the unit is needed. We apply DRA to 7,660 resolved GitHub Copilot CLI trajectories from 18 frontier models on SWE-bench Verified (6,728) and DeepSWE (932), and grade developer patches using the same method. Agent patches do change more lines than developers'; on SWE-bench Verified the majority of extra edits add tests (61%) and documentation (13%) while on DeepSWE, most extra edits are code (58%). On both benchmarks, agents' code is on average at least as necessary as developers' (mean $NP_{code}$ 0.887 vs. 0.864 on SWE-bench Verified, where 11 of 18 models leave less unneeded code than developers, and 0.797 vs. 0.785 on DeepSWE). On average, 11% of an agent patch's code units on SWE-bench Verified are still unneeded, and 89% of those change behavior. Debug steps write almost none of the unneeded code. Code necessity differs substantially by model; it is unrelated to resolve rate on SWE-bench Verified and negatively correlated with it on DeepSWE (Spearman -0.59, p = 0.01). On SWE-bench Verified, pruning with DRA using only the tests the agent can see (its own tests and the repository's) removes the majority of unneeded code but also some needed code (67% recall, 46% precision), and 89% of pruned patches still resolve the task; asking the agent to audit its own diff is more precise but less effective (36% recall, 66% precision). We recommend that benchmarks report code necessity",
+    "published_at": "2026-11-25T18:37:06Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.34875v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 7,
+    "facts": "提出Delta Residue Attribution（DRA），回放代理轨迹，将最终补丁每个单元追溯到写入步骤，逐一回退并重跑任务测试以判定必要性。应用于18个前沿模型在SWE-bench Verified（6728）与DeepSWE（932）上的7660条已解决GitHub Copilot CLI轨迹，并以同法评估开发者补丁。代理补丁改动行数多于开发者；SWE-bench Verified上额外编辑61%为测试、13%为文档，DeepSWE上58%为代码。两基准上代理代码平均必要性不低于开发者（NP_code均值0.887对0.864；0.797对0.785），SWE-bench Verified上代理补丁平均11%代码单元不必要，其中89%改变行为；调试步骤几乎不产生不必要代码。代码必要性与解决率在SWE-bench Verified上无关，在DeepSWE上负相关（Spearman -0.59）。仅用代理可见测试剪枝可去除多数不必要代码但误删必要代码（召回67%、精确率46%），89%剪枝后补丁仍解决任务；让代理自审diff更精确但效果较弱（召回36%、精确率66%）。",
+    "analysis": "该研究把'代理过度编辑'这一常见印象拆解为可测量的必要性判定，结论具有反直觉性：代理代码平均必要性并不低于开发者，额外编辑多集中在测试与文档。同时揭示代码必要性与解决率并非正相关，提示现有基准以解决率为核心指标可能掩盖补丁质量问题。剪枝实验显示仅靠可见测试难以精确区分必要与不必要代码。",
+    "technical_value": "DRA提供了可操作的补丁单元级必要性归因方法，对代理补丁质量评估、基准指标设计与补丁剪枝研究有较高方法学价值。",
+    "impact": "对编码代理评测体系有直接影响，建议基准报告代码必要性；对代理训练与补丁精简工具链有实践参考，但剪枝精度限制其直接生产化。",
+    "keywords": [
+      "编码代理",
+      "过度编辑",
+      "补丁必要性",
+      "SWE-bench",
+      "轨迹归因",
+      "基准指标"
+    ]
+  },
+  {
+    "id": "6f3099abf69d3024",
+    "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+    "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+    "published_at": "Tue, 10 Nov 2026 12:02:28 +0000",
+    "sources": [
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "type": "official"
+      }
+    ],
+    "pre_score": 5.5,
+    "ai_score": 7,
+    "facts": "Google DeepMind发布AlphaProof Code，称其代理在Lean中编写三百万行证明，用于验证Signal核心加密。",
+    "analysis": "以形式化证明验证真实生产级加密实现，是AI辅助软件验证的重要案例。三百万行证明的规模说明代理可承担大规模形式化工程，但博客未披露证明覆盖率、人工介入比例与验证周期等关键细节。",
+    "technical_value": "展示了代理驱动的大规模形式化验证可行性，对高保障软件验证流程有参考价值，但需更多技术细节评估其自动化程度。",
+    "impact": "对密码学软件与安全关键系统的验证实践有潜在影响，若方法可推广，将改变形式化验证的成本结构。",
+    "keywords": [
+      "形式化验证",
+      "Lean",
+      "AlphaProof",
+      "加密验证",
+      "代理",
+      "软件安全"
+    ]
+  },
+  {
+    "id": "3ee86b0a056277e6",
+    "title": "Diverse Alternative Reasoning Traces for Hard Math Problems",
+    "summary": "Post-training large language models (LLMs) for mathematical reasoning often relies on accepted traces whose final answers pass a verifier. For hard math problems, however, such traces can be rare under independent Monte Carlo (MC) sampling. To address this, we propose Diverse Alternative Reasoning Traces (DART), a trace-mining method that starts from a rejected trace, decomposes it into reasoning steps, and ranks them by position-weighted uncertainty. It then generates deliberately distinct alternative candidates for highly ranked steps using reference-answer guidance and a meta-thought before completing the resulting traces. On greedy-unsolved DeepMath-103K problems, DART recovers 37% more problems than MC sampling at a matched number of generated traces. Its estimated generation cost per recovered problem is nearly identical, while its cost per accepted trace is 30% lower. Post-training Llama-3.1-8B-Instruct on traces mined by DART achieves the highest point estimate in five of six evaluations across MATH-500 and AIME benchmarks. These results demonstrate that revisiting rejected traces with DART can expand problem coverage and provide effective post-training data.",
+    "published_at": "2026-11-25T18:59:11Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.34928v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 6,
+    "facts": "提出DART方法：从被拒绝的推理轨迹出发，分解为推理步骤并按位置加权不确定性排序，对高排名步骤借助参考答案引导和meta-thought生成刻意不同的替代候选，再补全轨迹。在DeepMath-103K贪心未解问题上，相同生成轨迹数下比蒙特卡洛采样多恢复37%的问题，每个恢复问题成本几乎相同，每个被接受轨迹成本低30%；用DART挖掘轨迹后训练Llama-3.1-8B-Instruct，在MATH-500与AIME六项评测中五项取得最高点估计。",
+    "analysis": "该方法把'失败轨迹'视为可再利用资源，而非丢弃，思路务实且成本敏感。位置加权不确定性排序与参考答案引导的组合，本质上是在搜索空间中做定向多样化探索，与拒绝采样形成互补。需注意结论基于点估计，未强调方差与显著性，泛化性仍需更多模型验证。",
+    "technical_value": "提供了一种低成本扩展难题训练数据覆盖的轨迹挖掘流程，可复用于数学推理后训练数据构造，对数据效率研究有方法学贡献。",
+    "impact": "对数学推理模型后训练的数据管线有直接应用价值，可能降低对大规模采样的依赖；对推理数据合成与课程构建方向有启发。",
+    "keywords": [
+      "推理轨迹挖掘",
+      "数学推理",
+      "后训练",
+      "蒙特卡洛采样",
+      "数据效率",
+      "Llama-3.1"
+    ]
+  },
+  {
+    "id": "23983c109e875033",
+    "title": "$μ$-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents",
+    "summary": "Voice agents in shared spaces must satisfy interdependent multi-user requests while upholding per-user authority, privacy, and task constraints. Existing evaluations offer limited coverage when participants react throughout a session. We introduce $μ$-Bench, a benchmark for joint task completion in closed-loop, full-duplex multi-user voice interaction. Simulated participants act from isolated profiles of goals, knowledge, and permissions, adapting to the agent's speech and tool outcomes. Across 20 domains, 100 scenarios vary group size, acoustics, and follow-up demands to form 800 cases (408 tool-augmented, 392 tool-free). Joint Task Success (JTS) requires all user goals, privacy boundaries, and terminal states to hold jointly, while Pure JTS further disallows unauthorized tool calls; Attribution, Threading, and Coordination (ATC) diagnostics localize failures. Across 13 voice agents, proprietary systems peak at 62.24\\% tool-free and 65.44\\% tool-augmented success, while open-weight models remain below 20\\%. ATC diagnostics show that open-weight models lag primarily in multi-turn attribution and threading, and controlled contrasts reveal that larger groups consistently degrade joint task success across capable systems. By coupling reactive multi-user simulation with verifiable session-level outcomes, $μ$-Bench provides a rigorous testbed for shared voice agents.",
+    "published_at": "2026-11-25T18:58:42Z",
+    "sources": [
+      {
+        "name": "arXiv AI",
+        "url": "https://arxiv.org/abs/2611.34920v1",
+        "type": "research"
+      }
+    ],
+    "pre_score": 5.7,
+    "ai_score": 6,
+    "facts": "提出μ-Bench，面向闭环全双工多用户语音交互的联合任务完成基准；模拟参与者基于隔离的目标、知识与权限档案行动，覆盖20个领域、100个场景，变化组规模、声学条件与追问需求，共800个案例（408个带工具、392个无工具）。联合任务成功（JTS）要求所有用户目标、隐私边界与终止状态同时满足，Pure JTS进一步禁止未授权工具调用；ATC诊断定位失败环节。13个语音代理中，专有系统最高62.24%（无工具）与65.44%（带工具），开源权重模型低于20%；ATC显示开源模型主要落后于多轮归因与线程化，更大组规模一致降低联合成功率。",
+    "analysis": "现有语音代理评测多聚焦单用户，该基准补上了多用户共享空间下的权限、隐私与协调维度，闭环反应式模拟是其关键设计。专有与开源模型间的巨大差距，以及组规模增大导致性能下降的发现，揭示了多用户语音交互仍是薄弱环节。",
+    "technical_value": "提供了可验证会话级结果的多用户语音代理评测框架，ATC诊断具备失败归因能力，对语音代理系统设计与评测方法学有参考价值。",
+    "impact": "对智能音箱、车载与会议等共享空间语音产品有直接评测意义；开源模型低于20%的成功率提示该方向仍有较大工程与研究空间。",
+    "keywords": [
+      "多用户语音代理",
+      "基准评测",
+      "联合任务成功",
+      "隐私与权限",
+      "全双工交互",
+      "ATC诊断"
+    ]
+  }
+]

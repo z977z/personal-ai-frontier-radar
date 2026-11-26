@@ -1116,5 +1116,18 @@
     "evidence_urls": [
       "https://arxiv.org/abs/2611.33093v1"
     ]
+  },
+  {
+    "date": "2026-11-26",
+    "name_zh": "代理驱动的大规模形式化验证",
+    "name_en": "Agent-Driven Large-Scale Formal Verification",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "以AI代理自动编写并维护大规模形式化证明（如Lean），用于验证真实生产级软件与算法正确性，将形式化方法从高成本人工工程转向可扩展的自动化流程。",
+    "why_now": "近期出现代理在Lean中编写数百万行证明验证Signal加密、以及代理团队结合形式化验证改进量子算法等事件，显示该路径正从研究演示走向真实系统验证。",
+    "evidence_urls": [
+      "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/"
+    ]
   }
 ]
