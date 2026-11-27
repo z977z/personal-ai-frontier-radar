@@ -1,0 +1,322 @@
+[
+  {
+    "title": "From spectrum to structure: Identifying molecules with Mass Spec Skills for Google Antigravity",
+    "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 24 Nov 2026 13:07:53 +0000",
+    "retrieved_at": "2026-11-27T09:01:35.765618+00:00",
+    "summary": "Mass Spec Skills empowers scientists using Google Antigravity to interpret tandem mass spectra.",
+    "content": "Mass Spec Skills empowers scientists using Google Antigravity to interpret tandem mass spectra.",
+    "source_type": "official"
+  },
+  {
+    "title": "Finding faster quantum algorithms with agents and formal verification",
+    "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+    "source": "Google DeepMind",
+    "published_at": "Mon, 23 Nov 2026 16:59:40 +0000",
+    "retrieved_at": "2026-11-27T09:01:35.765647+00:00",
+    "summary": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
+    "content": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
+    "source_type": "official"
+  },
+  {
+    "title": "Introducing Gemini 4 Neon",
+    "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 18 Nov 2026 21:35:43 +0000",
+    "retrieved_at": "2026-11-27T09:01:35.765655+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Genie 4 is now available",
+    "url": "https://deepmind.google/blog/genie-4-is-now-available/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 18 Nov 2026 18:13:42 +0000",
+    "retrieved_at": "2026-11-27T09:01:35.765661+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Introducing Gemini 4 Hydrogen",
+    "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+    "source": "Google DeepMind",
+    "published_at": "Thu, 12 Nov 2026 18:00:50 +0000",
+    "retrieved_at": "2026-11-27T09:01:35.765665+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+    "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+    "source": "Google DeepMind",
+    "published_at": "Wed, 11 Nov 2026 15:00:15 +0000",
+    "retrieved_at": "2026-11-27T09:01:35.765673+00:00",
+    "summary": "Predicting how DNA sequences and their variations impact specific human cell types and disease.",
+    "content": "Predicting how DNA sequences and their variations impact specific human cell types and disease.",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini 4 Carbon is now available",
+    "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 10 Nov 2026 16:03:47 +0000",
+    "retrieved_at": "2026-11-27T09:01:35.765677+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+    "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 10 Nov 2026 12:02:28 +0000",
+    "retrieved_at": "2026-11-27T09:01:35.765689+00:00",
+    "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+    "content": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+    "source_type": "official"
+  },
+  {
+    "title": "Opening the datasets behind our AI weather models",
+    "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 10 Nov 2026 11:13:04 +0000",
+    "retrieved_at": "2026-11-27T09:01:35.765695+00:00",
+    "summary": "Foundational precipitation and geostationary satellite datasets to observe the planet clearly.",
+    "content": "Foundational precipitation and geostationary satellite datasets to observe the planet clearly.",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+    "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+    "source": "Google DeepMind",
+    "published_at": "Mon, 09 Nov 2026 19:51:47 +0000",
+    "retrieved_at": "2026-11-27T09:01:35.765702+00:00",
+    "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+    "content": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+    "source_type": "official"
+  },
+  {
+    "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+    "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+    "source": "Google DeepMind",
+    "published_at": "Thu, 05 Nov 2026 17:05:16 +0000",
+    "retrieved_at": "2026-11-27T09:01:35.765706+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Agentic cheminformatics with Google Antigravity",
+    "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+    "source": "Google DeepMind",
+    "published_at": "Tue, 03 Nov 2026 17:01:49 +0000",
+    "retrieved_at": "2026-11-27T09:01:35.765714+00:00",
+    "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+    "content": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+    "source_type": "official"
+  },
+  {
+    "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+    "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+    "source": "Hugging Face",
+    "published_at": "Thu, 26 Nov 2026 11:37:17 GMT",
+    "retrieved_at": "2026-11-27T09:01:36.025964+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+    "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+    "source": "Hugging Face",
+    "published_at": "Thu, 26 Nov 2026 05:05:36 GMT",
+    "retrieved_at": "2026-11-27T09:01:36.025987+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
+    "url": "https://huggingface.co/blog/training-swarms",
+    "source": "Hugging Face",
+    "published_at": "Thu, 26 Nov 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-27T09:01:36.025992+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Where scientists draw the line on AI agents",
+    "url": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
+    "source": "Hugging Face",
+    "published_at": "Wed, 25 Nov 2026 18:52:55 GMT",
+    "retrieved_at": "2026-11-27T09:01:36.025997+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "An Indic Voice Agent with CUGA",
+    "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
+    "source": "Hugging Face",
+    "published_at": "Wed, 25 Nov 2026 10:22:09 GMT",
+    "retrieved_at": "2026-11-27T09:01:36.026001+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000",
+    "url": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb",
+    "source": "Hugging Face",
+    "published_at": "Wed, 25 Nov 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-27T09:01:36.026005+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "How to build and maintain an agentic evaluation",
+    "url": "https://huggingface.co/blog/agentic-evals",
+    "source": "Hugging Face",
+    "published_at": "Mon, 23 Nov 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-27T09:01:36.026008+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+    "url": "https://huggingface.co/blog/inkling2mini",
+    "source": "Hugging Face",
+    "published_at": "Fri, 20 Nov 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-27T09:01:36.026012+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+    "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+    "source": "Hugging Face",
+    "published_at": "Fri, 20 Nov 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-27T09:01:36.026016+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
+    "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
+    "source": "Hugging Face",
+    "published_at": "Wed, 18 Nov 2026 19:54:56 GMT",
+    "retrieved_at": "2026-11-27T09:01:36.026020+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Why your fine-tuning job takes longer than the FLOPs say",
+    "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+    "source": "Hugging Face",
+    "published_at": "Wed, 18 Nov 2026 18:53:43 GMT",
+    "retrieved_at": "2026-11-27T09:01:36.026023+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
+    "url": "https://huggingface.co/blog/moe-expert-streaming",
+    "source": "Hugging Face",
+    "published_at": "Wed, 18 Nov 2026 00:00:00 GMT",
+    "retrieved_at": "2026-11-27T09:01:36.026027+00:00",
+    "summary": "",
+    "content": "",
+    "source_type": "official"
+  },
+  {
+    "title": "Spectrum Adaptation of AI-Native Autoencoder Communications with Transfer Learning",
+    "url": "https://arxiv.org/abs/2611.34942v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-25T18:59:57Z",
+    "retrieved_at": "2026-11-27T09:01:36.165897+00:00",
+    "summary": "End-to-end physical-layer learning replaces separate modulation, coding, and detection operations with an autoencoder (AE) that consists of a jointly trained encoder-decoder pair at the transmitter and the receiver. This paper studies AI-native communications with AEs and quantifies the sensitivity to training-test mismatch in channel models. Models trained only on an AWGN channel achieve low bit error rates (BERs) under matched conditions but degrade severely on Rayleigh fading with practical front-end impairments. To reduce the time and energy required to adapt to new channel conditions, we propose a low-latency transfer-learning procedure that starts from an AWGN-pretrained system and fine-tunes only a small subset of transmitter and receiver layers while freezing the remainder. We further formulate layer selection as a budget-constrained optimization problem that identifies the most informative parameters to update during adaptation. This preserves the learned signal geometry and the deep decision structure while adapting lightweight front ends to fading- and impairment-induced mixing. For AE communications, we show that partial updates remove the mismatch-induced error floor and approach the BER of fully retrained models. We provide a layer-wise study and quantify resource-performance trade-offs, showing that modest adaptation substantially reduces BER while cutting training time, multiply-accumulate (MAC) operations, energy consumption, and the fraction of updated parameters for resource-efficient implementation.",
+    "content": "End-to-end physical-layer learning replaces separate modulation, coding, and detection operations with an autoencoder (AE) that consists of a jointly trained encoder-decoder pair at the transmitter and the receiver. This paper studies AI-native communications with AEs and quantifies the sensitivity to training-test mismatch in channel models. Models trained only on an AWGN channel achieve low bit error rates (BERs) under matched conditions but degrade severely on Rayleigh fading with practical front-end impairments. To reduce the time and energy required to adapt to new channel conditions, we propose a low-latency transfer-learning procedure that starts from an AWGN-pretrained system and fine-tunes only a small subset of transmitter and receiver layers while freezing the remainder. We further formulate layer selection as a budget-constrained optimization problem that identifies the most informative parameters to update during adaptation. This preserves the learned signal geometry and the deep decision structure while adapting lightweight front ends to fading- and impairment-induced mixing. For AE communications, we show that partial updates remove the mismatch-induced error floor and approach the BER of fully retrained models. We provide a layer-wise study and quantify resource-performance trade-offs, showing that modest adaptation substantially reduces BER while cutting training time, multiply-accumulate (MAC) operations, energy consumption, and the fraction of updated parameters for resource-efficient implementation.",
+    "source_type": "research"
+  },
+  {
+    "title": "Attack Policy Selection can Mislead Monitor Evaluators",
+    "url": "https://arxiv.org/abs/2611.34934v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-25T18:59:28Z",
+    "retrieved_at": "2026-11-27T09:01:36.165963+00:00",
+    "summary": "AI monitors, classifiers that flag dangerous behaviour by AI agents, are often evaluated against transcripts generated by attack policies acting as proxies for dangerous behaviour in deployment. We evaluate an ex-production OpenAI monitor as a case study and find that measured false negative rate is highly sensitive to both the method used to generate attack policies and the level of optimisation applied within that method. This rate ranged from 0.5\\% to 20.8\\% across optimisation levels of a single method (reinforcement learning), and from 6.4\\% to 23.0\\% across methods at their best observed optimisation level (optimised prompting vs.\\ transcript editing). Every attack policy was developed against proxy monitors only: all reported results show attacks transferring to the held-out GPT-5.4 target monitor. Our results suggest that monitor evasion evaluations can easily mislead: an evaluation using only basic attack methods may give false confidence that a monitor is strong. The sensitivity to attack-policy choice raises a problem: interpreting any particular result as evidence about deployment performance requires justification. The transcripts produced by attack policies are proxies for the dangerous behaviour a monitor must flag in deployment. These proxies can introduce visible artefacts, such as reasoning about a ``side task'' absent from the instructions shown to the monitor, that affect monitor judgements. Given the sensitivity above, the choice of proxy can change an evaluation's conclusion. Reading these results as evidence about deployment therefore requires a separate legitimacy argument for why the proxies are informative, including any justification of conservativeness. Making convincing arguments remains an open problem.",
+    "content": "AI monitors, classifiers that flag dangerous behaviour by AI agents, are often evaluated against transcripts generated by attack policies acting as proxies for dangerous behaviour in deployment. We evaluate an ex-production OpenAI monitor as a case study and find that measured false negative rate is highly sensitive to both the method used to generate attack policies and the level of optimisation applied within that method. This rate ranged from 0.5\\% to 20.8\\% across optimisation levels of a single method (reinforcement learning), and from 6.4\\% to 23.0\\% across methods at their best observed optimisation level (optimised prompting vs.\\ transcript editing). Every attack policy was developed against proxy monitors only: all reported results show attacks transferring to the held-out GPT-5.4 target monitor. Our results suggest that monitor evasion evaluations can easily mislead: an evaluation using only basic attack methods may give false confidence that a monitor is strong. The sensitivity to attack-policy choice raises a problem: interpreting any particular result as evidence about deployment performance requires justification. The transcripts produced by attack policies are proxies for the dangerous behaviour a monitor must flag in deployment. These proxies can introduce visible artefacts, such as reasoning about a ``side task'' absent from the instructions shown to the monitor, that affect monitor judgements. Given the sensitivity above, the choice of proxy can change an evaluation's conclusion. Reading these results as evidence about deployment therefore requires a separate legitimacy argument for why the proxies are informative, including any justification of conservativeness. Making convincing arguments remains an open problem.",
+    "source_type": "research"
+  },
+  {
+    "title": "Diverse Alternative Reasoning Traces for Hard Math Problems",
+    "url": "https://arxiv.org/abs/2611.34928v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-25T18:59:11Z",
+    "retrieved_at": "2026-11-27T09:01:36.165998+00:00",
+    "summary": "Post-training large language models (LLMs) for mathematical reasoning often relies on accepted traces whose final answers pass a verifier. For hard math problems, however, such traces can be rare under independent Monte Carlo (MC) sampling. To address this, we propose Diverse Alternative Reasoning Traces (DART), a trace-mining method that starts from a rejected trace, decomposes it into reasoning steps, and ranks them by position-weighted uncertainty. It then generates deliberately distinct alternative candidates for highly ranked steps using reference-answer guidance and a meta-thought before completing the resulting traces. On greedy-unsolved DeepMath-103K problems, DART recovers 37% more problems than MC sampling at a matched number of generated traces. Its estimated generation cost per recovered problem is nearly identical, while its cost per accepted trace is 30% lower. Post-training Llama-3.1-8B-Instruct on traces mined by DART achieves the highest point estimate in five of six evaluations across MATH-500 and AIME benchmarks. These results demonstrate that revisiting rejected traces with DART can expand problem coverage and provide effective post-training data.",
+    "content": "Post-training large language models (LLMs) for mathematical reasoning often relies on accepted traces whose final answers pass a verifier. For hard math problems, however, such traces can be rare under independent Monte Carlo (MC) sampling. To address this, we propose Diverse Alternative Reasoning Traces (DART), a trace-mining method that starts from a rejected trace, decomposes it into reasoning steps, and ranks them by position-weighted uncertainty. It then generates deliberately distinct alternative candidates for highly ranked steps using reference-answer guidance and a meta-thought before completing the resulting traces. On greedy-unsolved DeepMath-103K problems, DART recovers 37% more problems than MC sampling at a matched number of generated traces. Its estimated generation cost per recovered problem is nearly identical, while its cost per accepted trace is 30% lower. Post-training Llama-3.1-8B-Instruct on traces mined by DART achieves the highest point estimate in five of six evaluations across MATH-500 and AIME benchmarks. These results demonstrate that revisiting rejected traces with DART can expand problem coverage and provide effective post-training data.",
+    "source_type": "research"
+  },
+  {
+    "title": "$μ$-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents",
+    "url": "https://arxiv.org/abs/2611.34920v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-25T18:58:42Z",
+    "retrieved_at": "2026-11-27T09:01:36.166045+00:00",
+    "summary": "Voice agents in shared spaces must satisfy interdependent multi-user requests while upholding per-user authority, privacy, and task constraints. Existing evaluations offer limited coverage when participants react throughout a session. We introduce $μ$-Bench, a benchmark for joint task completion in closed-loop, full-duplex multi-user voice interaction. Simulated participants act from isolated profiles of goals, knowledge, and permissions, adapting to the agent's speech and tool outcomes. Across 20 domains, 100 scenarios vary group size, acoustics, and follow-up demands to form 800 cases (408 tool-augmented, 392 tool-free). Joint Task Success (JTS) requires all user goals, privacy boundaries, and terminal states to hold jointly, while Pure JTS further disallows unauthorized tool calls; Attribution, Threading, and Coordination (ATC) diagnostics localize failures. Across 13 voice agents, proprietary systems peak at 62.24\\% tool-free and 65.44\\% tool-augmented success, while open-weight models remain below 20\\%. ATC diagnostics show that open-weight models lag primarily in multi-turn attribution and threading, and controlled contrasts reveal that larger groups consistently degrade joint task success across capable systems. By coupling reactive multi-user simulation with verifiable session-level outcomes, $μ$-Bench provides a rigorous testbed for shared voice agents.",
+    "content": "Voice agents in shared spaces must satisfy interdependent multi-user requests while upholding per-user authority, privacy, and task constraints. Existing evaluations offer limited coverage when participants react throughout a session. We introduce $μ$-Bench, a benchmark for joint task completion in closed-loop, full-duplex multi-user voice interaction. Simulated participants act from isolated profiles of goals, knowledge, and permissions, adapting to the agent's speech and tool outcomes. Across 20 domains, 100 scenarios vary group size, acoustics, and follow-up demands to form 800 cases (408 tool-augmented, 392 tool-free). Joint Task Success (JTS) requires all user goals, privacy boundaries, and terminal states to hold jointly, while Pure JTS further disallows unauthorized tool calls; Attribution, Threading, and Coordination (ATC) diagnostics localize failures. Across 13 voice agents, proprietary systems peak at 62.24\\% tool-free and 65.44\\% tool-augmented success, while open-weight models remain below 20\\%. ATC diagnostics show that open-weight models lag primarily in multi-turn attribution and threading, and controlled contrasts reveal that larger groups consistently degrade joint task success across capable systems. By coupling reactive multi-user simulation with verifiable session-level outcomes, $μ$-Bench provides a rigorous testbed for shared voice agents.",
+    "source_type": "research"
+  },
+  {
+    "title": "Enhancing Maritime Domain Awareness using Latent Space Representations",
+    "url": "https://arxiv.org/abs/2611.34899v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-25T18:51:36Z",
+    "retrieved_at": "2026-11-27T09:01:36.166093+00:00",
+    "summary": "This work presents a novel application of Earth Observation (EO) embeddings for Maritime Domain Awareness (MDA) from the perspective of the geospatial foundation model TerraMind. By operating directly on compressed latent-space representations rather than on the original Sentinel-1 imagery, this approach directly addresses the data gravity bottleneck that increasingly constrains operational EO processing, in line with the objectives of the Embed2Scale project. In particular, linear and non-linear probing of compressed embeddings, latent space representations of synthetic aperture radar (SAR) imagery, is used to detect, localise, and characterise vessels from Sentinel-1 GRD images. Vessel detection achieves a ROC-AUC of 0.95, while vessel localisation has a median error of around 300 m for vessels longer than 100 m, and vessel AIS type-code classification achieves 62% accuracy for the majority classes. The latter, however, is highly correlated with vessel length. These results reveal both the potential and current limitations of Geospatial Foundation Models (GeoFMs) when applied to fine-grained MDA understanding in real-world scenarios. Additionally, a new maritime remote sensing dataset is released, pairing about 2,000 Sentinel-1 images with temporally aligned AIS signals from commercial vessels. Through manual inspection, each candidate sample was verified for bounding-box quality and for consistency between the AIS-reported vessel length and the observed vessel extent, cross-checking vessel identity and location against publicly available vessel records and, where available, photographs. The dataset was made ready for use with the NeuCo-Bench neural compression benchmark framework, publicly available on HuggingFace through https://huggingface.co/datasets/embed2scale/S",
+    "content": "This work presents a novel application of Earth Observation (EO) embeddings for Maritime Domain Awareness (MDA) from the perspective of the geospatial foundation model TerraMind. By operating directly on compressed latent-space representations rather than on the original Sentinel-1 imagery, this approach directly addresses the data gravity bottleneck that increasingly constrains operational EO processing, in line with the objectives of the Embed2Scale project. In particular, linear and non-linear probing of compressed embeddings, latent space representations of synthetic aperture radar (SAR) imagery, is used to detect, localise, and characterise vessels from Sentinel-1 GRD images. Vessel detection achieves a ROC-AUC of 0.95, while vessel localisation has a median error of around 300 m for vessels longer than 100 m, and vessel AIS type-code classification achieves 62% accuracy for the majority classes. The latter, however, is highly correlated with vessel length. These results reveal both the potential and current limitations of Geospatial Foundation Models (GeoFMs) when applied to fine-grained MDA understanding in real-world scenarios. Additionally, a new maritime remote sensing dataset is released, pairing about 2,000 Sentinel-1 images with temporally aligned AIS signals from commercial vessels. Through manual inspection, each candidate sample was verified for bounding-box quality and for consistency between the AIS-reported vessel length and the observed vessel extent, cross-checking vessel identity and location against publicly available vessel records and, where available, photographs. The dataset was made ready for use with the NeuCo-Bench neural compression benchmark framework, publicly available on HuggingFace through https://huggingface.co/datasets/embed2scale/S",
+    "source_type": "research"
+  },
+  {
+    "title": "Interpretable and Accurate Hybrid Decision Trees with Selective Case-Based Splits",
+    "url": "https://arxiv.org/abs/2611.34887v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-25T18:45:35Z",
+    "retrieved_at": "2026-11-27T09:01:36.166131+00:00",
+    "summary": "Decision trees are among the most well-known interpretable models in Machine Learning. Over the years, a wide variety of strategies have been proposed to define split conditions within the greedy learning framework, aiming to guide instance routing and enhance predictive performance. These strategies range from axis-parallel and oblique splits based on feature values to proximity-based splits using exemplar instances and more complex hybrid approaches. However, no single method has emerged as universally superior. In this work, we present two key contributions to the construction of greedy decision trees. First, we propose a hybrid tree architecture that integrates both feature-based and case-based splits, allowing for heterogeneous splits throughout the tree. Second, we introduce a novel type of split that leverages a selective case-based approach: when a split is needed, our method searches for the most informative subset of features to define the split, effectively balancing the specificity of case-based methods with the simplicity of feature-based ones. Experiments on a diverse set of tabular datasets show that our method outperforms standard decision trees and achieves performance on par with ensemble methods, while producing shallow trees that retain or even improve predictive accuracy.",
+    "content": "Decision trees are among the most well-known interpretable models in Machine Learning. Over the years, a wide variety of strategies have been proposed to define split conditions within the greedy learning framework, aiming to guide instance routing and enhance predictive performance. These strategies range from axis-parallel and oblique splits based on feature values to proximity-based splits using exemplar instances and more complex hybrid approaches. However, no single method has emerged as universally superior. In this work, we present two key contributions to the construction of greedy decision trees. First, we propose a hybrid tree architecture that integrates both feature-based and case-based splits, allowing for heterogeneous splits throughout the tree. Second, we introduce a novel type of split that leverages a selective case-based approach: when a split is needed, our method searches for the most informative subset of features to define the split, effectively balancing the specificity of case-based methods with the simplicity of feature-based ones. Experiments on a diverse set of tabular datasets show that our method outperforms standard decision trees and achieves performance on par with ensemble methods, while producing shallow trees that retain or even improve predictive accuracy.",
+    "source_type": "research"
+  },
+  {
+    "title": "How Much Do Coding Agents Over-Edit, and Why? An Empirical Study of Unneeded Edits in Repository-Level Agent Patches",
+    "url": "https://arxiv.org/abs/2611.34875v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-25T18:37:06Z",
+    "retrieved_at": "2026-11-27T09:01:36.166184+00:00",
+    "summary": "Agent patches are larger than developers', which is widely read as over-editing. But patch size does not say whether the extra edits are needed, what they are, or where they come from. We introduce Delta Residue Attribution (DRA), which replays agent trajectories, traces every block (unit) of the final patch to the step that wrote it, reverts each unit, and reruns the task tests to decide whether the unit is needed. We apply DRA to 7,660 resolved GitHub Copilot CLI trajectories from 18 frontier models on SWE-bench Verified (6,728) and DeepSWE (932), and grade developer patches using the same method. Agent patches do change more lines than developers'; on SWE-bench Verified the majority of extra edits add tests (61%) and documentation (13%) while on DeepSWE, most extra edits are code (58%). On both benchmarks, agents' code is on average at least as necessary as developers' (mean $NP_{code}$ 0.887 vs. 0.864 on SWE-bench Verified, where 11 of 18 models leave less unneeded code than developers, and 0.797 vs. 0.785 on DeepSWE). On average, 11% of an agent patch's code units on SWE-bench Verified are still unneeded, and 89% of those change behavior. Debug steps write almost none of the unneeded code. Code necessity differs substantially by model; it is unrelated to resolve rate on SWE-bench Verified and negatively correlated with it on DeepSWE (Spearman -0.59, p = 0.01). On SWE-bench Verified, pruning with DRA using only the tests the agent can see (its own tests and the repository's) removes the majority of unneeded code but also some needed code (67% recall, 46% precision), and 89% of pruned patches still resolve the task; asking the agent to audit its own diff is more precise but less effective (36% recall, 66% precision). We recommend that benchmarks report code necessity",
+    "content": "Agent patches are larger than developers', which is widely read as over-editing. But patch size does not say whether the extra edits are needed, what they are, or where they come from. We introduce Delta Residue Attribution (DRA), which replays agent trajectories, traces every block (unit) of the final patch to the step that wrote it, reverts each unit, and reruns the task tests to decide whether the unit is needed. We apply DRA to 7,660 resolved GitHub Copilot CLI trajectories from 18 frontier models on SWE-bench Verified (6,728) and DeepSWE (932), and grade developer patches using the same method. Agent patches do change more lines than developers'; on SWE-bench Verified the majority of extra edits add tests (61%) and documentation (13%) while on DeepSWE, most extra edits are code (58%). On both benchmarks, agents' code is on average at least as necessary as developers' (mean $NP_{code}$ 0.887 vs. 0.864 on SWE-bench Verified, where 11 of 18 models leave less unneeded code than developers, and 0.797 vs. 0.785 on DeepSWE). On average, 11% of an agent patch's code units on SWE-bench Verified are still unneeded, and 89% of those change behavior. Debug steps write almost none of the unneeded code. Code necessity differs substantially by model; it is unrelated to resolve rate on SWE-bench Verified and negatively correlated with it on DeepSWE (Spearman -0.59, p = 0.01). On SWE-bench Verified, pruning with DRA using only the tests the agent can see (its own tests and the repository's) removes the majority of unneeded code but also some needed code (67% recall, 46% precision), and 89% of pruned patches still resolve the task; asking the agent to audit its own diff is more precise but less effective (36% recall, 66% precision). We recommend that benchmarks report code necessity",
+    "source_type": "research"
+  },
+  {
+    "title": "Shape-Aware Three-Way Merge for RDF Knowledge Graphs: The schema defines the conflict: an implementation and evaluation",
+    "url": "https://arxiv.org/abs/2611.34870v1",
+    "source": "arXiv AI",
+    "published_at": "2026-11-25T18:34:46Z",
+    "retrieved_at": "2026-11-27T09:01:36.166235+00:00",
+    "summary": "Merging RDF serializations creates ordering conflicts and misses semantic ones. We describe and evaluate a three-way merge in which the schema defines a conflict: set algebra combines canonical triples, and a slot is contended only where a SHACL shape bounds its cardinality and both sides' changes cannot stand within that bound. Unbounded predicates union; contended slots go to a person. The same shapes graph validates the result. We do not claim the first three-way merge for RDF. Our contribution is an implementation in a production multi-agent store and an evaluation against a reimplementation of Quit Store's Context Merge overlap rule, which it extends rather than replaces, and six other strategies. Across five synthetic seeds, the shape-aware operator raised 33 conflicts, all true positives as judged by the same shapes that define them, with no triples lost or fabricated and no SHACL violations admitted. The context-overlap baseline, counted per slot, detected the same 33 conflicts but asked 845 questions. A replay built from recorded production incidents covers 105 human alias repairs (93 after excluding 12 chained pairs) and 939 duplicate-value incidents. It reproduces a triple-level limit: different names for one entity remain invisible (0 of 93 alias repairs detected, matching 0 of 21 synthetic cases). In a study of evolving shape contracts, merging shape declarations first handles the tested cardinality changes, while datatype evolution exposes a detector blind spot caught by post-merge validation. An oracle that reads no shapes agrees with the shipped operator on the facts and history of all 23 reachable single-slot cases. Under wrong shapes, a missing bound loses data silently and a spurious one only adds questions. The supported claim is fewer human decision",
+    "content": "Merging RDF serializations creates ordering conflicts and misses semantic ones. We describe and evaluate a three-way merge in which the schema defines a conflict: set algebra combines canonical triples, and a slot is contended only where a SHACL shape bounds its cardinality and both sides' changes cannot stand within that bound. Unbounded predicates union; contended slots go to a person. The same shapes graph validates the result. We do not claim the first three-way merge for RDF. Our contribution is an implementation in a production multi-agent store and an evaluation against a reimplementation of Quit Store's Context Merge overlap rule, which it extends rather than replaces, and six other strategies. Across five synthetic seeds, the shape-aware operator raised 33 conflicts, all true positives as judged by the same shapes that define them, with no triples lost or fabricated and no SHACL violations admitted. The context-overlap baseline, counted per slot, detected the same 33 conflicts but asked 845 questions. A replay built from recorded production incidents covers 105 human alias repairs (93 after excluding 12 chained pairs) and 939 duplicate-value incidents. It reproduces a triple-level limit: different names for one entity remain invisible (0 of 93 alias repairs detected, matching 0 of 21 synthetic cases). In a study of evolving shape contracts, merging shape declarations first handles the tested cardinality changes, while datatype evolution exposes a detector blind spot caught by post-merge validation. An oracle that reads no shapes agrees with the shipped operator on the facts and history of all 23 reachable single-slot cases. Under wrong shapes, a missing bound loses data silently and a spurious one only adds questions. The supported claim is fewer human decision",
+    "source_type": "research"
+  }
+]

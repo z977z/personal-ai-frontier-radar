@@ -1129,5 +1129,19 @@
       "https://deepmind.google/blog/introducing-alphaproof-code/",
       "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/"
     ]
+  },
+  {
+    "date": "2026-11-27",
+    "name_zh": "智能体化科学验证",
+    "name_en": "Agentic Scientific Verification",
+    "score": 8,
+    "maturity": "Emerging",
+    "explanation": "指以智能体团队自动生成并借助形式化工具（如Lean证明检查器、测试回放与归因）对科学或软件产物进行机器可验证的检查，把'生成'与'验证'闭环。本期事件中AlphaProof Code用Lean编写三百万行证明验证Signal加密、DeepMind用智能体+形式化验证改进量子算法、DRA通过回退重跑测试判定补丁单元必要性，均属该范式。",
+    "why_now": "大模型生成能力已足以产出大规模候选产物，瓶颈转向可信验证；形式化证明检查器与可回放测试提供了低成本、可审计的判定手段，使智能体从'生成器'升级为'可验证生成器'。",
+    "evidence_urls": [
+      "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "https://arxiv.org/abs/2611.34875v1"
+    ]
   }
 ]
