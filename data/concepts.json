@@ -1143,5 +1143,20 @@
       "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
       "https://arxiv.org/abs/2611.34875v1"
     ]
+  },
+  {
+    "date": "2026-11-28",
+    "name_zh": "智能体评估方法论",
+    "name_en": "Agentic Evaluation Methodology",
+    "score": 8,
+    "maturity": "Growing",
+    "explanation": "围绕AI智能体（编码、语音、多用户、安全监控）如何被可靠评估形成的一组方法：单元级补丁必要性归因、闭环多用户联合任务成功指标、监控器对攻击策略选择的敏感性分析、评估体系构建与维护实践。核心共性是承认单一解决率或静态脚本不足，转向可验证的会话级/单元级结果与失败归因。",
+    "why_now": "多智能体与语音智能体进入真实共享场景，编码智能体补丁规模膨胀引发质量质疑，AI监控器被用于安全部署决策，三者共同暴露现有评估指标的失真风险，推动评估方法从结果计数转向归因与敏感性分析。",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2611.34875v1",
+      "https://arxiv.org/abs/2611.34920v1",
+      "https://arxiv.org/abs/2611.34934v1",
+      "https://huggingface.co/blog/agentic-evals"
+    ]
   }
 ]
